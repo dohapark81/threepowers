@@ -61,6 +61,20 @@
     "topics": ["선관위", "6·3지방선거"]
   },
   {
+    "id": "evt_20260609_02",
+    "date": "2026-06-09",
+    "title": "선관위 휴직자 181명 — 정원 3,034명의 약 6% (국회 제출 자료, 5월 기준)",
+    "body_oneline": "김승수 의원(국민의힘)이 공개한 선관위 제출 자료 기준 휴직자 181명(2025년 12월 말 148명 대비 33명 증가). 앞서 복수 매체는 4월 기준 176명(육아휴직 124·질병 30·가족돌봄 11·해외동반 8)으로 보도",
+    "status": "official",
+    "source_grade": "press_multi",
+    "source_refs": [
+      { "type": "press", "title": "국회 제출 선관위 자료 (뉴스1 보도)", "url": "https://www.news1.kr/politics/assembly/6192037" },
+      { "type": "press", "title": "MBC 뉴스데스크 보도", "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828646_37004.html" },
+      { "type": "press", "title": "한국경제 보도", "url": "https://www.hankyung.com/article/2026060713367" }
+    ],
+    "topics": ["선관위", "6·3지방선거"]
+  },
+  {
     "id": "evt_20260610_01",
     "date": "2026-06-10",
     "title": "투표지 부족 사태 진상규명위원회 출범 (6/10~6/19 · 외부 인사 6명 · 위원장 조현욱 변호사)",
