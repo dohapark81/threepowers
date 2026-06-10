@@ -1,0 +1,240 @@
+---
+import type { Appointment, SelectionTrack } from '../lib/types';
+
+interface Props {
+  appointments: Appointment[];
+}
+
+const { appointments } = Astro.props;
+const nec = appointments.filter((a) => a.body === 'nec');
+
+const TRACK_LABEL: Record<SelectionTrack, string> = {
+  president: '대통령 임명',
+  assembly_ruling: '국회 선출',
+  assembly_opposition: '국회 선출',
+  assembly_consensus: '국회 선출',
+  assembly: '국회 선출',
+  chief_justice: '대법원장 지명',
+  internal: '내부',
+};
+
+const GROUPS: { key: string; label: string; tracks: SelectionTrack[] }[] = [
+  { key: 'president', label: '대통령 임명', tracks: ['president'] },
+  {
+    key: 'assembly',
+    label: '국회 선출',
+    tracks: ['assembly_ruling', 'assembly_opposition', 'assembly_consensus', 'assembly'],
+  },
+  { key: 'chief_justice', label: '대법원장 지명', tracks: ['chief_justice'] },
+];
+
+const isMember = (a: Appointment) => a.position !== '사무총장';
+const members = nec.filter(isMember);
+
+const groups = GROUPS.map((g) => ({
+  ...g,
+  people: members.filter((a) => g.tracks.includes(a.selection_track)),
+}));
+
+const chair = members.find((a) => a.position === '위원장');
+const acting = members.find((a) => a.acting_role);
+const secretary = nec.find((a) => a.position === '사무총장');
+
+const vacantCount = members.filter((a) => a.status === 'resigned').length;
+const expiringByYear = new Map<string, number>();
+for (const a of members) {
+  if (a.term_end && a.status !== 'resigned') {
+    const y = a.term_end.slice(0, 4);
+    expiringByYear.set(y, (expiringByYear.get(y) ?? 0) + 1);
+  }
+}
+const nearestYear = [...expiringByYear.keys()].sort()[0];
+
+function seatMeta(a: Appointment): string {
+  const parts: string[] = [];
+  if (a.status === 'resigned') {
+    parts.push(`${a.position}(대법관 호선)`, '사임 · 공석');
+  } else {
+    if (a.position !== '위원') parts.push(a.position);
+    if (a.acting_role) parts.push(a.acting_role);
+    parts.push(a.recommended_by ?? TRACK_LABEL[a.selection_track]);
+    parts.push(a.appointed_date ?? '임명일 확인 중');
+    if (!a.recommended_by && a.selection_track === 'assembly') parts.push('추천 교섭단체 확인 중');
+  }
+  return [...new Set(parts)].join(' · ');
+}
+
+const slug = (a: Appointment) => a.person;
+
+// 상세 패널용 데이터 (클라이언트 스크립트가 읽음)
+const detailData = Object.fromEntries(
+  members.map((a) => [
+    slug(a),
+    {
+      name: a.person,
+      pos:
+        a.status === 'resigned'
+          ? `前 ${a.position} (사임 · 공석)`
+          : a.acting_role
+            ? `${a.position} · ${a.acting_role}`
+            : a.position,
+      track: TRACK_LABEL[a.selection_track] + (a.recommended_by ? ` · ${a.recommended_by}` : ''),
+      appointed: a.appointed_date ?? '확인 중',
+      term: a.term_start && a.term_end ? `${a.term_start} ~ ${a.term_end} (6년)` : '확인 중',
+      career: a.career_summary.join(' · '),
+      note: a.note ?? '',
+      refs: a.source_refs.map((r) => ({
+        title: r.title,
+        url: r.url,
+        grade: r.type === 'official' ? '공식문서' : '복수 매체 교차',
+      })),
+    },
+  ])
+);
+---
+
+<div class="composition-map">
+  <p class="map-note">
+    각 위원을 누르면 추천 주체 · 임명/선출일 · 임기 · 경력 · 원문 출처가 열립니다.
+    {chair?.status === 'resigned' && (
+      <b>현재 위원장은 공석</b>
+    )}
+    {chair?.status === 'resigned' && acting && ` — ${chair.person} 위원장 사임, ${acting.person} ${acting.position}이 직무대행.`}
+  </p>
+
+  {groups.map((g) => (
+    <div class="track">
+      <div class="label"><b>{g.label}</b>{g.people.length}인</div>
+      <div class="seats">
+        {g.people.map((a) => (
+          <button
+            class:list={['seat', a.status === 'resigned' && 'vacant']}
+            type="button"
+            data-seat={slug(a)}
+            aria-expanded="false"
+          >
+            <span class="nm"><span class="dot"></span>{a.person}</span>
+            <span class="meta">{seatMeta(a)}</span>
+          </button>
+        ))}
+      </div>
+    </div>
+  ))}
+
+  <div class="detail" id="seat-detail">
+    <button class="close" type="button" aria-label="닫기">닫기 ✕</button>
+    <dl>
+      <dt>이름</dt><dd data-f="name">—</dd>
+      <dt>직</dt><dd data-f="pos">—</dd>
+      <dt>임명 경로</dt><dd data-f="track">—</dd>
+      <dt>임명일</dt><dd class="mono" data-f="appointed">—</dd>
+      <dt>임기</dt><dd class="mono" data-f="term">—</dd>
+      <dt>경력</dt><dd data-f="career">—</dd>
+      <dt data-f="note-dt">비고</dt><dd data-f="note">—</dd>
+      <dt>출처</dt><dd data-f="src">—</dd>
+    </dl>
+  </div>
+
+  <div class="singles">
+    {chair && (
+      <div class="single">
+        <div class="role">위원장 · 대법관 호선 · 비상근</div>
+        <div class="nm">
+          {chair.person}
+          {chair.status === 'resigned' && <small> — 사임 · 공석</small>}
+        </div>
+        <div class="sub">{chair.appointed_date} 취임{chair.status === 'resigned' && ' · 지명 해제 수용으로 공석'}</div>
+      </div>
+    )}
+    {acting && (
+      <div class="single">
+        <div class="role">{acting.position} · 상근 · 현 {acting.acting_role}</div>
+        <div class="nm">{acting.person}</div>
+        <div class="sub">{acting.note}</div>
+      </div>
+    )}
+    {secretary && (
+      <div class="single">
+        <div class="role">사무총장 · 상근 (사무처 총괄)</div>
+        <div class="nm">
+          {secretary.person}
+          {secretary.status === 'resignation_offered' && <small> — 사의 표명</small>}
+        </div>
+        <div class="sub">{secretary.career_summary.join(' · ')}{secretary.note && ` · ${secretary.note}`}</div>
+      </div>
+    )}
+  </div>
+
+  <div class="map-foot">
+    <span class="pill">
+      {nearestYear && <>임기 만료 임박 <b>{nearestYear}년 {expiringByYear.get(nearestYear)}명</b></>}
+      {vacantCount > 0 && <> · 위원장 <b>공석 {vacantCount}석</b></>}
+    </span>
+    <span class="also">
+      같은 컴포넌트로 보기 → 헌법재판소 9인 · 대법원 14인 <span style="color:var(--faint)">(데이터 준비 중)</span>
+    </span>
+  </div>
+
+  <script type="application/json" id="seat-data" set:html={JSON.stringify(detailData)} />
+</div>
+
+<script>
+  const dataEl = document.getElementById('seat-data');
+  const detail = document.getElementById('seat-detail');
+  if (dataEl && detail) {
+    const DATA = JSON.parse(dataEl.textContent || '{}');
+    const seats = document.querySelectorAll<HTMLButtonElement>('.seat');
+    const field = (f: string) => detail.querySelector(`[data-f="${f}"]`) as HTMLElement;
+
+    function fill(d: any) {
+      for (const k of ['name', 'pos', 'track', 'appointed', 'term', 'career']) field(k).textContent = d[k];
+      const noteDt = field('note-dt');
+      const noteDd = field('note');
+      noteDt.style.display = d.note ? '' : 'none';
+      noteDd.style.display = d.note ? '' : 'none';
+      noteDd.textContent = d.note;
+      const src = field('src');
+      src.textContent = '';
+      d.refs.forEach((r: any, i: number) => {
+        if (i > 0) src.append(' · ');
+        const grade = document.createElement('span');
+        grade.className = 'src ' + (r.grade === '공식문서' ? 'official' : 'press');
+        grade.textContent = r.grade;
+        src.append(grade, ' ' + r.title + ' ');
+        if (r.url) {
+          const a = document.createElement('a');
+          a.href = r.url;
+          a.target = '_blank';
+          a.rel = 'noopener';
+          a.textContent = '원문 보기 ↗';
+          src.append('· ', a);
+        } else {
+          const pending = document.createElement('span');
+          pending.className = 'pending-source';
+          pending.textContent = '· 원문 확인 중';
+          src.append(pending);
+        }
+      });
+    }
+
+    function closeAll() {
+      detail.classList.remove('open');
+      seats.forEach((s) => s.setAttribute('aria-expanded', 'false'));
+    }
+
+    seats.forEach((s) => {
+      s.addEventListener('click', () => {
+        const wasOpen = s.getAttribute('aria-expanded') === 'true';
+        closeAll();
+        if (!wasOpen) {
+          const d = DATA[s.dataset.seat || ''];
+          if (d) fill(d);
+          s.setAttribute('aria-expanded', 'true');
+          detail.classList.add('open');
+          s.closest('.track')?.after(detail);
+        }
+      });
+    });
+    detail.querySelector('.close')?.addEventListener('click', closeAll);
+  }
+</script>

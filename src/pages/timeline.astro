@@ -1,51 +1,32 @@
 ---
 import Base from '../layouts/Base.astro';
-import rawEvents from '../../data/events.json';
-import { EVENT_STATUS_LABEL, type TimelineEvent } from '../lib/types';
-
-const events = (rawEvents as TimelineEvent[]).sort((a, b) => b.date.localeCompare(a.date));
-const supersededIds = new Set(events.map((e) => e.supersedes).filter(Boolean));
-
-const GRADE_LABEL = { official: '공식문서', press_multi: '언론보도(교차확인)' } as const;
+import TimelineList from '../components/TimelineList.astro';
+import events from '../../data/events.json';
+import type { TimelineEvent } from '../lib/types';
 ---
 
 <Base
   title="6·3 투표용지 부족 사태 기록"
-  description="6·3 지방선거 투표용지 부족 사태에 대한 공식 발표를 날짜순으로 기록합니다. 모든 항목에 출처 등급과 원문 링크를 표시합니다."
+  description="6·3 지방선거 투표용지 부족 사태에 대한 공식 발표·국회 문서를 날짜순으로 기록합니다. 모든 항목에 출처 등급과 원문 링크를 표시합니다."
+  active="timeline"
 >
-  <h1>6·3 사태 기록 타임라인</h1>
-  <p>
-    공식 문서 또는 복수 매체가 교차 확인한 사실만 수록합니다. 정정된 발표는 삭제하지 않고
-    <span class="badge corrected">정정됨</span> 라벨과 함께 남깁니다.
-  </p>
+  <section>
+    <span class="eyebrow">6·3 사태 기록</span>
+    <h1>날짜순 공식 기록</h1>
+    <p class="lede" style="margin-bottom:14px">
+      공식 문서 또는 복수 매체가 교차 확인한 사실만 수록합니다. 단독 보도·미확인 주장은
+      싣지 않습니다. 정정된 발표는 삭제하지 않고 <span class="badge b-correct">↻ 정정됨</span>
+      라벨과 함께 남기며, 변경 내역은 커밋 이력으로 공개됩니다.
+    </p>
+    <TimelineList events={events as TimelineEvent[]} />
+  </section>
 
-  <ul class="timeline">
-    {events.map((evt) => (
-      <li id={evt.id}>
-        <time datetime={evt.date}>{evt.date}</time>
-        <span class={`badge ${supersededIds.has(evt.id) ? 'corrected' : evt.status}`}>
-          {supersededIds.has(evt.id) ? EVENT_STATUS_LABEL.corrected : EVENT_STATUS_LABEL[evt.status]}
-        </span>
-        <span class="badge grade">{GRADE_LABEL[evt.source_grade]}</span>
-        <p class="evt-title">{evt.title}</p>
-        <p class="evt-body">{evt.body_oneline}</p>
-        <p class="evt-src">
-          출처:
-          {evt.source_refs.map((ref, i) => (
-            <>
-              {i > 0 && ' · '}
-              {ref.url ? (
-                <a href={ref.url} rel="noopener">{ref.title}</a>
-              ) : (
-                <span class="pending-source">{ref.title} (원문 확인 중)</span>
-              )}
-            </>
-          ))}
-          {evt.supersedes && (
-            <> · <a href={`#${evt.supersedes}`}>이전 발표 정정</a></>
-          )}
-        </p>
-      </li>
-    ))}
-  </ul>
+  <section>
+    <span class="eyebrow">수록 기준</span>
+    <p class="lede" style="font-size:14px">
+      출처 등급 <span class="src official">공식문서</span>는 선관위·국회·관보·법원 발표,
+      <span class="src press">복수 매체 교차</span>는 두 곳 이상의 매체가 동일 사실을 보도한
+      경우입니다. 누락이 오염보다 낫다는 원칙으로, 확인되지 않은 항목은 싣지 않습니다.
+    </p>
+  </section>
 </Base>

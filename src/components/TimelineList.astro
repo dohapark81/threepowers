@@ -1,0 +1,74 @@
+---
+import { EVENT_STATUS_LABEL, type TimelineEvent } from '../lib/types';
+
+interface Props {
+  events: TimelineEvent[];
+  /** 표시할 항목 수 제한 (홈 티저용) */
+  limit?: number;
+  /** 항목 앵커 링크의 베이스 경로. 다른 페이지에서 티저로 쓸 때 "/timeline" 지정 */
+  anchorBase?: string;
+}
+
+const { events, limit, anchorBase = '' } = Astro.props;
+
+const sorted = [...events].sort((a, b) => b.date.localeCompare(a.date) || b.id.localeCompare(a.id));
+const shown = limit ? sorted.slice(0, limit) : sorted;
+
+// 정정 관계: 어떤 항목이 어떤 새 항목으로 대체됐는지
+const supersededBy = new Map<string, TimelineEvent>();
+for (const e of sorted) if (e.supersedes) supersededBy.set(e.supersedes, e);
+
+const GRADE_LABEL = { official: '공식문서', press_multi: '복수 매체 교차' } as const;
+
+const STATUS_CLASS = {
+  official: 'b-official',
+  investigating: 'b-progress',
+  result_announced: 'b-result',
+  corrected: 'b-correct',
+} as const;
+---
+
+<div class="tl">
+  {shown.map((evt) => {
+    const replacement = supersededBy.get(evt.id);
+    const isSuperseded = !!replacement || evt.status === 'corrected';
+    return (
+      <div class="ev" id={evt.id}>
+        <div class="date">{evt.date}</div>
+        <div class="body">
+          <p class:list={['t', isSuperseded && 'superseded']}>{evt.title}</p>
+          <div class="tags">
+            <span class:list={['badge', isSuperseded ? 'b-correct' : STATUS_CLASS[evt.status]]}>
+              {isSuperseded ? '↻ 정정됨' : EVENT_STATUS_LABEL[evt.status]}
+            </span>
+            <span class:list={['src', evt.source_grade === 'official' ? 'official' : 'press']}>
+              {GRADE_LABEL[evt.source_grade]}
+            </span>
+            <span class="ref">
+              {evt.source_refs.map((ref, i) => (
+                <>
+                  {i > 0 && ' · '}
+                  {ref.url ? (
+                    <a href={ref.url} target="_blank" rel="noopener">{ref.title} ↗</a>
+                  ) : (
+                    <span class="pending-source">{ref.title} (원문 확인 중)</span>
+                  )}
+                </>
+              ))}
+            </span>
+          </div>
+          {evt.supersedes && (
+            <p class="supersede">
+              ↻ 이전 발표를 갱신함 — <a href={`${anchorBase}#${evt.supersedes}`}>변경 전 항목 보기</a>
+            </p>
+          )}
+          {replacement && (
+            <p class="supersede">
+              {replacement.date} 집계로 대체됨 — <a href={`${anchorBase}#${replacement.id}`}>대체 항목 보기</a>
+            </p>
+          )}
+        </div>
+      </div>
+    );
+  })}
+</div>

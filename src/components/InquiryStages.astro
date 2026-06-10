@@ -1,0 +1,38 @@
+---
+import { INQUIRY_STAGES, type Inquiry } from '../lib/types';
+
+interface Props {
+  inquiry: Inquiry;
+}
+
+const { inquiry } = Astro.props;
+const doneStages = new Set(inquiry.stages_done.map((s) => s.stage));
+const stageDates = new Map(inquiry.stages_done.map((s) => [s.stage, s.date]));
+---
+
+<div class="stages-scroll">
+  <div class="stages">
+    {INQUIRY_STAGES.map((stage) => (
+      <div
+        class:list={[
+          'stage',
+          doneStages.has(stage) && 'done',
+          stage === inquiry.stage && !doneStages.has(stage) && 'now',
+        ]}
+      >
+        {stage}
+        {stageDates.has(stage) && <span class="mono"> {stageDates.get(stage)?.slice(5).replace('-', '/')}</span>}
+      </div>
+    ))}
+  </div>
+</div>
+
+<div class="next">
+  <span class="lbl">현황</span>
+  <span>
+    <b>{inquiry.next_event.date ? `${inquiry.next_event.date} — ` : ''}{inquiry.next_event.title.split(' · ')[0]}</b>
+    {inquiry.next_event.title.includes(' · ') && (
+      <span style="color:var(--faint)"> · {inquiry.next_event.title.split(' · ').slice(1).join(' · ')}</span>
+    )}
+  </span>
+</div>

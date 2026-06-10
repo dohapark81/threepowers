@@ -1,1 +1,137 @@
-[]
+[
+  {
+    "body": "nec",
+    "person": "위철환",
+    "position": "상임위원",
+    "selection_track": "president",
+    "appointed_date": "2025-10-20",
+    "term_start": "2025-10-20",
+    "term_end": "2031-10-19",
+    "career_summary": ["수원고등법원 조정위원", "前 대한변호사협회장"],
+    "acting_role": "위원장 직무대행",
+    "note": "2026-06-08 노태악 위원장 지명 해제 수용에 따라 선거관리위원회법 제5조에 의거 위원장 직무대행",
+    "source_refs": [
+      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" }
+    ]
+  },
+  {
+    "body": "nec",
+    "person": "윤광일",
+    "position": "위원",
+    "selection_track": "president",
+    "appointed_date": "2026-03-30",
+    "term_start": "2026-03-30",
+    "term_end": "2032-03-29",
+    "career_summary": ["숙명여자대학교 사회과학대학 학장"],
+    "source_refs": [
+      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" }
+    ]
+  },
+  {
+    "body": "nec",
+    "person": "전현정",
+    "position": "위원",
+    "selection_track": "president",
+    "appointed_date": "2026-03-30",
+    "term_start": "2026-03-30",
+    "term_end": "2032-03-29",
+    "career_summary": ["법무법인 LKB 구성원 변호사"],
+    "source_refs": [
+      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" }
+    ]
+  },
+  {
+    "body": "nec",
+    "person": "조병현",
+    "position": "위원",
+    "selection_track": "assembly_opposition",
+    "recommended_by": "미래통합당(현 국민의힘) 추천",
+    "appointed_date": "2021-01-08",
+    "term_start": "2021-01-08",
+    "term_end": "2027-01-07",
+    "career_summary": ["법무법인 평안 대표변호사", "前 서울고등법원장"],
+    "source_refs": [
+      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" }
+    ]
+  },
+  {
+    "body": "nec",
+    "person": "조성대",
+    "position": "위원",
+    "selection_track": "assembly_ruling",
+    "recommended_by": "더불어민주당 추천",
+    "appointed_date": "2021-01-08",
+    "term_start": "2021-01-08",
+    "term_end": "2027-01-07",
+    "career_summary": ["한신대학교 교수", "한국선거학회 기획이사"],
+    "source_refs": [
+      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" }
+    ]
+  },
+  {
+    "body": "nec",
+    "person": "남래진",
+    "position": "위원",
+    "selection_track": "assembly",
+    "appointed_date": "2022-08-02",
+    "term_start": "2022-08-02",
+    "term_end": "2028-08-01",
+    "career_summary": ["前 인천광역시선거관리위원회 상임위원"],
+    "note": "추천 교섭단체 확인 중",
+    "source_refs": [
+      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" }
+    ]
+  },
+  {
+    "body": "nec",
+    "person": "노태악",
+    "position": "위원장",
+    "selection_track": "chief_justice",
+    "appointed_date": "2022-05-07",
+    "career_summary": ["前 대법관"],
+    "status": "resigned",
+    "note": "6·3 투표용지 부족 사태 책임으로 2026-06-05 사의 표명, 06-08 대법원장이 지명 해제 수용 → 위원장 공석 (위철환 상임위원 직무대행)",
+    "source_refs": [
+      { "type": "press", "title": "대법원장 사직 수용 보도 (뉴스1)", "url": "https://www.news1.kr/politics/assembly/6188983" }
+    ]
+  },
+  {
+    "body": "nec",
+    "person": "박순영",
+    "position": "위원",
+    "selection_track": "chief_justice",
+    "appointed_date": "2021-03-17",
+    "term_start": "2021-03-17",
+    "term_end": "2027-03-16",
+    "career_summary": ["前 서울고등법원 부장판사"],
+    "source_refs": [
+      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" }
+    ]
+  },
+  {
+    "body": "nec",
+    "person": "김대웅",
+    "position": "위원",
+    "selection_track": "chief_justice",
+    "appointed_date": "2025-03-19",
+    "term_start": "2025-03-19",
+    "term_end": "2031-03-18",
+    "career_summary": ["前 서울고등법원장"],
+    "source_refs": [
+      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" }
+    ]
+  },
+  {
+    "body": "nec",
+    "person": "허철훈",
+    "position": "사무총장",
+    "selection_track": "internal",
+    "appointed_date": null,
+    "career_summary": ["前 중앙선관위 사무차장 (내부 승진)"],
+    "status": "resignation_offered",
+    "note": "6·3 사태 책임으로 사의 표명 · 직전 사무총장 김용빈 · 임명일 확인 중",
+    "source_refs": [
+      { "type": "press", "title": "사무총장 사의 보도 (뉴시스)", "url": "https://www.newsis.com/view/NISX20260605_0003658212" }
+    ]
+  }
+]

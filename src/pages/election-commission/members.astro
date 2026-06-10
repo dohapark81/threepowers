@@ -1,81 +1,34 @@
 ---
 import Base from '../../layouts/Base.astro';
-import rawAppointments from '../../../data/appointments.json';
-import type { Appointment, SelectionTrack } from '../../lib/types';
-
-const appointments = (rawAppointments as Appointment[]).filter((a) => a.body === 'nec');
-
-const TRACKS: { track: SelectionTrack[]; label: string }[] = [
-  { track: ['president'], label: '대통령 임명' },
-  { track: ['assembly_ruling', 'assembly_opposition', 'assembly_consensus'], label: '국회 선출' },
-  { track: ['chief_justice'], label: '대법원장 지명' },
-];
-
-const members = TRACKS.map(({ track, label }) => ({
-  label,
-  people: appointments.filter(
-    (a) => track.includes(a.selection_track) && a.position.includes('위원')
-  ),
-}));
-
-const secretaryGeneral = appointments.find((a) => a.position === '사무총장');
+import CompositionMap from '../../components/CompositionMap.astro';
+import appointments from '../../../data/appointments.json';
+import type { Appointment } from '../../lib/types';
 ---
 
 <Base
-  title="중앙선관위원 9인은 누가 임명했나"
-  description="중앙선거관리위원회 위원 9인의 임명 주체(대통령·국회·대법원장), 임명일, 임기, 경력을 관보 원문 링크와 함께 정리합니다."
+  title="중앙선거관리위원 9인은 누가 임명했나"
+  description="중앙선거관리위원회 위원 9인의 임명 주체(대통령·국회·대법원장), 임명일, 임기, 경력을 공식 자료 원문 링크와 함께 정리합니다."
+  active="map"
 >
-  <h1>중앙선거관리위원회 구성</h1>
-  <p>
-    선관위원 9인은 대통령 임명 3인, 국회 선출 3인, 대법원장 지명 3인으로 구성됩니다
-    (헌법 제114조). 각 위원의 임명 근거는 관보 원문으로 확인할 수 있습니다.
-  </p>
-
-  {appointments.length === 0 ? (
-    <div class="empty-note">
-      임명 데이터를 관보 원문 대조와 함께 구축하고 있습니다. 데이터가 거칠게라도 먼저
-      올라오는 일은 없습니다 — 정확한 기록이 빠른 기록보다 우선입니다.
+  <section>
+    <span class="provisional">공개 출처 기반 잠정 데이터 (2026-06-10 조사) · 관보 대조 후 확정 표기 예정</span><br />
+    <span class="eyebrow">선관위 구성 지도</span>
+    <h1>중앙선거관리위원 9인은 누가 임명했나</h1>
+    <p class="lede">
+      중앙선거관리위원회는 대통령 임명 3인, 국회 선출 3인, 대법원장 지명 3인의 9인으로
+      구성됩니다 (헌법 제114조). 위원장은 위원 중에서 호선하며 관례상 대법관이 맡아 왔습니다.
+    </p>
+    <div style="margin-top:18px">
+      <CompositionMap appointments={appointments as Appointment[]} />
     </div>
-  ) : (
-    <>
-      {members.map(({ label, people }) => (
-        <section>
-          <h2>{label} ({people.length}인)</h2>
-          <ul>
-            {people.map((p) => (
-              <li>
-                <strong>{p.person}</strong> — {p.position}
-                {p.recommended_by && <> · {p.recommended_by}</>}
-                · 임명/선출일 {p.appointed_date}
-                {p.term_end && <> · 임기 ~{p.term_end}</>}
-                <br />
-                {p.career_summary.join(' · ')}
-                <br />
-                {p.source_refs.map((ref, i) => (
-                  <>
-                    {i > 0 && ' · '}
-                    {ref.url ? (
-                      <a href={ref.url} rel="noopener">{ref.title}</a>
-                    ) : (
-                      <span class="pending-source">{ref.title} (원문 확인 중)</span>
-                    )}
-                  </>
-                ))}
-              </li>
-            ))}
-          </ul>
-        </section>
-      ))}
-      {secretaryGeneral && (
-        <section>
-          <h2>사무총장</h2>
-          <p>
-            <strong>{secretaryGeneral.person}</strong> · 임명일 {secretaryGeneral.appointed_date}
-            <br />
-            {secretaryGeneral.career_summary.join(' · ')}
-          </p>
-        </section>
-      )}
-    </>
-  )}
+  </section>
+
+  <section>
+    <span class="eyebrow">수록 기준</span>
+    <p class="lede" style="font-size:14px">
+      임명일·임기·경력은 중앙선관위 위원 소개 페이지 기준이며, 사임·직무대행 등 변동 사항은
+      공식 발표 또는 복수 매체 교차 확인 시에만 반영합니다. 항목별 출처는 위원 상세에서
+      확인할 수 있습니다. 관보 호수 대조 작업이 끝나면 잠정 표기를 제거합니다.
+    </p>
+  </section>
 </Base>

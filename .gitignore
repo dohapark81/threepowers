@@ -17,5 +17,8 @@ node_modules/
 dist/
 .astro/
 
+# Local screenshots / diagnostics
+.tmp-shots/
+
 # OS
 .DS_Store

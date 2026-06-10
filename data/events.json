@@ -2,42 +2,74 @@
   {
     "id": "evt_20260603_01",
     "date": "2026-06-03",
-    "title": "본투표일 투표용지 부족 발생",
-    "body_oneline": "6·3 지방선거 본투표일에 일부 투표소에서 투표용지 부족 사태 발생",
+    "title": "제9회 전국동시지방선거 본투표일, 일부 투표소 투표용지 부족으로 투표 중단·재개",
+    "body_oneline": "본투표일에 일부 투표소에서 투표용지가 부족해 투표가 중단됐다가 재개됨",
     "status": "official",
-    "source_grade": "official",
-    "source_refs": [{ "type": "official", "title": "선관위 발표", "url": null }],
+    "source_grade": "press_multi",
+    "source_refs": [
+      { "type": "press", "title": "선관위 발표·복수 매체 보도 (MBC)", "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828081_37004.html" }
+    ],
     "topics": ["선관위", "6·3지방선거"]
   },
   {
     "id": "evt_20260605_01",
     "date": "2026-06-05",
-    "title": "선관위, 투표용지 부족 투표소 50곳 발표",
-    "body_oneline": "선관위가 투표용지가 부족했던 투표소를 50곳으로 발표",
+    "title": "선관위, 투표용지 부족 투표소 50곳 발표 (당초 14곳에서 늘어남)",
+    "body_oneline": "선관위가 투표용지가 부족했던 투표소를 50곳으로 발표 — 이후 06-09 집계(91곳)로 대체됨",
     "status": "corrected",
     "source_grade": "official",
-    "source_refs": [{ "type": "official", "title": "선관위 발표", "url": null }],
+    "source_refs": [
+      { "type": "official", "title": "선관위 발표 (MBC 보도)", "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828081_37004.html" }
+    ],
     "topics": ["선관위", "6·3지방선거"]
   },
   {
     "id": "evt_20260608_01",
     "date": "2026-06-08",
-    "title": "여야, 국정조사 요구서 각각 제출",
-    "body_oneline": "여야가 중앙선관위 투표용지 부족 사태에 대한 국정조사 요구서를 각각 제출",
+    "title": "여야, 투표용지 부족 사태 국정조사 요구서 각각 제출",
+    "body_oneline": "국민의힘(의원 110명 명의)과 더불어민주당이 국정조사 요구서를 각각 국회 의안과에 제출 · 의안번호 확인 중",
     "status": "official",
     "source_grade": "official",
-    "source_refs": [{ "type": "official", "title": "국회 의안정보시스템", "url": null }],
+    "source_refs": [
+      { "type": "official", "title": "국회 의안과 접수 (MBC 보도)", "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828650_37004.html" }
+    ],
     "topics": ["선관위", "국정조사"]
+  },
+  {
+    "id": "evt_20260608_02",
+    "date": "2026-06-08",
+    "title": "대법원장, 노태악 선관위원장 사직(지명 해제) 수용 → 위철환 상임위원 직무대행",
+    "body_oneline": "대법원장이 노태악 위원장의 사직을 수용해 위원장 공석, 선관위법 제5조에 따라 위철환 상임위원이 직무대행",
+    "status": "official",
+    "source_grade": "official",
+    "source_refs": [
+      { "type": "official", "title": "대법원·선관위 (뉴스1 보도)", "url": "https://www.news1.kr/politics/assembly/6188983" }
+    ],
+    "topics": ["선관위", "6·3지방선거"]
+  },
+  {
+    "id": "evt_20260609_01",
+    "date": "2026-06-09",
+    "title": "추가 용지 사용 투표소 91곳·추가 송부 140곳으로 집계 (투표 중단 후 재개 26곳)",
+    "body_oneline": "선관위 집계 결과 추가 용지를 사용한 투표소 91곳, 추가 송부 140곳, 투표 중단 후 재개 26곳으로 확인",
+    "status": "official",
+    "source_grade": "official",
+    "source_refs": [
+      { "type": "official", "title": "선관위 집계 (파이낸셜뉴스 보도)", "url": "https://www.fnnews.com/news/202606090501132196" }
+    ],
+    "supersedes": "evt_20260605_01",
+    "topics": ["선관위", "6·3지방선거"]
   },
   {
     "id": "evt_20260610_01",
     "date": "2026-06-10",
-    "title": "투표용지 부족 투표소 91곳으로 정정 발표, 진상규명위 구성",
-    "body_oneline": "선관위가 6/5 발표(50곳)를 정정하고 6/19까지 진상규명위를 운영한다고 발표",
+    "title": "투표지 부족 사태 진상규명위원회 출범 (6/10~6/19 · 외부 인사 6명 · 위원장 조현욱 변호사)",
+    "body_oneline": "선관위가 외부 인사 6명으로 구성된 진상규명위원회를 출범, 6월 19일까지 운영",
     "status": "official",
     "source_grade": "official",
-    "source_refs": [{ "type": "official", "title": "선관위 보도자료", "url": null }],
-    "supersedes": "evt_20260605_01",
-    "topics": ["선관위", "6·3지방선거"]
+    "source_refs": [
+      { "type": "official", "title": "선관위 발표 (파이낸셜뉴스 보도)", "url": "https://www.fnnews.com/news/202606090501132196" }
+    ],
+    "topics": ["선관위", "6·3지방선거", "진상규명위"]
   }
 ]

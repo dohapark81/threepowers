@@ -7,6 +7,7 @@ export type SelectionTrack =
   | 'assembly_ruling'
   | 'assembly_opposition'
   | 'assembly_consensus'
+  | 'assembly' // 국회 선출이나 추천 교섭단체 확인 중
   | 'chief_justice'
   | 'internal';
 
@@ -22,11 +23,17 @@ export interface Appointment {
   position: string;
   selection_track: SelectionTrack;
   recommended_by?: string;
-  appointed_date: string;
+  appointed_date: string | null; // null = 확인 중
+
   term_start?: string;
   term_end?: string;
   career_summary: string[];
   source_refs: SourceRef[];
+  /** 사임 = 공석, 사의 표명 = 재직 중이나 사의 제출 */
+  status?: 'active' | 'resigned' | 'resignation_offered';
+  /** 예: "위원장 직무대행 (선관위법 제5조)" */
+  acting_role?: string;
+  note?: string;
 }
 
 // 가드레일 §6-1: 상태 라벨은 이 네 가지만 사용한다.

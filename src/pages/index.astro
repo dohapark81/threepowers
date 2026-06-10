@@ -1,34 +1,91 @@
 ---
 import Base from '../layouts/Base.astro';
+import CompositionMap from '../components/CompositionMap.astro';
+import TimelineList from '../components/TimelineList.astro';
+import InquiryStages from '../components/InquiryStages.astro';
+import appointments from '../../data/appointments.json';
 import events from '../../data/events.json';
+import inquiry from '../../data/inquiry.json';
+import type { Appointment, TimelineEvent, Inquiry } from '../lib/types';
 
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
-const latest = [...events].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 3);
 ---
 
 <Base
-  title="공식 기록으로 보는 삼권"
-  description="선관위 구성, 6·3 사태 타임라인, 국정조사 진행 상황을 공식 원문 링크와 함께 기록합니다. 해석과 결론은 없습니다."
+  title="중앙선거관리위원 9인은 누가 임명했나"
+  description="중앙선거관리위원회·헌법재판소·대법원의 구성과 6·3 사태 기록, 국정조사 진행을 공식 원문 링크와 함께 날짜순으로 기록합니다. 결론을 내리지 않습니다."
 >
-  <h1>삼권 三權</h1>
-  <p>
-    선거관리위원회·국회·법원에 관한 <strong>공식 기록 보관소</strong>입니다.
-    모든 항목은 원문 링크를 가지며, 이 사이트는 어떤 판정도 하지 않습니다.
-  </p>
+  <!-- ════ HERO: 선관위 구성 지도 ════ -->
+  <section id="map">
+    <span class="provisional">공개 출처 기반 잠정 데이터 (2026-06-10 조사) · 관보 대조 후 확정 표기 예정</span><br />
+    <span class="eyebrow">선관위 구성 지도</span>
+    <h1>중앙선거관리위원 9인은 누가 임명했나</h1>
+    <p class="lede">
+      중앙선거관리위원회는 9인으로 구성됩니다 (헌법 제114조).
+      임명 경로별로 누가 추천·지명했는지, 임기는 언제까지인지를 공식 자료와 함께 정리합니다.
+    </p>
+    <div style="margin-top:18px">
+      <CompositionMap appointments={appointments as Appointment[]} />
+    </div>
+  </section>
 
-  <ul>
-    <li><a href={`${base}/election-commission/members`}>중앙선관위원 9인은 누가 임명했나</a> — 임명 주체별 구성 지도</li>
-    <li><a href={`${base}/timeline`}>6·3 투표용지 부족 사태 기록</a> — 날짜순 공식 발표 타임라인</li>
-    <li><a href={`${base}/inquiry`}>선관위 국정조사 추적</a> — 절차 단계·특위·증인 현황</li>
-  </ul>
+  <!-- ════ 3대 기능 진입 ════ -->
+  <section>
+    <span class="eyebrow">무엇을 기록하나</span>
+    <div class="cards">
+      <a class="card" href={`${base}/election-commission/members`}>
+        <span class="k">01 · 구성 지도</span>
+        <h3>누가 앉힌 사람들인가</h3>
+        <p>선관위 9인 · 헌재 9인 · 대법원 14인의 임명 경로를 관보 원문과 함께.</p>
+        <span class="go">지도 보기 →</span>
+      </a>
+      <a class="card" href={`${base}/timeline`}>
+        <span class="k">02 · 사태 기록</span>
+        <h3>6·3 사태 타임라인</h3>
+        <p>공식 발표·국회 문서를 날짜순으로. 단독 보도는 싣지 않습니다.</p>
+        <span class="go">타임라인 보기 →</span>
+      </a>
+      <a class="card" href={`${base}/inquiry`}>
+        <span class="k">03 · 국정조사</span>
+        <h3>국정조사 추적기</h3>
+        <p>요구서 제출부터 결과보고서까지 절차 진행을 단계별로.</p>
+        <span class="go">추적기 보기 →</span>
+      </a>
+    </div>
+  </section>
 
-  <h2>최근 기록</h2>
-  <ul class="timeline">
-    {latest.map((evt) => (
-      <li>
-        <time datetime={evt.date}>{evt.date}</time>
-        <p class="evt-title">{evt.title}</p>
-      </li>
-    ))}
-  </ul>
+  <!-- ════ 타임라인 미리보기 ════ -->
+  <section id="timeline">
+    <span class="eyebrow">6·3 사태 기록 · 최신</span>
+    <h2>날짜순 공식 기록</h2>
+    <p class="lede" style="margin-bottom:14px">
+      한 줄 사실 + 출처 + 상태. 출처 등급(공식문서 / 복수 매체 교차)을 항목마다 표시합니다.
+    </p>
+    <TimelineList events={events as TimelineEvent[]} limit={5} anchorBase={`${base}/timeline`} />
+    <p style="margin-top:16px"><a href={`${base}/timeline`}>전체 타임라인 보기 →</a></p>
+  </section>
+
+  <!-- ════ 국정조사 현황 ════ -->
+  <section id="inquiry">
+    <span class="eyebrow">국정조사 추적기</span>
+    <h2>{inquiry.name}</h2>
+    <p class="lede" style="margin-bottom:16px">절차가 어디까지 왔는지를 단계로 표시합니다. 진행될수록 갱신됩니다.</p>
+    <InquiryStages inquiry={inquiry as Inquiry} />
+    <p style="margin-top:12px"><a href={`${base}/inquiry`}>특위 구성·증인·관련 의안 보기 →</a></p>
+  </section>
+
+  <!-- ════ 공유 카드 ════ -->
+  <section>
+    <span class="eyebrow">공유</span>
+    <div class="share">
+      <div class="desc">
+        이 화면은 출처 푸터가 박힌 이미지 카드 한 장으로 저장됩니다.
+        커뮤니티/SNS에서 카드가 돌 때 출처와 사이트명이 함께 돕니다.
+      </div>
+      <button class="btn" type="button" disabled>팩트 카드로 저장 (준비 중)</button>
+    </div>
+    <p style="font-size:12px;color:var(--faint);margin:8px 2px 0">
+      카드 푸터 — 출처: 중앙선관위 위원 소개·보도자료, 국회 의안 외 · threepowers · 데이터/코드 공개
+    </p>
+  </section>
 </Base>
