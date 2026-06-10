@@ -14,7 +14,8 @@ const { events, limit, anchorBase = '' } = Astro.props;
 const sorted = [...events].sort((a, b) => b.date.localeCompare(a.date) || b.id.localeCompare(a.id));
 const shown = limit ? sorted.slice(0, limit) : sorted;
 
-// 정정 관계: 어떤 항목이 어떤 새 항목으로 대체됐는지
+// 정정 관계: 발표 주체가 스스로 정정한 발표를 추적 (예: 선관위 50곳 → 91곳)
+const byId = new Map(sorted.map((e) => [e.id, e]));
 const supersededBy = new Map<string, TimelineEvent>();
 for (const e of sorted) if (e.supersedes) supersededBy.set(e.supersedes, e);
 
@@ -59,12 +60,14 @@ const STATUS_CLASS = {
           </div>
           {evt.supersedes && (
             <p class="supersede">
-              ↻ 이전 발표를 갱신함 — <a href={`${anchorBase}#${evt.supersedes}`}>변경 전 항목 보기</a>
+              ↻ 발표 주체가 {byId.get(evt.supersedes)?.date ?? '이전'} 발표를 정정한 후속 발표 —{' '}
+              <a href={`${anchorBase}#${evt.supersedes}`}>정정 전 발표 보기</a>
             </p>
           )}
           {replacement && (
             <p class="supersede">
-              {replacement.date} 집계로 대체됨 — <a href={`${anchorBase}#${replacement.id}`}>대체 항목 보기</a>
+              ↻ 발표 주체가 {replacement.date} 후속 발표로 정정 —{' '}
+              <a href={`${anchorBase}#${replacement.id}`}>정정 발표 보기</a>
             </p>
           )}
         </div>

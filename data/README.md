@@ -1,6 +1,6 @@
 # data/
 
-사이트의 모든 콘텐츠는 이 디렉토리의 JSON에서 나온다. 스키마는 [src/lib/types.ts](../src/lib/types.ts), 배경은 [docs/PRD.md](../docs/PRD.md) §7 참고.
+사이트의 모든 콘텐츠는 이 디렉토리의 JSON에서 나온다. 스키마는 [src/lib/types.ts](../src/lib/types.ts) 참고.
 
 | 파일 | 내용 | 갱신 주체 |
 |---|---|---|
@@ -8,7 +8,7 @@
 | `events.json` | 6·3 사태 기록 타임라인 (`TimelineEvent[]`) | registrar 에이전트 PR → 사람 머지 |
 | `inquiry.json` | 국정조사 절차 현황 (`Inquiry`) | inquiry-tracker 에이전트 PR → 사람 머지 |
 
-## 수록 원칙 (PRD §6 가드레일)
+## 수록 원칙
 
 - **원문 링크 100%.** `url: null`은 "원문 공개 대기" 상태로만 일시 허용되며, 사이트에 "원문 확인 중"으로 노출된다. 공개 전까지 모든 null을 해소하는 것이 목표.
 - 출처 등급은 `official`(선관위·국회·관보) 또는 `press_multi`(복수 매체 교차 확인)만. 단독 보도는 수록하지 않는다.

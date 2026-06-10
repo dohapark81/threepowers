@@ -16,7 +16,7 @@
 3. 정정은 삭제가 아니라 기록입니다 (`supersedes` 체계, 커밋 이력 공개).
 4. 데이터 변경은 에이전트가 PR을 만들고, 머지는 사람이 합니다.
 
-자세한 배경은 [docs/PRD.md](docs/PRD.md), 데이터 스키마는 [data/README.md](data/README.md) 참고.
+데이터 스키마와 수록 원칙은 [data/README.md](data/README.md) 참고.
 
 ## 개발
 

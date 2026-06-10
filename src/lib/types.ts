@@ -1,4 +1,4 @@
-// PRD v0.2 §7 데이터 모델
+// 데이터 모델 — 모든 항목은 원문 출처(source_refs)를 가진다
 
 export type Body = 'nec' | 'supreme_court' | 'constitutional_court';
 
