@@ -173,6 +173,16 @@ const detailData = Object.fromEntries(
           {secretary.status === 'resignation_offered' && <small> — 사의 표명</small>}
         </div>
         <div class="sub">{secretary.career_summary.join(' · ')}{secretary.note && ` · ${secretary.note}`}</div>
+        {(secretary.controversies ?? []).map((c) => (
+          <div class="sub" style="margin-top:6px">
+            {c.summary}
+            {c.refs.map((r) =>
+              r.url ? (
+                <> · <a href={r.url} target="_blank" rel="noopener">보도 ↗</a></>
+              ) : null
+            )}
+          </div>
+        ))}
       </div>
     )}
   </div>
@@ -187,7 +197,7 @@ const detailData = Object.fromEntries(
     </span>
   </div>
 
-  <script type="application/json" id="seat-data" set:html={JSON.stringify(detailData)} />
+  <script is:inline type="application/json" id="seat-data" set:html={JSON.stringify(detailData)} />
 </div>
 
 <script>

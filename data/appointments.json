@@ -10,15 +10,24 @@
     "term_end": "2031-10-19",
     "career_summary": ["수원고등법원 조정위원", "前 대한변호사협회장"],
     "acting_role": "위원장 직무대행",
-    "note": "2026-06-08 노태악 위원장 지명 해제 수용에 따라 선거관리위원회법 제5조에 의거 위원장 직무대행",
+    "note": "2026-06-08 노태악 위원장 사의 수용·지명 해제에 따라 선거관리위원회법 제5조에 의거 위원장 직무대행",
     "source_refs": [
       { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" },
       { "type": "press", "title": "대통령 지명 보도 (MBC)", "url": "https://imnews.imbc.com/news/2025/politics/article/6754027_36711.html" }
     ],
     "controversies": [
       {
-        "summary": "인사청문회(2025-10)에서 국민의힘이 이재명 대통령과의 사법연수원 18기 동기 관계, 2017년 민주당 대선 캠프 법률지원단장 이력을 들어 정치적 중립성 우려를 제기 — 위 후보자는 \"당원 자격을 가진 적은 없었다\"고 해명",
-        "refs": [{ "type": "press", "title": "청문회 보도 (문화일보)", "url": "https://www.munhwa.com/article/11537227" }]
+        "summary": "인사청문회(2025-10-01)에서 국민의힘 의원들이 이재명 대통령과의 사법연수원 18기 동기 관계와 친여 이력(2017년 민주당 대선캠프 법률지원단장, 민주당 윤리심판원장, 2025년 대선 이재명 후보 공개 지지)을 들어 정치적 중립성을 문제 삼음 — 본인은 \"당원 자격을 가진 적은 없었다\"고 해명",
+        "refs": [
+          { "type": "press", "title": "청문회 보도 (문화일보)", "url": "https://www.munhwa.com/article/11537227" },
+          { "type": "press", "title": "청문회 보도 (더퍼블릭)", "url": "https://www.thepublic.kr/news/articleView.html?idxno=278922" }
+        ]
+      },
+      {
+        "summary": "2026-01-02 임명장 수여를 계기로 국민의힘 박성훈 수석대변인이 사법연수원 18기 동기 9명의 정부 요직 임명을 들어 '코드 인사'라고 비판(\"이재명 개인 로펌 정부\" 표현) — 본인 해명은 해당 보도에 포함되지 않음",
+        "refs": [
+          { "type": "press", "title": "세계일보 보도", "url": "https://www.segye.com/newsView/20260102512297" }
+        ]
       }
     ]
   },
@@ -37,7 +46,7 @@
     ],
     "controversies": [
       {
-        "summary": "인사청문회(2026-03)에서 더불어민주당 양부남 의원이 초고가 아파트 보유 지인에 대한 약 1억 2천만 원 현금 대여를 두고 \"통상적인 차용금 관계가 아닌가 의심된다\"고 지적 — 윤 후보자는 사과. 부정선거 주장 대응에 대해서는 \"모든 문제 제기를 음모론으로 치부하는 것에도 문제가 있다, 능동적으로 대처해야 한다\"고 답변",
+        "summary": "인사청문회(2026-03-26)에서 더불어민주당 양부남 의원이 초고가 아파트 보유 지인에 대한 약 1억 2천만 원 현금 대여를 두고 \"통상적인 차용금 관계가 아닌가 의심된다\"고 지적 — 본인은 \"문제의 심각성을 인지하지 못했던 것은 제 불찰\"이라고 사과. 부정선거 주장 대응에 대해서는 \"모든 문제 제기를 음모론으로 치부하는 것에도 문제가 있다, 능동적으로 대처해야 한다\"고 답변",
         "refs": [{ "type": "press", "title": "청문회 보도 (헤럴드경제)", "url": "https://biz.heraldcorp.com/article/10703714" }]
       }
     ]
@@ -58,7 +67,7 @@
     ],
     "controversies": [
       {
-        "summary": "인사청문회(2026-03)에서 국민의힘 서범수 의원이 2020년 초대 공수처장 최종 후보 추천 이력(당시 추미애 법무부 장관 추천 보도)을 지적 — 전 후보자는 부정선거 주장에 대해 \"대법원에서 한 번도 받아들인 적 없고 구체적 근거가 없다\"고 답변",
+        "summary": "인사청문회(2026-03-26)에서 국민의힘 서범수 의원이 2020년 초대 공수처장 최종 후보 추천 이력(당시 추미애 법무부 장관 추천 보도)을 지적 — 본인은 \"추미애 의원과 개별적 인연이 전혀 없다\"고 해명하고 관련 안건의 회피 제도 활용 검토를 답변. 부정선거 주장에 대해서는 \"대법원에서 한 번도 받아들인 적 없고 구체적 근거가 없다\"고 답변",
         "refs": [{ "type": "press", "title": "청문회 보도 (헤럴드경제)", "url": "https://biz.heraldcorp.com/article/10703714" }]
       }
     ]
@@ -68,13 +77,24 @@
     "person": "조병현",
     "position": "위원",
     "selection_track": "assembly_opposition",
-    "recommended_by": "미래통합당(현 국민의힘) 추천",
+    "recommended_by": "국민의힘 추천",
     "appointed_date": "2021-01-08",
     "term_start": "2021-01-08",
     "term_end": "2027-01-07",
     "career_summary": ["법무법인 평안 대표변호사", "前 서울고등법원장"],
     "source_refs": [
-      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" }
+      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" },
+      { "type": "press", "title": "국민의힘 추천 보도 (이투데이)", "url": "https://www.etoday.co.kr/news/view/1936499" }
+    ],
+    "controversies": [
+      {
+        "summary": "2023년 6월 선관위가 고위직 자녀 특혜채용 의혹에 대한 감사원 직무감찰을 위원 전원 일치 의견으로 거부하자(이후 특혜채용 한정 수용으로 선회) 국민의힘 지도부가 위원 전원 사퇴를 공식 요구했고, 국민의힘 소속 서울시의원이 위원장·위원 전원을 감사원법 위반 혐의로 고발 — 특정 개인이 아닌 당시 재직 위원 전원 대상. 2025년 2월 헌법재판소는 감사원의 선관위 직무감찰이 선관위 권한을 침해한다고 결정",
+        "refs": [
+          { "type": "press", "title": "감사 거부 보도 (뉴시스)", "url": "https://www.newsis.com/view/NISX20230602_0002325809" },
+          { "type": "press", "title": "전원 사퇴 요구 보도 (경향신문)", "url": "https://www.khan.co.kr/article/202306051700001" },
+          { "type": "press", "title": "헌재 결정 보도 (YTN)", "url": "https://www.ytn.co.kr/_ln/0101_202502272300272804" }
+        ]
+      }
     ]
   },
   {
@@ -88,21 +108,50 @@
     "term_end": "2027-01-07",
     "career_summary": ["한신대학교 교수", "한국선거학회 기획이사"],
     "source_refs": [
-      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" }
+      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" },
+      { "type": "press", "title": "더불어민주당 추천 보도 (MBC)", "url": "https://imnews.imbc.com/news/2020/politics/article/5663747_32626.html" }
+    ],
+    "controversies": [
+      {
+        "summary": "2023년 6월 선관위가 고위직 자녀 특혜채용 의혹에 대한 감사원 직무감찰을 위원 전원 일치 의견으로 거부하자(이후 특혜채용 한정 수용으로 선회) 국민의힘 지도부가 위원 전원 사퇴를 공식 요구했고, 국민의힘 소속 서울시의원이 위원장·위원 전원을 감사원법 위반 혐의로 고발 — 특정 개인이 아닌 당시 재직 위원 전원 대상. 2025년 2월 헌법재판소는 감사원의 선관위 직무감찰이 선관위 권한을 침해한다고 결정",
+        "refs": [
+          { "type": "press", "title": "감사 거부 보도 (뉴시스)", "url": "https://www.newsis.com/view/NISX20230602_0002325809" },
+          { "type": "press", "title": "전원 사퇴 요구 보도 (경향신문)", "url": "https://www.khan.co.kr/article/202306051700001" },
+          { "type": "press", "title": "헌재 결정 보도 (YTN)", "url": "https://www.ytn.co.kr/_ln/0101_202502272300272804" }
+        ]
+      }
     ]
   },
   {
     "body": "nec",
     "person": "남래진",
     "position": "위원",
-    "selection_track": "assembly",
+    "selection_track": "assembly_ruling",
+    "recommended_by": "국민의힘 추천",
     "appointed_date": "2022-08-02",
     "term_start": "2022-08-02",
     "term_end": "2028-08-01",
-    "career_summary": ["前 인천광역시선거관리위원회 상임위원"],
-    "note": "추천 교섭단체 확인 중",
+    "career_summary": ["前 인천광역시선거관리위원회 상임위원 (선관위 내부 출신)"],
     "source_refs": [
-      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" }
+      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" },
+      { "type": "press", "title": "국회 선출·국민의힘 추천 몫 보도 (SBS)", "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1006845725" }
+    ],
+    "controversies": [
+      {
+        "summary": "인사청문회(2022-07-25)에서 여야 청문위원들이 위장전입 논란과 농지법 위반 의혹을 지적(질의 의원 실명은 보도에서 특정되지 않음). 선관위 퇴직 후 경비원으로 근무한 이력에 대해서는 \"무위도식하는 사람으로 살기 싫었다\"고 답변했고, 청문특위는 같은 날 여야 이견 없이 경과보고서를 채택",
+        "refs": [
+          { "type": "press", "title": "청문회 보도 (YTN)", "url": "https://www.ytn.co.kr/_ln/0101_202207251557350806" },
+          { "type": "press", "title": "청문회 보도 (한국일보)", "url": "https://www.hankookilbo.com/News/Read/A2022072514400003149" }
+        ]
+      },
+      {
+        "summary": "2023년 6월 선관위가 고위직 자녀 특혜채용 의혹에 대한 감사원 직무감찰을 위원 전원 일치 의견으로 거부하자(이후 특혜채용 한정 수용으로 선회) 국민의힘 지도부가 위원 전원 사퇴를 공식 요구했고, 국민의힘 소속 서울시의원이 위원장·위원 전원을 감사원법 위반 혐의로 고발 — 특정 개인이 아닌 당시 재직 위원 전원 대상. 2025년 2월 헌법재판소는 감사원의 선관위 직무감찰이 선관위 권한을 침해한다고 결정",
+        "refs": [
+          { "type": "press", "title": "감사 거부 보도 (뉴시스)", "url": "https://www.newsis.com/view/NISX20230602_0002325809" },
+          { "type": "press", "title": "전원 사퇴 요구 보도 (경향신문)", "url": "https://www.khan.co.kr/article/202306051700001" },
+          { "type": "press", "title": "헌재 결정 보도 (YTN)", "url": "https://www.ytn.co.kr/_ln/0101_202502272300272804" }
+        ]
+      }
     ]
   },
   {
@@ -111,20 +160,46 @@
     "position": "위원장",
     "selection_track": "chief_justice",
     "appointed_by": "김명수 대법원장",
-    "appointed_date": "2022-05-07",
-    "career_summary": ["前 대법관"],
+    "appointed_date": "2022-05-17",
+    "career_summary": ["前 대법관 (2020-03~2026-03)"],
     "status": "resigned",
-    "note": "6·3 투표용지 부족 사태 책임으로 2026-06-05 사의 표명, 06-08 조희대 대법원장이 지명 해제 수용 → 위원장 공석 (위철환 상임위원 직무대행)",
+    "note": "2022-04-22 위원 지명, 05-17 위원장 호선·취임. 6·3 투표용지 부족 사태 책임으로 2026-06-05 사의 표명, 06-08 조희대 대법원장이 사의 수용 및 중앙선관위원 지명 해제 → 위원장 공석 (위철환 상임위원 직무대행)",
     "source_refs": [
-      { "type": "press", "title": "대법원장 사직 수용 보도 (뉴스1)", "url": "https://www.news1.kr/politics/assembly/6188983" },
-      { "type": "press", "title": "지명·취임 경위 보도 (경향신문)", "url": "https://www.khan.co.kr/article/202606081949001" }
+      { "type": "official", "title": "중앙선관위 위원장 약력", "url": "https://www.nec.go.kr/site/nec/05/10502010100002020040801.jsp" },
+      { "type": "press", "title": "위원 지명 보도 (파이낸셜뉴스)", "url": "https://www.fnnews.com/news/202204221140549731" },
+      { "type": "press", "title": "대법원장 사직 수용 보도 (뉴스1)", "url": "https://www.news1.kr/politics/assembly/6188983" }
     ],
     "controversies": [
       {
-        "summary": "대법관 임기 종료(2026-03) 후 위원장직 유임 상태에서 '책임 사퇴'를 표명한 것을 두고 실효성 지적 보도",
+        "summary": "2023년 5월 선관위 고위직 자녀 특혜채용 의혹이 불거지자 국민의힘 김기현 대표가 위원장 사퇴를 공개 요구하고 사무총장·차장 동반 사퇴를 '꼬리자르기'로 규정하며 국정조사 추진을 주장 — 본인은 2023년 6월 \"바로 사퇴하는 것이 책임 있는 자세인가 고민하고 있다\", 같은 해 10월 국정감사에서 \"감사·수사·총선이 마무리된 뒤 책임질 일이 있다면 바로 지겠다\"고 답하며 즉각 사퇴를 거부",
         "refs": [
-          { "type": "press", "title": "더퍼블릭 보도", "url": "https://www.thepublic.kr/news/articleView.html?idxno=306766" },
-          { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0134_202606051942556378" }
+          { "type": "press", "title": "사퇴 요구 보도 (경향신문)", "url": "https://www.khan.co.kr/article/202305261334001" },
+          { "type": "press", "title": "거취 발언 보도 (MBC)", "url": "https://imnews.imbc.com/news/2023/politics/article/6491893_36119.html" },
+          { "type": "press", "title": "국정감사 발언 보도 (시사저널)", "url": "https://www.sisajournal.com/news/articleView.html?idxno=274068" }
+        ]
+      },
+      {
+        "summary": "2023년 국정원·KISA 합동 보안점검에서 선관위 투·개표 시스템의 다수 보안 취약점이 확인됐고, 선관위가 북한발 해킹 통보에 제대로 대응하지 않고 당초 보안점검을 거부했다가 수용한 사실이 드러남 — 2023년 10월 국정감사에서 본인은 \"정보 보안 관리 미흡과 고위직 자녀 특혜채용으로 국민께 실망을 드려 송구하다\"고 사과. 이 발표가 이후 부정선거 주장의 소재로 활용되는 과정에서 선관위·국정원이 충돌했다는 보도도 있음",
+        "refs": [
+          { "type": "press", "title": "국정감사 보도 (디지털데일리)", "url": "https://www.ddaily.co.kr/page/view/2023101311375829839" },
+          { "type": "press", "title": "보안점검 결과 보도 (보안뉴스)", "url": "https://m.boannews.com/html/detail.html?tab_type=1&idx=122505" },
+          { "type": "press", "title": "국정원-선관위 충돌 보도 (헤럴드경제)", "url": "https://biz.heraldcorp.com/article/10696975" }
+        ]
+      },
+      {
+        "summary": "재임 중 네 차례 공식 사과(2022 소쿠리 투표 국감 사과, 2023 특혜채용 의혹 사과, 2025 감사원 적발 특혜채용·사전투표용지 반출 사과, 2026 투표용지 부족 대국민 사과)가 사퇴 국면에서 복수 매체에 의해 비판적으로 정리됨",
+        "refs": [
+          { "type": "press", "title": "파이낸셜뉴스 보도", "url": "https://www.fnnews.com/news/202606051418207907" },
+          { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0103_202606051708161459" },
+          { "type": "press", "title": "머니투데이 칼럼", "url": "https://www.mt.co.kr/politics/2026/06/08/2026060607454394288" }
+        ]
+      },
+      {
+        "summary": "6·3 사태 책임 사퇴 표명(2026-06-05)에 대해 국민의힘에서 '대법관 임기(2026-03) 만료로 위원장직이 지방선거까지의 한시적 유임이었던 만큼 책임 사퇴가 아니라 국민 기만'이라는 비판이 나왔고, 사퇴 거부 시 탄핵 추진 경고와 일부 의원의 고발 방침도 보도됨. 현직 대법관이 위원장으로 호선되는 관례 자체가 구조적 문제라는 지적 보도도 있음",
+        "refs": [
+          { "type": "press", "title": "뉴데일리 보도", "url": "https://www.newdaily.co.kr/site/data/html/2026/06/05/2026060500256.html" },
+          { "type": "press", "title": "뉴스1 보도", "url": "https://www.news1.kr/politics/assembly/6188690" },
+          { "type": "press", "title": "호선 관례 비판 보도 (세계일보)", "url": "https://v.daum.net/v/20260604162116681" }
         ]
       }
     ]
@@ -138,9 +213,35 @@
     "appointed_date": "2021-03-17",
     "term_start": "2021-03-17",
     "term_end": "2027-03-16",
-    "career_summary": ["前 서울고등법원 부장판사"],
+    "career_summary": ["前 서울고등법원 부장판사 (현직 법관 겸직)"],
     "source_refs": [
-      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" }
+      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" },
+      { "type": "press", "title": "임명 보도 (법률신문)", "url": "https://www.lawtimes.co.kr/news/168711" }
+    ],
+    "controversies": [
+      {
+        "summary": "인사청문회(2021-03-04)가 국민의힘 의원 전원 불참 속에 야당 없는 '반쪽' 청문회로 진행됐고 청문보고서도 야당 없이 약 3시간 만에 채택됨 — 더불어민주당 의원들은 야당 불참을 '의원 책무를 다하지 않는 것'이라고 비판. 본인의 청문회 답변·해명은 확인된 보도에서 명시되지 않음",
+        "refs": [
+          { "type": "press", "title": "청문회 보도 (뉴스1)", "url": "https://www.news1.kr/politics/assembly/4230589" },
+          { "type": "press", "title": "임명 보도 (법률신문)", "url": "https://www.lawtimes.co.kr/news/168711" }
+        ]
+      },
+      {
+        "summary": "2023년 6월 대법관 임명제청 국면에서 윤석열 대통령실이 최종 후보군 중 박순영 판사를 지목해 '중앙선관위원 겸직으로 선관위 자녀 특혜채용 비리에 책임이 있다'며 임명 거부 의사를 시사 — 경향신문 사설은 노동자 우호적 판결 성향이 실제 배경일 수 있다며 거부권 시사를 삼권분립 훼손이라고 비판. 본인의 공개 해명은 보도되지 않았으며, 이후에도 2024년 1월·2026년 1월 대법관 최종 후보에 거듭 추천됐으나 제청되지 못함",
+        "refs": [
+          { "type": "press", "title": "경향신문 사설", "url": "https://www.khan.co.kr/article/202306042045005" },
+          { "type": "press", "title": "뉴스토마토 보도", "url": "https://www.newstomato.com/ReadNews.aspx?no=1217582" },
+          { "type": "press", "title": "시사저널 보도", "url": "https://www.sisajournal.com/news/articleView.html?idxno=360387" }
+        ]
+      },
+      {
+        "summary": "2023년 6월 선관위가 고위직 자녀 특혜채용 의혹에 대한 감사원 직무감찰을 위원 전원 일치 의견으로 거부하자(이후 특혜채용 한정 수용으로 선회) 국민의힘 지도부가 위원 전원 사퇴를 공식 요구했고, 국민의힘 소속 서울시의원이 위원장·위원 전원을 감사원법 위반 혐의로 고발 — 특정 개인이 아닌 당시 재직 위원 전원 대상. 2025년 2월 헌법재판소는 감사원의 선관위 직무감찰이 선관위 권한을 침해한다고 결정",
+        "refs": [
+          { "type": "press", "title": "감사 거부 보도 (뉴시스)", "url": "https://www.newsis.com/view/NISX20230602_0002325809" },
+          { "type": "press", "title": "전원 사퇴 요구 보도 (경향신문)", "url": "https://www.khan.co.kr/article/202306051700001" },
+          { "type": "press", "title": "헌재 결정 보도 (YTN)", "url": "https://www.ytn.co.kr/_ln/0101_202502272300272804" }
+        ]
+      }
     ]
   },
   {
@@ -154,7 +255,18 @@
     "term_end": "2031-03-18",
     "career_summary": ["前 서울고등법원장"],
     "source_refs": [
-      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" }
+      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://ok.nec.go.kr/site/nec/ex/bbs/View.do?cbIdx=1285&bcIdx=267924" },
+      { "type": "press", "title": "대법원장 내정 보도 (뉴시스)", "url": "https://www.newsis.com/view/NISX20250213_0003063971" }
+    ],
+    "controversies": [
+      {
+        "summary": "인사청문 과정(2025-03)에서 더불어민주당 이해식 의원에게 제출한 서면답변으로 2003년 서초구 아파트 다운계약서 작성(실거래 8억 5천만 원을 1억 7,400만 원으로 기재)과 총 6차례 위장전입이 확인됨 — 본인은 \"이유를 불문하고 고위공직자로서 부적절한 행위임을 인정하고 사과드린다\"고 밝혔고, 행안위는 2025-03-06 여야 합의로 경과보고서를 채택",
+        "refs": [
+          { "type": "press", "title": "노컷뉴스 보도", "url": "https://www.nocutnews.co.kr/news/6302576" },
+          { "type": "press", "title": "뉴스1 보도", "url": "https://www.news1.kr/politics/assembly/5708347" },
+          { "type": "press", "title": "보고서 채택 보도 (뉴시스)", "url": "https://www.newsis.com/view/NISX20250306_0003089425" }
+        ]
+      }
     ]
   },
   {
@@ -162,12 +274,22 @@
     "person": "허철훈",
     "position": "사무총장",
     "selection_track": "internal",
-    "appointed_date": null,
+    "appointed_by": "중앙선관위 위원회 의결",
+    "appointed_date": "2025-08-01",
     "career_summary": ["前 중앙선관위 사무차장 (내부 승진)"],
     "status": "resignation_offered",
-    "note": "6·3 사태 책임으로 사의 표명 · 직전 사무총장 김용빈 · 임명일 확인 중",
+    "note": "2025-07 위원회 의결로 임명, 8/1 취임 · 직전 사무총장 김용빈 · 6·3 사태 책임으로 사의 표명",
     "source_refs": [
+      { "type": "press", "title": "임명 의결 보도 (경향신문)", "url": "https://www.khan.co.kr/article/202507222003035" },
       { "type": "press", "title": "사무총장 사의 보도 (뉴시스)", "url": "https://www.newsis.com/view/NISX20260605_0003658212" }
+    ],
+    "controversies": [
+      {
+        "summary": "사무총장 인사청문회 도입 법안(국민의힘 조은희·더불어민주당 허영 의원안)이 국회 계류 중이던 2025년 7월, 선관위가 자체 검증 절차만으로 사무차장이던 본인을 사무총장에 임명 의결하자 '알박기 인사' 비판이 제기됨(서울신문 보도) — 선관위는 \"전임 사무총장의 사의 표명과 지방선거 준비를 고려해 자체 검증 절차를 진행했다\"고 해명",
+        "refs": [
+          { "type": "press", "title": "서울신문 보도", "url": "https://www.seoul.co.kr/news/politics/2025/07/23/20250723006005" }
+        ]
+      }
     ]
   }
 ]
