@@ -57,7 +57,11 @@ function seatMeta(a: Appointment): string {
   } else {
     if (a.position !== '위원') parts.push(a.position);
     if (a.acting_role) parts.push(a.acting_role);
-    parts.push(a.recommended_by ?? TRACK_LABEL[a.selection_track]);
+    parts.push(
+      a.appointed_by
+        ? `${a.appointed_by} ${a.selection_track === 'chief_justice' ? '지명' : '임명'}`
+        : (a.recommended_by ?? TRACK_LABEL[a.selection_track])
+    );
     parts.push(a.appointed_date ?? '임명일 확인 중');
     if (!a.recommended_by && a.selection_track === 'assembly') parts.push('추천 교섭단체 확인 중');
   }
@@ -78,7 +82,10 @@ const detailData = Object.fromEntries(
           : a.acting_role
             ? `${a.position} · ${a.acting_role}`
             : a.position,
-      track: TRACK_LABEL[a.selection_track] + (a.recommended_by ? ` · ${a.recommended_by}` : ''),
+      track:
+        TRACK_LABEL[a.selection_track] +
+        (a.appointed_by ? ` · ${a.appointed_by}` : '') +
+        (a.recommended_by ? ` · ${a.recommended_by}` : ''),
       appointed: a.appointed_date ?? '확인 중',
       term: a.term_start && a.term_end ? `${a.term_start} ~ ${a.term_end} (6년)` : '확인 중',
       career: a.career_summary.join(' · '),
@@ -87,6 +94,10 @@ const detailData = Object.fromEntries(
         title: r.title,
         url: r.url,
         grade: r.type === 'official' ? '공식문서' : '복수 매체 교차',
+      })),
+      controversies: (a.controversies ?? []).map((c) => ({
+        summary: c.summary,
+        refs: c.refs.map((r) => ({ title: r.title, url: r.url })),
       })),
     },
   ])
@@ -131,6 +142,7 @@ const detailData = Object.fromEntries(
       <dt>임기</dt><dd class="mono" data-f="term">—</dd>
       <dt>경력</dt><dd data-f="career">—</dd>
       <dt data-f="note-dt">비고</dt><dd data-f="note">—</dd>
+      <dt data-f="ctrv-dt">관련 논란</dt><dd data-f="ctrv">—</dd>
       <dt>출처</dt><dd data-f="src">—</dd>
     </dl>
   </div>
@@ -180,11 +192,31 @@ const detailData = Object.fromEntries(
 
 <script>
   const dataEl = document.getElementById('seat-data');
-  const detail = document.getElementById('seat-detail');
-  if (dataEl && detail) {
+  const detailEl = document.getElementById('seat-detail');
+  if (dataEl && detailEl) {
+    const detail = detailEl;
     const DATA = JSON.parse(dataEl.textContent || '{}');
     const seats = document.querySelectorAll<HTMLButtonElement>('.seat');
     const field = (f: string) => detail.querySelector(`[data-f="${f}"]`) as HTMLElement;
+
+    const refLink = (r: { title: string; url: string | null }, label: string) => {
+      const frag = document.createDocumentFragment();
+      frag.append(r.title + ' ');
+      if (r.url) {
+        const a = document.createElement('a');
+        a.href = r.url;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.textContent = label;
+        frag.append('· ', a);
+      } else {
+        const pending = document.createElement('span');
+        pending.className = 'pending-source';
+        pending.textContent = '· 원문 확인 중';
+        frag.append(pending);
+      }
+      return frag;
+    };
 
     function fill(d: any) {
       for (const k of ['name', 'pos', 'track', 'appointed', 'term', 'career']) field(k).textContent = d[k];
@@ -193,6 +225,26 @@ const detailData = Object.fromEntries(
       noteDt.style.display = d.note ? '' : 'none';
       noteDd.style.display = d.note ? '' : 'none';
       noteDd.textContent = d.note;
+
+      const ctrvDt = field('ctrv-dt');
+      const ctrvDd = field('ctrv');
+      const hasCtrv = d.controversies && d.controversies.length > 0;
+      ctrvDt.style.display = hasCtrv ? '' : 'none';
+      ctrvDd.style.display = hasCtrv ? '' : 'none';
+      ctrvDd.textContent = '';
+      if (hasCtrv) {
+        d.controversies.forEach((c: any, i: number) => {
+          const p = document.createElement('p');
+          p.style.margin = i > 0 ? '6px 0 0' : '0';
+          p.append(c.summary + ' ');
+          c.refs.forEach((r: any, j: number) => {
+            if (j > 0) p.append(' · ');
+            p.append(refLink(r, '보도 ↗'));
+          });
+          ctrvDd.append(p);
+        });
+      }
+
       const src = field('src');
       src.textContent = '';
       d.refs.forEach((r: any, i: number) => {
@@ -200,20 +252,8 @@ const detailData = Object.fromEntries(
         const grade = document.createElement('span');
         grade.className = 'src ' + (r.grade === '공식문서' ? 'official' : 'press');
         grade.textContent = r.grade;
-        src.append(grade, ' ' + r.title + ' ');
-        if (r.url) {
-          const a = document.createElement('a');
-          a.href = r.url;
-          a.target = '_blank';
-          a.rel = 'noopener';
-          a.textContent = '원문 보기 ↗';
-          src.append('· ', a);
-        } else {
-          const pending = document.createElement('span');
-          pending.className = 'pending-source';
-          pending.textContent = '· 원문 확인 중';
-          src.append(pending);
-        }
+        src.append(grade, ' ');
+        src.append(refLink(r, '원문 보기 ↗'));
       });
     }
 

@@ -34,6 +34,10 @@ export interface Appointment {
   /** 예: "위원장 직무대행 (선관위법 제5조)" */
   acting_role?: string;
   note?: string;
+  /** 임명·지명 행위자. 예: "이재명 대통령", "김명수 대법원장" */
+  appointed_by?: string;
+  /** 복수 매체 또는 공개 절차(청문회 등)에서 확인된 논란만. 제기 주체를 명시한 사실 서술로 기록 */
+  controversies?: { summary: string; refs: SourceRef[] }[];
 }
 
 // 가드레일 §6-1: 상태 라벨은 이 네 가지만 사용한다.

@@ -4,6 +4,7 @@
     "person": "위철환",
     "position": "상임위원",
     "selection_track": "president",
+    "appointed_by": "이재명 대통령",
     "appointed_date": "2025-10-20",
     "term_start": "2025-10-20",
     "term_end": "2031-10-19",
@@ -11,7 +12,14 @@
     "acting_role": "위원장 직무대행",
     "note": "2026-06-08 노태악 위원장 지명 해제 수용에 따라 선거관리위원회법 제5조에 의거 위원장 직무대행",
     "source_refs": [
-      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" }
+      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" },
+      { "type": "press", "title": "대통령 지명 보도 (MBC)", "url": "https://imnews.imbc.com/news/2025/politics/article/6754027_36711.html" }
+    ],
+    "controversies": [
+      {
+        "summary": "인사청문회(2025-10)에서 국민의힘이 이재명 대통령과의 사법연수원 18기 동기 관계, 2017년 민주당 대선 캠프 법률지원단장 이력을 들어 정치적 중립성 우려를 제기 — 위 후보자는 \"당원 자격을 가진 적은 없었다\"고 해명",
+        "refs": [{ "type": "press", "title": "청문회 보도 (문화일보)", "url": "https://www.munhwa.com/article/11537227" }]
+      }
     ]
   },
   {
@@ -19,6 +27,7 @@
     "person": "윤광일",
     "position": "위원",
     "selection_track": "president",
+    "appointed_by": "이재명 대통령",
     "appointed_date": "2026-03-30",
     "term_start": "2026-03-30",
     "term_end": "2032-03-29",
@@ -32,12 +41,20 @@
     "person": "전현정",
     "position": "위원",
     "selection_track": "president",
+    "appointed_by": "이재명 대통령",
     "appointed_date": "2026-03-30",
     "term_start": "2026-03-30",
     "term_end": "2032-03-29",
-    "career_summary": ["법무법인 LKB 구성원 변호사"],
+    "career_summary": ["법무법인 LKB 구성원 변호사", "前 서울중앙지법 부장판사"],
     "source_refs": [
-      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" }
+      { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" },
+      { "type": "press", "title": "대통령 지명 보도 (뉴시스)", "url": "https://www.newsis.com/view/NISX20260302_0003531527" }
+    ],
+    "controversies": [
+      {
+        "summary": "인사청문회(2026-03)에서 국민의힘 서범수 의원이 2020년 초대 공수처장 최종 후보 추천 이력(당시 추미애 법무부 장관 추천 보도)을 지적 — 전 후보자는 부정선거 주장에 대해 \"대법원에서 한 번도 받아들인 적 없고 구체적 근거가 없다\"고 답변",
+        "refs": [{ "type": "press", "title": "청문회 보도 (헤럴드경제)", "url": "https://biz.heraldcorp.com/article/10703714" }]
+      }
     ]
   },
   {
@@ -87,12 +104,23 @@
     "person": "노태악",
     "position": "위원장",
     "selection_track": "chief_justice",
+    "appointed_by": "김명수 대법원장",
     "appointed_date": "2022-05-07",
     "career_summary": ["前 대법관"],
     "status": "resigned",
-    "note": "6·3 투표용지 부족 사태 책임으로 2026-06-05 사의 표명, 06-08 대법원장이 지명 해제 수용 → 위원장 공석 (위철환 상임위원 직무대행)",
+    "note": "6·3 투표용지 부족 사태 책임으로 2026-06-05 사의 표명, 06-08 조희대 대법원장이 지명 해제 수용 → 위원장 공석 (위철환 상임위원 직무대행)",
     "source_refs": [
-      { "type": "press", "title": "대법원장 사직 수용 보도 (뉴스1)", "url": "https://www.news1.kr/politics/assembly/6188983" }
+      { "type": "press", "title": "대법원장 사직 수용 보도 (뉴스1)", "url": "https://www.news1.kr/politics/assembly/6188983" },
+      { "type": "press", "title": "지명·취임 경위 보도 (경향신문)", "url": "https://www.khan.co.kr/article/202606081949001" }
+    ],
+    "controversies": [
+      {
+        "summary": "대법관 임기 종료(2026-03) 후 위원장직 유임 상태에서 '책임 사퇴'를 표명한 것을 두고 실효성 지적 보도",
+        "refs": [
+          { "type": "press", "title": "더퍼블릭 보도", "url": "https://www.thepublic.kr/news/articleView.html?idxno=306766" },
+          { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0134_202606051942556378" }
+        ]
+      }
     ]
   },
   {
@@ -100,6 +128,7 @@
     "person": "박순영",
     "position": "위원",
     "selection_track": "chief_justice",
+    "appointed_by": "김명수 대법원장",
     "appointed_date": "2021-03-17",
     "term_start": "2021-03-17",
     "term_end": "2027-03-16",
@@ -113,6 +142,7 @@
     "person": "김대웅",
     "position": "위원",
     "selection_track": "chief_justice",
+    "appointed_by": "조희대 대법원장",
     "appointed_date": "2025-03-19",
     "term_start": "2025-03-19",
     "term_end": "2031-03-18",
