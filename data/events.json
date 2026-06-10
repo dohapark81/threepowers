@@ -24,6 +24,19 @@
     "topics": ["선관위", "6·3지방선거"]
   },
   {
+    "id": "evt_20260605_02",
+    "date": "2026-06-05",
+    "title": "선관위, 유권자 110% 기준 투표용지 예산 확보 후 일부 지역 50% 안팎 인쇄 보도",
+    "body_oneline": "지자체로부터 유권자 수 110% 수준의 인쇄 예산을 받고 실제 인쇄는 '선거인 수 50% 하한선' 지침 — 송파 약 50%(잠실7동 제2투표소 49.3%)·광진 50%·강남 55%. 선관위는 2022년 잔여 용지 논란 이후 물량을 조정했으며 미사용 예산은 지자체에 반납 예정이라고 해명",
+    "status": "investigating",
+    "source_grade": "press_multi",
+    "source_refs": [
+      { "type": "press", "title": "MBC 뉴스데스크 보도", "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828084_37004.html" },
+      { "type": "press", "title": "더퍼블릭 보도", "url": "https://www.thepublic.kr/news/articleView.html?idxno=306628" }
+    ],
+    "topics": ["선관위", "6·3지방선거"]
+  },
+  {
     "id": "evt_20260608_01",
     "date": "2026-06-08",
     "title": "여야, 투표용지 부족 사태 국정조사 요구서 각각 제출",
