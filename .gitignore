@@ -1,6 +1,10 @@
 # CrewX runtime
 .crewx/
 
+# Machine-local agent hook configs (absolute paths)
+.claude/settings.json
+.codex/hooks.json
+
 # Memory runtime state (regenerable from entries/)
 memory/*/.dirty-summary
 memory/*/graph.json
