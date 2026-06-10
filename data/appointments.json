@@ -34,6 +34,12 @@
     "career_summary": ["숙명여자대학교 사회과학대학 학장"],
     "source_refs": [
       { "type": "official", "title": "중앙선관위 위원 소개", "url": "https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" }
+    ],
+    "controversies": [
+      {
+        "summary": "인사청문회(2026-03)에서 더불어민주당 양부남 의원이 초고가 아파트 보유 지인에 대한 약 1억 2천만 원 현금 대여를 두고 \"통상적인 차용금 관계가 아닌가 의심된다\"고 지적 — 윤 후보자는 사과. 부정선거 주장 대응에 대해서는 \"모든 문제 제기를 음모론으로 치부하는 것에도 문제가 있다, 능동적으로 대처해야 한다\"고 답변",
+        "refs": [{ "type": "press", "title": "청문회 보도 (헤럴드경제)", "url": "https://biz.heraldcorp.com/article/10703714" }]
+      }
     ]
   },
   {
