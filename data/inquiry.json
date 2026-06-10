@@ -1,0 +1,11 @@
+{
+  "id": "inq_nec_2026",
+  "name": "중앙선관위 투표용지 부족 사태 국정조사",
+  "stage": "요구서제출",
+  "stages_done": [{ "stage": "요구서제출", "date": "2026-06-08", "source": null }],
+  "committee_members": [],
+  "hearings": [],
+  "witnesses": [],
+  "related_bills": [],
+  "next_event": { "date": null, "title": "본회의 의결 대기" }
+}

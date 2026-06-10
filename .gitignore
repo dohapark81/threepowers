@@ -1,0 +1,21 @@
+# CrewX runtime
+.crewx/
+
+# Memory runtime state (regenerable from entries/)
+memory/*/.dirty-summary
+memory/*/graph.json
+memory/*/summary.md
+
+# Skill runtime
+skills/*/.data/
+skills/*/sessions/
+skills/*/logs/
+skills/*/.crewx/
+
+# Astro / Node
+node_modules/
+dist/
+.astro/
+
+# OS
+.DS_Store

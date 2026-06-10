@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>중앙선거관리위원 9인은 누가 임명했나 · 삼권 threepowers</title>
+  <meta name="description" content="중앙선거관리위원회·헌법재판소·대법원의 구성과 6·3 사태 기록, 국정조사 진행을 공식 원문 링크와 함께 날짜순으로 기록합니다. 결론을 내리지 않습니다." />
+  <!--
+    WIREFRAME · 첫 화면(홈) 목업 v0.2
+    - 정적 스케치입니다. 실제 사이트 구현 아님.
+    - 데이터: 공개 출처(중앙선관위 위원 소개·보도자료, 국회, 언론보도)를 2026-06-10 조사해 채운 *잠정* 값.
+      PRD 가드레일상 실제 배포 데이터는 관보 대조 후 사람 머지가 원칙 — 이 목업 값은 검수 전 단계.
+    - 색은 중립(흑·회·먹). 정당색(적/청) 사용 금지. 부정선거 단정·음모론 키워드 비참조 원칙 반영.
+  -->
+  <style>
+    :root{
+      --paper:#faf9f6; --ink:#1a1a1a; --muted:#5f5f57; --faint:#8a8a80;
+      --line:#dcdbd3; --line-strong:#bfbeb4; --hair:#ecebe4;
+      --link:#234; --accent:#2b3a42;
+      --b-official-bg:#e9eef0; --b-official-fg:#2b3a42;
+      --b-progress-bg:#f3ecdd; --b-progress-fg:#7a5c2e;
+      --b-result-bg:#2b3a42;   --b-result-fg:#fafafa;
+      --b-correct-bg:#efe6ec;  --b-correct-fg:#5f3a52;
+      --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,Consolas,monospace;
+      --sans:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic","맑은 고딕",
+             "Apple SD Gothic Neo","Noto Sans KR",sans-serif;
+    }
+    *{box-sizing:border-box}
+    html{-webkit-text-size-adjust:100%}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);
+         font-size:16px;line-height:1.6;letter-spacing:-.01em}
+    a{color:var(--link);text-underline-offset:2px}
+    .wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+    .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
+
+    /* ── disclaimer strip (상시 노출) ───────────────── */
+    .strip{background:#1a1a1a;color:#f3f2ec;font-size:13px;letter-spacing:0}
+    .strip .wrap{display:flex;gap:10px;align-items:center;padding:8px 24px;justify-content:center;text-align:center}
+    .strip b{font-weight:600}
+
+    /* ── masthead ───────────────────────────────────── */
+    header.mast{border-bottom:1px solid var(--line-strong)}
+    .mast .wrap{display:flex;align-items:baseline;justify-content:space-between;padding:18px 24px}
+    .brand{display:flex;align-items:baseline;gap:10px;text-decoration:none;color:var(--ink)}
+    .brand .han{font-size:26px;font-weight:700;letter-spacing:.06em}
+    .brand .lat{font-size:12px;color:var(--faint);letter-spacing:.18em;text-transform:uppercase}
+    nav.top{display:flex;gap:20px;font-size:14px}
+    nav.top a{color:var(--muted);text-decoration:none}
+    nav.top a.here{color:var(--ink);font-weight:600;text-decoration:underline}
+    nav.top a.rss{color:var(--faint)}
+
+    /* ── section scaffolding ────────────────────────── */
+    section{padding:34px 0}
+    .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);
+             border-top:2px solid var(--ink);padding-top:8px;margin:0 0 14px;display:inline-block}
+    h1{font-size:30px;line-height:1.28;margin:.1em 0 .35em;letter-spacing:-.02em}
+    h2{font-size:21px;margin:0 0 6px;letter-spacing:-.02em}
+    .lede{color:var(--muted);max-width:60ch;margin:0}
+
+    /* ── badges ─────────────────────────────────────── */
+    .badge{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;font-weight:600;
+           padding:2px 8px;border-radius:2px;letter-spacing:0;white-space:nowrap;vertical-align:middle}
+    .b-official{background:var(--b-official-bg);color:var(--b-official-fg)}
+    .b-progress{background:var(--b-progress-bg);color:var(--b-progress-fg)}
+    .b-result{background:var(--b-result-bg);color:var(--b-result-fg)}
+    .b-correct{background:var(--b-correct-bg);color:var(--b-correct-fg)}
+    .src{display:inline-flex;align-items:center;gap:4px;font-size:11.5px;padding:1px 7px;border-radius:2px;
+         border:1px solid var(--line-strong);color:var(--muted);background:#fff}
+    .src.official{border-color:#2b3a42;color:#2b3a42}
+    .src.press{border-style:dashed}
+
+    /* ── NEC composition map (hero) ─────────────────── */
+    .map-note{font-size:13px;color:var(--faint);margin:0 0 18px}
+    .track{display:grid;grid-template-columns:120px 1fr;gap:16px;align-items:start;
+           padding:16px 0;border-top:1px solid var(--hair)}
+    .track:first-of-type{border-top:1px solid var(--line)}
+    .track .label{font-size:13px;color:var(--muted);padding-top:10px}
+    .track .label b{display:block;color:var(--ink);font-size:14px;font-weight:600}
+    .seats{display:flex;gap:10px;flex-wrap:wrap}
+    .seat{flex:1 1 150px;min-width:140px;border:1px solid var(--line-strong);background:#fff;
+          border-radius:4px;padding:10px 12px;cursor:pointer;text-align:left;font:inherit;color:inherit;
+          transition:border-color .12s,box-shadow .12s}
+    .seat:hover{border-color:var(--ink);box-shadow:0 1px 0 var(--ink)}
+    .seat .nm{font-weight:600;font-size:15px}
+    .seat .meta{font-size:12px;color:var(--faint);margin-top:3px}
+    .seat .dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--accent);margin-right:6px;vertical-align:middle}
+    .singles{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
+    .single{flex:1 1 220px;border:1px dashed var(--line-strong);border-radius:4px;padding:10px 12px;background:#fff}
+    .single .role{font-size:12px;color:var(--faint)}
+    .single .nm{font-weight:600}
+
+    /* detail panel */
+    .detail{margin-top:14px;border:1px solid var(--ink);border-radius:4px;background:#fff;padding:16px 18px;display:none}
+    .detail.open{display:block}
+    .detail dl{display:grid;grid-template-columns:96px 1fr;gap:6px 14px;margin:0;font-size:14px}
+    .detail dt{color:var(--faint)}
+    .detail dd{margin:0}
+    .detail .close{float:right;border:none;background:none;font:inherit;color:var(--faint);cursor:pointer}
+
+    .map-foot{display:flex;flex-wrap:wrap;gap:18px;align-items:center;margin-top:20px;
+              padding-top:16px;border-top:1px solid var(--line);font-size:14px}
+    .map-foot .also a{color:var(--link)}
+    .pill{font-size:13px;background:#fff;border:1px solid var(--line-strong);border-radius:999px;padding:4px 12px;color:var(--muted)}
+    .pill b{color:var(--ink)}
+
+    /* ── three feature cards ────────────────────────── */
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .card{border:1px solid var(--line-strong);border-radius:6px;background:#fff;padding:18px;text-decoration:none;color:inherit;
+          display:flex;flex-direction:column;gap:8px;transition:border-color .12s}
+    .card:hover{border-color:var(--ink)}
+    .card .k{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+    .card h3{margin:0;font-size:17px}
+    .card p{margin:0;font-size:13.5px;color:var(--muted)}
+    .card .go{margin-top:auto;font-size:13px;color:var(--link)}
+
+    /* ── timeline teaser ────────────────────────────── */
+    .tl{border-top:1px solid var(--line)}
+    .ev{display:grid;grid-template-columns:104px 1fr;gap:16px;padding:14px 0;border-bottom:1px solid var(--hair)}
+    .ev .date{font-family:var(--mono);font-size:13px;color:var(--muted);padding-top:2px}
+    .ev .body .t{font-size:15px;margin:0 0 6px}
+    .ev .body .tags{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+    .ev .supersede{font-size:12.5px;color:var(--faint);margin-top:6px}
+    .ev .supersede a{color:var(--link)}
+
+    /* ── inquiry stage strip ────────────────────────── */
+    .stages{display:flex;flex-wrap:wrap;gap:0;border:1px solid var(--line-strong);border-radius:6px;overflow:hidden;background:#fff}
+    .stage{flex:1 1 0;min-width:96px;padding:12px 10px;font-size:12.5px;text-align:center;border-left:1px solid var(--hair);color:var(--faint);position:relative}
+    .stage:first-child{border-left:none}
+    .stage.done{color:var(--ink)}
+    .stage.done::before{content:"✓ ";color:var(--accent)}
+    .stage.now{background:#2b3a42;color:#fff;font-weight:600}
+    .stage.now::before{content:"● ";color:#fff}
+    .next{margin-top:14px;font-size:14px;display:flex;align-items:center;gap:10px}
+    .next .lbl{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint)}
+
+    /* ── share affordance ───────────────────────────── */
+    .share{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+           border:1px solid var(--line);border-radius:6px;background:#fff;padding:14px 18px;margin-top:6px}
+    .share .desc{font-size:13.5px;color:var(--muted);max-width:52ch}
+    .btn{border:1px solid var(--ink);background:#fff;color:var(--ink);font:inherit;font-size:13.5px;font-weight:600;
+         padding:8px 16px;border-radius:4px;cursor:pointer}
+    .btn:hover{background:var(--ink);color:#fff}
+
+    /* ── footer ─────────────────────────────────────── */
+    footer{border-top:1px solid var(--line-strong);margin-top:20px;background:#f4f3ec}
+    footer .wrap{padding:26px 24px 40px}
+    .foot-line{font-size:13px;color:var(--muted);margin:0 0 8px;max-width:72ch}
+    .foot-line b{color:var(--ink)}
+    .foot-meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:var(--faint);margin-top:14px;
+               padding-top:14px;border-top:1px solid var(--line)}
+    .foot-meta a{color:var(--muted)}
+
+    .wfnote{font-size:11.5px;color:#b08;background:#fff4fb;border:1px dashed #d9a;border-radius:4px;
+            padding:6px 10px;display:inline-block;margin-bottom:8px}
+
+    @media (max-width:720px){
+      .cards{grid-template-columns:1fr}
+      .track{grid-template-columns:1fr;gap:6px}
+      .track .label{padding-top:0}
+      .ev{grid-template-columns:1fr;gap:4px}
+      h1{font-size:24px}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 상시 고지 -->
+  <div class="strip">
+    <div class="wrap"><span>이 서비스는 공식 기록을 날짜순으로 모읍니다. <b>어떤 결론도 내리지 않습니다.</b></span></div>
+  </div>
+
+  <!-- 머리말 -->
+  <header class="mast">
+    <div class="wrap">
+      <a class="brand" href="#">
+        <span class="han">삼권 三權</span>
+        <span class="lat">threepowers</span>
+      </a>
+      <nav class="top">
+        <a class="here" href="#map">구성 지도</a>
+        <a href="#timeline">사태 기록</a>
+        <a href="#inquiry">국정조사</a>
+        <a href="#">정보</a>
+        <a class="rss" href="#">RSS</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <!-- ════ HERO: 선관위 구성 지도 (간판) ════ -->
+    <section id="map">
+      <span class="wfnote">와이어프레임 · 공개 출처 기반 잠정 데이터(2026-06-10 조사) · 관보 대조·사람 검수 전</span>
+      <span class="eyebrow">선관위 구성 지도</span>
+      <h1>중앙선거관리위원 9인은 누가 임명했나</h1>
+      <p class="lede">중앙선거관리위원회는 9인으로 구성됩니다. 임명 경로별로 누가 추천·지명했는지, 임기는 언제까지인지를 공식 자료와 함께 정리합니다.</p>
+
+      <p class="map-note" style="margin-top:18px">각 위원을 누르면 추천 주체 · 임명/선출일 · 임기 · 경력 · 원문 출처가 열립니다. <b>현재 위원장은 공석</b> — 노태악 위원장이 6·3 사태 책임으로 사임, 위철환 상임위원이 직무대행.</p>
+
+      <!-- 대통령 임명 3 -->
+      <div class="track">
+        <div class="label"><b>대통령 임명</b>3인</div>
+        <div class="seats">
+          <button class="seat" data-seat="wi" aria-expanded="false"><span class="nm"><span class="dot"></span>위철환</span><span class="meta">상임위원·위원장 직무대행 · 임명 2025-10-20</span></button>
+          <button class="seat" data-seat="yo" aria-expanded="false"><span class="nm"><span class="dot"></span>윤광일</span><span class="meta">대통령 임명 · 2026-03-30</span></button>
+          <button class="seat" data-seat="je" aria-expanded="false"><span class="nm"><span class="dot"></span>전현정</span><span class="meta">대통령 임명 · 2026-03-30</span></button>
+        </div>
+      </div>
+
+      <!-- 위원 상세 (클릭한 위원 데이터로 채워짐) -->
+      <div class="detail" id="detail">
+        <button class="close" type="button" aria-label="닫기">닫기 ✕</button>
+        <dl>
+          <dt>이름</dt><dd id="d-name">—</dd>
+          <dt>직</dt><dd id="d-pos">—</dd>
+          <dt>임명 경로</dt><dd id="d-track">—</dd>
+          <dt>임명일</dt><dd class="mono" id="d-appointed">—</dd>
+          <dt>임기</dt><dd class="mono" id="d-term">—</dd>
+          <dt>경력</dt><dd id="d-career">—</dd>
+          <dt id="d-note-dt">비고</dt><dd id="d-note">—</dd>
+          <dt>출처</dt><dd id="d-src">—</dd>
+        </dl>
+      </div>
+
+      <!-- 국회 선출 3 -->
+      <div class="track">
+        <div class="label"><b>국회 선출</b>3인</div>
+        <div class="seats">
+          <button class="seat" data-seat="cb" aria-expanded="false"><span class="nm"><span class="dot"></span>조병현</span><span class="meta">국민의힘(미래통합당) 추천 · 2021-01-08</span></button>
+          <button class="seat" data-seat="cs" aria-expanded="false"><span class="nm"><span class="dot"></span>조성대</span><span class="meta">더불어민주당 추천 · 2021-01-08</span></button>
+          <button class="seat" data-seat="nr" aria-expanded="false"><span class="nm"><span class="dot"></span>남래진</span><span class="meta">국회 선출 · 2022-08-02 · 추천 교섭단체 확인 중</span></button>
+        </div>
+      </div>
+
+      <!-- 대법원장 지명 3 -->
+      <div class="track">
+        <div class="label"><b>대법원장 지명</b>3인</div>
+        <div class="seats">
+          <button class="seat" data-seat="no" aria-expanded="false"><span class="nm"><span class="dot" style="background:#fff;box-shadow:inset 0 0 0 1.5px var(--faint)"></span>노태악</span><span class="meta">위원장(대법관 호선) · 사임 6/8 · 공석</span></button>
+          <button class="seat" data-seat="ps" aria-expanded="false"><span class="nm"><span class="dot"></span>박순영</span><span class="meta">대법원장 지명 · 2021-03-17</span></button>
+          <button class="seat" data-seat="kd" aria-expanded="false"><span class="nm"><span class="dot"></span>김대웅</span><span class="meta">대법원장 지명 · 2025-03-19</span></button>
+        </div>
+      </div>
+
+      <!-- 위원장 / 상임위원 직무대행 / 사무총장 -->
+      <div class="singles">
+        <div class="single">
+          <div class="role">위원장 · 대법관 호선 · 비상근</div>
+          <div class="nm">노태악 <span style="font-weight:400;color:var(--faint);font-size:12px">— 사임 · 공석</span></div>
+          <div class="seat-meta" style="font-size:12px;color:var(--faint)">2022-05-07 취임 · 6/5 사의 → 6/8 대법원장 지명 해제 수용</div>
+        </div>
+        <div class="single">
+          <div class="role">상임위원 · 상근 · 현 위원장 직무대행</div>
+          <div class="nm">위철환</div>
+          <div class="seat-meta" style="font-size:12px;color:var(--faint)">대통령 임명 2025-10-20 · 선관위법 제5조에 따라 6/8부터 직무대행</div>
+        </div>
+        <div class="single">
+          <div class="role">사무총장 · 상근 (사무처 총괄)</div>
+          <div class="nm">허철훈 <span style="font-weight:400;color:var(--faint);font-size:12px">— 사의 표명</span></div>
+          <div class="seat-meta" style="font-size:12px;color:var(--faint)">前 사무차장 승진 · 6/5 사태 책임 사의 (직전 김용빈)</div>
+        </div>
+      </div>
+
+      <div class="map-foot">
+        <span class="pill">임기 만료 임박 <b>2027년 3명</b> · 위원장 <b>공석 1석</b></span>
+        <span class="also">같은 컴포넌트로 보기 → <a href="#">헌법재판소 9인</a> · <a href="#">대법원 14인</a> <span style="color:var(--faint)">(데이터 준비 중)</span></span>
+      </div>
+    </section>
+
+    <!-- ════ 3대 기능 진입 ════ -->
+    <section>
+      <span class="eyebrow">무엇을 기록하나</span>
+      <div class="cards">
+        <a class="card" href="#map">
+          <span class="k">01 · 구성 지도</span>
+          <h3>누가 앉힌 사람들인가</h3>
+          <p>선관위 9인 · 헌재 9인 · 대법원 14인의 임명 경로를 관보 원문과 함께.</p>
+          <span class="go">지도 보기 →</span>
+        </a>
+        <a class="card" href="#timeline">
+          <span class="k">02 · 사태 기록</span>
+          <h3>6·3 사태 타임라인</h3>
+          <p>공식 발표·국회 문서를 날짜순으로. 단독 보도는 싣지 않습니다.</p>
+          <span class="go">타임라인 보기 →</span>
+        </a>
+        <a class="card" href="#inquiry">
+          <span class="k">03 · 국정조사</span>
+          <h3>국정조사 추적기</h3>
+          <p>요구서 제출부터 결과보고서까지 절차 진행을 단계별로.</p>
+          <span class="go">추적기 보기 →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ════ 타임라인 미리보기 ════ -->
+    <section id="timeline">
+      <span class="eyebrow">6·3 사태 기록 · 최신</span>
+      <h2>날짜순 공식 기록</h2>
+      <p class="lede" style="margin-bottom:8px">한 줄 사실 + 출처 + 상태. 출처 등급(공식문서 / 복수 매체 교차)을 항목마다 표시합니다.</p>
+
+      <div class="tl">
+        <div class="ev">
+          <div class="date">2026-06-10</div>
+          <div class="body">
+            <p class="t">투표지 부족 사태 진상규명위원회 출범 (6/10~6/19 · 외부 인사 6명 · 위원장 조현욱 변호사)</p>
+            <div class="tags">
+              <span class="badge b-official">공식발표</span>
+              <span class="src official">공식문서</span>
+              <span style="font-size:12px;color:var(--faint)">선관위 발표 · <a href="https://www.fnnews.com/news/202606090501132196" target="_blank" rel="noopener">보도 ↗</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ev">
+          <div class="date">2026-06-09</div>
+          <div class="body">
+            <p class="t">추가 용지 사용 투표소 91곳·추가 송부 140곳으로 집계 (투표 중단 후 재개 26곳)</p>
+            <div class="tags">
+              <span class="badge b-official">공식발표</span>
+              <span class="src official">공식문서</span>
+              <span style="font-size:12px;color:var(--faint)">선관위 집계 · <a href="https://www.fnnews.com/news/202606090501132196" target="_blank" rel="noopener">보도 ↗</a></span>
+            </div>
+            <p class="supersede">↻ 2026-06-05 발표(부족 투표소 50곳)를 갱신함 — <a href="#">변경 내역 보기</a></p>
+          </div>
+        </div>
+
+        <div class="ev">
+          <div class="date">2026-06-08</div>
+          <div class="body">
+            <p class="t">여야, 투표용지 부족 사태 국정조사 요구서 각각 제출 (국민의힘 의원 110명 명의 · 더불어민주당)</p>
+            <div class="tags">
+              <span class="badge b-official">공식발표</span>
+              <span class="src official">공식문서</span>
+              <span style="font-size:12px;color:var(--faint)">국회 의안과 접수 · <a href="https://imnews.imbc.com/replay/2026/nwdesk/article/6828650_37004.html" target="_blank" rel="noopener">보도 ↗</a> · 의안번호 확인 중</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ev">
+          <div class="date">2026-06-08</div>
+          <div class="body">
+            <p class="t">대법원장, 노태악 위원장 사직(지명 해제) 수용 → 위철환 상임위원 직무대행</p>
+            <div class="tags">
+              <span class="badge b-official">공식발표</span>
+              <span class="src official">공식문서</span>
+              <span style="font-size:12px;color:var(--faint)">대법원·선관위 · <a href="https://www.news1.kr/politics/assembly/6188983" target="_blank" rel="noopener">보도 ↗</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ev">
+          <div class="date">2026-06-05</div>
+          <div class="body">
+            <p class="t" style="color:var(--faint);text-decoration:line-through dotted">부족 투표소 50곳 발표 (당초 14곳에서 늘어남)</p>
+            <div class="tags">
+              <span class="badge b-correct">↻ 정정됨</span>
+              <span class="src official">공식문서</span>
+              <span style="font-size:12px;color:var(--faint)">6-09 집계(91곳)로 대체됨 · <a href="https://imnews.imbc.com/replay/2026/nwdesk/article/6828081_37004.html" target="_blank" rel="noopener">대체 항목 보기</a></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="ev">
+          <div class="date">2026-06-03</div>
+          <div class="body">
+            <p class="t">제9회 전국동시지방선거 본투표일, 일부 투표소 투표용지 부족으로 투표 중단·재개</p>
+            <div class="tags">
+              <span class="badge b-official">공식발표</span>
+              <span class="src press">복수 매체 교차</span>
+              <span style="font-size:12px;color:var(--faint)">선관위·복수 매체 · <a href="https://imnews.imbc.com/replay/2026/nwdesk/article/6828081_37004.html" target="_blank" rel="noopener">보도 ↗</a></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top:16px"><a href="#">전체 타임라인 보기 →</a></p>
+    </section>
+
+    <!-- ════ 국정조사 현황 ════ -->
+    <section id="inquiry">
+      <span class="eyebrow">국정조사 추적기</span>
+      <h2>중앙선관위 투표용지 부족 사태 국정조사</h2>
+      <p class="lede" style="margin-bottom:16px">절차가 어디까지 왔는지를 단계로 표시합니다. 진행될수록 갱신됩니다.</p>
+
+      <div class="stages">
+        <div class="stage done">요구서 제출</div>
+        <div class="stage now">본회의 의결</div>
+        <div class="stage">특위 구성</div>
+        <div class="stage">계획서</div>
+        <div class="stage">기관보고</div>
+        <div class="stage">청문회</div>
+        <div class="stage">결과보고서</div>
+      </div>
+
+      <div class="next">
+        <span class="lbl">현황</span>
+        <span><b>본회의 의결 대기</b> <span style="color:var(--faint)">· 여야 요구서 각각 제출(6/8 · 국민의힘 110명 명의·더불어민주당) · 특위 미구성 · 본회의 일정 확정 시 갱신 · <a href="#">RSS 구독</a></span></span>
+      </div>
+    </section>
+
+    <!-- ════ 데이터 출처 (조사 단계 · 검수 전) ════ -->
+    <section>
+      <span class="eyebrow">이 화면 데이터의 출처</span>
+      <p class="lede" style="margin-bottom:12px">와이어프레임 값은 아래 공개 출처를 2026-06-10 조사해 채운 잠정 데이터입니다. 배포본은 관보·국회 의안 원문을 대조한 뒤 사람이 머지합니다(PRD 가드레일: 에이전트는 PR까지).</p>
+      <ul style="columns:2;-webkit-columns:2;font-size:13px;color:var(--muted);line-height:1.9;padding-left:18px;margin:0">
+        <li>중앙선관위 — <a href="https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285" target="_blank" rel="noopener">위원 소개(명단·임명일)</a></li>
+        <li>헌법 제114조 — <a href="https://casenote.kr/%EB%B2%95%EB%A0%B9/%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%ED%97%8C%EB%B2%95/%EC%A0%9C114%EC%A1%B0" target="_blank" rel="noopener">선관위 구성 근거</a></li>
+        <li>노태악 위원장 사임 수용 — <a href="https://www.news1.kr/politics/assembly/6188983" target="_blank" rel="noopener">뉴스1</a></li>
+        <li>허철훈 사무총장 사의 — <a href="https://www.newsis.com/view/NISX20260605_0003658212" target="_blank" rel="noopener">뉴시스</a></li>
+        <li>위철환 직무대행 — <a href="https://www.newspem.com/26324" target="_blank" rel="noopener">뉴스팸</a></li>
+        <li>진상규명위·91곳/140곳 집계 — <a href="https://www.fnnews.com/news/202606090501132196" target="_blank" rel="noopener">파이낸셜뉴스</a></li>
+        <li>부족 투표소 50곳 — <a href="https://imnews.imbc.com/replay/2026/nwdesk/article/6828081_37004.html" target="_blank" rel="noopener">MBC</a></li>
+        <li>여야 국정조사 요구서 제출 — <a href="https://imnews.imbc.com/replay/2026/nwdesk/article/6828650_37004.html" target="_blank" rel="noopener">MBC</a></li>
+      </ul>
+      <p style="font-size:12px;color:var(--faint);margin-top:12px">미수록 — 단독 보도·미확인 주장, 인쇄기준 관련 일부 매체의 '고의' 의혹 프레임(음모론 키워드 비참조 원칙). 확인 중 — 남래진 위원 추천 교섭단체, 국정조사 의안번호, 임명별 관보 호수.</p>
+    </section>
+
+    <!-- ════ 공유 카드 (확산 장치) ════ -->
+    <section>
+      <span class="eyebrow">공유</span>
+      <div class="share">
+        <div class="desc">이 화면은 출처 푸터가 박힌 이미지 카드 한 장으로 저장됩니다. 커뮤니티/SNS에서 카드가 돌 때 출처와 사이트명이 함께 돕니다.</div>
+        <button class="btn" type="button">팩트 카드로 저장 ↓</button>
+      </div>
+      <p style="font-size:12px;color:var(--faint);margin:8px 2px 0">카드 푸터 예시 — 출처: 중앙선관위 위원 소개·보도자료, 국회 의안 외 · threepowers · 데이터/코드 공개</p>
+    </section>
+
+  </main>
+
+  <!-- ════ 푸터 ════ -->
+  <footer>
+    <div class="wrap">
+      <p class="foot-line"><b>이 서비스는 결론을 내리지 않습니다.</b> 부정선거 여부 등 어떤 판정도 하지 않으며, 공식 기록(선관위 발표·국회 문서·관보·법령)을 날짜순으로 쌓고 원문 링크를 답니다. 판정은 진상규명위·국정조사·수사가 합니다.</p>
+      <p class="foot-line">모든 데이터는 관보 · 국회 의안정보 · 선관위 공식 발표에 근거합니다. 단독 보도·미확인 주장은 싣지 않습니다. 정정 이력은 커밋으로 공개됩니다.</p>
+      <p class="foot-line">이 서비스의 수집 · 요약 · 배포는 <a href="#">CrewX</a> 에이전트가 수행합니다.</p>
+      <div class="foot-meta">
+        <span>코드 MIT · 데이터 CC BY 4.0</span>
+        <a href="#">데이터/코드 저장소 ↗</a>
+        <a href="#">RSS</a>
+        <a href="#">정정 내역</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // 위원 클릭 → 상세 패널을 해당 위원 데이터로 채워 토글 (와이어프레임 · 2026-06-10 조사 잠정값)
+    (function(){
+      var NEC = 'https://www.nec.go.kr/site/nec/ex/bbs/List.do?cbIdx=1285';
+      var DATA = {
+        wi:{name:'위철환', pos:'상임위원 · 위원장 직무대행', track:'대통령 임명', appointed:'2025-10-20', term:'2025-10-20 ~ 2031-10-19 (6년)', career:'수원고등법원 조정위원 · 前 대한변호사협회장', note:'2026-06-08 노태악 위원장 지명 해제 수용에 따라 선거관리위원회법 제5조에 의거 위원장 직무대행', srcT:'중앙선관위 위원 소개(공식)', srcU:NEC, grade:'공식문서'},
+        yo:{name:'윤광일', pos:'위원', track:'대통령 임명', appointed:'2026-03-30', term:'2026-03-30 ~ 2032-03-29 (6년)', career:'숙명여자대학교 사회과학대학 학장', note:'', srcT:'중앙선관위 위원 소개(공식)', srcU:NEC, grade:'공식문서'},
+        je:{name:'전현정', pos:'위원', track:'대통령 임명', appointed:'2026-03-30', term:'2026-03-30 ~ 2032-03-29 (6년)', career:'법무법인 LKB 구성원 변호사', note:'', srcT:'중앙선관위 위원 소개(공식)', srcU:NEC, grade:'공식문서'},
+        cb:{name:'조병현', pos:'위원', track:'국회 선출', appointed:'2021-01-08', term:'2021-01-08 ~ 2027-01-07 (6년)', career:'법무법인 평안 대표변호사 · 前 서울고등법원장', note:'국회 추천 교섭단체: 미래통합당(현 국민의힘)', srcT:'중앙선관위 위원 소개(공식)', srcU:NEC, grade:'공식문서'},
+        cs:{name:'조성대', pos:'위원', track:'국회 선출', appointed:'2021-01-08', term:'2021-01-08 ~ 2027-01-07 (6년)', career:'한신대학교 교수 · 한국선거학회 기획이사', note:'국회 추천 교섭단체: 더불어민주당', srcT:'중앙선관위 위원 소개(공식)', srcU:NEC, grade:'공식문서'},
+        nr:{name:'남래진', pos:'위원', track:'국회 선출', appointed:'2022-08-02', term:'2022-08-02 ~ 2028-08-01 (6년)', career:'前 인천광역시선거관리위원회 상임위원', note:'국회 추천 교섭단체: 확인 중', srcT:'중앙선관위 위원 소개(공식)', srcU:NEC, grade:'공식문서'},
+        no:{name:'노태악', pos:'前 위원장 (사임 · 공석)', track:'대법원장 지명', appointed:'2022-05-07', term:'대법관 임기 종료(2026-03-03) 후 위원장 유임 중 사임', career:'前 대법관', note:'6·3 투표용지 부족 사태 책임으로 6/5 사의 표명, 6/8 대법원장이 지명 해제 수용 → 위원장 공석(위철환 직무대행)', srcT:'대법원장 사직 수용 보도(뉴스1)', srcU:'https://www.news1.kr/politics/assembly/6188983', grade:'복수 매체 교차'},
+        ps:{name:'박순영', pos:'위원', track:'대법원장 지명', appointed:'2021-03-17', term:'2021-03-17 ~ 2027-03-16 (6년)', career:'前 서울고등법원 부장판사', note:'', srcT:'중앙선관위 위원 소개(공식)', srcU:NEC, grade:'공식문서'},
+        kd:{name:'김대웅', pos:'위원', track:'대법원장 지명', appointed:'2025-03-19', term:'2025-03-19 ~ 2031-03-18 (6년)', career:'前 서울고등법원장', note:'', srcT:'중앙선관위 위원 소개(공식)', srcU:NEC, grade:'공식문서'}
+      };
+      var detail = document.getElementById('detail');
+      var seats = document.querySelectorAll('.seat');
+      function setText(id,v){ document.getElementById(id).textContent = v; }
+      function fill(d){
+        setText('d-name', d.name); setText('d-pos', d.pos); setText('d-track', d.track);
+        setText('d-appointed', d.appointed); setText('d-term', d.term); setText('d-career', d.career);
+        var noteDt = document.getElementById('d-note-dt'), noteDd = document.getElementById('d-note');
+        if(d.note){ noteDt.style.display=''; noteDd.style.display=''; noteDd.textContent = d.note; }
+        else { noteDt.style.display='none'; noteDd.style.display='none'; }
+        var cls = d.grade.indexOf('공식') >= 0 ? 'official' : 'press';
+        document.getElementById('d-src').innerHTML =
+          '<span class="src '+cls+'">'+d.grade+'</span> '+d.srcT+
+          ' · <a href="'+d.srcU+'" target="_blank" rel="noopener">원문 보기 ↗</a>';
+      }
+      function close(){ detail.classList.remove('open'); seats.forEach(function(s){s.setAttribute('aria-expanded','false');}); }
+      seats.forEach(function(s){
+        s.addEventListener('click', function(){
+          var open = s.getAttribute('aria-expanded') === 'true';
+          close();
+          if(!open){
+            var d = DATA[s.getAttribute('data-seat')];
+            if(d){ fill(d); }
+            s.setAttribute('aria-expanded','true'); detail.classList.add('open');
+            // 패널을 클릭한 트랙 바로 아래로 이동
+            s.closest('.track').after(detail);
+          }
+        });
+      });
+      detail.querySelector('.close').addEventListener('click', close);
+    })();
+  </script>
+</body>
+</html>

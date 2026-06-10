@@ -1,0 +1,85 @@
+---
+import Base from '../layouts/Base.astro';
+import rawInquiry from '../../data/inquiry.json';
+import { INQUIRY_STAGES, type Inquiry } from '../lib/types';
+
+const inquiry = rawInquiry as Inquiry;
+const doneStages = new Set(inquiry.stages_done.map((s) => s.stage));
+const stageDates = new Map(inquiry.stages_done.map((s) => [s.stage, s.date]));
+---
+
+<Base
+  title="선관위 국정조사 추적"
+  description="중앙선관위 투표용지 부족 사태 국정조사의 절차 단계, 특위 구성, 회의 기록, 증인 명단을 국회 공식 자료 기준으로 추적합니다."
+>
+  <h1>{inquiry.name}</h1>
+
+  <h2>절차 현황</h2>
+  <ul class="stages">
+    {INQUIRY_STAGES.map((stage) => (
+      <li
+        class:list={[
+          doneStages.has(stage) && 'done',
+          stage === inquiry.stage && !doneStages.has(stage) && 'current',
+        ]}
+      >
+        {stage}
+        {stageDates.has(stage) && ` (${stageDates.get(stage)})`}
+      </li>
+    ))}
+  </ul>
+  <p>
+    <strong>다음 일정:</strong>{' '}
+    {inquiry.next_event.date ? `${inquiry.next_event.date} — ` : ''}
+    {inquiry.next_event.title}
+  </p>
+
+  <h2>특위 구성</h2>
+  {inquiry.committee_members.length === 0 ? (
+    <div class="empty-note">특별위원회가 아직 구성되지 않았습니다. 구성 의결 시 국회 공식 자료 기준으로 명단을 게시합니다.</div>
+  ) : (
+    <ul>
+      {inquiry.committee_members.map((m) => (
+        <li>{m.name} ({m.party}){m.role && ` — ${m.role}`}</li>
+      ))}
+    </ul>
+  )}
+
+  <h2>회의 기록</h2>
+  {inquiry.hearings.length === 0 ? (
+    <div class="empty-note">아직 열린 회의가 없습니다.</div>
+  ) : (
+    <ul>
+      {inquiry.hearings.map((h) => (
+        <li>
+          {h.date} — {h.title}
+          {h.source_refs.map((ref) =>
+            ref.url ? <> · <a href={ref.url}>{ref.title}</a></> : <> · <span class="pending-source">{ref.title} (원문 확인 중)</span></>
+          )}
+        </li>
+      ))}
+    </ul>
+  )}
+
+  <h2>증인·참고인</h2>
+  {inquiry.witnesses.length === 0 ? (
+    <div class="empty-note">채택된 증인·참고인이 없습니다. 의결 문서 기준으로만 수록합니다.</div>
+  ) : (
+    <ul>
+      {inquiry.witnesses.map((w) => (
+        <li>{w.name}{w.note && ` — ${w.note}`}</li>
+      ))}
+    </ul>
+  )}
+
+  <h2>관련 의안</h2>
+  {inquiry.related_bills.length === 0 ? (
+    <div class="empty-note">의안번호 확인 중입니다.</div>
+  ) : (
+    <ul>
+      {inquiry.related_bills.map((b) => (
+        <li>{b.bill_no} — {b.title}{b.proposer && ` (${b.proposer})`}</li>
+      ))}
+    </ul>
+  )}
+</Base>

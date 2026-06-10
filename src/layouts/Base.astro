@@ -1,0 +1,52 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title} · 삼권 threepowers</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="inner">
+        <a class="brand" href={`${base}/`}>삼권 三權</a>
+        <nav>
+          <a href={`${base}/election-commission/members`}>선관위 구성</a>
+          <a href={`${base}/timeline`}>6·3 기록</a>
+          <a href={`${base}/inquiry`}>국정조사</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="inner">
+        <p>
+          이 서비스는 어떤 결론도 내리지 않습니다. 공식 기록(선관위·국회·관보·법령)을
+          날짜순으로 쌓고 원문 링크를 다는 것이 하는 일의 전부입니다.
+        </p>
+        <p>
+          이 서비스의 수집·요약·배포는 <a href="https://github.com/sowonlabs/crewx">CrewX</a>
+          에이전트가 수행합니다. 데이터와 코드는 공개되어 있습니다.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

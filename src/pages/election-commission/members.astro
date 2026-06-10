@@ -1,0 +1,81 @@
+---
+import Base from '../../layouts/Base.astro';
+import rawAppointments from '../../../data/appointments.json';
+import type { Appointment, SelectionTrack } from '../../lib/types';
+
+const appointments = (rawAppointments as Appointment[]).filter((a) => a.body === 'nec');
+
+const TRACKS: { track: SelectionTrack[]; label: string }[] = [
+  { track: ['president'], label: '대통령 임명' },
+  { track: ['assembly_ruling', 'assembly_opposition', 'assembly_consensus'], label: '국회 선출' },
+  { track: ['chief_justice'], label: '대법원장 지명' },
+];
+
+const members = TRACKS.map(({ track, label }) => ({
+  label,
+  people: appointments.filter(
+    (a) => track.includes(a.selection_track) && a.position.includes('위원')
+  ),
+}));
+
+const secretaryGeneral = appointments.find((a) => a.position === '사무총장');
+---
+
+<Base
+  title="중앙선관위원 9인은 누가 임명했나"
+  description="중앙선거관리위원회 위원 9인의 임명 주체(대통령·국회·대법원장), 임명일, 임기, 경력을 관보 원문 링크와 함께 정리합니다."
+>
+  <h1>중앙선거관리위원회 구성</h1>
+  <p>
+    선관위원 9인은 대통령 임명 3인, 국회 선출 3인, 대법원장 지명 3인으로 구성됩니다
+    (헌법 제114조). 각 위원의 임명 근거는 관보 원문으로 확인할 수 있습니다.
+  </p>
+
+  {appointments.length === 0 ? (
+    <div class="empty-note">
+      임명 데이터를 관보 원문 대조와 함께 구축하고 있습니다. 데이터가 거칠게라도 먼저
+      올라오는 일은 없습니다 — 정확한 기록이 빠른 기록보다 우선입니다.
+    </div>
+  ) : (
+    <>
+      {members.map(({ label, people }) => (
+        <section>
+          <h2>{label} ({people.length}인)</h2>
+          <ul>
+            {people.map((p) => (
+              <li>
+                <strong>{p.person}</strong> — {p.position}
+                {p.recommended_by && <> · {p.recommended_by}</>}
+                · 임명/선출일 {p.appointed_date}
+                {p.term_end && <> · 임기 ~{p.term_end}</>}
+                <br />
+                {p.career_summary.join(' · ')}
+                <br />
+                {p.source_refs.map((ref, i) => (
+                  <>
+                    {i > 0 && ' · '}
+                    {ref.url ? (
+                      <a href={ref.url} rel="noopener">{ref.title}</a>
+                    ) : (
+                      <span class="pending-source">{ref.title} (원문 확인 중)</span>
+                    )}
+                  </>
+                ))}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+      {secretaryGeneral && (
+        <section>
+          <h2>사무총장</h2>
+          <p>
+            <strong>{secretaryGeneral.person}</strong> · 임명일 {secretaryGeneral.appointed_date}
+            <br />
+            {secretaryGeneral.career_summary.join(' · ')}
+          </p>
+        </section>
+      )}
+    </>
+  )}
+</Base>

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "evt_20260603_01",
+    "date": "2026-06-03",
+    "title": "본투표일 투표용지 부족 발생",
+    "body_oneline": "6·3 지방선거 본투표일에 일부 투표소에서 투표용지 부족 사태 발생",
+    "status": "official",
+    "source_grade": "official",
+    "source_refs": [{ "type": "official", "title": "선관위 발표", "url": null }],
+    "topics": ["선관위", "6·3지방선거"]
+  },
+  {
+    "id": "evt_20260605_01",
+    "date": "2026-06-05",
+    "title": "선관위, 투표용지 부족 투표소 50곳 발표",
+    "body_oneline": "선관위가 투표용지가 부족했던 투표소를 50곳으로 발표",
+    "status": "corrected",
+    "source_grade": "official",
+    "source_refs": [{ "type": "official", "title": "선관위 발표", "url": null }],
+    "topics": ["선관위", "6·3지방선거"]
+  },
+  {
+    "id": "evt_20260608_01",
+    "date": "2026-06-08",
+    "title": "여야, 국정조사 요구서 각각 제출",
+    "body_oneline": "여야가 중앙선관위 투표용지 부족 사태에 대한 국정조사 요구서를 각각 제출",
+    "status": "official",
+    "source_grade": "official",
+    "source_refs": [{ "type": "official", "title": "국회 의안정보시스템", "url": null }],
+    "topics": ["선관위", "국정조사"]
+  },
+  {
+    "id": "evt_20260610_01",
+    "date": "2026-06-10",
+    "title": "투표용지 부족 투표소 91곳으로 정정 발표, 진상규명위 구성",
+    "body_oneline": "선관위가 6/5 발표(50곳)를 정정하고 6/19까지 진상규명위를 운영한다고 발표",
+    "status": "official",
+    "source_grade": "official",
+    "source_refs": [{ "type": "official", "title": "선관위 보도자료", "url": null }],
+    "supersedes": "evt_20260605_01",
+    "topics": ["선관위", "6·3지방선거"]
+  }
+]

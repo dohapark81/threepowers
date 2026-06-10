@@ -1,0 +1,51 @@
+---
+import Base from '../layouts/Base.astro';
+import rawEvents from '../../data/events.json';
+import { EVENT_STATUS_LABEL, type TimelineEvent } from '../lib/types';
+
+const events = (rawEvents as TimelineEvent[]).sort((a, b) => b.date.localeCompare(a.date));
+const supersededIds = new Set(events.map((e) => e.supersedes).filter(Boolean));
+
+const GRADE_LABEL = { official: '공식문서', press_multi: '언론보도(교차확인)' } as const;
+---
+
+<Base
+  title="6·3 투표용지 부족 사태 기록"
+  description="6·3 지방선거 투표용지 부족 사태에 대한 공식 발표를 날짜순으로 기록합니다. 모든 항목에 출처 등급과 원문 링크를 표시합니다."
+>
+  <h1>6·3 사태 기록 타임라인</h1>
+  <p>
+    공식 문서 또는 복수 매체가 교차 확인한 사실만 수록합니다. 정정된 발표는 삭제하지 않고
+    <span class="badge corrected">정정됨</span> 라벨과 함께 남깁니다.
+  </p>
+
+  <ul class="timeline">
+    {events.map((evt) => (
+      <li id={evt.id}>
+        <time datetime={evt.date}>{evt.date}</time>
+        <span class={`badge ${supersededIds.has(evt.id) ? 'corrected' : evt.status}`}>
+          {supersededIds.has(evt.id) ? EVENT_STATUS_LABEL.corrected : EVENT_STATUS_LABEL[evt.status]}
+        </span>
+        <span class="badge grade">{GRADE_LABEL[evt.source_grade]}</span>
+        <p class="evt-title">{evt.title}</p>
+        <p class="evt-body">{evt.body_oneline}</p>
+        <p class="evt-src">
+          출처:
+          {evt.source_refs.map((ref, i) => (
+            <>
+              {i > 0 && ' · '}
+              {ref.url ? (
+                <a href={ref.url} rel="noopener">{ref.title}</a>
+              ) : (
+                <span class="pending-source">{ref.title} (원문 확인 중)</span>
+              )}
+            </>
+          ))}
+          {evt.supersedes && (
+            <> · <a href={`#${evt.supersedes}`}>이전 발표 정정</a></>
+          )}
+        </p>
+      </li>
+    ))}
+  </ul>
+</Base>

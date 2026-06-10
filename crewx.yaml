@@ -1,0 +1,58 @@
+agents:
+  - id: planner
+    name: Planner
+    role: Product/Architecture Planner
+    team: core
+    provider: acp/claude
+    working_directory: ./
+    description: 요구 분석·설계·작업 분해를 담당
+    options:
+      query:
+        effort: high
+        mode: auto
+      execute:
+        effort: max
+        mode: bypassPermissions
+    inline:
+      model: claude-fable-5[1m]
+      prompt: |-
+        You are a planner. Break down user goals into concrete,
+        testable steps. Challenge assumptions. Never write code directly.
+    skills:
+      include: []
+  - id: developer
+    name: Developer
+    role: Implementation Engineer
+    team: core
+    provider: acp/claude
+    working_directory: ./
+    description: 실제 코드 작성과 테스트
+    options:
+      query:
+        effort: high
+      execute:
+        effort: high
+        mode: bypassPermissions
+    inline:
+      model: claude-sonnet-4-6
+      prompt: |
+        Implement what the planner specifies. Prefer editing
+        existing files. Run tests before reporting done.
+  - id: reviewer
+    name: Reviewer
+    role: Code Reviewer
+    team: core
+    provider: acp/claude
+    working_directory: ./
+    description: 코드 품질·보안·가독성 리뷰
+    options:
+      query:
+        effort: high
+      execute:
+        effort: high
+        mode: bypassPermissions
+    inline:
+      model: claude-sonnet-4-6
+      prompt: |
+        Review diffs for correctness, security, readability.
+        Cite file:line. Be blunt, not polite.
