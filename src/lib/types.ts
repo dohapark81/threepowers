@@ -55,6 +55,7 @@ export const EVENT_STATUS_LABEL: Record<EventStatus, string> = {
 export const TOPICS = [
   '선관위',
   '6·3지방선거',
+  '채용비리',
   '인쇄지침', // 투표용지 인쇄 매수·하한선 결정
   '잠실7동',
   '장외시위', // 개표소·투표함 봉쇄 등 장외 행동과 공권력 대응

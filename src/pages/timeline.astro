@@ -2,12 +2,13 @@
 import Base from '../layouts/Base.astro';
 import TimelineList from '../components/TimelineList.astro';
 import events from '../../data/events.json';
+import recruitmentEvents from '../../data/recruitment_events.json';
 import type { TimelineEvent } from '../lib/types';
 ---
 
 <Base
   title="6·3 투표용지 부족 사태 기록"
-  description="6·3 지방선거 투표용지 부족 사태에 대한 공식 발표·국회 문서를 날짜순으로 기록합니다. 모든 항목에 출처 등급과 원문 링크를 표시합니다."
+  description="6·3 지방선거 투표용지 부족 사태와 그 이전 선관위 채용 비리 배경 기록을 공식 발표·국회 문서·법원 결정 기준으로 날짜순 보관합니다."
   active="timeline"
 >
   <section>
@@ -19,6 +20,17 @@ import type { TimelineEvent } from '../lib/types';
       라벨과 함께 남기며, 변경 내역은 커밋 이력으로 공개됩니다.
     </p>
     <TimelineList events={events as TimelineEvent[]} />
+  </section>
+
+  <section>
+    <span class="eyebrow">채용 비리 배경 기록</span>
+    <h2>6·3 이전 선관위 채용·감사·수사 기록</h2>
+    <p class="lede" style="margin-bottom:14px">
+      6·3 사태 이전에 누적된 선관위 채용 비리 관련 공식 기록을 별도 보관합니다. 권익위
+      고발 28명 전원 불기소와 별도 기소 사건이 병존하므로, 수사·재판 결과가 갈린 흐름을
+      함께 남깁니다.
+    </p>
+    <TimelineList events={recruitmentEvents as TimelineEvent[]} />
   </section>
 
   <section>
