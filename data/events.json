@@ -60,7 +60,7 @@
       { "type": "press", "title": "연합뉴스 보도 (파이낸셜뉴스 게재)", "url": "https://www.fnnews.com/news/202606050921342212" },
       { "type": "press", "title": "머니투데이 보도", "url": "https://www.mt.co.kr/society/2026/06/05/2026060509132563943" }
     ],
-    "topics": ["선관위", "6·3지방선거", "잠실7동"]
+    "topics": ["선관위", "6·3지방선거", "잠실7동", "장외시위"]
   },
   {
     "id": "evt_20260605_04",
@@ -163,5 +163,54 @@
       { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/replay/2026/nw1700/article/6829201_36981.html" }
     ],
     "topics": ["선관위", "6·3지방선거", "잠실7동", "수사"]
+  },
+  {
+    "id": "evt_20251210_01",
+    "date": "2025-12-10",
+    "title": "선관위, 투표용지 인쇄 하한선 60%→50% 하향 — 공식 회의 없이 사무총장 전결로 개정",
+    "body_oneline": "중앙선관위가 '제9회 전국동시지방선거 종합관리지침'의 본투표용지 인쇄 매수 하한 기준을 선거인 수의 60%에서 50%로 낮춤. 2025-12-10 사무총장 전결, 12-24 선거정책실장 전결('공직선거 절차 사무편람')로 처리됐고 별도 공식 회의는 열리지 않은 것으로 확인 — 국민의힘 김승수·김민전 의원실에 제출된 선관위 자료 기준. 이 50% 하한이 일부 투표소의 50% 안팎 인쇄의 근거가 됨",
+    "status": "official",
+    "source_grade": "press_multi",
+    "source_refs": [
+      { "type": "press", "title": "문화일보 보도", "url": "https://www.munhwa.com/article/11594591" },
+      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10768983" },
+      { "type": "press", "title": "디지털타임스 보도", "url": "https://www.dt.co.kr/article/12066850" }
+    ],
+    "related": [
+      { "id": "evt_20260605_02", "note": "이 지침의 50% 하한이 적용된 인쇄·부족 사태" }
+    ],
+    "topics": ["선관위", "6·3지방선거", "인쇄지침"]
+  },
+  {
+    "id": "evt_20260604_01",
+    "date": "2026-06-04",
+    "title": "법원, 모스 탄 교수 출국금지 집행정지 신청 기각 — 출국정지 유지",
+    "body_oneline": "서울행정법원 행정1단독(위지현 부장판사)이 미국 리버티대 교수 모스 탄(단현명)이 법무부 장관을 상대로 낸 출국금지 처분 집행정지 신청을 기각. 탄 교수는 6·3 지방선거를 앞두고 '부정선거 감시'를 내세워 입국했고 2025년 이재명 대통령 관련 허위사실 유포(명예훼손) 혐의로 수사 중. 재판부는 '범죄 수사를 통한 국가형벌권의 적정한 행사'라는 공익을 들어 기각, 본안 소송 변론은 6-10 예정",
+    "status": "official",
+    "source_grade": "press_multi",
+    "source_refs": [
+      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10763429" },
+      { "type": "press", "title": "아시아경제 보도", "url": "https://www.asiae.co.kr/article/2026060410171621654" },
+      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/society/article/6827681_36918.html" }
+    ],
+    "topics": ["6·3지방선거", "부정선거의혹", "외세개입설"]
+  },
+  {
+    "id": "evt_20260611_01",
+    "date": "2026-06-11",
+    "title": "경찰·검경 합수본, 중앙선관위 등 7곳 압수수색 — 노태악·허철훈 피의자 적시",
+    "body_oneline": "서울경찰청 광역수사대와 검·경 합동수사본부가 공직선거법 위반·직무유기 혐의로 중앙선관위, 서울시선관위, 송파·서초·강남·광진·동작구 선관위 등 7곳을 동시 압수수색. 경찰·국수본·디지털포렌식 등 100여 명과 합수본 검사·수사관 10여 명 투입, 노태악 전 위원장과 허철훈 사무총장을 피의자로 적시. 투표용지 인쇄계획서·회의록·예산서 등 확보",
+    "status": "investigating",
+    "source_grade": "press_multi",
+    "source_refs": [
+      { "type": "press", "title": "경향신문 속보", "url": "https://www.khan.co.kr/article/202606110903001/" },
+      { "type": "press", "title": "파이낸셜뉴스 [3보]", "url": "https://www.fnnews.com/news/202606110940119628" },
+      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10769474" }
+    ],
+    "related": [
+      { "id": "evt_20260609_03", "note": "검·경 합수본 출범 후 첫 강제수사" },
+      { "id": "evt_20251210_01", "note": "인쇄 하한 50% 전결 개정 경위가 수사 핵심 쟁점" }
+    ],
+    "topics": ["선관위", "6·3지방선거", "수사"]
   }
 ]

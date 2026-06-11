@@ -23,6 +23,45 @@ const inquiry = rawInquiry as Inquiry;
   </section>
 
   <section>
+    <span class="eyebrow">제출된 국정조사 요구서</span>
+    {!inquiry.requests || inquiry.requests.length === 0 ? (
+      <div class="empty-note">
+        아직 접수된 국정조사 요구서가 없습니다. 의안과 접수 문서 기준으로만 수록합니다.
+      </div>
+    ) : (
+      <>
+        <p class="lede" style="font-size:13.5px; margin-bottom:12px">
+          여야가 범위가 다른 요구서를 각각 제출했습니다. 각 요구서가 명시한 조사 범위를
+          가공 없이 그대로 표시합니다 (어느 쪽이 타당한지는 판단하지 않습니다).
+        </p>
+        <div class="tl">
+          {inquiry.requests.map((req) => (
+            <div class="ev">
+              <div class="date">{req.date}</div>
+              <div class="body">
+                <p class="t">{req.title}</p>
+                <div class="tags">
+                  <span class="badge b-official">{req.party}</span>
+                  {req.proposers && <span class="pending-source" style="font-style:normal">{req.proposers}</span>}
+                  {req.source.url ? (
+                    <span class="ref"><a href={req.source.url} target="_blank" rel="noopener">{req.source.title} ↗</a></span>
+                  ) : (
+                    <span class="ref pending-source">{req.source.title} (원문 확인 중)</span>
+                  )}
+                </div>
+                {req.scope && req.scope.length > 0 && (
+                  <p class="scope">조사 범위: {req.scope.join(' · ')}</p>
+                )}
+                {req.note && <p class="scope">{req.note}</p>}
+              </div>
+            </div>
+          ))}
+        </div>
+      </>
+    )}
+  </section>
+
+  <section>
     <span class="eyebrow">특위 구성</span>
     {inquiry.committee_members.length === 0 ? (
       <div class="empty-note">

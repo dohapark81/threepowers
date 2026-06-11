@@ -70,6 +70,18 @@ const STATUS_CLASS = {
               <a href={`${anchorBase}#${replacement.id}`}>정정 발표 보기</a>
             </p>
           )}
+          {evt.related && evt.related.length > 0 && (
+            <p class="related">
+              ↳ 관련 기록:{' '}
+              {evt.related.map((rel, i) => (
+                <>
+                  {i > 0 && ' · '}
+                  <a href={`${anchorBase}#${rel.id}`}>{byId.get(rel.id)?.title ?? rel.id}</a>
+                  {rel.note && <span class="related-note"> — {rel.note}</span>}
+                </>
+              ))}
+            </p>
+          )}
         </div>
       </div>
     );

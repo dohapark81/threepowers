@@ -50,6 +50,34 @@ export const EVENT_STATUS_LABEL: Record<EventStatus, string> = {
   corrected: '정정됨',
 };
 
+// 가드레일: topics는 아래 통제 어휘만 사용한다 (자유 입력 금지 — 표기 드리프트 방지).
+// 새 토픽이 필요하면 이 배열에 먼저 추가하고 합의한 뒤 데이터에 쓴다.
+export const TOPICS = [
+  '선관위',
+  '6·3지방선거',
+  '인쇄지침', // 투표용지 인쇄 매수·하한선 결정
+  '잠실7동',
+  '장외시위', // 개표소·투표함 봉쇄 등 장외 행동과 공권력 대응
+  '수사',
+  '국정조사',
+  '진상규명위',
+  '부정선거의혹', // 선거 결과·관리의 부정 주장 일반
+  '외세개입설', // 중국·북한 등 외부 개입 주장
+  '통계의혹', // 동일 득표 등 개표 수치 관련 의혹
+] as const;
+export type Topic = (typeof TOPICS)[number];
+
+/**
+ * 사건 간 일반 연결. 정정(supersedes)과 구분되는 참조다.
+ * 예: 원인→결과(인쇄지침→부족사태), 주장→공식대응(의혹→법원·기관 대응).
+ * 주장 자체를 항목으로 싣지 않고, 공식 대응 항목에서 맥락으로만 연결한다.
+ */
+export interface EventRef {
+  id: string;
+  /** 연결의 성격 한 줄. 예: "이 지침이 부족 사태의 직접 원인" */
+  note?: string;
+}
+
 export interface TimelineEvent {
   id: string;
   date: string;
@@ -59,7 +87,9 @@ export interface TimelineEvent {
   source_grade: 'official' | 'press_multi';
   source_refs: SourceRef[];
   supersedes?: string;
-  topics: string[];
+  /** 정정이 아닌 일반 연결. 렌더 시 "관련 기록" 앵커 링크로 노출 */
+  related?: EventRef[];
+  topics: Topic[];
 }
 
 export type InquiryStage =
@@ -81,11 +111,30 @@ export const INQUIRY_STAGES: InquiryStage[] = [
   '결과보고서',
 ];
 
+/**
+ * 국정조사 요구서. 여야가 범위가 다른 요구서를 각각 제출하는 단계가 실제로 존재하므로
+ * 단일 Inquiry 아래 복수 요구서를 병렬로 담는다 (추후 단일 특위로 병합되면 그대로 보존).
+ */
+export interface InquiryRequest {
+  party: string;
+  /** 대표 발의·제출자 (보도에서 확인된 실명만) */
+  proposers?: string;
+  date: string;
+  title: string;
+  /** 요구서가 명시한 조사 범위 — 요구서마다 다르므로 그대로 기록 */
+  scope?: string[];
+  /** 구성 요구 등 부가 메모. 예: "여야 동수·야당 위원장 요구" */
+  note?: string;
+  source: SourceRef;
+}
+
 export interface Inquiry {
   id: string;
   name: string;
   stage: InquiryStage;
   stages_done: { stage: InquiryStage; date: string; source: string | null }[];
+  /** 제출된 국정조사 요구서들 (여야 경쟁 제출 단계). 특위 구성 전까지 병렬 표시 */
+  requests?: InquiryRequest[];
   committee_members: { name: string; party: string; role?: string }[];
   hearings: { date: string; title: string; source_refs: SourceRef[] }[];
   witnesses: { name: string; note?: string }[];
