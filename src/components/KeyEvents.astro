@@ -9,10 +9,10 @@ interface Props {
 
 const { events, anchorBase = '' } = Astro.props;
 
-// pivot 표시된 항목만, 날짜 오름차순(전환점을 전개 순서대로 위→아래)
+// pivot 표시된 항목만, 날짜 내림차순(최신순) — 아래 TimelineList 와 방향 통일
 const pivots = events
   .filter((e) => e.pivot)
-  .sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id));
+  .sort((a, b) => b.date.localeCompare(a.date) || b.id.localeCompare(a.id));
 
 // TimelineList 와 동일한 상태→색 매핑
 const STATUS_CLASS = {
