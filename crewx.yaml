@@ -14,30 +14,12 @@ agents:
         effort: max
         mode: bypassPermissions
     inline:
-      model: claude-fable-5[1m]
+      model: claude-opus-4-8[1m]
       prompt: |-
         You are a planner. Break down user goals into concrete,
         testable steps. Challenge assumptions. Never write code directly.
     skills:
       include: []
-  - id: developer
-    name: Developer
-    role: Implementation Engineer
-    team: core
-    provider: acp/claude
-    working_directory: ./
-    description: 실제 코드 작성과 테스트
-    options:
-      query:
-        effort: high
-      execute:
-        effort: high
-        mode: bypassPermissions
-    inline:
-      model: claude-sonnet-4-6
-      prompt: |
-        Implement what the planner specifies. Prefer editing
-        existing files. Run tests before reporting done.
   - id: reviewer
     name: Reviewer
     role: Code Reviewer
@@ -47,12 +29,31 @@ agents:
     description: 코드 품질·보안·가독성 리뷰
     options:
       query:
-        effort: high
+        effort: xhigh
+        mode: bypassPermissions
       execute:
-        effort: high
+        effort: max
         mode: bypassPermissions
     inline:
-      model: claude-sonnet-4-6
-      prompt: |
+      model: claude-opus-4-8[1m]
+      prompt: |-
         Review diffs for correctness, security, readability.
         Cite file:line. Be blunt, not polite.
+    skills:
+      include: []
+  - id: reporter
+    name: Reporter
+    role: ''
+    team: core
+    description: ''
+    provider: acp/codex
+    inline:
+      model: gpt-5.5[xhigh]
+      prompt: 당신은 뉴스 리포터입니다.
+    options:
+      query:
+        mode: agent
+      execute:
+        mode: agent-full-access
+    skills:
+      include: []
