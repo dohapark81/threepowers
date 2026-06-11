@@ -6,6 +6,7 @@
     "body_oneline": "본투표일에 일부 투표소에서 투표용지가 부족해 투표가 중단됐다가 재개됨",
     "status": "official",
     "source_grade": "press_multi",
+    "pivot": { "label": "투표 중단·재개" },
     "source_refs": [
       { "type": "press", "title": "선관위 발표·복수 매체 보도 (MBC)", "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828081_37004.html" }
     ],
@@ -69,6 +70,7 @@
     "body_oneline": "노태악 위원장이 \"참정권이라는 국민의 소중한 권리를 침해하는, 있어서는 안 될 일\"이라며 위원장직 사퇴 의사를 밝히고, 허철훈 사무총장도 사의 표명. 국정조사 등 책임 확인 절차에 성실히 임하겠다고 발표",
     "status": "official",
     "source_grade": "official",
+    "pivot": { "label": "위원장 사퇴 표명" },
     "source_refs": [
       { "type": "official", "title": "선관위 브리핑 (파이낸셜뉴스 보도)", "url": "https://www.fnnews.com/news/202606051615525545" },
       { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008596932" }
@@ -82,6 +84,7 @@
     "body_oneline": "국민의힘(의원 110명 명의)과 더불어민주당이 국정조사 요구서를 각각 국회 의안과에 제출 · 의안번호 확인 중",
     "status": "official",
     "source_grade": "official",
+    "pivot": { "label": "국정조사 요구" },
     "source_refs": [
       { "type": "official", "title": "국회 의안과 접수 (MBC 보도)", "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828650_37004.html" }
     ],
@@ -133,6 +136,7 @@
     "body_oneline": "대검찰청이 서울중앙지검에 합수본 설치 발표(본부장 김태훈 3차장검사 · 검찰 12명·경찰 15명). 이재명 대통령의 구성 지시 이틀 만의 출범으로, 대검은 \"국민적 의혹을 엄정히 규명하겠다\"고 발표",
     "status": "official",
     "source_grade": "official",
+    "pivot": { "label": "합수본 출범" },
     "source_refs": [
       { "type": "official", "title": "대검찰청 발표 (한국일보 보도)", "url": "https://www.hankookilbo.com/news/article/A2026060917540003667" },
       { "type": "press", "title": "파이낸셜뉴스 보도", "url": "https://www.fnnews.com/news/202606092032051078" }
@@ -171,6 +175,7 @@
     "body_oneline": "중앙선관위가 '제9회 전국동시지방선거 종합관리지침'의 본투표용지 인쇄 매수 하한 기준을 선거인 수의 60%에서 50%로 낮춤. 2025-12-10 사무총장 전결, 12-24 선거정책실장 전결('공직선거 절차 사무편람')로 처리됐고 별도 공식 회의는 열리지 않은 것으로 확인 — 국민의힘 김승수·김민전 의원실에 제출된 선관위 자료 기준. 이 50% 하한이 일부 투표소의 50% 안팎 인쇄의 근거가 됨",
     "status": "official",
     "source_grade": "press_multi",
+    "pivot": { "label": "인쇄하한 60→50%" },
     "source_refs": [
       { "type": "press", "title": "문화일보 보도", "url": "https://www.munhwa.com/article/11594591" },
       { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10768983" },
@@ -202,6 +207,7 @@
     "body_oneline": "서울경찰청 광역수사대와 검·경 합동수사본부가 공직선거법 위반·직무유기 혐의로 중앙선관위, 서울시선관위, 송파·서초·강남·광진·동작구 선관위 등 7곳을 동시 압수수색. 경찰·국수본·디지털포렌식 등 100여 명과 합수본 검사·수사관 10여 명 투입, 노태악 전 위원장과 허철훈 사무총장을 피의자로 적시. 투표용지 인쇄계획서·회의록·예산서 등 확보",
     "status": "investigating",
     "source_grade": "press_multi",
+    "pivot": { "label": "7곳 압수수색" },
     "source_refs": [
       { "type": "press", "title": "경향신문 속보", "url": "https://www.khan.co.kr/article/202606110903001/" },
       { "type": "press", "title": "파이낸셜뉴스 [3보]", "url": "https://www.fnnews.com/news/202606110940119628" },

@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import KeyEvents from '../components/KeyEvents.astro';
 import TimelineList from '../components/TimelineList.astro';
 import events from '../../data/events.json';
 import recruitmentEvents from '../../data/recruitment_events.json';
@@ -19,6 +20,7 @@ import type { TimelineEvent } from '../lib/types';
       싣지 않습니다. 정정된 발표는 삭제하지 않고 <span class="badge b-correct">↻ 정정됨</span>
       라벨과 함께 남기며, 변경 내역은 커밋 이력으로 공개됩니다.
     </p>
+    <KeyEvents events={events as TimelineEvent[]} />
     <TimelineList events={events as TimelineEvent[]} />
   </section>
 

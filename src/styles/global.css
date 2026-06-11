@@ -175,6 +175,28 @@ h2 { font-size: 21px; margin: 0 0 6px; letter-spacing: -0.02em; }
 .ev .scope { font-size: 12.5px; color: var(--muted); margin: 6px 0 0; }
 .pending-source { color: var(--faint); font-style: italic; }
 
+/* ── key-flow chip strip ────────────────────────── */
+.keyflow { margin: 2px 0 20px; }
+.keyflow-label {
+  font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--faint); display: block; margin-bottom: 8px;
+}
+.keyflow-chips { display: flex; gap: 8px; flex-wrap: nowrap; min-width: max-content; }
+.kchip {
+  display: inline-flex; align-items: center; gap: 7px;
+  background: #fff; border: 1px solid var(--line-strong); border-radius: 999px;
+  padding: 5px 13px; text-decoration: none; color: var(--ink);
+  white-space: nowrap; transition: border-color 0.12s;
+}
+.kchip:hover { border-color: var(--ink); }
+.kdot { width: 7px; height: 7px; border-radius: 999px; flex-shrink: 0; }
+.kdot.b-official { background: var(--b-official-fg); }
+.kdot.b-progress { background: var(--b-progress-fg); }
+.kdot.b-result { background: var(--b-result-fg); }
+.kdot.b-correct { background: var(--b-correct-fg); }
+.kdate { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+.klabel { font-size: 13px; }
+
 /* ── inquiry stage strip ────────────────────────── */
 .stages-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -24px; padding: 0 24px; }
 .stages {
