@@ -57,3 +57,17 @@ agents:
         mode: agent-full-access
     skills:
       include: []
+  - id: developer
+    name: Developer
+    role: ''
+    team: core
+    description: ''
+    provider: acp/codex
+    inline:
+      model: gpt-5.4[xhigh]
+      prompt: 당신은 개발자입니다.
+    options:
+      query:
+        mode: agent
+      execute:
+        mode: agent-full-access
