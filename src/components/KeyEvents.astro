@@ -1,5 +1,5 @@
 ---
-import type { TimelineEvent } from '../lib/types';
+import { EVENT_STATUS_LABEL, type TimelineEvent } from '../lib/types';
 
 interface Props {
   events: TimelineEvent[];
@@ -9,10 +9,12 @@ interface Props {
 
 const { events, anchorBase = '' } = Astro.props;
 
+// pivot 표시된 항목만, 날짜 오름차순(전환점을 전개 순서대로 위→아래)
 const pivots = events
   .filter((e) => e.pivot)
   .sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id));
 
+// TimelineList 와 동일한 상태→색 매핑
 const STATUS_CLASS = {
   official: 'b-official',
   investigating: 'b-progress',
@@ -20,25 +22,27 @@ const STATUS_CLASS = {
   corrected: 'b-correct',
 } as const;
 
-const shortDate = (d: string) => {
-  const [, m, day] = d.split('-');
-  return `${Number(m)}·${Number(day)}`;
-};
+// 'YYYY-MM-DD' → 'YYYY.MM.DD'
+const dotDate = (d: string) => d.replace(/-/g, '.');
 ---
 
 {pivots.length > 0 && (
-  <div class="keyflow">
+  <nav class="keyflow" aria-label="핵심 흐름 요약">
     <span class="keyflow-label">핵심 흐름</span>
-    <div class="stages-scroll">
-      <div class="keyflow-chips">
-        {pivots.map((evt) => (
-          <a class="kchip" href={`${anchorBase}#${evt.id}`}>
-            <span class:list={['kdot', STATUS_CLASS[evt.status]]} />
-            <span class="kdate">{shortDate(evt.date)}</span>
-            <span class="klabel">{evt.pivot!.label}</span>
+    <ol class="keyflow-rail">
+      {pivots.map((evt) => (
+        <li class="kf-node">
+          <a class="kf-link" href={`${anchorBase}#${evt.id}`}>
+            <span class:list={['kf-dot', STATUS_CLASS[evt.status]]} aria-hidden="true" />
+            <span class="kf-meta">
+              <time class="kf-date">{dotDate(evt.date)}</time>
+              <span class:list={['badge', STATUS_CLASS[evt.status]]}>{EVENT_STATUS_LABEL[evt.status]}</span>
+            </span>
+            <span class="kf-label">{evt.pivot!.label}</span>
+            <span class="kf-title">{evt.title}</span>
           </a>
-        ))}
-      </div>
-    </div>
-  </div>
+        </li>
+      ))}
+    </ol>
+  </nav>
 )}

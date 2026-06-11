@@ -175,27 +175,42 @@ h2 { font-size: 21px; margin: 0 0 6px; letter-spacing: -0.02em; }
 .ev .scope { font-size: 12.5px; color: var(--muted); margin: 6px 0 0; }
 .pending-source { color: var(--faint); font-style: italic; }
 
-/* ── key-flow chip strip ────────────────────────── */
-.keyflow { margin: 2px 0 20px; }
+/* ── key-flow vertical timeline ─────────────────── */
+.keyflow { margin: 2px 0 26px; }
 .keyflow-label {
   font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--faint); display: block; margin-bottom: 8px;
+  color: var(--faint); display: block; margin-bottom: 14px;
 }
-.keyflow-chips { display: flex; gap: 8px; flex-wrap: nowrap; min-width: max-content; }
-.kchip {
-  display: inline-flex; align-items: center; gap: 7px;
-  background: #fff; border: 1px solid var(--line-strong); border-radius: 999px;
-  padding: 5px 13px; text-decoration: none; color: var(--ink);
-  white-space: nowrap; transition: border-color 0.12s;
+.keyflow-rail { list-style: none; margin: 0; padding: 0; }
+.kf-node { position: relative; }
+/* 노드를 잇는 세로 레일선(점 중심 x=6px). 첫 점 위·끝 점 아래로는 그리지 않음 */
+.kf-node::before {
+  content: ""; position: absolute; left: 6px; top: 0; bottom: 0;
+  width: 1px; background: var(--line-strong); z-index: 0;
 }
-.kchip:hover { border-color: var(--ink); }
-.kdot { width: 7px; height: 7px; border-radius: 999px; flex-shrink: 0; }
-.kdot.b-official { background: var(--b-official-fg); }
-.kdot.b-progress { background: var(--b-progress-fg); }
-.kdot.b-result { background: var(--b-result-fg); }
-.kdot.b-correct { background: var(--b-correct-fg); }
-.kdate { font-family: var(--mono); font-size: 12px; color: var(--muted); }
-.klabel { font-size: 13px; }
+.kf-node:first-child::before { top: 8px; }
+.kf-node:last-child::before { bottom: auto; height: 8px; }
+.kf-link {
+  position: relative; z-index: 1;
+  display: grid; grid-template-columns: 13px 1fr; column-gap: 14px; row-gap: 2px;
+  padding: 0 0 18px; text-decoration: none; color: var(--ink);
+}
+.kf-node:last-child .kf-link { padding-bottom: 0; }
+.kf-dot {
+  grid-column: 1; grid-row: 1 / span 3; align-self: start; margin-top: 2px;
+  width: 13px; height: 13px; border-radius: 999px; box-sizing: border-box;
+  background: var(--paper); border: 3px solid var(--b-official-fg);
+  box-shadow: 0 0 0 3px var(--paper); /* 점 주변에서 레일선을 끊어줌 */
+}
+.kf-dot.b-official { background: var(--b-official-fg); border-color: var(--b-official-fg); }
+.kf-dot.b-progress { background: var(--paper);         border-color: var(--b-progress-fg); }
+.kf-dot.b-result   { background: var(--b-result-bg);   border-color: var(--b-result-bg); }
+.kf-dot.b-correct  { background: var(--b-correct-fg);   border-color: var(--b-correct-fg); }
+.kf-meta  { grid-column: 2; grid-row: 1; display: flex; align-items: center; gap: 8px; }
+.kf-date  { font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
+.kf-label { grid-column: 2; grid-row: 2; font-size: 15.5px; font-weight: 600; line-height: 1.35; }
+.kf-title { grid-column: 2; grid-row: 3; font-size: 13px; color: var(--muted); line-height: 1.45; }
+.kf-link:hover .kf-label { text-decoration: underline; text-underline-offset: 2px; }
 
 /* ── inquiry stage strip ────────────────────────── */
 .stages-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 -24px; padding: 0 24px; }
