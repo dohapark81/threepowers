@@ -1,0 +1,223 @@
+[
+  {
+    "id": "evt_recruit_20230911_01",
+    "date": "2023-09-11",
+    "title": "국민권익위, 선관위 경력채용 전수조사 결과 353건 적발·28명 고발·312건 수사의뢰",
+    "body_oneline": "국민권익위가 최근 7년간 선관위 경력채용 384명을 전수조사해 58명(약 15%)의 부정합격 의혹과 총 353건의 채용비리 의심 사례를 발표. 관련자 28명은 고발, 312건은 수사의뢰",
+    "status": "result_announced",
+    "source_grade": "official",
+    "source_refs": [
+      {
+        "type": "official",
+        "title": "국민권익위 전수조사 결과 (정책브리핑)",
+        "url": "https://www.korea.kr/news/policyNewsView.do?newsId=148920080"
+      }
+    ],
+    "topics": ["선관위", "채용비리"]
+  },
+  {
+    "id": "evt_recruit_20240430_01",
+    "date": "2024-04-30",
+    "title": "감사원, 선관위 채용·인력관리 감사로 전·현직 27명 수사 요청",
+    "body_oneline": "감사원이 고위직 자녀 특혜채용 의혹을 계기로 선관위 조직·인사 운영 전반을 점검해 전·현직 27명을 대검에 수사 요청. 2013년 이후 경력경쟁채용 167회 전수조사에서 모든 회차 규정 위반과 800여 건 위반을 확인했다고 발표",
+    "status": "result_announced",
+    "source_grade": "press_multi",
+    "source_refs": [
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20240430024851001"
+      },
+      {
+        "type": "press",
+        "title": "KTV 국민방송 보도",
+        "url": "https://m.ktv.go.kr/content/view?content_id=700524"
+      }
+    ],
+    "related": [
+      {
+        "id": "evt_recruit_20230911_01",
+        "note": "권익위 전수조사 뒤 감사원이 채용·인사 운영 전반으로 범위를 넓혀 후속 조사"
+      }
+    ],
+    "topics": ["선관위", "채용비리", "수사"]
+  },
+  {
+    "id": "evt_recruit_20241203_01",
+    "date": "2024-12-03",
+    "title": "검찰, 김세환 전 선관위 사무총장을 아들 특혜채용 혐의로 불구속 기소",
+    "body_oneline": "서울중앙지검이 김세환 전 사무총장을 직권남용권리행사방해·국가공무원법 위반 혐의로 기소. 2019년 아들의 강화군선관위 8급 채용과 1년 뒤 인천시선관위 사무처 전입 과정에 부당한 영향력을 행사한 혐의",
+    "status": "investigating",
+    "source_grade": "press_multi",
+    "source_refs": [
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20241203151151004"
+      },
+      {
+        "type": "press",
+        "title": "뉴시스 보도",
+        "url": "https://www.newsis.com/view/NISX20241203_0002982624"
+      }
+    ],
+    "related": [
+      {
+        "id": "evt_recruit_20240430_01",
+        "note": "감사원 수사 요청 이후 이어진 형사 사건"
+      }
+    ],
+    "topics": ["선관위", "채용비리", "수사"]
+  },
+  {
+    "id": "evt_recruit_20250206_01",
+    "date": "2025-02-06",
+    "title": "검찰, 권익위가 고발한 선관위 채용 관련자 28명 모두 불기소",
+    "body_oneline": "서울중앙지검이 2023년 9월 권익위 고발 사건 28명에 대해 증거불충분으로 혐의없음 처분. 다만 감사원이 2024년 4월 수사 요청한 전·현직 직원 27명 관련 사건 등은 계속 수사 중이라고 보도",
+    "status": "result_announced",
+    "source_grade": "press_multi",
+    "source_refs": [
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20250206026300004"
+      },
+      {
+        "type": "press",
+        "title": "법률신문 보도",
+        "url": "https://www.lawtimes.co.kr/news/articleView.html?idxno=205323"
+      }
+    ],
+    "related": [
+      {
+        "id": "evt_recruit_20230911_01",
+        "note": "권익위 고발 사건의 형사 처분 결과"
+      },
+      {
+        "id": "evt_recruit_20240430_01",
+        "note": "감사원 수사 요청 사건은 별도로 계속 수사"
+      }
+    ],
+    "topics": ["선관위", "채용비리", "수사"]
+  },
+  {
+    "id": "evt_recruit_20250227_01",
+    "date": "2025-02-27",
+    "title": "헌재, 감사원의 선관위 채용·인력관리 직무감찰은 권한 침해라고 결정",
+    "body_oneline": "헌법재판소가 2023헌라5 사건에서 감사원이 2023-06-01부터 2025-02-25까지 실시한 '선거관리위원회 채용 등 인력관리실태' 직무감찰이 선관위의 독립적 업무수행권을 침해했다고 인용 결정",
+    "status": "result_announced",
+    "source_grade": "official",
+    "source_refs": [
+      {
+        "type": "official",
+        "title": "헌재 주요 판례 설명",
+        "url": "https://www.ccourt.go.kr/site/kor/ex/bbs/View.do?bcIdx=3983682&cbIdx=1106"
+      },
+      {
+        "type": "official",
+        "title": "헌재 보도자료",
+        "url": "https://www.ccourt.go.kr/site/kor/ex/bbs/View.do?bcIdx=2996062&cbIdx=1128"
+      }
+    ],
+    "related": [
+      {
+        "id": "evt_recruit_20240430_01",
+        "note": "감사원 감사의 권한 범위를 둘러싼 별도 권한쟁의"
+      },
+      {
+        "id": "evt_recruit_20250227_02",
+        "note": "같은 날 감사원은 최종 감사 결과를 공개"
+      }
+    ],
+    "topics": ["선관위", "채용비리"]
+  },
+  {
+    "id": "evt_recruit_20250227_02",
+    "date": "2025-02-27",
+    "title": "감사원, 최종 감사 결과 878건 규정 위반·32명 징계 요구 공개",
+    "body_oneline": "감사원이 2013년 이후 경력경쟁채용 291회를 전수조사해 총 878건의 규정 위반을 확인하고 전·현직 32명에 대한 징계 요구·비위 통보를 발표. 비공개 채용, 내부위원 위주 면접, 면접점수 조작, 자료 은폐 시도 등을 적시",
+    "status": "result_announced",
+    "source_grade": "press_multi",
+    "source_refs": [
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20250227019300001"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/replay/2025/nw1200/article/6690964_36769.html"
+      }
+    ],
+    "related": [
+      {
+        "id": "evt_recruit_20240430_01",
+        "note": "2024년 수사 요청 단계 뒤 나온 최종 감사 결과"
+      },
+      {
+        "id": "evt_recruit_20250227_01",
+        "note": "헌재 결정과 별개로 감사원이 공개한 사실 조사 결과"
+      }
+    ],
+    "topics": ["선관위", "채용비리", "수사"]
+  },
+  {
+    "id": "evt_recruit_20250314_01",
+    "date": "2025-03-14",
+    "title": "김세환 전 선관위 사무총장 사건, 인천지법 합의부 심리로 넘어감",
+    "body_oneline": "2024년 12월 기소된 김세환 전 사무총장 사건을 인천지법이 사회적 영향 등을 고려해 단독 재판이 아닌 합의부 심리로 진행하기로 결정. 첫 재판은 2025-04-07 예정이었다가 재정합의로 변경",
+    "status": "investigating",
+    "source_grade": "press_multi",
+    "source_refs": [
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20250314129300065"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/news/2025/society/article/6696063_36718.html"
+      }
+    ],
+    "related": [
+      {
+        "id": "evt_recruit_20241203_01",
+        "note": "기소 뒤 재판이 합의부 사건으로 진행"
+      }
+    ],
+    "topics": ["선관위", "채용비리", "수사"]
+  },
+  {
+    "id": "evt_recruit_20250430_01",
+    "date": "2025-04-30",
+    "title": "선관위, 경력채용 특혜 의혹 당사자 8명 임용취소 결정·직원 16명 징계 마무리",
+    "body_oneline": "중앙선관위가 지방공무원에서 지역선관위로 옮긴 경력채용 특혜 의혹 당사자 8명에 대해 청문을 거쳐 임용취소 처분을 발표. 수사 결과에 따라 2명은 추후 결정, 관련 직원 16명은 중징계 6명·경징계 10명으로 징계 완료",
+    "status": "official",
+    "source_grade": "official",
+    "source_refs": [
+      {
+        "type": "official",
+        "title": "중앙선관위 보도자료",
+        "url": "https://img.nec.go.kr/cmm/dozen/view.do?bcIdx=275842&cbIdx=1090&fileNo=2"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20250430119351001"
+      }
+    ],
+    "related": [
+      {
+        "id": "evt_recruit_20250227_02",
+        "note": "최종 감사 결과 뒤 이뤄진 선관위 후속 인사 조치"
+      },
+      {
+        "id": "evt_recruit_20250314_01",
+        "note": "별도 형사 사건은 재판 단계에서 계속 진행"
+      }
+    ],
+    "topics": ["선관위", "채용비리"]
+  }
+]

@@ -1,0 +1,48 @@
+---
+import { EVENT_STATUS_LABEL, type TimelineEvent } from '../lib/types';
+
+interface Props {
+  events: TimelineEvent[];
+  /** 항목 앵커 링크의 베이스 경로. 같은 페이지면 빈 문자열 */
+  anchorBase?: string;
+}
+
+const { events, anchorBase = '' } = Astro.props;
+
+// pivot 표시된 항목만, 날짜 내림차순(최신순) — 아래 TimelineList 와 방향 통일
+const pivots = events
+  .filter((e) => e.pivot)
+  .sort((a, b) => b.date.localeCompare(a.date) || b.id.localeCompare(a.id));
+
+// TimelineList 와 동일한 상태→색 매핑
+const STATUS_CLASS = {
+  official: 'b-official',
+  investigating: 'b-progress',
+  result_announced: 'b-result',
+  corrected: 'b-correct',
+} as const;
+
+// 'YYYY-MM-DD' → 'YYYY.MM.DD'
+const dotDate = (d: string) => d.replace(/-/g, '.');
+---
+
+{pivots.length > 0 && (
+  <nav class="keyflow" aria-label="핵심 흐름 요약">
+    <span class="keyflow-label">핵심 흐름</span>
+    <ol class="keyflow-rail">
+      {pivots.map((evt) => (
+        <li class="kf-node">
+          <a class="kf-link" href={`${anchorBase}#${evt.id}`}>
+            <span class:list={['kf-dot', STATUS_CLASS[evt.status]]} aria-hidden="true" />
+            <span class="kf-meta">
+              <time class="kf-date">{dotDate(evt.date)}</time>
+              <span class:list={['badge', STATUS_CLASS[evt.status]]}>{EVENT_STATUS_LABEL[evt.status]}</span>
+            </span>
+            <span class="kf-label">{evt.pivot!.label}</span>
+            <span class="kf-title">{evt.title}</span>
+          </a>
+        </li>
+      ))}
+    </ol>
+  </nav>
+)}

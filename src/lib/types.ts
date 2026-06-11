@@ -55,6 +55,7 @@ export const EVENT_STATUS_LABEL: Record<EventStatus, string> = {
 export const TOPICS = [
   '선관위',
   '6·3지방선거',
+  '채용비리',
   '인쇄지침', // 투표용지 인쇄 매수·하한선 결정
   '잠실7동',
   '장외시위', // 개표소·투표함 봉쇄 등 장외 행동과 공권력 대응
@@ -78,6 +79,16 @@ export interface EventRef {
   note?: string;
 }
 
+/**
+ * 핵심 흐름 칩(전환점 요약)에 노출할 항목 표시.
+ * 선정·라벨 규칙은 data/README.md 참조.
+ * 라벨은 제목에서 뽑은 사실 조각만 - 판정·인과·형용 금지.
+ */
+export interface PivotMark {
+  /** 칩에 표시할 짧은 사실 라벨. 예: "투표 중단·재개" */
+  label: string;
+}
+
 export interface TimelineEvent {
   id: string;
   date: string;
@@ -89,6 +100,8 @@ export interface TimelineEvent {
   supersedes?: string;
   /** 정정이 아닌 일반 연결. 렌더 시 "관련 기록" 앵커 링크로 노출 */
   related?: EventRef[];
+  /** 핵심 흐름 칩 노출 표시 (선택). data/README.md 의 선정 규칙을 따른다 */
+  pivot?: PivotMark;
   topics: Topic[];
 }
 
