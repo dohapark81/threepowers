@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dohapark81.github.io/threepowers/sitemap-index.xml
