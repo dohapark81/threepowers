@@ -204,19 +204,73 @@
     "id": "evt_20260611_01",
     "date": "2026-06-11",
     "title": "경찰·검경 합수본, 중앙선관위 등 7곳 압수수색 — 노태악·허철훈 피의자 적시",
-    "body_oneline": "서울경찰청 광역수사대와 검·경 합동수사본부가 공직선거법 위반·직무유기 혐의로 중앙선관위, 서울시선관위, 송파·서초·강남·광진·동작구 선관위 등 7곳을 동시 압수수색. 경찰·국수본·디지털포렌식 등 100여 명과 합수본 검사·수사관 10여 명 투입, 노태악 전 위원장과 허철훈 사무총장을 피의자로 적시. 투표용지 인쇄계획서·회의록·예산서 등 확보",
+    "body_oneline": "서울경찰청 광역수사대와 검·경 합동수사본부가 공직선거법 위반·직무유기 혐의로 중앙선관위, 서울시선관위, 송파·서초·강남·광진·동작구 선관위 등 7곳을 동시 압수수색. 경찰·국수본·디지털포렌식 등 100여 명과 합수본 검사·수사관 10여 명 투입, 노태악 전 위원장과 허철훈 사무총장을 피의자로 적시. 투표용지 인쇄계획서·회의록·예산서 등 확보, 중앙선관위 서버 전자정보 압수를 제외한 압수수색은 약 13시간 만에 종료",
     "status": "investigating",
     "source_grade": "press_multi",
     "pivot": { "label": "7곳 압수수색" },
     "source_refs": [
       { "type": "press", "title": "경향신문 속보", "url": "https://www.khan.co.kr/article/202606110903001/" },
       { "type": "press", "title": "파이낸셜뉴스 [3보]", "url": "https://www.fnnews.com/news/202606110940119628" },
-      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10769474" }
+      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10769474" },
+      { "type": "press", "title": "MBC 7곳 13시간 압수수색 보도", "url": "https://imnews.imbc.com/replay/2026/nwtoday/article/6829626_37012.html" },
+      { "type": "press", "title": "KBC 압수수색 종료 보도", "url": "https://news.ikbc.co.kr/article/view/kbc202606120006" }
     ],
     "related": [
       { "id": "evt_20260609_03", "note": "검·경 합수본 출범 후 첫 강제수사" },
       { "id": "evt_20251210_01", "note": "인쇄 하한 50% 전결 개정 경위가 수사 핵심 쟁점" }
     ],
     "topics": ["선관위", "6·3지방선거", "수사"]
+  },
+  {
+    "id": "evt_20260611_02",
+    "date": "2026-06-11",
+    "title": "선관위원장 직무대행, 송파구 투표용지 4만2천여 매 잔여·분배 실패 입장문 발표",
+    "body_oneline": "위철환 직무대행이 입장문에서 송파구 전체로는 투표용지가 4만2천여 매 남았으나 146개 투표소별 분배에 실패했다고 설명하고 사과. 본투표용지 인쇄 비율 50%는 사전투표율 23.3%를 제외한 기준이라 전체 인쇄 비율은 73.3%, 송파구 투표율은 65.8%였다고 밝힘",
+    "status": "official",
+    "source_grade": "official",
+    "source_refs": [
+      { "type": "official", "title": "위철환 직무대행 입장문 (연합뉴스 보도)", "url": "https://www.yna.co.kr/amp/view/AKR20260611116100001" },
+      { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/politics/politics_general/1263007.html" },
+      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.amp.php?param=0101_202606112229144503&version=1" }
+    ],
+    "related": [
+      { "id": "evt_20260605_02", "note": "본투표용지 인쇄 비율과 송파구 배분 실패에 대한 선관위 해명" },
+      { "id": "evt_20251210_01", "note": "50% 하한 지침의 적용 배경" }
+    ],
+    "topics": ["선관위", "6·3지방선거", "인쇄지침"]
+  },
+  {
+    "id": "evt_20260611_03",
+    "date": "2026-06-11",
+    "title": "진상규명위, 송파구 무번호 투표용지 1만7천 매 필요 대비 2천 매 교부 확인",
+    "body_oneline": "조현욱 진상규명위원장이 브리핑에서 공직선거 절차 사무편람의 선거인수 3% 내외 가산 기준을 적용하면 송파구 무번호 투표용지 1만7천 매가 필요했지만 2천 매만 교부됐다고 발표. 추가 사용 투표지는 무번호와 일련번호 기재 용지가 섞였고, 70%가 무번호였으며 일련번호 작성 매뉴얼 부재로 혼란과 지연이 발생했다고 설명",
+    "status": "result_announced",
+    "source_grade": "official",
+    "source_refs": [
+      { "type": "official", "title": "진상규명위원회 브리핑 (연합뉴스 보도)", "url": "https://www.yna.co.kr/amp/view/AKR20260611165100001" },
+      { "type": "official", "title": "진상규명위원회 브리핑 현장영상 (YTN)", "url": "https://www.ytn.co.kr/_ln/0101_202606111832492580" },
+      { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/amp/news.amp?news_id=N1008606748" }
+    ],
+    "related": [
+      { "id": "evt_20260610_01", "note": "진상규명위원회 출범 후 확인한 초기 조사 내용" },
+      { "id": "evt_20260611_02", "note": "송파구 투표용지 분배 실패에 대한 선관위 입장문과 같은 날 발표" }
+    ],
+    "topics": ["선관위", "6·3지방선거", "진상규명위", "인쇄지침"]
+  },
+  {
+    "id": "evt_20260611_04",
+    "date": "2026-06-11",
+    "title": "국회 본회의, 투표용지 부족 사태 국정조사 요구서 보고 — 특위·조사계획서 협상 착수",
+    "body_oneline": "더불어민주당과 국민의힘이 6월 8일 각각 제출한 국정조사 요구서가 6월 11일 국회 본회의에 보고됨. 여야는 조사 범위·특위 구성·위원장 배분 등 협상에 들어갔고, 국정조사는 특위 구성과 조사계획서 본회의 승인 후 시작",
+    "status": "official",
+    "source_grade": "official",
+    "source_refs": [
+      { "type": "official", "title": "국회 본회의 보고 (한겨레 보도)", "url": "https://www.hani.co.kr/arti/politics/politics_general/1263079.html" },
+      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0101_202606111754045786" }
+    ],
+    "related": [
+      { "id": "evt_20260608_01", "note": "여야 국정조사 요구서 제출 후 본회의 보고 절차" }
+    ],
+    "topics": ["선관위", "6·3지방선거", "국정조사"]
   }
 ]
