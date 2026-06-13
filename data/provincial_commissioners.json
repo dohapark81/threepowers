@@ -1,0 +1,3551 @@
+{
+  "_note": "17개 시·도선거관리위원회 공식 위원장 및 위원소개 페이지에서 추출한 현원 데이터. selection_method는 원문 표기를 그대로 보존하고, selection_route/party_key는 히트맵용 파생값이다. 정당명이 원문에 없는 정당추천 항목은 추정하지 않고 party_unspecified로 둔다.",
+  "snapshot_date": "2026-06-13",
+  "scope": "province_committees",
+  "expected_regions": 17,
+  "observed_members": 135,
+  "counts": {
+    "by_region": {
+      "서울특별시": 8,
+      "부산광역시": 8,
+      "대구광역시": 8,
+      "인천광역시": 8,
+      "광주광역시": 8,
+      "대전광역시": 8,
+      "울산광역시": 8,
+      "세종특별자치시": 8,
+      "경기도": 8,
+      "강원특별자치도": 8,
+      "충청북도": 8,
+      "충청남도": 8,
+      "전북특별자치도": 8,
+      "전라남도": 7,
+      "경상북도": 8,
+      "경상남도": 8,
+      "제주특별자치도": 8
+    },
+    "by_route": {
+      "court": 47,
+      "nec_designated": 12,
+      "party": 29,
+      "self_selected": 39,
+      "elected_chair": 4,
+      "party_unspecified": 4
+    },
+    "by_party": {
+      "ppp": 15,
+      "dpk": 14,
+      "unspecified_party": 4
+    }
+  },
+  "source_pages": [
+    {
+      "region_code": "su",
+      "region": "서울특별시",
+      "title": "위원장 및 위원소개 — 서울특별시선거관리위원회",
+      "url": "https://su.nec.go.kr/su/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    },
+    {
+      "region_code": "bs",
+      "region": "부산광역시",
+      "title": "위원장 및 위원소개 — 부산광역시선거관리위원회",
+      "url": "https://bs.nec.go.kr/bs/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    },
+    {
+      "region_code": "dg",
+      "region": "대구광역시",
+      "title": "위원장 및 위원소개 — 대구광역시선거관리위원회",
+      "url": "https://dg.nec.go.kr/dg/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    },
+    {
+      "region_code": "ic",
+      "region": "인천광역시",
+      "title": "위원장 및 위원소개 — 인천광역시선거관리위원회",
+      "url": "https://ic.nec.go.kr/ic/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    },
+    {
+      "region_code": "gj",
+      "region": "광주광역시",
+      "title": "위원장 및 위원소개 — 광주광역시선거관리위원회",
+      "url": "https://gj.nec.go.kr/gj/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    },
+    {
+      "region_code": "dj",
+      "region": "대전광역시",
+      "title": "위원장 및 위원소개 — 대전광역시선거관리위원회",
+      "url": "https://dj.nec.go.kr/dj/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    },
+    {
+      "region_code": "us",
+      "region": "울산광역시",
+      "title": "위원장 및 위원소개 — 울산광역시선거관리위원회",
+      "url": "https://us.nec.go.kr/us/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    },
+    {
+      "region_code": "sj",
+      "region": "세종특별자치시",
+      "title": "위원장 및 위원소개 — 세종특별자치시선거관리위원회",
+      "url": "https://sj.nec.go.kr/sj/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    },
+    {
+      "region_code": "gg",
+      "region": "경기도",
+      "title": "위원장 및 위원소개 — 경기도선거관리위원회",
+      "url": "https://gg.nec.go.kr/gg/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    },
+    {
+      "region_code": "gw",
+      "region": "강원특별자치도",
+      "title": "위원장 및 위원소개 — 강원특별자치도선거관리위원회",
+      "url": "https://gw.nec.go.kr/gw/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    },
+    {
+      "region_code": "cb",
+      "region": "충청북도",
+      "title": "위원장 및 위원소개 — 충청북도선거관리위원회",
+      "url": "https://cb.nec.go.kr/cb/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    },
+    {
+      "region_code": "cn",
+      "region": "충청남도",
+      "title": "위원장 및 위원소개 — 충청남도선거관리위원회",
+      "url": "https://cn.nec.go.kr/cn/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    },
+    {
+      "region_code": "jb",
+      "region": "전북특별자치도",
+      "title": "위원장 및 위원소개 — 전북특별자치도선거관리위원회",
+      "url": "https://jb.nec.go.kr/jb/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    },
+    {
+      "region_code": "jn",
+      "region": "전라남도",
+      "title": "위원장 및 위원소개 — 전라남도선거관리위원회",
+      "url": "https://jn.nec.go.kr/jn/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    },
+    {
+      "region_code": "gb",
+      "region": "경상북도",
+      "title": "위원장 및 위원소개 — 경상북도선거관리위원회",
+      "url": "https://gb.nec.go.kr/gb/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    },
+    {
+      "region_code": "gn",
+      "region": "경상남도",
+      "title": "위원장 및 위원소개 — 경상남도선거관리위원회",
+      "url": "https://gn.nec.go.kr/gn/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    },
+    {
+      "region_code": "jj",
+      "region": "제주특별자치도",
+      "title": "위원장 및 위원소개 — 제주특별자치도선거관리위원회",
+      "url": "https://jj.nec.go.kr/jj/bbs/B0000273/list.do?menuNo=200013",
+      "retrieved_at": "2026-06-13"
+    }
+  ],
+  "commissioners": [
+    {
+      "id": "province-su-01",
+      "region_code": "su",
+      "region": "서울특별시",
+      "committee": "서울특별시선거관리위원회",
+      "display_order": 1,
+      "person": "오민석",
+      "position": "위원장",
+      "appointed_date": "2025-02-18",
+      "selection_method": "법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "대법원 수석재판연구관",
+        "[現]서울중앙지방법원장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 서울특별시선거관리위원회",
+          "url": "https://su.nec.go.kr/su/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-su-02",
+      "region_code": "su",
+      "region": "서울특별시",
+      "committee": "서울특별시선거관리위원회",
+      "display_order": 2,
+      "person": "신광호",
+      "position": "상임위원",
+      "appointed_date": "2025-07-01",
+      "selection_method": "중앙선거관리위원회 지명",
+      "selection_route": "nec_designated",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "중앙선거관리위원회 선거정책실장",
+        "[現]서울특별시선거관리위원회 상임위원"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 서울특별시선거관리위원회",
+          "url": "https://su.nec.go.kr/su/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-su-03",
+      "region_code": "su",
+      "region": "서울특별시",
+      "committee": "서울특별시선거관리위원회",
+      "display_order": 3,
+      "person": "박진표",
+      "position": "위원",
+      "appointed_date": "2021-07-20",
+      "selection_method": "국민의힘 추천",
+      "selection_route": "party",
+      "party_key": "ppp",
+      "party_name": "국민의힘",
+      "career_summary": [
+        "산업통상자원부 에너지개발전문위원회 위원",
+        "[現]법무법인(유한) 태평양 변호사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 서울특별시선거관리위원회",
+          "url": "https://su.nec.go.kr/su/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-su-04",
+      "region_code": "su",
+      "region": "서울특별시",
+      "committee": "서울특별시선거관리위원회",
+      "display_order": 4,
+      "person": "해덕진",
+      "position": "위원",
+      "appointed_date": "2024-03-19",
+      "selection_method": "법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "인천지방법원 부장판사",
+        "[現]서울중앙지방법원 부장판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 서울특별시선거관리위원회",
+          "url": "https://su.nec.go.kr/su/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-su-05",
+      "region_code": "su",
+      "region": "서울특별시",
+      "committee": "서울특별시선거관리위원회",
+      "display_order": 5,
+      "person": "이상현",
+      "position": "위원",
+      "appointed_date": "2025-12-24",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(주)태인 대표",
+        "대한사이클연맹 회장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 서울특별시선거관리위원회",
+          "url": "https://su.nec.go.kr/su/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-su-06",
+      "region_code": "su",
+      "region": "서울특별시",
+      "committee": "서울특별시선거관리위원회",
+      "display_order": 6,
+      "person": "최윤영",
+      "position": "위원",
+      "appointed_date": "2026-02-09",
+      "selection_method": "법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "서울대학교 독어독문학과 교수",
+        "(전) 서울대학교 기초교육원장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 서울특별시선거관리위원회",
+          "url": "https://su.nec.go.kr/su/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-su-07",
+      "region_code": "su",
+      "region": "서울특별시",
+      "committee": "서울특별시선거관리위원회",
+      "display_order": 7,
+      "person": "김진곤",
+      "position": "위원",
+      "appointed_date": "2026-02-18",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "연세대학교 법학전문대학원 교수",
+        "헌법재판소 헌법 및 헌법재판제도 연구회 위원"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 서울특별시선거관리위원회",
+          "url": "https://su.nec.go.kr/su/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-su-08",
+      "region_code": "su",
+      "region": "서울특별시",
+      "committee": "서울특별시선거관리위원회",
+      "display_order": 8,
+      "person": "이재학",
+      "position": "위원",
+      "appointed_date": "2026-02-28",
+      "selection_method": "더불어민주당 추천",
+      "selection_route": "party",
+      "party_key": "dpk",
+      "party_name": "더불어민주당",
+      "career_summary": [
+        "법무법인 필 변호사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 서울특별시선거관리위원회",
+          "url": "https://su.nec.go.kr/su/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-bs-01",
+      "region_code": "bs",
+      "region": "부산광역시",
+      "committee": "부산광역시선거관리위원회",
+      "display_order": 1,
+      "person": "김문관",
+      "position": "위원장",
+      "appointed_date": "2025-02-18",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "부산고등법원 수석부장판사",
+        "부산지방법원장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 부산광역시선거관리위원회",
+          "url": "https://bs.nec.go.kr/bs/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-bs-02",
+      "region_code": "bs",
+      "region": "부산광역시",
+      "committee": "부산광역시선거관리위원회",
+      "display_order": 2,
+      "person": "김영헌",
+      "position": "상임위원",
+      "appointed_date": "2025-01-01",
+      "selection_method": "중앙지명",
+      "selection_route": "nec_designated",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전북특별자치도위원회 사무처장",
+        "중앙선거관리위원회 대변인",
+        "중앙선거관리위원회 공보과장",
+        "중앙선거관리위원회 감사과장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 부산광역시선거관리위원회",
+          "url": "https://bs.nec.go.kr/bs/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-bs-03",
+      "region_code": "bs",
+      "region": "부산광역시",
+      "committee": "부산광역시선거관리위원회",
+      "display_order": 3,
+      "person": "안여향",
+      "position": "위원",
+      "appointed_date": "2021-09-28",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(주)파워 대표이사",
+        "미래교육포럼 본부장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 부산광역시선거관리위원회",
+          "url": "https://bs.nec.go.kr/bs/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-bs-04",
+      "region_code": "bs",
+      "region": "부산광역시",
+      "committee": "부산광역시선거관리위원회",
+      "display_order": 4,
+      "person": "박수현",
+      "position": "위원",
+      "appointed_date": "2023-05-16",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "국제신문 문화사업국장",
+        "경성대학교 겸임교수"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 부산광역시선거관리위원회",
+          "url": "https://bs.nec.go.kr/bs/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-bs-05",
+      "region_code": "bs",
+      "region": "부산광역시",
+      "committee": "부산광역시선거관리위원회",
+      "display_order": 5,
+      "person": "김재광",
+      "position": "위원",
+      "appointed_date": "2024-02-27",
+      "selection_method": "정당추천(더불어민주당)",
+      "selection_route": "party",
+      "party_key": "dpk",
+      "party_name": "더불어민주당",
+      "career_summary": [
+        "김해교육지원청 학교폭력전담변호사",
+        "푸른숲법률사무소 대표변호사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 부산광역시선거관리위원회",
+          "url": "https://bs.nec.go.kr/bs/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-bs-06",
+      "region_code": "bs",
+      "region": "부산광역시",
+      "committee": "부산광역시선거관리위원회",
+      "display_order": 6,
+      "person": "배진호",
+      "position": "위원",
+      "appointed_date": "2025-03-07",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "서울북부지방법원 판사",
+        "부산지방법원 부장판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 부산광역시선거관리위원회",
+          "url": "https://bs.nec.go.kr/bs/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-bs-07",
+      "region_code": "bs",
+      "region": "부산광역시",
+      "committee": "부산광역시선거관리위원회",
+      "display_order": 7,
+      "person": "박성준",
+      "position": "위원",
+      "appointed_date": "2025-09-24",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "대구지방법원 부장판사",
+        "법무법인 해인 구성원 변호사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 부산광역시선거관리위원회",
+          "url": "https://bs.nec.go.kr/bs/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-bs-08",
+      "region_code": "bs",
+      "region": "부산광역시",
+      "committee": "부산광역시선거관리위원회",
+      "display_order": 8,
+      "person": "이봉재",
+      "position": "위원",
+      "appointed_date": "2026-03-27",
+      "selection_method": "정당추천(국민의힘)",
+      "selection_route": "party",
+      "party_key": "ppp",
+      "party_name": "국민의힘",
+      "career_summary": [
+        "잉스디자인스튜디오 대표",
+        "부산과학기술대학교 산업디자인학과 교수"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 부산광역시선거관리위원회",
+          "url": "https://bs.nec.go.kr/bs/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-dg-01",
+      "region_code": "dg",
+      "region": "대구광역시",
+      "committee": "대구광역시선거관리위원회",
+      "display_order": 1,
+      "person": "강동명",
+      "position": "위원장",
+      "appointed_date": "2025-02-24",
+      "selection_method": "지방법원장추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "대구지방법원 수석부장판사",
+        "[現]대구지방법원장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 대구광역시선거관리위원회",
+          "url": "https://dg.nec.go.kr/dg/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-dg-02",
+      "region_code": "dg",
+      "region": "대구광역시",
+      "committee": "대구광역시선거관리위원회",
+      "display_order": 2,
+      "person": "조용칠",
+      "position": "상임위원",
+      "appointed_date": "2024-07-01",
+      "selection_method": "중앙위원회 지명",
+      "selection_route": "nec_designated",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "중앙선거관리위원회 기획국 시설과장",
+        "선거연수원 연수기획부장",
+        "강원도선거관리위원회 선거과장",
+        "부산광역시선거관리위원회 사무처장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 대구광역시선거관리위원회",
+          "url": "https://dg.nec.go.kr/dg/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-dg-03",
+      "region_code": "dg",
+      "region": "대구광역시",
+      "committee": "대구광역시선거관리위원회",
+      "display_order": 3,
+      "person": "권민오",
+      "position": "위원",
+      "appointed_date": "2025-02-18",
+      "selection_method": "지방법원장추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "대법원 재판연구관",
+        "대구지방법원 부장판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 대구광역시선거관리위원회",
+          "url": "https://dg.nec.go.kr/dg/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-dg-04",
+      "region_code": "dg",
+      "region": "대구광역시",
+      "committee": "대구광역시선거관리위원회",
+      "display_order": 4,
+      "person": "배창경",
+      "position": "위원",
+      "appointed_date": "2024-01-16",
+      "selection_method": "지방법원장추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "북대구세무서장 역임"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 대구광역시선거관리위원회",
+          "url": "https://dg.nec.go.kr/dg/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-dg-05",
+      "region_code": "dg",
+      "region": "대구광역시",
+      "committee": "대구광역시선거관리위원회",
+      "display_order": 5,
+      "person": "김경봉",
+      "position": "위원",
+      "appointed_date": "2024-11-30",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "현) (주)발렉스특수물류 영남지역장",
+        "전) 대구은행 경북도청 지점장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 대구광역시선거관리위원회",
+          "url": "https://dg.nec.go.kr/dg/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-dg-06",
+      "region_code": "dg",
+      "region": "대구광역시",
+      "committee": "대구광역시선거관리위원회",
+      "display_order": 6,
+      "person": "이동식",
+      "position": "위원",
+      "appointed_date": "2024-08-21",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "현) 경북대학교 법학전문대학원 원장",
+        "현) 행정안전부 지방세발전위원회 위원장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 대구광역시선거관리위원회",
+          "url": "https://dg.nec.go.kr/dg/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-dg-07",
+      "region_code": "dg",
+      "region": "대구광역시",
+      "committee": "대구광역시선거관리위원회",
+      "display_order": 7,
+      "person": "강훈",
+      "position": "위원",
+      "appointed_date": "2024-03-08",
+      "selection_method": "더불어민주당",
+      "selection_route": "party",
+      "party_key": "dpk",
+      "party_name": "더불어민주당",
+      "career_summary": [
+        "전) 성서경찰서 민원상담변호사",
+        "현) 법률사무소 감동 변호사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 대구광역시선거관리위원회",
+          "url": "https://dg.nec.go.kr/dg/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-dg-08",
+      "region_code": "dg",
+      "region": "대구광역시",
+      "committee": "대구광역시선거관리위원회",
+      "display_order": 8,
+      "person": "곽태호",
+      "position": "위원",
+      "appointed_date": "2026-03-17",
+      "selection_method": "국민의힘",
+      "selection_route": "party",
+      "party_key": "ppp",
+      "party_name": "국민의힘",
+      "career_summary": [
+        "현) 경북산업직업전문학교 대표",
+        "현) 고용노동부 직업능력개발 전문위원회 위원"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 대구광역시선거관리위원회",
+          "url": "https://dg.nec.go.kr/dg/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-ic-01",
+      "region_code": "ic",
+      "region": "인천광역시",
+      "committee": "인천광역시선거관리위원회",
+      "display_order": 1,
+      "person": "강성수",
+      "position": "위원장",
+      "appointed_date": "2026-02-28",
+      "selection_method": "호선",
+      "selection_route": "elected_chair",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "[現] 인천지방법원 법원장",
+        "[前] 대전지방법원·대전가정법원 천안지원 지원장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 인천광역시선거관리위원회",
+          "url": "https://ic.nec.go.kr/ic/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-ic-02",
+      "region_code": "ic",
+      "region": "인천광역시",
+      "committee": "인천광역시선거관리위원회",
+      "display_order": 2,
+      "person": "이주현",
+      "position": "상임위원",
+      "appointed_date": "2026-01-01",
+      "selection_method": "중앙선관위 지명",
+      "selection_route": "nec_designated",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "[前] 울산광역시 선거관리위원회 사무처장",
+        "[前] 강원특별자치도 선거관리위원회 총무과장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 인천광역시선거관리위원회",
+          "url": "https://ic.nec.go.kr/ic/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-ic-03",
+      "region_code": "ic",
+      "region": "인천광역시",
+      "committee": "인천광역시선거관리위원회",
+      "display_order": 3,
+      "person": "조용주",
+      "position": "위원",
+      "appointed_date": "2025-01-14",
+      "selection_method": "인천지방법원장추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "법무법인 안다 대표",
+        "인천지방법원 판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 인천광역시선거관리위원회",
+          "url": "https://ic.nec.go.kr/ic/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-ic-04",
+      "region_code": "ic",
+      "region": "인천광역시",
+      "committee": "인천광역시선거관리위원회",
+      "display_order": 4,
+      "person": "이연경",
+      "position": "위원",
+      "appointed_date": "2026-03-10",
+      "selection_method": "인천지방법원장추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "[現] 인천지방법원 부장판사",
+        "[前] 청주지방법원 부장판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 인천광역시선거관리위원회",
+          "url": "https://ic.nec.go.kr/ic/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-ic-05",
+      "region_code": "ic",
+      "region": "인천광역시",
+      "committee": "인천광역시선거관리위원회",
+      "display_order": 5,
+      "person": "김의식",
+      "position": "위원",
+      "appointed_date": "2024-04-17",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "2018년도 인천광역시 군·구의회의원 선거구획정위원회 위원",
+        "단A&C 종합건축사사무소 대표이사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 인천광역시선거관리위원회",
+          "url": "https://ic.nec.go.kr/ic/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-ic-06",
+      "region_code": "ic",
+      "region": "인천광역시",
+      "committee": "인천광역시선거관리위원회",
+      "display_order": 6,
+      "person": "이진환",
+      "position": "위원",
+      "appointed_date": "2024-10-23",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "[前] 서구선거관리위원회 위원",
+        "[前] 서구체육회 이사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 인천광역시선거관리위원회",
+          "url": "https://ic.nec.go.kr/ic/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-ic-07",
+      "region_code": "ic",
+      "region": "인천광역시",
+      "committee": "인천광역시선거관리위원회",
+      "display_order": 7,
+      "person": "이정희",
+      "position": "위원",
+      "appointed_date": "2025-02-18",
+      "selection_method": "정당 추천",
+      "selection_route": "party_unspecified",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "인천광역시 양궁협회 회장",
+        "초록우산 어린이재단 인천지역본부 회장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 인천광역시선거관리위원회",
+          "url": "https://ic.nec.go.kr/ic/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-ic-08",
+      "region_code": "ic",
+      "region": "인천광역시",
+      "committee": "인천광역시선거관리위원회",
+      "display_order": 8,
+      "person": "전찬기",
+      "position": "위원",
+      "appointed_date": "2025-01-14",
+      "selection_method": "정당 추천",
+      "selection_route": "party_unspecified",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "인천대학교 도시공학과 명예교수",
+        "인천국제공항공사 비상임이사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 인천광역시선거관리위원회",
+          "url": "https://ic.nec.go.kr/ic/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gj-01",
+      "region_code": "gj",
+      "region": "광주광역시",
+      "committee": "광주광역시선거관리위원회",
+      "display_order": 1,
+      "person": "장용기",
+      "position": "위원장",
+      "appointed_date": "2025-02-20",
+      "selection_method": "호선",
+      "selection_route": "elected_chair",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "광주지방법원 목포지원장",
+        "현)광주지방법원장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 광주광역시선거관리위원회",
+          "url": "https://gj.nec.go.kr/gj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gj-02",
+      "region_code": "gj",
+      "region": "광주광역시",
+      "committee": "광주광역시선거관리위원회",
+      "display_order": 2,
+      "person": "황윤선",
+      "position": "상임위원",
+      "appointed_date": "2024-07-01",
+      "selection_method": "중앙위원회 지명",
+      "selection_route": "nec_designated",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "경찰대학 교육 파견(부이사관)",
+        "중앙선거관리위원회 선거2국장(부이사관)",
+        "현)광주광역시선거관리위원회 상임위원(관리관)"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 광주광역시선거관리위원회",
+          "url": "https://gj.nec.go.kr/gj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gj-03",
+      "region_code": "gj",
+      "region": "광주광역시",
+      "committee": "광주광역시선거관리위원회",
+      "display_order": 3,
+      "person": "박상철",
+      "position": "위원",
+      "appointed_date": "2025-02-23",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "광주지검 검찰시민위원회 위원장",
+        "현)호남대학교 총장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 광주광역시선거관리위원회",
+          "url": "https://gj.nec.go.kr/gj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gj-04",
+      "region_code": "gj",
+      "region": "광주광역시",
+      "committee": "광주광역시선거관리위원회",
+      "display_order": 4,
+      "person": "주영화",
+      "position": "위원",
+      "appointed_date": "2020-06-16",
+      "selection_method": "지방법원장추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "현)광주지방법원 조정위원회 회장",
+        "현)광주대항외과 대표원장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 광주광역시선거관리위원회",
+          "url": "https://gj.nec.go.kr/gj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gj-05",
+      "region_code": "gj",
+      "region": "광주광역시",
+      "committee": "광주광역시선거관리위원회",
+      "display_order": 5,
+      "person": "윤석구",
+      "position": "위원",
+      "appointed_date": "2024-02-27",
+      "selection_method": "더불어민주당 추천",
+      "selection_route": "party",
+      "party_key": "dpk",
+      "party_name": "더불어민주당",
+      "career_summary": [
+        "인천국제공항공사 감사위원장",
+        "광주과학기술진흥원장",
+        "우리금융자산관리(주) 경영본부장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 광주광역시선거관리위원회",
+          "url": "https://gj.nec.go.kr/gj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gj-06",
+      "region_code": "gj",
+      "region": "광주광역시",
+      "committee": "광주광역시선거관리위원회",
+      "display_order": 6,
+      "person": "조현주",
+      "position": "위원",
+      "appointed_date": "2025-02-18",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "광주광역시 동구 한의사회 회장",
+        "광주전남 소비자시민모임 운영위원(현)",
+        "남광주한의원 원장(현)"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 광주광역시선거관리위원회",
+          "url": "https://gj.nec.go.kr/gj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gj-07",
+      "region_code": "gj",
+      "region": "광주광역시",
+      "committee": "광주광역시선거관리위원회",
+      "display_order": 7,
+      "person": "정윤현",
+      "position": "위원",
+      "appointed_date": "2025-03-07",
+      "selection_method": "지방법원장추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전) 전주지방법원 판사",
+        "전) 의정부지방법원 판사",
+        "현) 광주지방법원 부장판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 광주광역시선거관리위원회",
+          "url": "https://gj.nec.go.kr/gj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gj-08",
+      "region_code": "gj",
+      "region": "광주광역시",
+      "committee": "광주광역시선거관리위원회",
+      "display_order": 8,
+      "person": "이광재",
+      "position": "위원",
+      "appointed_date": "2026-02-09",
+      "selection_method": "국민의힘 추천",
+      "selection_route": "party",
+      "party_key": "ppp",
+      "party_name": "국민의힘",
+      "career_summary": [
+        "현)법률사무소 이해 대표변호사",
+        "전)광주고등법원 재판연구원"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 광주광역시선거관리위원회",
+          "url": "https://gj.nec.go.kr/gj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-dj-01",
+      "region_code": "dj",
+      "region": "대전광역시",
+      "committee": "대전광역시선거관리위원회",
+      "display_order": 1,
+      "person": "오영표",
+      "position": "위원장",
+      "appointed_date": "2026-02-09",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(현)대전지방법원장",
+        "(전)대전지방법원 수석부장판사",
+        "(전)대전지방법원 부장판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 대전광역시선거관리위원회",
+          "url": "https://dj.nec.go.kr/dj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-dj-02",
+      "region_code": "dj",
+      "region": "대전광역시",
+      "committee": "대전광역시선거관리위원회",
+      "display_order": 2,
+      "person": "김만영",
+      "position": "상임위원",
+      "appointed_date": "2024-07-01",
+      "selection_method": "중앙선관위 지명",
+      "selection_route": "nec_designated",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(전)울산광역시선거관리위원회 선거과장",
+        "(전)광주광역시선거관리위원회 사무처장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 대전광역시선거관리위원회",
+          "url": "https://dj.nec.go.kr/dj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-dj-03",
+      "region_code": "dj",
+      "region": "대전광역시",
+      "committee": "대전광역시선거관리위원회",
+      "display_order": 3,
+      "person": "최시환",
+      "position": "위원",
+      "appointed_date": "2023-06-20",
+      "selection_method": "선거관리위원회 선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(전)충남대학교 의학전문대학원 교수",
+        "(전)충남대학교 의학전문대학원장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 대전광역시선거관리위원회",
+          "url": "https://dj.nec.go.kr/dj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-dj-04",
+      "region_code": "dj",
+      "region": "대전광역시",
+      "committee": "대전광역시선거관리위원회",
+      "display_order": 4,
+      "person": "강도묵",
+      "position": "위원",
+      "appointed_date": "2024-09-18",
+      "selection_method": "선거관리위원회 선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(현)대전세종충남경영자총협회 회장",
+        "(현)충남대학교 경상대학 특임교수"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 대전광역시선거관리위원회",
+          "url": "https://dj.nec.go.kr/dj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-dj-05",
+      "region_code": "dj",
+      "region": "대전광역시",
+      "committee": "대전광역시선거관리위원회",
+      "display_order": 5,
+      "person": "최지수",
+      "position": "위원",
+      "appointed_date": "2025-03-07",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(현)최지수법률사무소 대표변호사",
+        "(전)대전고등법원 판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 대전광역시선거관리위원회",
+          "url": "https://dj.nec.go.kr/dj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-dj-06",
+      "region_code": "dj",
+      "region": "대전광역시",
+      "committee": "대전광역시선거관리위원회",
+      "display_order": 6,
+      "person": "홍은아",
+      "position": "위원",
+      "appointed_date": "2025-03-07",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(현)대전지방법원 부장판사",
+        "(전)대구지방법원 판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 대전광역시선거관리위원회",
+          "url": "https://dj.nec.go.kr/dj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-dj-07",
+      "region_code": "dj",
+      "region": "대전광역시",
+      "committee": "대전광역시선거관리위원회",
+      "display_order": 7,
+      "person": "박흥용",
+      "position": "위원",
+      "appointed_date": "2025-04-22",
+      "selection_method": "정당 추천(더불어민주당)",
+      "selection_route": "party",
+      "party_key": "dpk",
+      "party_name": "더불어민주당",
+      "career_summary": [
+        "(현)직장·공장 새마을운동 대전광역시협의회장",
+        "(현)법무부 청소년범죄예방위원 대전지역협의회 부회장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 대전광역시선거관리위원회",
+          "url": "https://dj.nec.go.kr/dj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-dj-08",
+      "region_code": "dj",
+      "region": "대전광역시",
+      "committee": "대전광역시선거관리위원회",
+      "display_order": 8,
+      "person": "김양수",
+      "position": "위원",
+      "appointed_date": "2024-02-27",
+      "selection_method": "정당 추천(국민의힘)",
+      "selection_route": "party",
+      "party_key": "ppp",
+      "party_name": "국민의힘",
+      "career_summary": [
+        "(전)대한전문건설협회대전시회 회장",
+        "(전)대전개발위원회 부회장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 대전광역시선거관리위원회",
+          "url": "https://dj.nec.go.kr/dj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-us-01",
+      "region_code": "us",
+      "region": "울산광역시",
+      "committee": "울산광역시선거관리위원회",
+      "display_order": 1,
+      "person": "유진현",
+      "position": "위원장",
+      "appointed_date": "2025-02-18",
+      "selection_method": "호선",
+      "selection_route": "elected_chair",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "현)울산지방법원장",
+        "전)울산지방법원 부장판사",
+        "전)대전지방법원 부장판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 울산광역시선거관리위원회",
+          "url": "https://us.nec.go.kr/us/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-us-02",
+      "region_code": "us",
+      "region": "울산광역시",
+      "committee": "울산광역시선거관리위원회",
+      "display_order": 2,
+      "person": "김영도",
+      "position": "상임위원",
+      "appointed_date": "2024-07-01",
+      "selection_method": "중앙선관위 지명",
+      "selection_route": "nec_designated",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "대구광역시선거관리위원회 사무처장",
+        "광주광역시선거관리위원회 사무처장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 울산광역시선거관리위원회",
+          "url": "https://us.nec.go.kr/us/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-us-03",
+      "region_code": "us",
+      "region": "울산광역시",
+      "committee": "울산광역시선거관리위원회",
+      "display_order": 3,
+      "person": "정인영",
+      "position": "위원",
+      "appointed_date": "2025-03-07",
+      "selection_method": "울산지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "현) 울산지방법원 부장 판사",
+        "전) 서울회생법원 판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 울산광역시선거관리위원회",
+          "url": "https://us.nec.go.kr/us/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-us-04",
+      "region_code": "us",
+      "region": "울산광역시",
+      "committee": "울산광역시선거관리위원회",
+      "display_order": 4,
+      "person": "이빛나",
+      "position": "위원",
+      "appointed_date": "2026-05-05",
+      "selection_method": "울산지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "변호사 이빛나 법률사무소 대표변호사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 울산광역시선거관리위원회",
+          "url": "https://us.nec.go.kr/us/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-us-05",
+      "region_code": "us",
+      "region": "울산광역시",
+      "committee": "울산광역시선거관리위원회",
+      "display_order": 5,
+      "person": "김창범",
+      "position": "위원",
+      "appointed_date": "2021-03-16",
+      "selection_method": "자체 추천",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "울산지방검찰청 형사조정위원"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 울산광역시선거관리위원회",
+          "url": "https://us.nec.go.kr/us/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-us-06",
+      "region_code": "us",
+      "region": "울산광역시",
+      "committee": "울산광역시선거관리위원회",
+      "display_order": 6,
+      "person": "서지원",
+      "position": "위원",
+      "appointed_date": "2022-01-12",
+      "selection_method": "자체 추천",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(주)삼정앤지니어링대륙산업 대표이사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 울산광역시선거관리위원회",
+          "url": "https://us.nec.go.kr/us/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-us-07",
+      "region_code": "us",
+      "region": "울산광역시",
+      "committee": "울산광역시선거관리위원회",
+      "display_order": 7,
+      "person": "권구배",
+      "position": "위원",
+      "appointed_date": "2024-02-27",
+      "selection_method": "더불어민주당 추천",
+      "selection_route": "party",
+      "party_key": "dpk",
+      "party_name": "더불어민주당",
+      "career_summary": [
+        "현) 범죄피해자지원센터 이사",
+        "전) 울산지방검찰청 수석검사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 울산광역시선거관리위원회",
+          "url": "https://us.nec.go.kr/us/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-us-08",
+      "region_code": "us",
+      "region": "울산광역시",
+      "committee": "울산광역시선거관리위원회",
+      "display_order": 8,
+      "person": "박영선",
+      "position": "위원",
+      "appointed_date": "2026-04-03",
+      "selection_method": "국민의힘 추천",
+      "selection_route": "party",
+      "party_key": "ppp",
+      "party_name": "국민의힘",
+      "career_summary": [
+        "울산광역시 고문변호사(現)",
+        "울산광역시교육청 고문번호사(現)"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 울산광역시선거관리위원회",
+          "url": "https://us.nec.go.kr/us/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-sj-01",
+      "region_code": "sj",
+      "region": "세종특별자치시",
+      "committee": "세종특별자치시선거관리위원회",
+      "display_order": 1,
+      "person": "김매경",
+      "position": "위원장",
+      "appointed_date": "2026-02-09",
+      "selection_method": "지방법원장",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전)대전지방법원 공주지원장",
+        "현)대전지방법원 수석부장판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 세종특별자치시선거관리위원회",
+          "url": "https://sj.nec.go.kr/sj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-sj-02",
+      "region_code": "sj",
+      "region": "세종특별자치시",
+      "committee": "세종특별자치시선거관리위원회",
+      "display_order": 2,
+      "person": "박종진",
+      "position": "상임위원",
+      "appointed_date": "2025-01-01",
+      "selection_method": "자체(중앙위원회 지명)",
+      "selection_route": "nec_designated",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전)제주도선거관리위원회 사무처장",
+        "전)강원도선거관리위원회 사무처장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 세종특별자치시선거관리위원회",
+          "url": "https://sj.nec.go.kr/sj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-sj-03",
+      "region_code": "sj",
+      "region": "세종특별자치시",
+      "committee": "세종특별자치시선거관리위원회",
+      "display_order": 3,
+      "person": "임성문",
+      "position": "위원",
+      "appointed_date": "2024-07-01",
+      "selection_method": "지방법원장추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전)대전지방법원 판사",
+        "현)법무법인 베스트로 대표변호사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 세종특별자치시선거관리위원회",
+          "url": "https://sj.nec.go.kr/sj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-sj-04",
+      "region_code": "sj",
+      "region": "세종특별자치시",
+      "committee": "세종특별자치시선거관리위원회",
+      "display_order": 4,
+      "person": "이종철",
+      "position": "위원",
+      "appointed_date": "2020-12-15",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "현)송원교육문화재단 이사",
+        "현)현대주류상사 대표이사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 세종특별자치시선거관리위원회",
+          "url": "https://sj.nec.go.kr/sj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-sj-05",
+      "region_code": "sj",
+      "region": "세종특별자치시",
+      "committee": "세종특별자치시선거관리위원회",
+      "display_order": 5,
+      "person": "권세진",
+      "position": "위원",
+      "appointed_date": "2024-02-20",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전)대전가정법원 판사",
+        "현)대전지방법원 판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 세종특별자치시선거관리위원회",
+          "url": "https://sj.nec.go.kr/sj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-sj-06",
+      "region_code": "sj",
+      "region": "세종특별자치시",
+      "committee": "세종특별자치시선거관리위원회",
+      "display_order": 6,
+      "person": "선진혜",
+      "position": "위원",
+      "appointed_date": "2024-07-16",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "현)공주시 고문변호사",
+        "현)대전 서구청 고문변호사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 세종특별자치시선거관리위원회",
+          "url": "https://sj.nec.go.kr/sj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-sj-07",
+      "region_code": "sj",
+      "region": "세종특별자치시",
+      "committee": "세종특별자치시선거관리위원회",
+      "display_order": 7,
+      "person": "김기수",
+      "position": "위원",
+      "appointed_date": "2024-10-22",
+      "selection_method": "더불어민주당",
+      "selection_route": "party",
+      "party_key": "dpk",
+      "party_name": "더불어민주당",
+      "career_summary": [
+        "현)홍익대학교 창업지원교수",
+        "전)홍익대학교 부총장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 세종특별자치시선거관리위원회",
+          "url": "https://sj.nec.go.kr/sj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-sj-08",
+      "region_code": "sj",
+      "region": "세종특별자치시",
+      "committee": "세종특별자치시선거관리위원회",
+      "display_order": 8,
+      "person": "권오정",
+      "position": "위원",
+      "appointed_date": "2025-05-12",
+      "selection_method": "국민의힘",
+      "selection_route": "party",
+      "party_key": "ppp",
+      "party_name": "국민의힘",
+      "career_summary": [
+        "전)해양수산부 부이사관",
+        "현)세종미래전략연구원 부원장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 세종특별자치시선거관리위원회",
+          "url": "https://sj.nec.go.kr/sj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gg-01",
+      "region_code": "gg",
+      "region": "경기도",
+      "committee": "경기도선거관리위원회",
+      "display_order": 1,
+      "person": "임상기",
+      "position": "위원장",
+      "appointed_date": "2026-02-20",
+      "selection_method": "호선",
+      "selection_route": "elected_chair",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "[前] 수원고등법원 수석부장판사",
+        "[現] 수원지방법원 지방법원장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경기도선거관리위원회",
+          "url": "https://gg.nec.go.kr/gg/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gg-02",
+      "region_code": "gg",
+      "region": "경기도",
+      "committee": "경기도선거관리위원회",
+      "display_order": 2,
+      "person": "김문배",
+      "position": "상임위원",
+      "appointed_date": "2023-07-01",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "[前]대전광역시선거관리위원회 사무처장",
+        "[前]중앙선거관리위원회 기획조정실장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경기도선거관리위원회",
+          "url": "https://gg.nec.go.kr/gg/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gg-03",
+      "region_code": "gg",
+      "region": "경기도",
+      "committee": "경기도선거관리위원회",
+      "display_order": 3,
+      "person": "김태진",
+      "position": "위원",
+      "appointed_date": "2023-04-04",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "[前]수원지검안산지청 자문위원",
+        "[現](주)두일건설 대표이사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경기도선거관리위원회",
+          "url": "https://gg.nec.go.kr/gg/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gg-04",
+      "region_code": "gg",
+      "region": "경기도",
+      "committee": "경기도선거관리위원회",
+      "display_order": 4,
+      "person": "신현정",
+      "position": "위원",
+      "appointed_date": "2024-09-10",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "[現]아주대 공과대학 교수",
+        "[現]한국정보과학회 AI 기계 학습연구회 회장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경기도선거관리위원회",
+          "url": "https://gg.nec.go.kr/gg/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gg-05",
+      "region_code": "gg",
+      "region": "경기도",
+      "committee": "경기도선거관리위원회",
+      "display_order": 5,
+      "person": "김진수",
+      "position": "위원",
+      "appointed_date": "2024-06-11",
+      "selection_method": "더불어민주당",
+      "selection_route": "party",
+      "party_key": "dpk",
+      "party_name": "더불어민주당",
+      "career_summary": [
+        "[前] 수원시 고등학교 총동문 연합회장",
+        "[現] ㈜대성정공 대표이사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경기도선거관리위원회",
+          "url": "https://gg.nec.go.kr/gg/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gg-06",
+      "region_code": "gg",
+      "region": "경기도",
+      "committee": "경기도선거관리위원회",
+      "display_order": 6,
+      "person": "오호택",
+      "position": "위원",
+      "appointed_date": "2026-03-17",
+      "selection_method": "국민의힘",
+      "selection_route": "party",
+      "party_key": "ppp",
+      "party_name": "국민의힘",
+      "career_summary": [
+        "[前]경기도 행정심판위원",
+        "[現]국립한경대학교 법학부 교수"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경기도선거관리위원회",
+          "url": "https://gg.nec.go.kr/gg/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gg-07",
+      "region_code": "gg",
+      "region": "경기도",
+      "committee": "경기도선거관리위원회",
+      "display_order": 7,
+      "person": "이상화",
+      "position": "위원",
+      "appointed_date": "2026-05-23",
+      "selection_method": "지방법원장",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "[前]수원지방법원 부장판사",
+        "[現]법률사무소 이상 대표변호사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경기도선거관리위원회",
+          "url": "https://gg.nec.go.kr/gg/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gg-08",
+      "region_code": "gg",
+      "region": "경기도",
+      "committee": "경기도선거관리위원회",
+      "display_order": 8,
+      "person": "김종근",
+      "position": "위원",
+      "appointed_date": "2026-04-03",
+      "selection_method": "지방법원장",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "[前]사법정책연구원 연구위원",
+        "[現]수원지방법원 부장판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경기도선거관리위원회",
+          "url": "https://gg.nec.go.kr/gg/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gw-01",
+      "region_code": "gw",
+      "region": "강원특별자치도",
+      "committee": "강원특별자치도선거관리위원회",
+      "display_order": 1,
+      "person": "김재호",
+      "position": "위원장",
+      "appointed_date": "2025-02-27",
+      "selection_method": "법원장",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "춘천지방법원장(현)",
+        "서울고등법원 부장판사(전)"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 강원특별자치도선거관리위원회",
+          "url": "https://gw.nec.go.kr/gw/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gw-02",
+      "region_code": "gw",
+      "region": "강원특별자치도",
+      "committee": "강원특별자치도선거관리위원회",
+      "display_order": 2,
+      "person": "최관재",
+      "position": "상임위원",
+      "appointed_date": "2025-01-01",
+      "selection_method": "중앙위원회 지명",
+      "selection_route": "nec_designated",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(전)경기도선거관리위원회 사무처장",
+        "(전)세계선거기관협의회(A-WEB) 사무국장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 강원특별자치도선거관리위원회",
+          "url": "https://gw.nec.go.kr/gw/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gw-03",
+      "region_code": "gw",
+      "region": "강원특별자치도",
+      "committee": "강원특별자치도선거관리위원회",
+      "display_order": 3,
+      "person": "장혜정",
+      "position": "위원",
+      "appointed_date": "2026-02-28",
+      "selection_method": "법원장추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "춘천지방법원 부장판사(현)"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 강원특별자치도선거관리위원회",
+          "url": "https://gw.nec.go.kr/gw/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gw-04",
+      "region_code": "gw",
+      "region": "강원특별자치도",
+      "committee": "강원특별자치도선거관리위원회",
+      "display_order": 4,
+      "person": "박수복",
+      "position": "위원",
+      "appointed_date": "2022-03-02",
+      "selection_method": "법원장추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "강원지방변호사회 회장(전)"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 강원특별자치도선거관리위원회",
+          "url": "https://gw.nec.go.kr/gw/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gw-05",
+      "region_code": "gw",
+      "region": "강원특별자치도",
+      "committee": "강원특별자치도선거관리위원회",
+      "display_order": 5,
+      "person": "이현지",
+      "position": "위원",
+      "appointed_date": "2024-02-27",
+      "selection_method": "정당추천",
+      "selection_route": "party_unspecified",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "법무법인(유) 예율 변호사(전)",
+        "변호사이현지법률사무소 변호사(현)"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 강원특별자치도선거관리위원회",
+          "url": "https://gw.nec.go.kr/gw/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gw-06",
+      "region_code": "gw",
+      "region": "강원특별자치도",
+      "committee": "강원특별자치도선거관리위원회",
+      "display_order": 6,
+      "person": "유성선",
+      "position": "위원",
+      "appointed_date": "2022-05-17",
+      "selection_method": "정당추천",
+      "selection_route": "party_unspecified",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "강원대학교 철학과 교수(현)"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 강원특별자치도선거관리위원회",
+          "url": "https://gw.nec.go.kr/gw/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gw-07",
+      "region_code": "gw",
+      "region": "강원특별자치도",
+      "committee": "강원특별자치도선거관리위원회",
+      "display_order": 7,
+      "person": "신지용",
+      "position": "위원",
+      "appointed_date": "2019-10-22",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "한옥과 문화 대표이사(현)",
+        "한국여성경제인협회 강원지회 이사(전)"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 강원특별자치도선거관리위원회",
+          "url": "https://gw.nec.go.kr/gw/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gw-08",
+      "region_code": "gw",
+      "region": "강원특별자치도",
+      "committee": "강원특별자치도선거관리위원회",
+      "display_order": 8,
+      "person": "허영철",
+      "position": "위원",
+      "appointed_date": "2020-07-21",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(주)빌드 대표(현)",
+        "(주)하늘농부 대표(현)"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 강원특별자치도선거관리위원회",
+          "url": "https://gw.nec.go.kr/gw/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-cb-01",
+      "region_code": "cb",
+      "region": "충청북도",
+      "committee": "충청북도선거관리위원회",
+      "display_order": 1,
+      "person": "조미연",
+      "position": "위원장",
+      "appointed_date": "2025-02-18",
+      "selection_method": "법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(현) 청주지방법원장",
+        "(전) 춘천지방법원 부장판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 충청북도선거관리위원회",
+          "url": "https://cb.nec.go.kr/cb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-cb-02",
+      "region_code": "cb",
+      "region": "충청북도",
+      "committee": "충청북도선거관리위원회",
+      "display_order": 2,
+      "person": "서양규",
+      "position": "상임위원",
+      "appointed_date": "2025-07-01",
+      "selection_method": "자체 선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(전) 대전광역시선거관리위원회 사무처장",
+        "(전) 충청남도선거관리위원회 사무처장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 충청북도선거관리위원회",
+          "url": "https://cb.nec.go.kr/cb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-cb-03",
+      "region_code": "cb",
+      "region": "충청북도",
+      "committee": "충청북도선거관리위원회",
+      "display_order": 3,
+      "person": "조성전",
+      "position": "위원",
+      "appointed_date": "2024-04-17",
+      "selection_method": "더불어민주당 추천",
+      "selection_route": "party",
+      "party_key": "dpk",
+      "party_name": "더불어민주당",
+      "career_summary": [
+        "(현) 법무법인(유한) 법조구성원 변호사",
+        "(현) 흥덕경찰서 집회·시위자문위원회 위원"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 충청북도선거관리위원회",
+          "url": "https://cb.nec.go.kr/cb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-cb-04",
+      "region_code": "cb",
+      "region": "충청북도",
+      "committee": "충청북도선거관리위원회",
+      "display_order": 4,
+      "person": "유경태",
+      "position": "위원",
+      "appointed_date": "2021-07-21",
+      "selection_method": "법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(현) 법무법인 청풍 변호사",
+        "(전) 법무법인 천명 변호사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 충청북도선거관리위원회",
+          "url": "https://cb.nec.go.kr/cb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-cb-05",
+      "region_code": "cb",
+      "region": "충청북도",
+      "committee": "충청북도선거관리위원회",
+      "display_order": 5,
+      "person": "김홍숙",
+      "position": "위원",
+      "appointed_date": "2025-04-22",
+      "selection_method": "위원회 추천",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(현) (주)HP&C 대표이사",
+        "(현) (사)충북 화장품산업협회장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 충청북도선거관리위원회",
+          "url": "https://cb.nec.go.kr/cb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-cb-06",
+      "region_code": "cb",
+      "region": "충청북도",
+      "committee": "충청북도선거관리위원회",
+      "display_order": 6,
+      "person": "지윤섭",
+      "position": "위원",
+      "appointed_date": "2025-08-19",
+      "selection_method": "법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(현) 청주지방법원 부장판사",
+        "(전) 전주지방법원 부장판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 충청북도선거관리위원회",
+          "url": "https://cb.nec.go.kr/cb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-cb-07",
+      "region_code": "cb",
+      "region": "충청북도",
+      "committee": "충청북도선거관리위원회",
+      "display_order": 7,
+      "person": "권순길",
+      "position": "위원",
+      "appointed_date": "2025-11-25",
+      "selection_method": "자체 선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(전) 충북대학교 의과대학 교수",
+        "(현) 청주 첼로병원 내과 진료원장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 충청북도선거관리위원회",
+          "url": "https://cb.nec.go.kr/cb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-cb-08",
+      "region_code": "cb",
+      "region": "충청북도",
+      "committee": "충청북도선거관리위원회",
+      "display_order": 8,
+      "person": "천문국",
+      "position": "위원",
+      "appointed_date": "2026-02-28",
+      "selection_method": "국민의힘 추천",
+      "selection_route": "party",
+      "party_key": "ppp",
+      "party_name": "국민의힘",
+      "career_summary": [
+        "(전) 청주지방법원 국선전담변호사",
+        "(현) 충청북도교육청 행정심판위원"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 충청북도선거관리위원회",
+          "url": "https://cb.nec.go.kr/cb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-cn-01",
+      "region_code": "cn",
+      "region": "충청남도",
+      "committee": "충청남도선거관리위원회",
+      "display_order": 1,
+      "person": "문봉길",
+      "position": "위원장",
+      "appointed_date": "2025-02-18",
+      "selection_method": "법원장추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "현) 대전고등법원 수석판사",
+        "전) 대전고등법원 판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 충청남도선거관리위원회",
+          "url": "https://cn.nec.go.kr/cn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-cn-02",
+      "region_code": "cn",
+      "region": "충청남도",
+      "committee": "충청남도선거관리위원회",
+      "display_order": 2,
+      "person": "김동초",
+      "position": "상임위원",
+      "appointed_date": "2026-01-01",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전) 충청남도선거관리위원회 사무처장",
+        "전) 중앙선거관리위원회 정보자료국장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 충청남도선거관리위원회",
+          "url": "https://cn.nec.go.kr/cn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-cn-03",
+      "region_code": "cn",
+      "region": "충청남도",
+      "committee": "충청남도선거관리위원회",
+      "display_order": 3,
+      "person": "정훈진",
+      "position": "위원",
+      "appointed_date": "2024-03-20",
+      "selection_method": "법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "현) 법무법인 담현 대표변호사",
+        "현) 대전지방법원 조정위원"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 충청남도선거관리위원회",
+          "url": "https://cn.nec.go.kr/cn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-cn-04",
+      "region_code": "cn",
+      "region": "충청남도",
+      "committee": "충청남도선거관리위원회",
+      "display_order": 4,
+      "person": "김온곤",
+      "position": "위원",
+      "appointed_date": "2024-05-21",
+      "selection_method": "국민의힘 추천",
+      "selection_route": "party",
+      "party_key": "ppp",
+      "party_name": "국민의힘",
+      "career_summary": [
+        "전) 중등학교 교장",
+        "전) 서산시교원총연합회 회장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 충청남도선거관리위원회",
+          "url": "https://cn.nec.go.kr/cn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-cn-05",
+      "region_code": "cn",
+      "region": "충청남도",
+      "committee": "충청남도선거관리위원회",
+      "display_order": 5,
+      "person": "남준우",
+      "position": "위원",
+      "appointed_date": "2019-10-22",
+      "selection_method": "더불어민주당 추천",
+      "selection_route": "party",
+      "party_key": "dpk",
+      "party_name": "더불어민주당",
+      "career_summary": [
+        "현) 당진상공회의소 부회장",
+        "(주)당진산업가스 대표"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 충청남도선거관리위원회",
+          "url": "https://cn.nec.go.kr/cn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-cn-06",
+      "region_code": "cn",
+      "region": "충청남도",
+      "committee": "충청남도선거관리위원회",
+      "display_order": 6,
+      "person": "이윤선",
+      "position": "위원",
+      "appointed_date": "2019-11-19",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전) 충남도청 도지사 비서실장",
+        "전) 충남도청 자치행정국장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 충청남도선거관리위원회",
+          "url": "https://cn.nec.go.kr/cn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-cn-07",
+      "region_code": "cn",
+      "region": "충청남도",
+      "committee": "충청남도선거관리위원회",
+      "display_order": 7,
+      "person": "가국일",
+      "position": "위원",
+      "appointed_date": "2019-12-17",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "현) 단국대 공공인재대학 초빙교수",
+        "현) 법과 역사학회 이사장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 충청남도선거관리위원회",
+          "url": "https://cn.nec.go.kr/cn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-cn-08",
+      "region_code": "cn",
+      "region": "충청남도",
+      "committee": "충청남도선거관리위원회",
+      "display_order": 8,
+      "person": "정우철",
+      "position": "위원",
+      "appointed_date": "2025-03-10",
+      "selection_method": "법원장추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "현) 대전지방법원 홍성지원 부장판사",
+        "전) 대법원 재판연구관"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 충청남도선거관리위원회",
+          "url": "https://cn.nec.go.kr/cn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jb-01",
+      "region_code": "jb",
+      "region": "전북특별자치도",
+      "committee": "전북특별자치도선거관리위원회",
+      "display_order": 1,
+      "person": "김상곤",
+      "position": "위원장",
+      "appointed_date": "2026-03-05",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "[前] 전주지방법원 부장판사",
+        "[現] 전주지방법원장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 전북특별자치도선거관리위원회",
+          "url": "https://jb.nec.go.kr/jb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jb-02",
+      "region_code": "jb",
+      "region": "전북특별자치도",
+      "committee": "전북특별자치도선거관리위원회",
+      "display_order": 2,
+      "person": "문승철",
+      "position": "상임위원",
+      "appointed_date": "2025-07-01",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "[前]제주특별자치도선거관리위원회 사무처장",
+        "[現]전북특별자치도선거관리위원회 상임위원"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 전북특별자치도선거관리위원회",
+          "url": "https://jb.nec.go.kr/jb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jb-03",
+      "region_code": "jb",
+      "region": "전북특별자치도",
+      "committee": "전북특별자치도선거관리위원회",
+      "display_order": 3,
+      "person": "하재관",
+      "position": "위원",
+      "appointed_date": "2021-02-23",
+      "selection_method": "국민의힘 추천",
+      "selection_route": "party",
+      "party_key": "ppp",
+      "party_name": "국민의힘",
+      "career_summary": [
+        "(주)미래약품 대표이사",
+        "국제 라이온스 협회 356 복합지구 의장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 전북특별자치도선거관리위원회",
+          "url": "https://jb.nec.go.kr/jb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jb-04",
+      "region_code": "jb",
+      "region": "전북특별자치도",
+      "committee": "전북특별자치도선거관리위원회",
+      "display_order": 4,
+      "person": "윤명숙",
+      "position": "위원",
+      "appointed_date": "2022-01-11",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전북대학교 사회과학대학 학장",
+        "교육부 자체평가위원회 위원"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 전북특별자치도선거관리위원회",
+          "url": "https://jb.nec.go.kr/jb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jb-05",
+      "region_code": "jb",
+      "region": "전북특별자치도",
+      "committee": "전북특별자치도선거관리위원회",
+      "display_order": 5,
+      "person": "최영희",
+      "position": "위원",
+      "appointed_date": "2022-02-22",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전북지방노동위원회 사용자 위원",
+        "누벨백미술관 관장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 전북특별자치도선거관리위원회",
+          "url": "https://jb.nec.go.kr/jb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jb-06",
+      "region_code": "jb",
+      "region": "전북특별자치도",
+      "committee": "전북특별자치도선거관리위원회",
+      "display_order": 6,
+      "person": "국순화",
+      "position": "위원",
+      "appointed_date": "2024-01-16",
+      "selection_method": "더불어민주당 추천",
+      "selection_route": "party",
+      "party_key": "dpk",
+      "party_name": "더불어민주당",
+      "career_summary": [
+        "전라북도 행정심판위원",
+        "전라북도교육청 행정심판위원",
+        "호산공동법률사무소 변호사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 전북특별자치도선거관리위원회",
+          "url": "https://jb.nec.go.kr/jb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jb-07",
+      "region_code": "jb",
+      "region": "전북특별자치도",
+      "committee": "전북특별자치도선거관리위원회",
+      "display_order": 7,
+      "person": "홍요셉",
+      "position": "위원",
+      "appointed_date": "2025-09-24",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "법률사무소 백석 대표변호사",
+        "전북특별자치도 감사위원"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 전북특별자치도선거관리위원회",
+          "url": "https://jb.nec.go.kr/jb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jb-08",
+      "region_code": "jb",
+      "region": "전북특별자치도",
+      "committee": "전북특별자치도선거관리위원회",
+      "display_order": 8,
+      "person": "김선범",
+      "position": "위원",
+      "appointed_date": "2026-02-28",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "서울중앙지방법원 판사",
+        "전주지방법원 부장판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 전북특별자치도선거관리위원회",
+          "url": "https://jb.nec.go.kr/jb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jn-01",
+      "region_code": "jn",
+      "region": "전라남도",
+      "committee": "전라남도선거관리위원회",
+      "display_order": 1,
+      "person": "최창훈",
+      "position": "위원장",
+      "appointed_date": "2026-02-09",
+      "selection_method": "지법추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "연세대학교 경영학과 졸업",
+        "前) 서울중앙지방법원 부장판사",
+        "現) 광주고등법원 수석판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 전라남도선거관리위원회",
+          "url": "https://jn.nec.go.kr/jn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jn-02",
+      "region_code": "jn",
+      "region": "전라남도",
+      "committee": "전라남도선거관리위원회",
+      "display_order": 2,
+      "person": "위환",
+      "position": "상임위원",
+      "appointed_date": "2025-07-01",
+      "selection_method": "중앙선관위 지명",
+      "selection_route": "nec_designated",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "중앙선거관리위원회 감사관",
+        "대전광역시선거관리위원회 사무처장",
+        "충청북도선거관리위원회 사무처장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 전라남도선거관리위원회",
+          "url": "https://jn.nec.go.kr/jn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jn-03",
+      "region_code": "jn",
+      "region": "전라남도",
+      "committee": "전라남도선거관리위원회",
+      "display_order": 3,
+      "person": "유동명",
+      "position": "위원",
+      "appointed_date": "2021-03-16",
+      "selection_method": "정당(국민의힘)",
+      "selection_route": "party",
+      "party_key": "ppp",
+      "party_name": "국민의힘",
+      "career_summary": [
+        "(現) 순천지방법원 여수시법원 민사조정위원",
+        "(現) (유)여천이엔지 대표이사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 전라남도선거관리위원회",
+          "url": "https://jn.nec.go.kr/jn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jn-04",
+      "region_code": "jn",
+      "region": "전라남도",
+      "committee": "전라남도선거관리위원회",
+      "display_order": 4,
+      "person": "오현석",
+      "position": "위원",
+      "appointed_date": "2024-11-30",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "청림종합건설 대표이사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 전라남도선거관리위원회",
+          "url": "https://jn.nec.go.kr/jn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jn-05",
+      "region_code": "jn",
+      "region": "전라남도",
+      "committee": "전라남도선거관리위원회",
+      "display_order": 5,
+      "person": "김명준",
+      "position": "위원",
+      "appointed_date": "2026-02-18",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "조선대학교 경영대학원 졸업",
+        "(前) (주)중앙약품 대표",
+        "(現) 효성요양병원 이사장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 전라남도선거관리위원회",
+          "url": "https://jn.nec.go.kr/jn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jn-06",
+      "region_code": "jn",
+      "region": "전라남도",
+      "committee": "전라남도선거관리위원회",
+      "display_order": 6,
+      "person": "홍혜란",
+      "position": "위원",
+      "appointed_date": "2026-02-18",
+      "selection_method": "지법추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전남대학교 대학원 미술학과 석사과정 수료",
+        "現) (유)이도스 디자인 대표",
+        "現 던 조형연구소 대표"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 전라남도선거관리위원회",
+          "url": "https://jn.nec.go.kr/jn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jn-07",
+      "region_code": "jn",
+      "region": "전라남도",
+      "committee": "전라남도선거관리위원회",
+      "display_order": 7,
+      "person": "고지은",
+      "position": "위원",
+      "appointed_date": "2026-02-28",
+      "selection_method": "지법추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "서울대학교 경영학과 졸업",
+        "前) 서울중앙지방법원 판사",
+        "現) 광주지방법원 목포지원 부장판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 전라남도선거관리위원회",
+          "url": "https://jn.nec.go.kr/jn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gb-01",
+      "region_code": "gb",
+      "region": "경상북도",
+      "committee": "경상북도선거관리위원회",
+      "display_order": 1,
+      "person": "손병원",
+      "position": "위원장",
+      "appointed_date": "2026-02-09",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전) 대구고등법원 고법판사",
+        "전) 서울고등법원 고법판사",
+        "현) 대구고등법원 수석판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경상북도선거관리위원회",
+          "url": "https://gb.nec.go.kr/gb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gb-02",
+      "region_code": "gb",
+      "region": "경상북도",
+      "committee": "경상북도선거관리위원회",
+      "display_order": 2,
+      "person": "이창열",
+      "position": "상임위원",
+      "appointed_date": "2025-07-01",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전) 중앙선거관리위원회 선거2과장",
+        "전) A-WEB(세계선거기관협의회) 사무국장",
+        "전) 대구광역시선거관리위원회 사무처장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경상북도선거관리위원회",
+          "url": "https://gb.nec.go.kr/gb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gb-03",
+      "region_code": "gb",
+      "region": "경상북도",
+      "committee": "경상북도선거관리위원회",
+      "display_order": 3,
+      "person": "김병기",
+      "position": "위원",
+      "appointed_date": "2024-02-27",
+      "selection_method": "더불어민주당 추천",
+      "selection_route": "party",
+      "party_key": "dpk",
+      "party_name": "더불어민주당",
+      "career_summary": [
+        "전) 안동과학대학교 체육계열학부장",
+        "현) 안동과학대학교 스포츠레저학과 교수"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경상북도선거관리위원회",
+          "url": "https://gb.nec.go.kr/gb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gb-04",
+      "region_code": "gb",
+      "region": "경상북도",
+      "committee": "경상북도선거관리위원회",
+      "display_order": 4,
+      "person": "곽경화",
+      "position": "위원",
+      "appointed_date": "2021-02-23",
+      "selection_method": "국민의힘 추천",
+      "selection_route": "party",
+      "party_key": "ppp",
+      "party_name": "국민의힘",
+      "career_summary": [
+        "현) 법무법인 삼일 소속 변호사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경상북도선거관리위원회",
+          "url": "https://gb.nec.go.kr/gb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gb-05",
+      "region_code": "gb",
+      "region": "경상북도",
+      "committee": "경상북도선거관리위원회",
+      "display_order": 5,
+      "person": "노정구",
+      "position": "위원",
+      "appointed_date": "2023-03-21",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전) 포항대학교 평생교육원장",
+        "전) 대구지방법원 포항지원 조정위원회 위원",
+        "현) 포항대학교 학생입학처장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경상북도선거관리위원회",
+          "url": "https://gb.nec.go.kr/gb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gb-06",
+      "region_code": "gb",
+      "region": "경상북도",
+      "committee": "경상북도선거관리위원회",
+      "display_order": 6,
+      "person": "문정현",
+      "position": "위원",
+      "appointed_date": "2025-09-24",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "현) (주)에스엠이 대표이사",
+        "현) (주)라이언 대표이사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경상북도선거관리위원회",
+          "url": "https://gb.nec.go.kr/gb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gb-07",
+      "region_code": "gb",
+      "region": "경상북도",
+      "committee": "경상북도선거관리위원회",
+      "display_order": 7,
+      "person": "김주나",
+      "position": "위원",
+      "appointed_date": "2025-10-22",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "현) 청송의료원성소병원 이사장",
+        "현) 명성학원(영주 영광여자중고등학교) 법인이사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경상북도선거관리위원회",
+          "url": "https://gb.nec.go.kr/gb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gb-08",
+      "region_code": "gb",
+      "region": "경상북도",
+      "committee": "경상북도선거관리위원회",
+      "display_order": 8,
+      "person": "어재원",
+      "position": "위원",
+      "appointed_date": "2026-02-28",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전) 대법원 재판연구관",
+        "전) 대구지방법원 부장판사",
+        "현) 대구고등법원 고법판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경상북도선거관리위원회",
+          "url": "https://gb.nec.go.kr/gb/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gn-01",
+      "region_code": "gn",
+      "region": "경상남도",
+      "committee": "경상남도선거관리위원회",
+      "display_order": 1,
+      "person": "이영훈",
+      "position": "위원장",
+      "appointed_date": "2025-02-26",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "現) 창원지방법원장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경상남도선거관리위원회",
+          "url": "https://gn.nec.go.kr/gn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gn-02",
+      "region_code": "gn",
+      "region": "경상남도",
+      "committee": "경상남도선거관리위원회",
+      "display_order": 2,
+      "person": "윤대락",
+      "position": "상임위원",
+      "appointed_date": "2025-01-01",
+      "selection_method": "중앙위원회 지명",
+      "selection_route": "nec_designated",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "現) 경상남도선거관리위원회 상임위원",
+        "前) 중앙선거관리위원회 기획국장",
+        "前) 경기도선거관리위원회 사무처장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경상남도선거관리위원회",
+          "url": "https://gn.nec.go.kr/gn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gn-03",
+      "region_code": "gn",
+      "region": "경상남도",
+      "committee": "경상남도선거관리위원회",
+      "display_order": 3,
+      "person": "이병탁",
+      "position": "위원",
+      "appointed_date": "2026-02-28",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "성균관대학교 법학 학사",
+        "前) 부산고등법원 창원재판부 판사",
+        "現) 창원지방법원 판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경상남도선거관리위원회",
+          "url": "https://gn.nec.go.kr/gn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gn-04",
+      "region_code": "gn",
+      "region": "경상남도",
+      "committee": "경상남도선거관리위원회",
+      "display_order": 4,
+      "person": "구만석",
+      "position": "위원",
+      "appointed_date": "2026-02-18",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "前) 바른선거시민모임 경남 상임대표",
+        "現) 경상남도선거방송토론위원회 위원"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경상남도선거관리위원회",
+          "url": "https://gn.nec.go.kr/gn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gn-05",
+      "region_code": "gn",
+      "region": "경상남도",
+      "committee": "경상남도선거관리위원회",
+      "display_order": 5,
+      "person": "안동규",
+      "position": "위원",
+      "appointed_date": "2023-11-21",
+      "selection_method": "국민의힘 추천",
+      "selection_route": "party",
+      "party_key": "ppp",
+      "party_name": "국민의힘",
+      "career_summary": [
+        "前) 창원시 자문변호사",
+        "現) NC다이노스 자문변호사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경상남도선거관리위원회",
+          "url": "https://gn.nec.go.kr/gn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gn-06",
+      "region_code": "gn",
+      "region": "경상남도",
+      "committee": "경상남도선거관리위원회",
+      "display_order": 6,
+      "person": "김지환",
+      "position": "위원",
+      "appointed_date": "2025-07-15",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "前) 한국상사판례학회 학회장",
+        "現) 경남대학교 법학과 교수"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경상남도선거관리위원회",
+          "url": "https://gn.nec.go.kr/gn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gn-07",
+      "region_code": "gn",
+      "region": "경상남도",
+      "committee": "경상남도선거관리위원회",
+      "display_order": 7,
+      "person": "박미혜",
+      "position": "위원",
+      "appointed_date": "2025-07-08",
+      "selection_method": "더불어민주당 추천",
+      "selection_route": "party",
+      "party_key": "dpk",
+      "party_name": "더불어민주당",
+      "career_summary": [
+        "前) 경상남도 고문변호사",
+        "現) 법무법인 믿음 대표변호사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경상남도선거관리위원회",
+          "url": "https://gn.nec.go.kr/gn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-gn-08",
+      "region_code": "gn",
+      "region": "경상남도",
+      "committee": "경상남도선거관리위원회",
+      "display_order": 8,
+      "person": "주기완",
+      "position": "위원",
+      "appointed_date": "2026-02-09",
+      "selection_method": "자체 선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "前) 고려대학교 일반대학원 행정학 박사",
+        "現) 국립창원대학교 행정학과 교수",
+        "現) 행정안전부 지방계약심의조정위원회 위원"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 경상남도선거관리위원회",
+          "url": "https://gn.nec.go.kr/gn/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jj-01",
+      "region_code": "jj",
+      "region": "제주특별자치도",
+      "committee": "제주특별자치도선거관리위원회",
+      "display_order": 1,
+      "person": "이흥권",
+      "position": "위원장",
+      "appointed_date": "2025-02-18",
+      "selection_method": "법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전)광주지방법원 부장판사",
+        "현)제주지방법원장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 제주특별자치도선거관리위원회",
+          "url": "https://jj.nec.go.kr/jj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jj-02",
+      "region_code": "jj",
+      "region": "제주특별자치도",
+      "committee": "제주특별자치도선거관리위원회",
+      "display_order": 2,
+      "person": "김덕진",
+      "position": "상임위원",
+      "appointed_date": "2026-01-01",
+      "selection_method": "중앙위원회 지명",
+      "selection_route": "nec_designated",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전)중앙선거관리위원회 선거연수원장",
+        "전)경상남도선거관리위원회 사무처장"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 제주특별자치도선거관리위원회",
+          "url": "https://jj.nec.go.kr/jj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jj-03",
+      "region_code": "jj",
+      "region": "제주특별자치도",
+      "committee": "제주특별자치도선거관리위원회",
+      "display_order": 3,
+      "person": "강지윤",
+      "position": "위원",
+      "appointed_date": "2025-10-22",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "(주)삼영교통·(주)삼영관광 전무이사",
+        "현)(주)삼영교통 대표이사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 제주특별자치도선거관리위원회",
+          "url": "https://jj.nec.go.kr/jj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jj-04",
+      "region_code": "jj",
+      "region": "제주특별자치도",
+      "committee": "제주특별자치도선거관리위원회",
+      "display_order": 4,
+      "person": "좌혜선",
+      "position": "위원",
+      "appointed_date": "2020-04-07",
+      "selection_method": "더불어민주당 추천",
+      "selection_route": "party",
+      "party_key": "dpk",
+      "party_name": "더불어민주당",
+      "career_summary": [
+        "제주대학교 법학전문대학원 겸임교수",
+        "현)좌혜선법률사무소 변호사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 제주특별자치도선거관리위원회",
+          "url": "https://jj.nec.go.kr/jj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jj-05",
+      "region_code": "jj",
+      "region": "제주특별자치도",
+      "committee": "제주특별자치도선거관리위원회",
+      "display_order": 5,
+      "person": "최진숙",
+      "position": "위원",
+      "appointed_date": "2023-09-19",
+      "selection_method": "자체선정",
+      "selection_route": "self_selected",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "현)제주도사회복지사협회 사무처장",
+        "현)제주시지역사회보장협의체 실무협의체 위원"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 제주특별자치도선거관리위원회",
+          "url": "https://jj.nec.go.kr/jj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jj-06",
+      "region_code": "jj",
+      "region": "제주특별자치도",
+      "committee": "제주특별자치도선거관리위원회",
+      "display_order": 6,
+      "person": "전용현",
+      "position": "위원",
+      "appointed_date": "2024-08-21",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전)대구고등법원 국선전담 변호사",
+        "현)제주지방법원 국선전담 변호사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 제주특별자치도선거관리위원회",
+          "url": "https://jj.nec.go.kr/jj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jj-07",
+      "region_code": "jj",
+      "region": "제주특별자치도",
+      "committee": "제주특별자치도선거관리위원회",
+      "display_order": 7,
+      "person": "이길범",
+      "position": "위원",
+      "appointed_date": "2025-03-07",
+      "selection_method": "지방법원장 추천",
+      "selection_route": "court",
+      "party_key": null,
+      "party_name": null,
+      "career_summary": [
+        "전)대법원 재판연구관",
+        "현)제주지방법원 부장판사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 제주특별자치도선거관리위원회",
+          "url": "https://jj.nec.go.kr/jj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    },
+    {
+      "id": "province-jj-08",
+      "region_code": "jj",
+      "region": "제주특별자치도",
+      "committee": "제주특별자치도선거관리위원회",
+      "display_order": 8,
+      "person": "한동명",
+      "position": "위원",
+      "appointed_date": "2025-03-18",
+      "selection_method": "국민의힘 추천",
+      "selection_route": "party",
+      "party_key": "ppp",
+      "party_name": "국민의힘",
+      "career_summary": [
+        "현)법무법인 더바로 변호사",
+        "현)제주지방변호사회 이사"
+      ],
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "위원장 및 위원소개 — 제주특별자치도선거관리위원회",
+          "url": "https://jj.nec.go.kr/jj/bbs/B0000273/list.do?menuNo=200013"
+        }
+      ]
+    }
+  ]
+}

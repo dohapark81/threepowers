@@ -11,9 +11,11 @@
   "dependencies": {
     "@astrojs/rss": "^4.0.12",
     "@astrojs/sitemap": "^3.7.3",
-    "astro": "^5.16.4"
+    "astro": "^5.16.4",
+    "d3": "^7.9.0"
   },
   "devDependencies": {
+    "@types/d3": "^7.4.3",
     "puppeteer-core": "^25.1.0"
   }
 }

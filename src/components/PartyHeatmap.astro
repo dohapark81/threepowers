@@ -1,0 +1,607 @@
+---
+import type {
+  Appointment,
+  SelectionTrack,
+  PartyLineage,
+  PartyKey,
+  LineageBasis,
+  SourceRef,
+  ProvincialCommissionersData,
+  ProvincialCommissioner,
+  ProvincialSelectionRoute,
+} from '../lib/types';
+
+interface Props {
+  appointments: Appointment[];
+  lineage: PartyLineage;
+  provincial?: ProvincialCommissionersData;
+}
+
+const { appointments, lineage, provincial } = Astro.props;
+
+// 색은 '임명 경로의 정파적 계통'이지 위원 개인의 당적이 아니다 (data/README 무판정 원칙).
+const PARTY_COLOR: Record<PartyKey | 'none', string> = {
+  ppp: '#c2362d',
+  dpk: '#2a5a9c',
+  none: '#bdbcb2',
+};
+
+const ROUTE_COLOR: Record<ProvincialSelectionRoute | 'vacant', string> = {
+  party: PARTY_COLOR.none,
+  party_unspecified: '#7b5aa6',
+  court: '#4e7f63',
+  nec_designated: '#8b8a80',
+  self_selected: '#c08a3c',
+  elected_chair: '#6f8b9c',
+  unknown: PARTY_COLOR.none,
+  vacant: 'transparent',
+};
+
+const ROUTE_LABEL: Record<ProvincialSelectionRoute, string> = {
+  party: '정당 추천',
+  party_unspecified: '정당추천(정당명 미표기)',
+  court: '법원장 추천',
+  nec_designated: '중앙선관위 지명',
+  self_selected: '자체선정',
+  elected_chair: '호선',
+  unknown: '확인 중',
+};
+
+const BASIS_LABEL: Record<LineageBasis, string> = {
+  direct: '정당 직접 추천',
+  president: '임명 대통령 소속정당 기준',
+  chief_justice: '대법원장 지명 (색 미분류 · 임명자 참고)',
+  none: '정당 계통 미특정',
+};
+
+const stripTitle = (s?: string) => (s ?? '').replace(/\s*(대통령|대법원장)\s*$/, '').trim();
+
+interface Lineage {
+  party: PartyKey | 'none';
+  basis: LineageBasis;
+  reason: string;
+  reasonRefs: SourceRef[];
+}
+
+function resolveLineage(a: Appointment): Lineage {
+  // 1) 국회 선출 — 추천 정당이 곧 색 (1차 근거는 위원 본인 source_refs)
+  if (a.recommended_by?.includes('국민의힘'))
+    return { party: 'ppp', basis: 'direct', reason: '국민의힘 추천 (국회 선출)', reasonRefs: [] };
+  if (a.recommended_by?.includes('더불어민주당'))
+    return { party: 'dpk', basis: 'direct', reason: '더불어민주당 추천 (국회 선출)', reasonRefs: [] };
+
+  // 2) 대통령 임명 — 임명한 대통령의 소속정당
+  if (a.selection_track === 'president' && a.appointed_by) {
+    const pn = stripTitle(a.appointed_by);
+    const pr = lineage.presidents.find((p) => p.name === pn);
+    if (pr)
+      return {
+        party: pr.party,
+        basis: 'president',
+        reason: `${pn} 대통령 임명 · 임명 당시 대통령 소속정당 ${pr.party_name}`,
+        reasonRefs: [pr.source],
+      };
+  }
+
+  // 3) 대법원장 지명 — 1단계 연계만 적용: 색은 칠하지 않고 회색(미분류)으로 둔다.
+  //    다만 그 대법원장을 누가 임명했는지는 상세에서 볼 수 있게 근거는 그대로 보존한다.
+  if (a.selection_track === 'chief_justice' && a.appointed_by) {
+    const cn = stripTitle(a.appointed_by);
+    const cj = lineage.chief_justices.find((c) => c.name === cn);
+    if (cj) {
+      const pr = lineage.presidents.find((p) => p.name === cj.appointed_by);
+      return {
+        party: 'none',
+        basis: 'chief_justice',
+        reason: `대법원장 지명 — 1단계 연계만 적용해 정당 계통으로 색칠하지 않음(회색). 지명자 ${cn} 대법원장은 ${cj.appointed_by} 대통령(${pr?.party_name ?? ''}) 임명(${cj.appointed_date}).`,
+        reasonRefs: pr ? [cj.source, pr.source] : [cj.source],
+      };
+    }
+  }
+
+  return { party: 'none', basis: 'none', reason: '정당 계통 미특정', reasonRefs: [] };
+}
+
+const TRACK_LABEL: Record<SelectionTrack, string> = {
+  president: '대통령 임명',
+  assembly_ruling: '국회 선출',
+  assembly_opposition: '국회 선출',
+  assembly_consensus: '국회 선출',
+  assembly: '국회 선출',
+  chief_justice: '대법원장 지명',
+  internal: '내부',
+};
+
+const GROUPS: { label: string; tracks: SelectionTrack[] }[] = [
+  { label: '대통령 임명', tracks: ['president'] },
+  { label: '국회 선출', tracks: ['assembly_ruling', 'assembly_opposition', 'assembly_consensus', 'assembly'] },
+  { label: '대법원장 지명', tracks: ['chief_justice'] },
+];
+
+const members = appointments.filter((a) => a.body === 'nec' && a.position !== '사무총장');
+
+interface Cell {
+  id: string;
+  name: string;
+  party: PartyKey | 'none' | 'party_unspecified' | ProvincialSelectionRoute | 'vacant';
+  dataParty: string; // 필터용 — 공석은 'vacant'
+  basis: LineageBasis;
+  color: string;
+  vacant: boolean;
+  inferred: boolean;
+}
+
+interface MatrixRow {
+  key: string;
+  label: string;
+  sublabel: string;
+  central: boolean;
+  cells: Cell[];
+}
+
+function toCell(a: Appointment): Cell {
+  const l = resolveLineage(a);
+  const vacant = a.status === 'resigned';
+  return {
+    id: a.person,
+    name: a.person,
+    party: l.party,
+    dataParty: vacant ? 'vacant' : l.party,
+    basis: l.basis,
+    color: PARTY_COLOR[l.party],
+    vacant,
+    inferred: l.basis === 'president', // 빗금 = 임명 대통령 경유(1단계). 대법원장 지명은 회색이라 빗금 없음
+  };
+}
+
+function toProvincialCell(c: ProvincialCommissioner): Cell {
+  const party = c.party_key ?? (c.selection_route === 'party_unspecified' ? 'party_unspecified' : c.selection_route);
+  return {
+    id: c.id,
+    name: c.person,
+    party,
+    dataParty: c.party_key ?? c.selection_route,
+    basis: c.party_key ? 'direct' : 'none',
+    color: c.party_key ? PARTY_COLOR[c.party_key] : ROUTE_COLOR[c.selection_route],
+    vacant: false,
+    inferred: false,
+  };
+}
+
+// ── 중앙 9석 순서: 대통령 3 · 국회 3 · 대법원장 3 ─────────────
+const groups = GROUPS.map((g) => {
+  const people = members.filter((a) => g.tracks.includes(a.selection_track));
+  const cells = people.map(toCell);
+  return { ...g, cells };
+});
+
+const provincialRows = provincial
+  ? provincial.source_pages.map((p) => {
+      const people = provincial.commissioners
+        .filter((c) => c.region_code === p.region_code)
+        .sort((a, b) => a.display_order - b.display_order);
+      const cells = people.map(toProvincialCell);
+      return {
+        ...p,
+        short: p.region.replace(/특별자치도|특별자치시|광역시|특별시|도/g, ''),
+        cells,
+      };
+    })
+  : [];
+
+function vacantCell(id: string): Cell {
+  return {
+    id,
+    name: '',
+    party: 'vacant',
+    dataParty: 'vacant',
+    basis: 'none',
+    color: 'transparent',
+    vacant: true,
+    inferred: false,
+  };
+}
+
+const centralCells = groups.flatMap((g) => g.cells);
+const SEATS_PER_ROW = 9;
+const matrixRows: MatrixRow[] = [
+  {
+    key: 'nec',
+    label: '중앙',
+    sublabel: '중앙선관위',
+    central: true,
+    cells: [...centralCells, ...Array.from({ length: Math.max(0, SEATS_PER_ROW - centralCells.length) }, (_, i) => vacantCell(`nec-vacant-${i}`))],
+  },
+  ...provincialRows.map((r) => ({
+    key: r.region_code,
+    label: r.short,
+    sublabel: r.region,
+    central: false,
+    cells: [...r.cells, ...Array.from({ length: Math.max(0, SEATS_PER_ROW - r.cells.length) }, (_, i) => vacantCell(`${r.region_code}-unpublished-${i + 1}`))],
+  })),
+];
+
+// ── SVG 레이아웃 (서버 렌더 — JS 없이도 보이게) ─────────────
+const MATRIX_LABEL_W = 58;
+const MCELL = 34;
+const MCGAP = 5;
+const MROW = 46;
+const MHEAD = 18;
+const matrixSvgW = MATRIX_LABEL_W + SEATS_PER_ROW * MCELL + (SEATS_PER_ROW - 1) * MCGAP;
+const matrixSvgH = MHEAD + matrixRows.length * MROW;
+
+const centralTally = { ppp: 0, dpk: 0, none: 0, vacant: 0 };
+for (const g of groups)
+  for (const c of g.cells) {
+    if (c.vacant) centralTally.vacant++;
+    else if (c.party === 'ppp' || c.party === 'dpk' || c.party === 'none') centralTally[c.party]++;
+  }
+
+// 전체 범례 집계 (중앙 + 시·도)
+const tally = {
+  ppp: 0,
+  dpk: 0,
+  none: 0,
+  vacant: 0,
+  party_unspecified: 0,
+  court: 0,
+  nec_designated: 0,
+  self_selected: 0,
+  elected_chair: 0,
+  unknown: 0,
+};
+tally.ppp += centralTally.ppp;
+tally.dpk += centralTally.dpk;
+tally.none += centralTally.none;
+tally.vacant += centralTally.vacant;
+for (const r of provincialRows)
+  for (const c of r.cells) {
+    if (c.dataParty === 'ppp') tally.ppp++;
+    else if (c.dataParty === 'dpk') tally.dpk++;
+    else if (c.dataParty in tally) tally[c.dataParty as keyof typeof tally]++;
+  }
+
+const legend: { key: string; label: string; color: string; count: number }[] = [
+  { key: 'ppp', label: lineage.parties.ppp.label, color: PARTY_COLOR.ppp, count: tally.ppp },
+  { key: 'dpk', label: lineage.parties.dpk.label, color: PARTY_COLOR.dpk, count: tally.dpk },
+  { key: 'party_unspecified', label: '정당명 미표기', color: ROUTE_COLOR.party_unspecified, count: tally.party_unspecified },
+  { key: 'court', label: ROUTE_LABEL.court, color: ROUTE_COLOR.court, count: tally.court },
+  { key: 'nec_designated', label: ROUTE_LABEL.nec_designated, color: ROUTE_COLOR.nec_designated, count: tally.nec_designated },
+  { key: 'self_selected', label: ROUTE_LABEL.self_selected, color: ROUTE_COLOR.self_selected, count: tally.self_selected },
+  { key: 'elected_chair', label: ROUTE_LABEL.elected_chair, color: ROUTE_COLOR.elected_chair, count: tally.elected_chair },
+  { key: 'none', label: '중앙 회색', color: PARTY_COLOR.none, count: tally.none },
+].filter((l) => l.count > 0);
+
+const totalSeats = SEATS_PER_ROW * matrixRows.length;
+const observedProvincial = provincial?.observed_members ?? 0;
+const unpublishedProvincialSeats = provincial ? provincial.expected_members - observedProvincial : 0;
+const centralVacant = centralTally.vacant;
+
+// ── 상세 패널용 데이터 (클라이언트가 읽음) ─────────────────
+const detailData = Object.fromEntries(
+  [
+  ...members.map((a) => {
+    const l = resolveLineage(a);
+    const partyLabel =
+      l.party === 'none' ? '해당 없음' : lineage.parties[l.party].label;
+    return [
+      a.person,
+      {
+        name: a.person,
+        pos:
+          a.status === 'resigned'
+            ? `前 ${a.position} (사임 · 공석)`
+            : a.acting_role
+              ? `${a.position} · ${a.acting_role}`
+              : a.position,
+        party: partyLabel,
+        partyColor: PARTY_COLOR[l.party],
+        basis: BASIS_LABEL[l.basis],
+        reason: l.reason,
+        track:
+          TRACK_LABEL[a.selection_track] +
+          (a.appointed_by ? ` · ${a.appointed_by}` : '') +
+          (a.recommended_by ? ` · ${a.recommended_by}` : ''),
+        appointed: a.appointed_date ?? '확인 중',
+        term: a.term_start && a.term_end ? `${a.term_start} ~ ${a.term_end} (6년)` : '확인 중',
+        career: a.career_summary.join(' · '),
+        vacant: a.status === 'resigned',
+        refs: a.source_refs.map((r) => ({
+          title: r.title,
+          url: r.url,
+          grade: r.type === 'official' ? '공식문서' : '복수 매체 교차',
+        })),
+        lineageRefs: l.reasonRefs.map((r) => ({ title: r.title, url: r.url })),
+      },
+    ];
+  }),
+  ...(provincial?.commissioners ?? []).map((c) => {
+    const partyLabel = c.party_key
+      ? lineage.parties[c.party_key].label
+      : c.selection_route === 'party_unspecified'
+        ? '정당추천(정당명 미표기)'
+        : ROUTE_LABEL[c.selection_route];
+    const color = c.party_key ? PARTY_COLOR[c.party_key] : ROUTE_COLOR[c.selection_route];
+    return [
+      c.id,
+      {
+        name: c.person,
+        pos: `${c.committee} · ${c.position}`,
+        party: partyLabel,
+        partyColor: color,
+        basis: c.party_key ? '정당 직접 추천' : ROUTE_LABEL[c.selection_route],
+        reason: c.party_key
+          ? `${c.selection_method} · 공식 페이지 원문 기준`
+          : c.selection_route === 'party_unspecified'
+            ? `${c.selection_method} · 공식 페이지에 정당명 미표기`
+            : `${c.selection_method ?? ROUTE_LABEL[c.selection_route]} · 정당 추천 아님`,
+        track: `${c.region} · ${c.selection_method ?? '확인 중'}`,
+        appointed: c.appointed_date ?? '확인 중',
+        term: '시·도선관위 공식 위원소개 기준',
+        career: c.career_summary.join(' · '),
+        vacant: false,
+        refs: c.source_refs.map((r) => ({
+          title: r.title,
+          url: r.url,
+          grade: r.type === 'official' ? '공식문서' : '복수 매체 교차',
+        })),
+        lineageRefs: [],
+      },
+    ];
+  }),
+  ]
+);
+---
+
+<div class="hm" id="hm-root">
+  <p class="hm-method">
+    <b>색은 임명 경로의 정파적 계통입니다 — 위원 개인의 당적이 아닙니다.</b>
+    국회 선출은 추천 정당, 대통령 임명은 임명한 대통령의 소속정당(1단계)을 기준으로 색을
+    칠합니다. 시·도 위원은 공식 위원소개의 선정방법을 기준으로 정당 추천만 빨강/파랑으로
+    표시하고, 정당명이 없는 추천·법원장 추천·자체선정·중앙선관위 지명은 별도 색으로
+    구분합니다. 각 칸을 누르면 색을 만든 근거와 원문 출처가 열립니다.
+  </p>
+
+  <div class="hm-legend" role="group" aria-label="정당 계통 범례 — 누르면 해당 계통만 강조">
+    {legend.map((l) => (
+      <button class="hm-legend-item" type="button" data-party={l.key} aria-pressed="false">
+        <span class="hm-sw" style={`background:${l.color}`}></span>
+        <span class="hm-lg-label">{l.label}</span>
+        <span class="hm-lg-count">{l.count}</span>
+      </button>
+    ))}
+    <span class="hm-key">
+      <span class="hm-key-item"><span class="hm-sw hm-sw-solid"></span>직접 추천</span>
+      <span class="hm-key-item"><span class="hm-sw hm-sw-hatch"></span>임명 대통령 경유(1단계)</span>
+    </span>
+  </div>
+
+  <div class="hm-row-head">
+    <span class="hm-committee">중앙 9석 + 시·도 153석 · 통합 9열 격자</span>
+    <span class="hm-tally">
+      <span style={`color:${PARTY_COLOR.dpk}`}>● 민주 {tally.dpk}</span>
+      <span style={`color:${PARTY_COLOR.ppp}`}>● 국힘 {tally.ppp}</span>
+      <span class="hm-tally-vac">총 {totalSeats}석 · 공개/기록 {members.length + observedProvincial}명</span>
+    </span>
+  </div>
+
+  <div class="hm-board">
+    <div class="hm-scroll">
+      <svg
+        class="hm-svg hm-matrix-svg"
+        viewBox={`0 0 ${matrixSvgW} ${matrixSvgH}`}
+        width={matrixSvgW}
+        height={matrixSvgH}
+        role="img"
+        aria-label={`중앙선거관리위원회와 시·도선거관리위원회 ${totalSeats}석의 정당 계통 통합 히트맵`}
+      >
+        <defs>
+          <pattern id="hm-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <rect width="6" height="6" fill="none"></rect>
+            <line x1="0" y1="0" x2="0" y2="6" stroke="#ffffff" stroke-width="2" stroke-opacity="0.55"></line>
+          </pattern>
+        </defs>
+
+        <g class="hm-colheads" transform={`translate(${MATRIX_LABEL_W}, 0)`}>
+          {Array.from({ length: SEATS_PER_ROW }, (_, i) => (
+            <text class="hm-colhead" x={i * (MCELL + MCGAP) + MCELL / 2} y="11" text-anchor="middle">{i + 1}</text>
+          ))}
+        </g>
+
+        {matrixRows.map((r, ri) => (
+          <g class:list={['hm-matrix-row', r.central && 'is-central']} transform={`translate(0, ${MHEAD + ri * MROW})`}>
+            <text class="hm-region" x="0" y="23">{r.label}</text>
+            {r.cells.map((c, i) => {
+              const cx = MATRIX_LABEL_W + i * (MCELL + MCGAP);
+              const aria =
+                c.vacant && !c.name
+                  ? `${r.sublabel} ${i + 1}번 칸 · 공식 페이지 미노출 또는 공석`
+                  : `${r.sublabel} ${c.name} · ${c.vacant ? '공석' : c.dataParty === 'ppp' ? lineage.parties.ppp.label : c.dataParty === 'dpk' ? lineage.parties.dpk.label : c.dataParty === 'party_unspecified' ? '정당명 미표기' : c.dataParty === 'none' ? '계통 미특정' : ROUTE_LABEL[c.dataParty as ProvincialSelectionRoute]}`;
+              return (
+                <g
+                  class:list={['hm-cell', 'hm-matrix-cell', r.central && 'is-central-cell', c.vacant && 'is-vacant', c.vacant && !c.name && 'is-empty']}
+                  data-seat={c.id}
+                  data-party={c.dataParty}
+                  transform={`translate(${cx}, 0)`}
+                  role={c.vacant && !c.name ? undefined : 'button'}
+                  tabindex={c.vacant && !c.name ? undefined : '0'}
+                  aria-label={aria}
+                >
+                  <rect
+                    class="hm-rect"
+                    width={MCELL}
+                    height={MCELL}
+                    rx="4"
+                    fill={c.vacant ? 'transparent' : c.color}
+                  />
+                  {!c.vacant && c.inferred && (
+                    <rect class="hm-rect-hatch" width={MCELL} height={MCELL} rx="4" fill="url(#hm-hatch)"></rect>
+                  )}
+                  {c.vacant && c.name && <text class="hm-vac" x={MCELL / 2} y={MCELL / 2 + 4} text-anchor="middle">사임</text>}
+                  <text class="hm-prov-nm" x={MCELL / 2} y={MCELL + 10} text-anchor="middle">{c.name.slice(0, 3)}</text>
+                </g>
+              );
+            })}
+          </g>
+        ))}
+      </svg>
+    </div>
+
+    <div class="detail hm-detail" id="hm-detail">
+      <button class="close" type="button" aria-label="닫기">닫기 ✕</button>
+      <dl>
+        <dt>이름</dt><dd data-f="name">—</dd>
+        <dt>직</dt><dd data-f="pos">—</dd>
+        <dt>정당 계통</dt><dd data-f="party">—</dd>
+        <dt>색 근거</dt><dd data-f="reason">—</dd>
+        <dt>임명 경로</dt><dd data-f="track">—</dd>
+        <dt>임명일</dt><dd class="mono" data-f="appointed">—</dd>
+        <dt>임기</dt><dd class="mono" data-f="term">—</dd>
+        <dt>경력</dt><dd data-f="career">—</dd>
+        <dt>출처</dt><dd data-f="src">—</dd>
+      </dl>
+    </div>
+  </div>
+
+  {provincial && (
+    <p class="hm-footnote">
+      통합 격자는 중앙 9석과 시·도 17곳의 법정 9석씩을 같은 9열로 놓은 것입니다.
+      시·도 행은 {provincial.snapshot_date} 기준 각 시·도선관위 공식 위원소개 페이지에 공개된
+      현원 {provincial.observed_members}명을 채우고, 원문에 노출되지 않은 {unpublishedProvincialSeats}석은
+      점선 빈칸으로 남겼습니다. 중앙의 사임 공석 {centralVacant}석도 같은 격자 안에서 표시합니다.
+      정당명이 원문에 없는 "정당추천" 항목은 추정하지 않고 별도 색으로 표시합니다.
+    </p>
+  )}
+
+  <script is:inline type="application/json" id="hm-seat-data" set:html={JSON.stringify(detailData)} />
+</div>
+
+<script>
+  import { selectAll } from 'd3';
+
+  const root = document.getElementById('hm-root');
+  const dataEl = document.getElementById('hm-seat-data');
+  const detail = document.getElementById('hm-detail');
+
+  if (root && dataEl && detail) {
+    const DATA = JSON.parse(dataEl.textContent || '{}');
+    const field = (f: string) => detail.querySelector(`[data-f="${f}"]`) as HTMLElement;
+
+    const refLink = (r: { title: string; url: string | null }, label: string) => {
+      const frag = document.createDocumentFragment();
+      frag.append(r.title + ' ');
+      if (r.url) {
+        const a = document.createElement('a');
+        a.href = r.url;
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.textContent = label;
+        frag.append('· ', a);
+      } else {
+        const pending = document.createElement('span');
+        pending.className = 'pending-source';
+        pending.textContent = '· 원문 확인 중';
+        frag.append(pending);
+      }
+      return frag;
+    };
+
+    function fill(d: any) {
+      field('name').textContent = d.name;
+      field('pos').textContent = d.pos;
+
+      // 정당 계통 = 색 스와치 + 라벨 + 근거 종류
+      const party = field('party');
+      party.textContent = '';
+      const sw = document.createElement('span');
+      sw.className = 'hm-sw';
+      sw.style.background = d.partyColor;
+      sw.style.marginRight = '6px';
+      party.append(sw, `${d.party} · ${d.basis}`);
+
+      field('reason').textContent = d.reason;
+      field('track').textContent = d.track;
+      field('appointed').textContent = d.appointed;
+      field('term').textContent = d.term;
+      field('career').textContent = d.career;
+
+      // 출처: 위원 본인 원문(1차) + 계통 근거(2차)
+      const src = field('src');
+      src.textContent = '';
+      d.refs.forEach((r: any, i: number) => {
+        if (i > 0) src.append(' · ');
+        const grade = document.createElement('span');
+        grade.className = 'src ' + (r.grade === '공식문서' ? 'official' : 'press');
+        grade.textContent = r.grade;
+        src.append(grade, ' ');
+        src.append(refLink(r, '원문 보기 ↗'));
+      });
+      if (d.lineageRefs && d.lineageRefs.length) {
+        d.refs.length && src.append(' · ');
+        const lab = document.createElement('span');
+        lab.className = 'src';
+        lab.textContent = '계통 근거';
+        src.append(lab, ' ');
+        d.lineageRefs.forEach((r: any, i: number) => {
+          if (i > 0) src.append(' · ');
+          src.append(refLink(r, '원문 보기 ↗'));
+        });
+      }
+    }
+
+    const cells = selectAll<SVGGElement, unknown>('#hm-root .hm-cell');
+
+    function closeDetail() {
+      detail!.classList.remove('open');
+      cells.attr('aria-expanded', 'false');
+    }
+
+    function openDetail(node: SVGGElement) {
+      const id = node.getAttribute('data-seat') || '';
+      const d = DATA[id];
+      if (!d) return;
+      const wasOpen = node.getAttribute('aria-expanded') === 'true';
+      closeDetail();
+      if (wasOpen) return;
+      fill(d);
+      node.setAttribute('aria-expanded', 'true');
+      detail!.classList.add('open');
+    }
+
+    cells
+      .on('click', function () {
+        openDetail(this as SVGGElement);
+      })
+      .on('keydown', function (event: KeyboardEvent) {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          openDetail(this as SVGGElement);
+        }
+      });
+
+    detail.querySelector('.close')?.addEventListener('click', closeDetail);
+
+    // ── 범례 클릭 = 해당 계통만 강조 (다시 누르면 해제) ──────
+    let focus: string | null = null;
+    const legendItems = selectAll<HTMLButtonElement, unknown>('#hm-root .hm-legend-item');
+
+    function applyFocus() {
+      cells.classed('hm-dim', function () {
+        return focus !== null && (this as SVGGElement).dataset.party !== focus;
+      });
+      legendItems
+        .classed('active', function () {
+          return (this as HTMLButtonElement).dataset.party === focus;
+        })
+        .attr('aria-pressed', function () {
+          return String((this as HTMLButtonElement).dataset.party === focus);
+        });
+    }
+
+    legendItems.on('click', function () {
+      const p = (this as HTMLButtonElement).dataset.party || null;
+      focus = focus === p ? null : p;
+      applyFocus();
+    });
+  }
+</script>

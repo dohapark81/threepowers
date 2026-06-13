@@ -40,6 +40,117 @@ export interface Appointment {
   controversies?: { summary: string; refs: SourceRef[] }[];
 }
 
+// ── 정당 계통 히트맵 (party_lineage.json) ──────────────────
+// 색은 위원 개인의 당적이 아니라 '임명 경로의 정파적 계통'을 나타낸다.
+export type PartyKey = 'ppp' | 'dpk';
+
+export interface PartyInfo {
+  /** 범례·상세 표기용. 예: "국민의힘 계열" */
+  label: string;
+  /** 칸 안 짧은 표기. 예: "국힘" */
+  short: string;
+}
+
+export interface PresidentRef {
+  name: string;
+  party: PartyKey;
+  party_name: string;
+  term_start: string;
+  term_end: string | null;
+  source: SourceRef;
+}
+
+export interface ChiefJusticeRef {
+  name: string;
+  /** 該 대법원장을 임명한 대통령 */
+  appointed_by: string;
+  party: PartyKey;
+  appointed_date: string;
+  source: SourceRef;
+}
+
+export interface PartyLineage {
+  parties: Record<PartyKey, PartyInfo>;
+  presidents: PresidentRef[];
+  chief_justices: ChiefJusticeRef[];
+}
+
+/** 색을 만든 근거. direct=정당 직접 추천 / president·chief_justice=임명 계통 추론 / none=정당 미특정 */
+export type LineageBasis = 'direct' | 'president' | 'chief_justice' | 'none';
+
+// ── 시·도선거관리위원회 위원 히트맵 (provincial_commissioners.json) ──
+export type ProvincialRegionCode =
+  | 'su'
+  | 'bs'
+  | 'dg'
+  | 'ic'
+  | 'gj'
+  | 'dj'
+  | 'us'
+  | 'sj'
+  | 'gg'
+  | 'gw'
+  | 'cb'
+  | 'cn'
+  | 'jb'
+  | 'jn'
+  | 'gb'
+  | 'gn'
+  | 'jj';
+
+export type ProvincialSelectionRoute =
+  | 'party'
+  | 'party_unspecified'
+  | 'court'
+  | 'nec_designated'
+  | 'self_selected'
+  | 'elected_chair'
+  | 'unknown';
+
+export interface ProvincialCommissioner {
+  id: string;
+  region_code: ProvincialRegionCode;
+  region: string;
+  committee: string;
+  display_order: number;
+  person: string;
+  position: string;
+  appointed_date: string | null;
+  /** 선관위 공식 페이지의 원문 표기. 예: "국민의힘 추천", "지방법원장추천" */
+  selection_method: string | null;
+  /** 히트맵 분류용 파생값. 원문에 정당명이 없으면 party_unspecified로 둔다. */
+  selection_route: ProvincialSelectionRoute;
+  party_key: PartyKey | null;
+  party_name: string | null;
+  career_summary: string[];
+  source_refs: SourceRef[];
+}
+
+export interface ProvincialCommissionersData {
+  _note: string;
+  snapshot_date: string;
+  scope: 'province_committees';
+  expected_regions: number;
+  observed_members: number;
+  counts: {
+    by_region: Record<string, number>;
+    by_route: Record<ProvincialSelectionRoute, number>;
+    by_party: {
+      ppp: number;
+      dpk: number;
+      unspecified_party: number;
+    };
+  };
+  source_pages: {
+    region_code: ProvincialRegionCode;
+    region: string;
+    title: string;
+    url: string;
+    retrieved_at: string;
+  }[];
+  commissioners: ProvincialCommissioner[];
+}
+
 // 가드레일 §6-1: 상태 라벨은 이 네 가지만 사용한다.
 export type EventStatus = 'official' | 'investigating' | 'result_announced' | 'corrected';
 
