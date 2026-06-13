@@ -126,6 +126,7 @@ const detailData = Object.fromEntries(
           >
             <span class="nm"><span class="dot"></span>{a.person}</span>
             <span class="meta">{seatMeta(a)}</span>
+            {a.status === 'resigned' && <span class="stamp" aria-hidden="true">사임</span>}
           </button>
         ))}
       </div>
@@ -191,9 +192,6 @@ const detailData = Object.fromEntries(
     <span class="pill">
       {nearestYear && <>임기 만료 임박 <b>{nearestYear}년 {expiringByYear.get(nearestYear)}명</b></>}
       {vacantCount > 0 && <> · 위원장 <b>공석 {vacantCount}석</b></>}
-    </span>
-    <span class="also">
-      같은 컴포넌트로 보기 → 헌법재판소 9인 · 대법원 14인 <span style="color:var(--faint)">(데이터 준비 중)</span>
     </span>
   </div>
 
