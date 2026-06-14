@@ -20,7 +20,9 @@
     "status": "official",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "선관위 브리핑 (파이낸셜뉴스 보도)", "url": "https://www.fnnews.com/news/202606032019328118" },
+      { "type": "official", "title": "선거일 투표용지 부족 관련 대국민 사과문 (중앙선거관리위원회)", "url": "https://img.nec.go.kr/cmm/dozen/view.do?bcIdx=326456&cbIdx=1090&fileNo=2" },
+      { "type": "official", "title": "제9회 전국동시지방선거 선거일 투표용지 부족 사태에 대한 중앙선거관리위원회 입장", "url": "https://img.nec.go.kr/cmm/dozen/view.do?bcIdx=326458&cbIdx=1090&fileNo=1" },
+      { "type": "press", "title": "선관위 브리핑 보도 (파이낸셜뉴스)", "url": "https://www.fnnews.com/news/202606032019328118" },
       { "type": "press", "title": "경향신문 속보", "url": "https://www.khan.co.kr/en/article/202606032045027" }
     ],
     "topics": ["선관위", "6·3지방선거"]
@@ -72,7 +74,8 @@
     "source_grade": "official",
     "pivot": { "label": "위원장 사퇴 표명" },
     "source_refs": [
-      { "type": "official", "title": "선관위 브리핑 (파이낸셜뉴스 보도)", "url": "https://www.fnnews.com/news/202606051615525545" },
+      { "type": "official", "title": "투표용지 부족 관련 대국민 사과문 (중앙선거관리위원장)", "url": "https://img.nec.go.kr/cmm/dozen/view.do?bcIdx=326848&cbIdx=1090&fileNo=2" },
+      { "type": "press", "title": "선관위 브리핑 보도 (파이낸셜뉴스)", "url": "https://www.fnnews.com/news/202606051615525545" },
       { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008596932" }
     ],
     "topics": ["선관위", "6·3지방선거"]
@@ -110,7 +113,8 @@
     "status": "official",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "선관위 집계 (파이낸셜뉴스 보도)", "url": "https://www.fnnews.com/news/202606090501132196" }
+      { "type": "official", "title": "투표용지 부족사태 진상규명위원회 출범 및 부족 투표소 현황 (중앙선거관리위원회)", "url": "https://img.nec.go.kr/common/board/Download.do?bcIdx=326957&cbIdx=1090&streFileNm=fb634d44-a169-4049-b315-74fc7544a503.pdf" },
+      { "type": "press", "title": "선관위 집계 보도 (파이낸셜뉴스)", "url": "https://www.fnnews.com/news/202606090501132196" }
     ],
     "supersedes": "evt_20260605_01",
     "topics": ["선관위", "6·3지방선거"]
@@ -151,7 +155,8 @@
     "status": "official",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "선관위 발표 (파이낸셜뉴스 보도)", "url": "https://www.fnnews.com/news/202606090501132196" }
+      { "type": "official", "title": "투표용지 부족사태 진상규명위원회 출범 (중앙선거관리위원회)", "url": "https://img.nec.go.kr/common/board/Download.do?bcIdx=326957&cbIdx=1090&streFileNm=fb634d44-a169-4049-b315-74fc7544a503.pdf" },
+      { "type": "press", "title": "선관위 발표 보도 (파이낸셜뉴스)", "url": "https://www.fnnews.com/news/202606090501132196" }
     ],
     "topics": ["선관위", "6·3지방선거", "진상규명위"]
   },
@@ -229,7 +234,8 @@
     "status": "official",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "위철환 직무대행 입장문 (연합뉴스 보도)", "url": "https://www.yna.co.kr/amp/view/AKR20260611116100001" },
+      { "type": "official", "title": "국민 여러분께 올리는 말씀 (중앙선거관리위원장 직무대행)", "url": "https://img.nec.go.kr/cmm/dozen/view.do?bcIdx=327144&cbIdx=1090&fileNo=2" },
+      { "type": "press", "title": "위철환 직무대행 입장문 보도 (연합뉴스)", "url": "https://www.yna.co.kr/amp/view/AKR20260611116100001" },
       { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/politics/politics_general/1263007.html" },
       { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.amp.php?param=0101_202606112229144503&version=1" }
     ],
@@ -326,5 +332,38 @@
       { "id": "evt_20260612_02", "note": "압수물 분석과 함께 진행되는 수사 절차" }
     ],
     "topics": ["선관위", "6·3지방선거", "수사"]
+  },
+  {
+    "id": "evt_20260613_01",
+    "date": "2026-06-13",
+    "title": "합수본, 중앙선관위 서버 전자정보 압수수색 사흘째 진행",
+    "body_oneline": "검경 합동수사본부가 6월 11일 착수한 중앙선관위 서버 전자정보 압수수색을 13일까지 이어갔고, 투표용지 50% 인쇄 결정 관련 공문·메신저 대화 등 전자문서와 기존 압수물 분석을 토대로 관계자 소환을 준비하는 것으로 보도됨",
+    "status": "investigating",
+    "source_grade": "press_multi",
+    "source_refs": [
+      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_cs/_ln_0103_202606140152481577_005.html" },
+      { "type": "press", "title": "동아일보 보도", "url": "https://www.donga.com/news/amp/all/20260614/134105635/1" }
+    ],
+    "related": [
+      { "id": "evt_20260612_02", "note": "중앙선관위 서버 전자정보 압수수색과 압수물 분석이 이어짐" },
+      { "id": "evt_20251210_01", "note": "투표용지 50% 인쇄 하한 결정 경위가 수사 대상" }
+    ],
+    "topics": ["선관위", "6·3지방선거", "수사", "인쇄지침"]
+  },
+  {
+    "id": "evt_20260613_02",
+    "date": "2026-06-13",
+    "title": "잠실 개표소 봉쇄 시위 9일째, 경찰 비공식 추산 약 1만2천명 집결",
+    "body_oneline": "서울 송파구 올림픽공원 핸드볼경기장 주변에서 투표용지 부족 사태에 항의하는 개표소 봉쇄 시위가 9일째 이어졌고, 6월 13일 오후 7시 기준 경찰 비공식 추산 약 1만2천명이 모인 것으로 보도됨",
+    "status": "official",
+    "source_grade": "press_multi",
+    "source_refs": [
+      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260613023651004" },
+      { "type": "press", "title": "MBN 현장 보도", "url": "https://www.mbn.co.kr/news/society/5199605" }
+    ],
+    "related": [
+      { "id": "evt_20260605_03", "note": "잠실7동 투표함 반출 이후 송파구 개표소 주변 장외시위가 이어짐" }
+    ],
+    "topics": ["선관위", "6·3지방선거", "잠실7동", "장외시위"]
   }
 ]
