@@ -353,13 +353,15 @@
   {
     "id": "evt_20260613_02",
     "date": "2026-06-13",
-    "title": "잠실 개표소 봉쇄 시위 9일째, 경찰 비공식 추산 약 1만2천명 집결",
-    "body_oneline": "서울 송파구 올림픽공원 핸드볼경기장 주변에서 투표용지 부족 사태에 항의하는 개표소 봉쇄 시위가 9일째 이어졌고, 6월 13일 오후 7시 기준 경찰 비공식 추산 약 1만2천명이 모인 것으로 보도됨",
+    "title": "잠실 개표소 봉쇄 시위 9일째, 밤 사이 경찰 비공식 추산 약 2만 명",
+    "body_oneline": "서울 송파구 올림픽공원 핸드볼경기장 일대에서 투표용지 부족 사태로 촉발된 개표소 봉쇄 시위가 9일째 이어졌고, 시위대는 '부정선거 재선거'·'당일개표 수개표' 구호를 내걸었음. 인원은 6월 13일 오전 약 700명에서 오후 9시 경찰 비공식 추산 약 2만 명까지 늘었고, 첫 주말(6-6) 약 3만 명 정점 대비로는 감소세로 보도됨",
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
       { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260613023651004" },
-      { "type": "press", "title": "MBN 현장 보도", "url": "https://www.mbn.co.kr/news/society/5199605" }
+      { "type": "press", "title": "MBN 현장 보도", "url": "https://www.mbn.co.kr/news/society/5199605" },
+      { "type": "press", "title": "한국일보 보도", "url": "https://www.hankookilbo.com/news/article/A2026061322410001051" },
+      { "type": "press", "title": "서울경제 보도", "url": "https://www.sedaily.com/article/20055343" }
     ],
     "related": [
       { "id": "evt_20260605_03", "note": "잠실7동 투표함 반출 이후 송파구 개표소 주변 장외시위가 이어짐" }
