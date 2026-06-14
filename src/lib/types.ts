@@ -131,6 +131,7 @@ export interface ProvincialCommissionersData {
   snapshot_date: string;
   scope: 'province_committees';
   expected_regions: number;
+  expected_members: number;
   observed_members: number;
   counts: {
     by_region: Record<string, number>;
