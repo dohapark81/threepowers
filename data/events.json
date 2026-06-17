@@ -496,5 +496,85 @@
       { "id": "evt_20260614_03", "note": "대통령이 시위 현장의 사적 검문·업무방해 엄정 대응을 언급한 다음 날 상황" }
     ],
     "topics": ["선관위", "6·3지방선거", "잠실7동", "장외시위"]
+  },
+  {
+    "id": "evt_20260616_01",
+    "date": "2026-06-16",
+    "title": "합수본, 잠실7동 제2투표소 투표관리원 참고인 조사·경찰 수사기록 이송",
+    "body_oneline": "검경 합동수사본부가 투표용지 부족으로 투표 마감 시각이 오후 10시까지 연장됐던 서울 송파구 잠실7동 제2투표소의 투표관리원을 참고인 신분으로 불러 조사. 합수본은 경찰 수사기록을 이송받고 서울중앙지검 내 사무실 정비를 마무리하면서, 현장 대응 경위 확인과 압수물 분석 뒤 중앙선관위 등 윗선 조사를 이어갈 방침",
+    "status": "investigating",
+    "source_grade": "press_multi",
+    "source_refs": [
+      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260616074000004" },
+      { "type": "press", "title": "MBC 단독 보도", "url": "https://imnews.imbc.com/news/2026/society/article/6830506_36918.html" },
+      { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/society/society_general/1263753.html" },
+      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.amp.php?param=0103_202606161434403606&version=1" }
+    ],
+    "related": [
+      { "id": "evt_20260614_01", "note": "중앙선관위 서버 압수수색 마무리 뒤 예고된 실무진 참고인 조사가 시작됨" },
+      { "id": "evt_20260612_01", "note": "송파구선관위의 부족 가능성 인지와 현장 대응 경위가 참고인 조사 대상" },
+      { "id": "evt_20260610_02", "note": "증거보전 현장검증이 이뤄졌던 잠실7동 제2투표소 관련 수사 절차" }
+    ],
+    "topics": ["선관위", "6·3지방선거", "잠실7동", "수사"]
+  },
+  {
+    "id": "evt_20260616_02",
+    "date": "2026-06-16",
+    "title": "여야, 선관위 국정조사 45일 진행·18일 계획서 처리 합의",
+    "body_oneline": "더불어민주당 천준호·국민의힘 김승수 원내운영수석부대표가 6월 18일 본회의에서 국정조사 계획서를 처리하기로 합의. 국정조사 명칭은 가칭 '투표용지 부족 사태 등 국민 참정권 침해 진상규명 및 선거관리 개혁을 위한 국정조사'이며, 조사 대상은 중앙선관위와 각급 지역선관위. 특위 위원장은 국민의힘이 맡고 위원은 민주당 9명·국민의힘 7명·비교섭단체 2명 등 총 18명으로 구성, 조사 기간은 45일로 하되 필요시 연장하기로 함",
+    "status": "official",
+    "source_grade": "press_multi",
+    "source_refs": [
+      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260616118100001" },
+      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/replay/2026/nw1700/article/6830603_36981.html" },
+      { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/politics/politics_general/1263791.html" },
+      { "type": "press", "title": "서울신문 보도", "url": "https://www.seoul.co.kr/news/politics/2026/06/16/20260616500187" }
+    ],
+    "related": [
+      { "id": "evt_20260615_02", "note": "전날 원내수석 협의에서 남은 특위 구성·조사 범위 쟁점을 합의" },
+      { "id": "evt_20260611_04", "note": "국정조사 요구서 본회의 보고 뒤 조사계획서 처리 일정과 특위 구성을 확정" },
+      { "id": "evt_20260614_03", "note": "대통령의 선관위 국정조사 협조 주문 이후 여야가 계획서 처리에 합의" }
+    ],
+    "topics": ["선관위", "6·3지방선거", "국정조사"]
+  },
+  {
+    "id": "evt_20260616_03",
+    "date": "2026-06-16",
+    "title": "선관위, 투표지 인쇄매수 기준 전면 재검토·재발방지책 보고",
+    "body_oneline": "중앙선관위가 더불어민주당 선거제도 개혁 TF 회의에서 투표지 인쇄매수 기준 축소 조정을 전면 재검토하겠다고 보고. 투표소별 잔여 수량 모니터링과 즉각 보고 체계 구축, 추가 배부 절차 표준화, 선거관리 비상상황 대응훈련 정례화, 비상대응전담인력 제도와 시도선관위 현장지원단 사전 운영 검토 등을 재발방지책으로 제시",
+    "status": "official",
+    "source_grade": "press_multi",
+    "source_refs": [
+      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260616140200001" },
+      { "type": "press", "title": "머니투데이 보도", "url": "https://www.mt.co.kr/politics/2026/06/16/2026061616362023201" },
+      { "type": "press", "title": "아시아경제 보도", "url": "https://view.asiae.co.kr/article/2026061617131481830" },
+      { "type": "press", "title": "뉴시스 보도", "url": "https://www.newsis.com/view/NISX20260616_0003671499" }
+    ],
+    "related": [
+      { "id": "evt_20251210_01", "note": "투표용지 인쇄 하한 기준 50% 전결 개정에 대한 재검토 방침" },
+      { "id": "evt_20260610_01", "note": "진상규명위원회 출범 뒤 확인된 투표용지 수급·보고체계 문제의 재발방지 대책" },
+      { "id": "evt_20260615_01", "note": "서울시선관위·중앙선관위의 부족 징후 인지와 보고 지연 조사 뒤 나온 개선 보고" }
+    ],
+    "topics": ["선관위", "6·3지방선거", "인쇄지침"]
+  },
+  {
+    "id": "evt_20260616_04",
+    "date": "2026-06-16",
+    "title": "잠실 개표소 봉쇄 시위 12일째, 체육단체 진입 합의 뒤 불발·경찰 수사 착수",
+    "body_oneline": "올림픽공원 핸드볼경기장 개표소 봉쇄 시위 12일째, 대한체육회 산하 체육단체 직원들이 사무실 진입을 시도했으나 시위대 반발로 대치. 오후 국민의힘 중재로 단체별 순차 진입과 방송 카메라 동행 등에 합의했지만 일부 참가자 반대로 최종 불발됐고, 경찰은 출입 방해 행위에 대해 업무방해 혐의 수사에 착수하겠다고 밝힘. 행정안전부 장관은 집회 현장의 사적 검문·시설 점거 등 불법행위에 엄정 책임을 묻겠다는 대국민 담화를 발표",
+    "status": "official",
+    "source_grade": "press_multi",
+    "source_refs": [
+      { "type": "press", "title": "연합뉴스 체육단체 진입 시도 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260616063000004" },
+      { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/society/society_general/1263841.html" },
+      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/replay/2026/nw1700/article/6830602_36981.html" },
+      { "type": "press", "title": "동아일보 보도", "url": "https://www.donga.com/news/Politics/article/all/20260616/134122616/2" }
+    ],
+    "related": [
+      { "id": "evt_20260615_04", "note": "전날 대한체육회 공권력 행사 요청과 경찰 경고 뒤 체육단체 진입 시도와 수사 착수로 이어짐" },
+      { "id": "evt_20260614_03", "note": "대통령이 시위 현장의 사적 검문·업무방해 엄정 대응을 언급한 뒤 행안부 담화와 경찰 수사 방침이 발표됨" },
+      { "id": "evt_20260605_03", "note": "잠실7동 투표함 반출 이후 송파구 개표소 주변 장외시위가 장기화됨" }
+    ],
+    "topics": ["선관위", "6·3지방선거", "잠실7동", "장외시위"]
   }
 ]
