@@ -27,5 +27,10 @@ dist/
 # Local screenshots / diagnostics
 .tmp-shots/
 
+# Secrets / API keys (NEVER commit)
+.env
+.env.*
+!.env.example
+
 # OS
 .DS_Store

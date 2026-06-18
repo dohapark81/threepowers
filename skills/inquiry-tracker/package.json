@@ -1,0 +1,15 @@
+{
+  "name": "inquiry-tracker",
+  "version": "0.2.0",
+  "description": "CrewX skill for National Assembly inquiry tracking via open.assembly.go.kr",
+  "scripts": {
+    "help": "node inquiry-tracker.js --help",
+    "key-guide": "node inquiry-tracker.js key-guide",
+    "check-key": "node inquiry-tracker.js check-key",
+    "search": "node inquiry-tracker.js search",
+    "bill": "node inquiry-tracker.js bill",
+    "detail": "node inquiry-tracker.js detail",
+    "vote": "node inquiry-tracker.js vote",
+    "service": "node inquiry-tracker.js service"
+  }
+}
