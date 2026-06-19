@@ -1,57 +1,163 @@
 {
   "id": "inq_nec_2026",
-  "name": "투표용지 부족 사태 등 국민 참정권 침해 진상규명 및 선거관리 개혁을 위한 국정조사(가칭)",
-  "stage": "본회의의결",
+  "name": "제9회 전국동시지방선거 투표용지 부족사태 등 국민참정권 침해 진상규명 및 선거관리 개혁을 위한 국정조사",
+  "stage": "기관보고",
   "stages_done": [
     {
       "stage": "요구서제출",
       "date": "2026-06-08",
-      "source": "https://www.fnnews.com/news/202606081433189569"
+      "source": "https://record.assembly.go.kr/assembly/viewer/minutes/xml.do?id=56810&type=view"
+    },
+    {
+      "stage": "본회의의결",
+      "date": "2026-06-18",
+      "source": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_E2Z6Q0O6A1B8M1L3P2D6Q1E2T6B1H8"
+    },
+    {
+      "stage": "특위구성",
+      "date": "2026-06-18",
+      "source": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_E2Z6Q0O6A1B8M1L3P2D6Q1E2T6B1H8"
+    },
+    {
+      "stage": "계획서",
+      "date": "2026-06-18",
+      "source": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_E2Z6Q0O6A1B8M1L3P2D6Q1E2T6B1H8"
     }
   ],
   "requests": [
     {
       "party": "더불어민주당",
-      "proposers": "천준호·김한규·이주희 등",
+      "proposers": "한병도 의원 등 161인",
       "date": "2026-06-08",
       "title": "제9회 전국동시지방선거 투표용지 부족 사태의 진상규명 및 선거관리 개혁을 위한 국정조사 요구서",
       "scope": [
-        "투표용지 부족 사태의 원인 및 사전 인지·대응 적정성",
+        "투표용지 부족 사태 진상규명",
         "선거관리 제도 개혁"
       ],
-      "note": "투표용지 부족을 '행정 실패'로 규정하고 선거관리 개혁에 초점. 특검에 대해서는 6/11 \"음모론에 가깝다\"며 거리를 둠(원내 발언)",
       "source": {
-        "type": "press",
-        "title": "민주당 요구서 제출 보도 (디지털타임스)",
-        "url": "https://www.dt.co.kr/article/12066426"
+        "type": "official",
+        "title": "제436회국회 제2차 본회의 회의록 보고사항",
+        "url": "https://record.assembly.go.kr/assembly/viewer/minutes/xml.do?id=56810&type=view"
       }
     },
     {
       "party": "국민의힘",
-      "proposers": "곽규택 등 소속 의원 110명 전원 명의",
+      "proposers": "유상범 의원 등 110인",
       "date": "2026-06-08",
-      "title": "6·3 지방선거 선거관리위원회 투표용지 부족 사태 및 경찰 폭력 사태 진상규명을 위한 국정조사 요구서",
+      "title": "6·3 지방선거 선거관리위원회 투표용지 부족 사태 관련 진상규명을 위한 국정조사 요구서",
       "scope": [
-        "투표용지 부족 사태의 원인",
-        "투·개표 동시 진행 및 개표 중단 거부 결정 경위",
-        "투표 종료 전 방송사 출구조사 발표 경위",
-        "투표용지 인쇄 지침 및 배포·봉안·보관",
-        "투표함 반출 과정의 합법성(경찰 대응 포함)"
+        "투표용지 부족 사태 관련 진상규명"
       ],
-      "note": "특위 여야 동수 구성·야당 위원장 요구. 별도 특검 도입도 함께 추진",
       "source": {
-        "type": "press",
-        "title": "국민의힘 요구서 제출 보도 (파이낸셜뉴스)",
-        "url": "https://www.fnnews.com/news/202606081134524088"
+        "type": "official",
+        "title": "제436회국회 제2차 본회의 회의록 보고사항",
+        "url": "https://record.assembly.go.kr/assembly/viewer/minutes/xml.do?id=56810&type=view"
       }
     }
   ],
-  "committee_members": [],
+  "committee_members": [
+    {
+      "name": "김남희",
+      "party": "더불어민주당"
+    },
+    {
+      "name": "김성회",
+      "party": "더불어민주당"
+    },
+    {
+      "name": "김영배",
+      "party": "더불어민주당"
+    },
+    {
+      "name": "김용만",
+      "party": "더불어민주당"
+    },
+    {
+      "name": "김은혜",
+      "party": "국민의힘"
+    },
+    {
+      "name": "박수민",
+      "party": "국민의힘"
+    },
+    {
+      "name": "서범수",
+      "party": "국민의힘",
+      "role": "간사"
+    },
+    {
+      "name": "신동욱",
+      "party": "국민의힘"
+    },
+    {
+      "name": "양부남",
+      "party": "더불어민주당"
+    },
+    {
+      "name": "윤건영",
+      "party": "더불어민주당",
+      "role": "간사"
+    },
+    {
+      "name": "윤상현",
+      "party": "국민의힘",
+      "role": "위원장"
+    },
+    {
+      "name": "이기헌",
+      "party": "더불어민주당"
+    },
+    {
+      "name": "이준석",
+      "party": "개혁신당"
+    },
+    {
+      "name": "이해식",
+      "party": "더불어민주당"
+    },
+    {
+      "name": "전용기",
+      "party": "더불어민주당"
+    },
+    {
+      "name": "정춘생",
+      "party": "조국혁신당"
+    },
+    {
+      "name": "주진우",
+      "party": "국민의힘"
+    },
+    {
+      "name": "최보윤",
+      "party": "국민의힘"
+    }
+  ],
   "hearings": [],
   "witnesses": [],
-  "related_bills": [],
+  "related_bills": [
+    {
+      "bill_no": "2219328",
+      "title": "제9회 전국동시지방선거 투표용지 부족사태 등 국민참정권 침해 진상규명 및 선거관리 개혁을 위한 국정조사계획서 승인의 건",
+      "proposer": "제9회전국동시지방선거투표용지부족사태등국민참정권침해진상규명및선거관리개혁을위한국정조사특별위원장"
+    },
+    {
+      "bill_no": "2219125",
+      "title": "제9회 전국동시지방선거 투표 농단 사건 진상규명을 위한 특별검사 임명 등에 관한 법률안",
+      "proposer": "김은혜의원 등 11인"
+    },
+    {
+      "bill_no": "2219127",
+      "title": "2026년 제9회 전국동시지방선거 투표용지 부족 등 선거관리 부실 사태의 진상규명을 위한 특별검사의 임명 등에 관한 법률안",
+      "proposer": "백혜련의원 등 10인"
+    },
+    {
+      "bill_no": "2219146",
+      "title": "제9회 전국동시지방선거 선거 부정 및 국민 참정권 침해 의혹 진상규명을 위한 특별검사 임명 등에 관한 법률안",
+      "proposer": "유상범의원 등 110인"
+    }
+  ],
   "next_event": {
-    "date": "2026-06-18",
-    "title": "국회 본회의에서 국정조사 계획서 처리 예정 · 조사기간 45일(필요시 연장) · 특위 위원장 국민의힘 · 위원 민주당 9명/국민의힘 7명/비교섭단체 2명 · 조사 대상 중앙선관위와 각급 지역선관위"
+    "date": null,
+    "title": "기관보고 일정 공식 공개 대기 · 계획서상 기관보고·현장조사·청문회 세부 일정은 위원장과 간사 협의를 거쳐 위원회 의결로 정함"
   }
 }
