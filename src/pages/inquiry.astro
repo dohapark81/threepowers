@@ -122,9 +122,14 @@ const inquiry = rawInquiry as Inquiry;
     {inquiry.related_bills.length === 0 ? (
       <div class="empty-note">국정조사요구서 의안번호 확인 중입니다. 특검법안 등 후속 의안도 여기에 수록됩니다.</div>
     ) : (
-      <ul>
+      <ul class="doc-list">
         {inquiry.related_bills.map((b) => (
-          <li>{b.bill_no} — {b.title}{b.proposer && ` (${b.proposer})`}</li>
+          <li>
+            <span class="mono">{b.bill_no}</span> — {b.title}{b.proposer && ` (${b.proposer})`}
+            {b.url && (
+              <> <a class="doc-link" href={b.url} target="_blank" rel="noopener">국회 문서 보기 ↗</a></>
+            )}
+          </li>
         ))}
       </ul>
     )}

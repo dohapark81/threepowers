@@ -4,16 +4,33 @@
 const fs = require('fs');
 const https = require('https');
 const path = require('path');
+const { execFileSync, spawnSync } = require('child_process');
+const os = require('os');
 
 const BASE_URL = 'https://open.assembly.go.kr/portal/openapi';
+const PORTAL_BASE_URL = 'https://open.assembly.go.kr';
+const RECORD_BASE_URL = 'https://record.assembly.go.kr';
 const USER_AGENT = process.env.ASSEMBLY_API_USER_AGENT || 'crewx-inquiry-tracker';
 const DEFAULT_AGE = '22';
+const DEFAULT_UNIT_CD = '100022';
+const DEFAULT_ERACO = '제22대';
 
 const SERVICES = {
   search: 'TVBPMBILL11',
   bill: 'ALLBILL',
   detail: 'BILLINFODETAIL',
   vote: 'ncocpgfiaoituanbr',
+  plenaryMinutes: 'nzbyfwhwaoanttzje',
+  meetingAgenda: 'VCONFBLLLIST',
+  plenarySchedule: 'nekcaiymatialqlxr',
+  inquiryMinutes: 'VCONFPIPCONFLIST',
+};
+
+const CATALOG_HINTS = {
+  '본회의 회의록': { infId: 'OO1X9P001017YF13038', infSeq: '2', service: SERVICES.plenaryMinutes },
+  '회의별 안건목록': { infId: 'OOWY4R001216HX11524', infSeq: '2', service: SERVICES.meetingAgenda },
+  '본회의 일정': { infId: 'ORDPSW001070QH19059', infSeq: '2', service: SERVICES.plenarySchedule },
+  '국정조사 회의록': { infId: 'OOWY4R001216HX11508', infSeq: '2', service: SERVICES.inquiryMinutes },
 };
 
 function printHelp() {
@@ -32,6 +49,18 @@ Commands:
   detail <bill_id> [--json]         Fetch BILLINFODETAIL by internal BILL_ID
   vote <bill_id> [--age 22] [--json]
                                     Fetch plenary vote status by BILL_ID
+  plenary-minutes --date YYYY-MM-DD [--keyword KEYWORD] [--json]
+                                    Fetch plenary minutes rows; use for reports not found as bills
+  meeting-agenda <conf_id> [--keyword KEYWORD] [--json]
+                                    Fetch agenda rows for a CONF_ID
+  plenary-schedule [--date YYYY-MM-DD] [--json]
+                                    Fetch plenary schedule for the 22nd Assembly
+  inquiry-minutes [--committee CODE] [--json]
+                                    Fetch National Assembly inquiry committee minutes
+  minutes-text <confer_num> [keyword]
+                                    Download minutes PDF and print keyword snippets
+  catalog <keyword> [--json]        Search Open API catalog and show service codes
+  catalog-meta <inf_id> [inf_seq]   Show Open API metadata and required params
   service <SERVICE> [KEY=VALUE...]  Raw wrapper for any open.assembly service
            [--json]
 
@@ -42,6 +71,9 @@ Examples:
   npx crewx skill inquiry-tracker bill 2219127
   npx crewx skill inquiry-tracker detail PRC_A2A6B0Y6Z0U9T1V6W0U4S2R9Q7P0O7
   npx crewx skill inquiry-tracker vote PRC_A2A5B0Q4O0J8R1P7Y4X4W1V8T7S8M5
+  npx crewx skill inquiry-tracker plenary-minutes --date 2026-06-11 --keyword 국정조사
+  npx crewx skill inquiry-tracker minutes-text 56810 국정조사
+  npx crewx skill inquiry-tracker catalog 본회의 회의록
   npx crewx skill inquiry-tracker service nxjuyqnxadtotdrbw AGE=22 pSize=5
 
 Notes:
@@ -178,6 +210,48 @@ function requestJson(url) {
   });
 }
 
+function requestText(url) {
+  return new Promise((resolve, reject) => {
+    const req = https.get(url, { headers: { 'User-Agent': USER_AGENT, Accept: '*/*' } }, (res) => {
+      let body = '';
+      res.setEncoding('utf8');
+      res.on('data', (chunk) => { body += chunk; });
+      res.on('end', () => {
+        if (res.statusCode < 200 || res.statusCode >= 300) {
+          reject(new Error(`HTTP ${res.statusCode}: ${body.slice(0, 200)}`));
+          return;
+        }
+        resolve(body);
+      });
+    });
+    req.setTimeout(15000, () => {
+      req.destroy(new Error('Request timed out'));
+    });
+    req.on('error', reject);
+  });
+}
+
+function requestBuffer(url) {
+  return new Promise((resolve, reject) => {
+    const req = https.get(url, { headers: { 'User-Agent': USER_AGENT, Accept: '*/*' } }, (res) => {
+      const chunks = [];
+      res.on('data', (chunk) => { chunks.push(chunk); });
+      res.on('end', () => {
+        const body = Buffer.concat(chunks);
+        if (res.statusCode < 200 || res.statusCode >= 300) {
+          reject(new Error(`HTTP ${res.statusCode}: ${body.toString('utf8', 0, 200)}`));
+          return;
+        }
+        resolve(body);
+      });
+    });
+    req.setTimeout(30000, () => {
+      req.destroy(new Error('Request timed out'));
+    });
+    req.on('error', reject);
+  });
+}
+
 function envelope(data, serviceHint) {
   if (data.RESULT) {
     return { service: serviceHint || 'unknown', count: undefined, result: data.RESULT, rows: [] };
@@ -200,6 +274,44 @@ async function callService(service, params) {
     pSize: params.pSize || 20,
     ...params,
   }));
+}
+
+async function postPortalJson(pathname, params) {
+  const body = new URLSearchParams(params).toString();
+  const url = new URL(pathname, PORTAL_BASE_URL);
+  return new Promise((resolve, reject) => {
+    const req = https.request(url, {
+      method: 'POST',
+      headers: {
+        'User-Agent': USER_AGENT,
+        Accept: 'application/json',
+        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+        'Content-Length': Buffer.byteLength(body),
+        'X-Requested-With': 'XMLHttpRequest',
+      },
+    }, (res) => {
+      let payload = '';
+      res.setEncoding('utf8');
+      res.on('data', (chunk) => { payload += chunk; });
+      res.on('end', () => {
+        if (res.statusCode < 200 || res.statusCode >= 300) {
+          reject(new Error(`HTTP ${res.statusCode}: ${payload.slice(0, 200)}`));
+          return;
+        }
+        try {
+          resolve(JSON.parse(payload));
+        } catch (error) {
+          reject(new Error(`Non-JSON response: ${payload.slice(0, 200)}`));
+        }
+      });
+    });
+    req.setTimeout(15000, () => {
+      req.destroy(new Error('Request timed out'));
+    });
+    req.on('error', reject);
+    req.write(body);
+    req.end();
+  });
 }
 
 function compactValue(value) {
@@ -230,6 +342,12 @@ function printRows(rows, columns) {
   });
 }
 
+function filterRows(rows, keyword) {
+  if (!keyword) return rows;
+  const needle = String(keyword).toLowerCase();
+  return rows.filter((row) => Object.values(row).some((value) => compactValue(value).toLowerCase().includes(needle)));
+}
+
 function printEnvelopeSummary(env) {
   const code = env.result?.CODE || 'UNKNOWN';
   const message = env.result?.MESSAGE || '';
@@ -247,6 +365,91 @@ function printOutput(data, options, columns, serviceHint) {
   const env = envelope(data, serviceHint);
   printEnvelopeSummary(env);
   printRows(env.rows, columns);
+}
+
+function printCatalogRows(rows) {
+  if (!rows.length) {
+    console.log('No catalog rows.');
+    return;
+  }
+  rows.forEach((row, index) => {
+    const srv = parseOpenService(row.openSrv);
+    console.log(`\n#${index + 1}`);
+    console.log(`title: ${row.infaNm}`);
+    console.log(`inf_id: ${row.infaId}`);
+    if (srv.seq) console.log(`api_seq: ${srv.seq}`);
+    if (row.service || srv.service) console.log(`service: ${row.service || srv.service}`);
+    if (row.infaExp) console.log(`description: ${compactValue(row.infaExp)}`);
+  });
+}
+
+function parseOpenService(openSrv) {
+  const parts = String(openSrv || '').split(',');
+  for (const part of parts) {
+    const [code, seq] = part.split('-');
+    if (code === 'A') return { seq, service: '' };
+  }
+  return { seq: '', service: '' };
+}
+
+function printJsonOrRows(data, options, rows, columns, serviceHint) {
+  if (options.json) {
+    console.log(JSON.stringify(data, null, 2));
+    return;
+  }
+  const env = envelope(data, serviceHint);
+  printEnvelopeSummary(env);
+  printRows(rows, columns);
+}
+
+function stripHtml(html) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function snippets(text, keyword, context = 180, limit = 8) {
+  if (!keyword) return [text.slice(0, Math.min(text.length, context * 2))];
+  const hits = [];
+  const lower = text.toLowerCase();
+  const needle = keyword.toLowerCase();
+  let offset = 0;
+  while (hits.length < limit) {
+    const index = lower.indexOf(needle, offset);
+    if (index === -1) break;
+    hits.push(text.slice(Math.max(0, index - context), Math.min(text.length, index + keyword.length + context)));
+    offset = index + needle.length;
+  }
+  return hits;
+}
+
+async function downloadPdfText(conferNum) {
+  const pdfUrl = `${RECORD_BASE_URL}/assembly/viewer/minutes/download/pdf.do?id=${encodeURIComponent(conferNum)}`;
+  const pdf = await requestBuffer(pdfUrl);
+  return pdfToText(pdf, conferNum, []);
+}
+
+function pdfToText(pdf, name, args) {
+  const tmpDir = fs.mkdtempSync(path.join(os.tmpdir(), 'inquiry-minutes-'));
+  const pdfPath = path.join(tmpDir, `${name}.pdf`);
+  fs.writeFileSync(pdfPath, pdf);
+  try {
+    const check = spawnSync('pdftotext', ['-v'], { encoding: 'utf8' });
+    if (check.error && check.error.code === 'ENOENT') {
+      throw new Error('pdftotext is required. Install poppler or use the PDF URL directly.');
+    }
+    return execFileSync('pdftotext', [...args, pdfPath, '-'], { encoding: 'utf8', maxBuffer: 30 * 1024 * 1024 });
+  } finally {
+    fs.rmSync(tmpDir, { recursive: true, force: true });
+  }
 }
 
 async function checkKey() {
@@ -339,6 +542,154 @@ async function run(argv) {
       ['against', ['NO_TCNT', 'DISAGREE', 'DISAGREE_TCNT']],
       ['abstain', ['BLANK_TCNT', 'ABSTAIN', 'ABSTAIN_TCNT']],
     ], SERVICES.vote);
+    return;
+  }
+  if (command === 'plenary-minutes') {
+    const date = options.date || positionals[0];
+    if (!date) throw new Error('Missing date. Usage: plenary-minutes --date YYYY-MM-DD [--keyword KEYWORD]');
+    const data = await callService(SERVICES.plenaryMinutes, {
+      DAE_NUM: options.dae || DEFAULT_AGE,
+      CONF_DATE: date,
+      pSize: options.size || 100,
+    });
+    const env = envelope(data, SERVICES.plenaryMinutes);
+    const rows = filterRows(env.rows, options.keyword);
+    const outputRows = rows.length || !options.keyword ? rows : env.rows;
+    printJsonOrRows(data, options, outputRows, [
+      ['confer_num', ['CONFER_NUM']],
+      ['conf_id', ['CONF_ID']],
+      ['date', ['CONF_DATE']],
+      ['title', ['TITLE']],
+      ['class', ['CLASS_NAME']],
+      ['agenda', ['SUB_NAME']],
+      ['summary', ['CONF_LINK_URL']],
+      ['pdf', ['PDF_LINK_URL']],
+    ], SERVICES.plenaryMinutes);
+    if (!options.json && options.keyword && !rows.length) {
+      console.log(`\nNo row contains "${options.keyword}". Showing all meeting rows above because reports can live only in the PDF body.`);
+      console.log(`Next: npx crewx skill inquiry-tracker minutes-text ${outputRows[0]?.CONFER_NUM || '{confer_num}'} ${options.keyword}`);
+    }
+    return;
+  }
+  if (command === 'meeting-agenda') {
+    const confId = positionals[0] || options.confId || options.conf_id;
+    if (!confId) throw new Error('Missing conf_id. Usage: meeting-agenda <conf_id> [--keyword KEYWORD]');
+    const data = await callService(SERVICES.meetingAgenda, {
+      CONF_ID: confId,
+      pSize: options.size || 200,
+    });
+    const env = envelope(data, SERVICES.meetingAgenda);
+    const rows = filterRows(env.rows, options.keyword);
+    printJsonOrRows(data, options, rows, [
+      ['conf_id', ['CONF_ID']],
+      ['assembly', ['ERACO']],
+      ['session', ['SESS']],
+      ['order', ['DGR']],
+      ['agenda_no', ['BLL_NO']],
+      ['agenda', ['BLL_NM']],
+      ['level', ['BLL_LV']],
+    ], SERVICES.meetingAgenda);
+    return;
+  }
+  if (command === 'plenary-schedule') {
+    const data = await callService(SERVICES.plenarySchedule, {
+      UNIT_CD: options.unit || DEFAULT_UNIT_CD,
+      MEETTING_DATE: options.date,
+      TITLE: options.title,
+      pSize: options.size || 50,
+    });
+    printOutput(data, options, [
+      ['session', ['MEETINGSESSION']],
+      ['order', ['CHA']],
+      ['date', ['MEETTING_DATE']],
+      ['time', ['MEETTING_TIME']],
+      ['title', ['TITLE']],
+      ['agenda', ['CONTS']],
+      ['link', ['LINK_URL']],
+    ], SERVICES.plenarySchedule);
+    return;
+  }
+  if (command === 'inquiry-minutes') {
+    const data = await callService(SERVICES.inquiryMinutes, {
+      ERACO: options.eraco || DEFAULT_ERACO,
+      CMIT_CD: options.committee,
+      pSize: options.size || 50,
+    });
+    printOutput(data, options, [
+      ['conf_id', ['CONF_ID']],
+      ['assembly', ['ERACO']],
+      ['session', ['SESS']],
+      ['order', ['DGR']],
+      ['date', ['CONF_DT']],
+      ['kind', ['CONF_KND']],
+      ['committee_code', ['CMIT_CD']],
+      ['committee', ['CMIT_NM']],
+      ['pdf', ['DOWN_URL']],
+    ], SERVICES.inquiryMinutes);
+    return;
+  }
+  if (command === 'minutes-text') {
+    const conferNum = positionals[0];
+    const keyword = positionals.slice(1).join(' ').trim() || options.keyword;
+    if (!conferNum) throw new Error('Missing confer_num. Usage: minutes-text <confer_num> [keyword]');
+    const text = await downloadPdfText(conferNum);
+    const hits = snippets(text.replace(/\s+/g, ' ').trim(), keyword, Number(options.context || 180), Number(options.limit || 8));
+    console.log(`pdf: ${RECORD_BASE_URL}/assembly/viewer/minutes/download/pdf.do?id=${encodeURIComponent(conferNum)}`);
+    console.log(`keyword: ${keyword || '(first text)'}`);
+    console.log(`snippets: ${hits.length}`);
+    hits.forEach((hit, index) => {
+      console.log(`\n#${index + 1}\n${hit}`);
+    });
+    if (keyword && !hits.length) process.exitCode = 1;
+    return;
+  }
+  if (command === 'catalog') {
+    const keyword = positionals.join(' ').trim();
+    if (!keyword) throw new Error('Missing keyword. Usage: catalog <keyword> [--json]');
+    const data = await postPortalJson('/portal/openapi/selectInfsOpenApiListPaging.do', {
+      page: options.page || 1,
+      rows: options.size || 20,
+      schInputGubun: '',
+      schInputVal: keyword,
+      schVOrder: 'D',
+    });
+    if (options.json) {
+      console.log(JSON.stringify(data, null, 2));
+      return;
+    }
+    console.log(`catalog result: ${data.records ?? data.data?.length ?? 0}`);
+    const rows = data.data || [];
+    printCatalogRows(rows.map((row) => {
+      const hint = CATALOG_HINTS[row.infaNm];
+      return hint ? { ...row, openSrv: row.openSrv, service: hint.service } : row;
+    }));
+    for (const row of rows) {
+      const hint = CATALOG_HINTS[row.infaNm];
+      if (hint) console.log(`\nmeta: npx crewx skill inquiry-tracker catalog-meta ${hint.infId} ${hint.infSeq}`);
+    }
+    return;
+  }
+  if (command === 'catalog-meta') {
+    const infId = positionals[0];
+    const infSeq = positionals[1] || '2';
+    if (!infId) throw new Error('Missing inf_id. Usage: catalog-meta <inf_id> [inf_seq]');
+    const data = await postPortalJson('/portal/data/openapi/selectOpenApiMeta.do', { infId, infSeq });
+    if (options.json) {
+      console.log(JSON.stringify(data, null, 2));
+      return;
+    }
+    const meta = data.data || {};
+    console.log(`title: ${meta.infaNm || infId}`);
+    console.log(`service: ${meta.apiRes}`);
+    console.log(`endpoint: ${meta.apiEp}${meta.apiRes ? `/${meta.apiRes}` : ''}`);
+    console.log('\nrequired params:');
+    (meta.variables || []).filter((item) => item.reqNeed === 'Y').forEach((item) => {
+      console.log(`- ${item.colId}: ${item.colNm}${item.smpColExp ? ` (${item.smpColExp})` : ''}`);
+    });
+    console.log('\noptional params:');
+    (meta.variables || []).filter((item) => item.reqNeed !== 'Y').forEach((item) => {
+      console.log(`- ${item.colId}: ${item.colNm}${item.smpColExp ? ` (${item.smpColExp})` : ''}`);
+    });
     return;
   }
   if (command === 'service') {

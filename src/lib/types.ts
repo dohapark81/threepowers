@@ -263,6 +263,6 @@ export interface Inquiry {
   committee_members: { name: string; party: string; role?: string }[];
   hearings: { date: string; title: string; source_refs: SourceRef[] }[];
   witnesses: { name: string; note?: string }[];
-  related_bills: { bill_no: string; title: string; proposer?: string }[];
+  related_bills: { bill_no: string; title: string; proposer?: string; url?: string }[];
   next_event: { date: string | null; title: string };
 }

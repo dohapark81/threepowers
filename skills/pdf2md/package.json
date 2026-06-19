@@ -1,0 +1,17 @@
+{
+  "name": "pdf2md",
+  "version": "0.4.0",
+  "description": "CrewX skill for converting PDFs and National Assembly minutes to searchable Markdown",
+  "private": true,
+  "main": "pdf2md.js",
+  "bin": {
+    "pdf2md": "./pdf2md.js"
+  },
+  "scripts": {
+    "help": "node pdf2md.js --help",
+    "convert": "node pdf2md.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

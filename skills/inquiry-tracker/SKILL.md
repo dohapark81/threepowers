@@ -2,7 +2,7 @@
 name: inquiry-tracker
 description: 국정조사 추적기(data/inquiry.json) 갱신 레시피. 열린국회정보 OpenAPI(국회 공식)로 단계·표결·위원·일정을 길어와 official 출처로 채운다. 뉴스는 진실 출처가 아니라 "언제 확인할지" 알리는 트리거.
 metadata:
-  version: 0.2.0
+  version: 0.3.0
   target: data/inquiry.json
   schema: src/lib/types.ts (Inquiry, INQUIRY_STAGES)
   rules: data/README.md (수록 원칙)
@@ -40,6 +40,18 @@ npx crewx skill inquiry-tracker search 투표용지 --size 5
 npx crewx skill inquiry-tracker bill 2219127
 npx crewx skill inquiry-tracker detail {BILL_ID}
 npx crewx skill inquiry-tracker vote {BILL_ID}
+
+# 본회의 회의록/보고사항/일정
+npx crewx skill inquiry-tracker plenary-minutes --date 2026-06-11 --keyword 국정조사
+npx crewx skill inquiry-tracker minutes-text 56810 국정조사
+npx crewx skill pdf2md 'https://record.assembly.go.kr/assembly/viewer/minutes/download/pdf.do?id=56810' --out docs/sources/assembly/20260611-plenary-minutes-56810.md --title '제436회국회 국회본회의회의록 제2호'
+npx crewx skill inquiry-tracker meeting-agenda N054280
+npx crewx skill inquiry-tracker plenary-schedule --date 2026-06-18
+npx crewx skill inquiry-tracker inquiry-minutes --size 5
+
+# OpenAPI 카탈로그/필수 파라미터 확인
+npx crewx skill inquiry-tracker catalog '본회의 회의록'
+npx crewx skill inquiry-tracker catalog-meta OO1X9P001017YF13038 2
 
 # 미확정 서비스 코드나 카탈로그 확인용 raw 호출
 npx crewx skill inquiry-tracker service nxjuyqnxadtotdrbw AGE=22 pSize=5
@@ -98,9 +110,11 @@ velog 개발 문서 교차확인 + 라이브 프로브로 확인한 코드:
 | 처리의안 | `nzpltgfqabtcpsmai` | ✅ | 대수 필요 |
 | 최근 본회의 처리의안 | `nxjuyqnxadtotdrbw` | ✅ | |
 | 심사정보 | `BILLJUDGE` | ✅ | |
-| **본회의 의사일정** | ⚠️ 미확정 | ⚠️ | `next_event`용. P0에서 카탈로그 확정 |
+| **본회의 회의록** | `nzbyfwhwaoanttzje` | ✅ | `DAE_NUM`, `CONF_DATE` 필수. 보고사항/회의번호(CONFER_NUM) 확인 |
+| **회의별 안건목록** | `VCONFBLLLIST` | ✅ | `CONF_ID` 필수. 정식 안건 목록 확인 |
+| **본회의 의사일정** | `nekcaiymatialqlxr` | ✅ | `UNIT_CD=100022`(22대). `next_event`용 |
+| **국정조사 회의록** | `VCONFPIPCONFLIST` | ✅ | `ERACO=제22대`. 특위 회의록/PDF 확인 |
 | **위원회 위원 명단** | ⚠️ 미확정 | ⚠️ | `committee_members`용. P0에서 확정 |
-| **위원회 회의록** | ⚠️ 미확정 | ⚠️ | `hearings`/`witnesses`용. P0에서 확정 |
 | 국정조사 결과보고서 | ⚠️ 미확정 | ⚠️ | `결과보고서` 단계 도달 시 확정 |
 
 > ⚠️ 코드 확정처(카탈로그): [Open API 목록](https://open.assembly.go.kr/portal/openapi/openApiNaListPage.do) ·
@@ -136,7 +150,7 @@ velog 개발 문서 교차확인 + 라이브 프로브로 확인한 코드:
    curl -s -A "crewx-inquiry-tracker" "https://open.assembly.go.kr/portal/openapi/TVBPMBILL11?KEY=$ASSEMBLY_API_KEY&Type=json&pIndex=1&pSize=1&AGE=22" | head -c 800
    ```
    - *통과 기준*: 봉투 `RESULT.CODE == INFO-000`(또는 데이터 없으면 `INFO-200`). `ERROR-290`이면 키 문제. **평문 `Bad Request.`(12B)면 키가 아니라 `-A`(UA) 누락.**
-3. **⚠️ 미확정 3코드 확정**: §2.1 카탈로그에서 **의사일정·위원명단·회의록** 서비스 코드를 찾아 이 문서 §2.1 표의 ⚠️ 칸을 ✅로 갱신(스킬 self-update). 각 코드는 키 호출로 `INFO-000` 확인 후 등재.
+3. **남은 미확정 코드 확정**: §2.1 카탈로그에서 **위원명단·결과보고서** 서비스 코드를 찾아 이 문서 §2.1 표의 ⚠️ 칸을 ✅로 갱신(스킬 self-update). 각 코드는 키 호출로 `INFO-000` 확인 후 등재. 카탈로그는 `catalog`/`catalog-meta` 명령을 우선 사용한다.
 
 ---
 
@@ -150,7 +164,7 @@ velog 개발 문서 교차확인 + 라이브 프로브로 확인한 코드:
 
 | # | 단계 | 어디서 잡나 | 자동화 |
 |---|---|---|---|
-| 1 | `요구서제출` | `TVBPMBILL11` 검색 → `ALLBILL` 처리경과 (요구서는 표결 없음) | ✅ |
+| 1 | `요구서제출` | 본회의 회의록(`plenary-minutes` → `minutes-text`)의 보고사항 우선. 의안번호가 잡히면 `TVBPMBILL11`/`ALLBILL` 보강 | ◑ |
 | 2 | `본회의의결` | `ALLBILL` 처리경과 + `ncocpgfiaoituanbr` 표결 + 본회의 회의록 | ✅ |
 | 3 | `특위구성` | 구성결의 의안(`TVBPMBILL11`) + 위원명단 API ⚠️ (의결·등록 후) | ◑ 시차 |
 | 4 | `계획서` | 계획서 의안 처리경과(`ALLBILL`) + 표결 | ✅ |
@@ -172,26 +186,31 @@ likms 원문 URL 패턴(인용용): `https://likms.assembly.go.kr/bill/billDetai
 | 필드 (타입) | 소스/호출 | 인용 url | 검증 게이트 |
 |---|---|---|---|
 | `stage` / `stages_done[]` `{stage,date,source:string\|null}` | `ALLBILL` 처리경과 + 표결 | likms 의안상세(string) | 새 단계에 official url 존재, 스테퍼 한 칸 전진 |
-| `requests[].source` (`SourceRef`) | `TVBPMBILL11`→`ALLBILL` | likms 의안상세 | `type:"official"`로 승급, 단독 press 0건 |
+| `requests[].source` (`SourceRef`) | 본회의 회의록/PDF 보고사항 우선, 의안번호 확인 시 `TVBPMBILL11`→`ALLBILL` 보강 | 회의록 또는 likms 의안상세 | `type:"official"`로 승급, 단독 press 0건 |
 | `committee_members[]` `{name,party,role?}` | 위원명단 API ⚠️ | (출처 official) | **의결·등록 확정분만**, 전원 party 표기, 위원장 role 명시 |
-| `hearings[]` `{date,title,source_refs[]}` | 회의록 API ⚠️ → 본문 파싱 | 회의록 원문 | 단계 도달 후, source_refs official |
-| `witnesses[]` `{name,note?}` | 회의록(증인채택) ⚠️ | — | 채택 의결분만, 추정 금지 |
-| `related_bills[]` `{bill_no,title,proposer?}` | `TVBPMBILL11` 검색 | — | bill_no는 의안번호(≠BILL_ID) |
-| `next_event` `{date:string\|null,title}` | 의사일정 API ⚠️ | — | 항상 "다음 한 칸"만. 미정이면 `date:null` |
+| `hearings[]` `{date,title,source_refs[]}` | 국정조사 회의록(`inquiry-minutes`) → 본문 파싱 | 회의록 원문 | 단계 도달 후, source_refs official |
+| `witnesses[]` `{name,note?}` | 국정조사 회의록(증인채택) | — | 채택 의결분만, 추정 금지 |
+| `related_bills[]` `{bill_no,title,proposer?,url?}` | `TVBPMBILL11` 검색 → `ALLBILL` | `ALLBILL.LINK_URL` | bill_no는 의안번호(≠BILL_ID), url은 국회 의안정보 보기 링크 |
+| `next_event` `{date:string\|null,title}` | 본회의 의사일정(`plenary-schedule`) | — | 항상 "다음 한 칸"만. 미정이면 `date:null` |
 
 **핵심 호출 예시**
 
 ```bash
-# (a) 의안 검색 — 국정조사 요구서/계획서 찾기 → BILL_ID·의안번호 확보
+# (a) 요구서 제출 확인 — 국정조사 요구서는 정식 안건 행이 아니라 본회의 보고사항/PDF 본문에 먼저 잡힐 수 있다
+npx crewx skill inquiry-tracker plenary-minutes --date 2026-06-11 --keyword 국정조사
+npx crewx skill inquiry-tracker minutes-text 56810 국정조사
+npx crewx skill pdf2md 'https://record.assembly.go.kr/assembly/viewer/minutes/download/pdf.do?id=56810' --out docs/sources/assembly/20260611-plenary-minutes-56810.md --title '제436회국회 국회본회의회의록 제2호'
+
+# (b) 의안 검색 — 계획서/관련 법안 BILL_ID·의안번호 확보
 npx crewx skill inquiry-tracker search 국정조사 --size 20
 
-# (b) 처리경과 — 의결 여부·일자 확정
+# (c) 처리경과 — 의결 여부·일자 확정
 npx crewx skill inquiry-tracker bill {BILL_NO}
 
-# (c) 표결현황 — 본회의 찬/반/기권 수치
+# (d) 표결현황 — 본회의 찬/반/기권 수치
 npx crewx skill inquiry-tracker vote {BILL_ID}
 ```
-> 파라미터명(`BILL_NAME`/`BILL_ID`/`BILL_NO`/`AGE` 등)은 첫 호출 응답의 필드로 확정한다. AGE=22(제22대). 라이브 검증(2026-06-18): `ALLBILL`은 `BILL_NO` 필수, `BILL_ID` 단독은 `ERROR-300`. `BILL_NAME=국정조사` 단독으론 `INFO-200`(무결과) 가능 — 실제 의안명/파라미터는 응답과 의사일정 원문으로 확정한다.
+> 파라미터명(`BILL_NAME`/`BILL_ID`/`BILL_NO`/`AGE` 등)은 첫 호출 응답의 필드로 확정한다. AGE=22(제22대). 라이브 검증(2026-06-18): `ALLBILL`은 `BILL_NO` 필수, `BILL_ID` 단독은 `ERROR-300`. `BILL_NAME=국정조사` 단독으론 `INFO-200`(무결과) 가능 — 요구서 제출은 본회의 회의록/PDF 보고사항 경로를 먼저 확인한다.
 
 ---
 
@@ -248,10 +267,11 @@ planner는 분해·가드레일만 잡고 데이터는 건드리지 않는다.
 
 `data/README.md`가 "국정조사요구서 의안번호 확인 중"이라 적고 있다. 첫 실행 작업:
 
-1. `TVBPMBILL11`로 `BILL_NAME=국정조사` & `AGE=22` 검색부터 시도하되, `INFO-200`이면 의안명 키워드(`투표용지`, `선거관리`, 계획서 공식명)와 카탈로그/의사일정 원문을 병행 확인한다. 여야 요구서 2건(천준호 외 / 곽규택 외)과 계획서 의안의 **의안번호·BILL_ID**를 식별한다.
-2. `requests[].source`를 단독 press → `type:"official"`(likms 의안상세)로 승급.
-3. `related_bills`에 요구서·계획서 의안 등록(`bill_no`,`title`,`proposer`).
-4. 오늘 본회의 의결 시: `ALLBILL`+표결로 `본회의의결` 단계를 official로 확정, `stage` 전진, `next_event`를 특위구성 일정으로 교체.
+1. `plenary-minutes --date 2026-06-11`로 본회의 회의번호와 `CONF_ID`를 잡고, `minutes-text {CONFER_NUM} 국정조사`로 6월 8일 요구서 제출 보고사항을 확인한다. 2026-06-18 검증값: `CONFER_NUM=56810`, `CONF_ID=N054280`.
+2. `TVBPMBILL11`로 `BILL_NAME=국정조사` & `AGE=22` 검색부터 시도하되, `INFO-200`이면 의안명 키워드(`투표용지`, `선거관리`, 계획서 공식명)와 본회의 회의록/의사일정 원문을 병행 확인한다. 여야 요구서 2건과 계획서 의안의 **의안번호·BILL_ID**를 식별한다.
+3. `requests[].source`를 단독 press → `type:"official"`(회의록/likms 의안상세)로 승급.
+4. `related_bills`에 요구서·계획서 의안 등록(`bill_no`,`title`,`proposer`,`url`). `url`은 `npx crewx skill inquiry-tracker bill {BILL_NO}`의 `LINK_URL`을 쓴다.
+5. 오늘 본회의 의결 시: `ALLBILL`+표결로 `본회의의결` 단계를 official로 확정, `stage` 전진, `next_event`를 특위구성 일정으로 교체.
 
 ## 부록 B. 실행형 래퍼
 

@@ -8,22 +8,34 @@ interface Props {
 const { inquiry } = Astro.props;
 const doneStages = new Set(inquiry.stages_done.map((s) => s.stage));
 const stageDates = new Map(inquiry.stages_done.map((s) => [s.stage, s.date]));
+const stageSources = new Map(inquiry.stages_done.map((s) => [s.stage, s.source]));
 ---
 
 <div class="stages-scroll">
   <div class="stages">
-    {INQUIRY_STAGES.map((stage) => (
-      <div
-        class:list={[
-          'stage',
-          doneStages.has(stage) && 'done',
-          stage === inquiry.stage && !doneStages.has(stage) && 'now',
-        ]}
-      >
-        {stage}
-        {stageDates.has(stage) && <span class="mono"> {stageDates.get(stage)?.slice(5).replace('-', '/')}</span>}
-      </div>
-    ))}
+    {INQUIRY_STAGES.map((stage) => {
+      const source = stageSources.get(stage);
+      const classList = [
+        'stage',
+        source && 'linked',
+        doneStages.has(stage) && 'done',
+        stage === inquiry.stage && !doneStages.has(stage) && 'now',
+      ];
+      const content = (
+        <>
+          {stage}
+          {stageDates.has(stage) && <span class="mono"> {stageDates.get(stage)?.slice(5).replace('-', '/')}</span>}
+        </>
+      );
+
+      return source ? (
+        <a class:list={classList} href={source} target="_blank" rel="noopener" title={`${stage} 국회 원문 보기`}>
+          {content}
+        </a>
+      ) : (
+        <div class:list={classList}>{content}</div>
+      );
+    })}
   </div>
 </div>
 
