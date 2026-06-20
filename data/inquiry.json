@@ -132,7 +132,24 @@
       "party": "국민의힘"
     }
   ],
-  "hearings": [],
+  "hearings": [
+    {
+      "date": "2026-06-18",
+      "title": "제436회 제1차 국정조사특별위원회 전체회의(위원장·간사 선임 및 국정조사계획서 승인)",
+      "source_refs": [
+        {
+          "type": "official",
+          "title": "국회 위원회별 전체회의 일정: 제1차 국정조사특별위원회",
+          "url": "https://adminhom.na.go.kr/cmmit/schl/cmitSchl/view.do?menuNo=2000048&cmtCnclDivCd=001&cmtSchSn=10121146"
+        },
+        {
+          "type": "official",
+          "title": "제1차 국정조사특별위원회 회의록 원문 공개 대기",
+          "url": null
+        }
+      ]
+    }
+  ],
   "witnesses": [],
   "related_bills": [
     {
