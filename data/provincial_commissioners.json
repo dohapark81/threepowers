@@ -1,13 +1,13 @@
 {
-  "_note": "17개 시·도선거관리위원회 공식 위원장 및 위원소개 페이지에서 추출한 현원 데이터. 2026-06-14 재확인 결과 2026-06-13 스냅샷과 명단·위촉일·선정방법·경력 변동 없음. selection_method는 원문 표기를 그대로 보존하고, selection_route/party_key는 히트맵용 파생값이다. 정당명이 원문에 없는 정당추천 항목은 추정하지 않고 party_unspecified로 둔다.",
-  "snapshot_date": "2026-06-14",
+  "_note": "17개 시·도선거관리위원회 공식 위원장 및 위원소개 페이지에서 추출한 현원 데이터. 2026-06-21 재확인 결과 서울특별시선거관리위원회 위원장 오민석이 공식 페이지에서 빠지고 위원장 공석으로 표시되어 서울 현원이 7명으로 변경됨. 그 외 16개 시·도는 명단·위촉일·선정방법 변동 없음. selection_method는 원문 표기를 그대로 보존하고, selection_route/party_key는 히트맵용 파생값이다. 정당명이 원문에 없는 정당추천 항목은 추정하지 않고 party_unspecified로 둔다.",
+  "snapshot_date": "2026-06-21",
   "scope": "province_committees",
   "expected_regions": 17,
   "expected_members": 153,
-  "observed_members": 135,
+  "observed_members": 134,
   "counts": {
     "by_region": {
-      "서울특별시": 8,
+      "서울특별시": 7,
       "부산광역시": 8,
       "대구광역시": 8,
       "인천광역시": 8,
@@ -26,7 +26,7 @@
       "제주특별자치도": 8
     },
     "by_route": {
-      "court": 47,
+      "court": 46,
       "nec_designated": 12,
       "party": 29,
       "self_selected": 39,
@@ -45,147 +45,122 @@
       "region": "서울특별시",
       "title": "위원장 및 위원소개 — 서울특별시선거관리위원회",
       "url": "https://su.nec.go.kr/su/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     },
     {
       "region_code": "bs",
       "region": "부산광역시",
       "title": "위원장 및 위원소개 — 부산광역시선거관리위원회",
       "url": "https://bs.nec.go.kr/bs/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     },
     {
       "region_code": "dg",
       "region": "대구광역시",
       "title": "위원장 및 위원소개 — 대구광역시선거관리위원회",
       "url": "https://dg.nec.go.kr/dg/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     },
     {
       "region_code": "ic",
       "region": "인천광역시",
       "title": "위원장 및 위원소개 — 인천광역시선거관리위원회",
       "url": "https://ic.nec.go.kr/ic/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     },
     {
       "region_code": "gj",
       "region": "광주광역시",
       "title": "위원장 및 위원소개 — 광주광역시선거관리위원회",
       "url": "https://gj.nec.go.kr/gj/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     },
     {
       "region_code": "dj",
       "region": "대전광역시",
       "title": "위원장 및 위원소개 — 대전광역시선거관리위원회",
       "url": "https://dj.nec.go.kr/dj/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     },
     {
       "region_code": "us",
       "region": "울산광역시",
       "title": "위원장 및 위원소개 — 울산광역시선거관리위원회",
       "url": "https://us.nec.go.kr/us/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     },
     {
       "region_code": "sj",
       "region": "세종특별자치시",
       "title": "위원장 및 위원소개 — 세종특별자치시선거관리위원회",
       "url": "https://sj.nec.go.kr/sj/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     },
     {
       "region_code": "gg",
       "region": "경기도",
       "title": "위원장 및 위원소개 — 경기도선거관리위원회",
       "url": "https://gg.nec.go.kr/gg/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     },
     {
       "region_code": "gw",
       "region": "강원특별자치도",
       "title": "위원장 및 위원소개 — 강원특별자치도선거관리위원회",
       "url": "https://gw.nec.go.kr/gw/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     },
     {
       "region_code": "cb",
       "region": "충청북도",
       "title": "위원장 및 위원소개 — 충청북도선거관리위원회",
       "url": "https://cb.nec.go.kr/cb/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     },
     {
       "region_code": "cn",
       "region": "충청남도",
       "title": "위원장 및 위원소개 — 충청남도선거관리위원회",
       "url": "https://cn.nec.go.kr/cn/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     },
     {
       "region_code": "jb",
       "region": "전북특별자치도",
       "title": "위원장 및 위원소개 — 전북특별자치도선거관리위원회",
       "url": "https://jb.nec.go.kr/jb/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     },
     {
       "region_code": "jn",
       "region": "전라남도",
       "title": "위원장 및 위원소개 — 전라남도선거관리위원회",
       "url": "https://jn.nec.go.kr/jn/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     },
     {
       "region_code": "gb",
       "region": "경상북도",
       "title": "위원장 및 위원소개 — 경상북도선거관리위원회",
       "url": "https://gb.nec.go.kr/gb/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     },
     {
       "region_code": "gn",
       "region": "경상남도",
       "title": "위원장 및 위원소개 — 경상남도선거관리위원회",
       "url": "https://gn.nec.go.kr/gn/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     },
     {
       "region_code": "jj",
       "region": "제주특별자치도",
       "title": "위원장 및 위원소개 — 제주특별자치도선거관리위원회",
       "url": "https://jj.nec.go.kr/jj/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-06-14"
+      "retrieved_at": "2026-06-21"
     }
   ],
   "commissioners": [
-    {
-      "id": "province-su-01",
-      "region_code": "su",
-      "region": "서울특별시",
-      "committee": "서울특별시선거관리위원회",
-      "display_order": 1,
-      "person": "오민석",
-      "position": "위원장",
-      "appointed_date": "2025-02-18",
-      "selection_method": "법원장 추천",
-      "selection_route": "court",
-      "party_key": null,
-      "party_name": null,
-      "career_summary": [
-        "대법원 수석재판연구관",
-        "[現]서울중앙지방법원장"
-      ],
-      "source_refs": [
-        {
-          "type": "official",
-          "title": "위원장 및 위원소개 — 서울특별시선거관리위원회",
-          "url": "https://su.nec.go.kr/su/bbs/B0000273/list.do?menuNo=200013"
-        }
-      ]
-    },
     {
       "id": "province-su-02",
       "region_code": "su",
