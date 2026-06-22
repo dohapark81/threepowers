@@ -421,7 +421,9 @@ function extractAssemblyMinutes(html, minutesId) {
   const source = `https://record.assembly.go.kr/assembly/viewer/minutes/xml.do?id=${minutesId}&type=view`;
   const generatedAt = new Date().toISOString();
 
-  const bodyMatch = html.match(/<div class="minutes_body">([\s\S]*?)<button type="button" class="btn_play"/i);
+  const bodyMatch =
+    html.match(/<div class="minutes_body">([\s\S]*?)<button type="button" class="btn_play"/i) ||
+    html.match(/<div class="minutes_body">([\s\S]*?)<div class="minutes_footer">/i);
   if (!bodyMatch) {
     throw new Error(`Could not find minutes body in National Assembly HTML for id ${minutesId}`);
   }
