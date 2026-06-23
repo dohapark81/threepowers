@@ -1,16 +1,16 @@
 ---
-title: "제436회국회 제1차 국정조사특별위원회 회의록"
+title: "제22대국회 제436회 (임시회) 제1차 제9회전국동시지방선거투표용지부족사태등국민참정권침해진상규명및선거관리개혁을위한국정조사특별위원회 (2026.06.18.) - 제9회전국동시지방선거투표용지부족사태등국민참정권침해진상규명및선거관리개혁을위한국정조사특별위원회회의록"
 source: "https://record.assembly.go.kr/assembly/viewer/minutes/xml.do?id=56831&type=view"
 source_type: "national_assembly_minutes_html"
 minutes_id: "56831"
-generated_at: "2026-06-22T22:53:56.928Z"
+generated_at: "2026-06-23T22:54:24.650Z"
 extractor: "record.assembly.go.kr type=view html"
 ---
 
-# 제436회국회 제1차 국정조사특별위원회 회의록
+# 제22대국회 제436회 (임시회) 제1차 제9회전국동시지방선거투표용지부족사태등국민참정권침해진상규명및선거관리개혁을위한국정조사특별위원회 (2026.06.18.) - 제9회전국동시지방선거투표용지부족사태등국민참정권침해진상규명및선거관리개혁을위한국정조사특별위원회회의록
 
 - Source: https://record.assembly.go.kr/assembly/viewer/minutes/xml.do?id=56831&type=view
-- Note: Generated from the National Assembly minutes HTML view for readability. The official PDF download endpoint returned "내려받을 원본 회의록 파일이 등록되지 않았습니다." on 2026-06-23, so this HTML-derived archive should be replaced or supplemented when the source PDF is published.
+- Note: Generated from the National Assembly minutes HTML view for readability. Keep the official PDF for source fidelity.
 
 (11시04분 개의)
 
