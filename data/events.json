@@ -1029,7 +1029,7 @@
     "source_refs": [
       { "type": "press", "title": "경기일보 보도", "url": "https://www.kyeonggi.com/article/20260624580115" },
       { "type": "press", "title": "뉴데일리 보도", "url": "https://www.newdaily.co.kr/site/data/html/2026/06/24/2026062400155.html" },
-      { "type": "press", "title": "서울신문 보도", "url": "https://www.seoul.co.kr/news/politics/2026/06/25/20260625004002" }
+      { "type": "press", "title": "경향신문 보도", "url": "https://www.khan.co.kr/article/202606241202001/" }
     ],
     "related": [
       { "id": "evt_20260611_01", "note": "중앙선관위 등 7곳 압수수색 이후 서울시·송파구 선관위 관계자 개인 자료 확보로 수사가 확대됨" },
