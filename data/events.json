@@ -1194,7 +1194,7 @@
     "source_grade": "press_multi",
     "source_refs": [
       { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/society/article/6833299_36918.html" },
-      { "type": "press", "title": "뉴시스 보도(동아일보 게재)", "url": "https://www.donga.com/news/Society/article/all/20260627/134197968/1" },
+      { "type": "press", "title": "뉴시스 보도", "url": "https://www.newsis.com/view/NISX20260627_0003686051" },
       { "type": "press", "title": "연합뉴스TV 보도(다음 게재)", "url": "https://v.daum.net/v/20260627181235558" }
     ],
     "related": [
