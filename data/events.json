@@ -1189,21 +1189,20 @@
     "id": "evt_20260626_06",
     "date": "2026-06-26",
     "title": "경찰, 잠실 개표소 봉쇄 현장 핸드볼 대표팀 무단수색 피의자 소환 조사",
-    "body_oneline": "서울 송파경찰서가 잠실 개표소 봉쇄 시위 현장에서 여자 핸드볼 주니어 대표팀 선수들의 장비·가방을 무단 수색한 혐의로 집회 참가자 1명을 강요 혐의 피의자 신분으로 불러 조사한 것으로 보도됨. 경찰은 현장 영상과 관계자 진술을 토대로 가담자와 배후 여부를 확인하고 있으며, 체육단체 사무실 진입을 막은 업무방해 혐의자들도 조사할 예정이라고 보도됨",
+    "body_oneline": "서울 송파경찰서가 잠실 개표소 봉쇄 시위 현장에서 여자 핸드볼 주니어 대표팀 선수들의 장비·가방을 무단 수색한 혐의로 집회 참가자 1명을 강요 등 혐의 피의자로 처음 소환해 조사한 것으로 보도됨. 경찰은 무단 수색에 가담한 것으로 파악된 5명을 상대로 특정 단체·정당 등 배후가 있는지 조사했으며, 특수강요 혐의 적용도 검토 중인 것으로 보도됨. 체육단체 사무실 진입을 막은 업무방해 혐의자들도 조사할 예정이라고 보도됨",
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260628041900004" },
-      { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008631058" },
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/society/article/6833608_36918.html" },
-      { "type": "press", "title": "한국일보 보도", "url": "https://www.hankookilbo.com/News/Read/A2026062911080002773" }
+      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260628041900004" },
+      { "type": "press", "title": "이데일리 보도", "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02824086645486312" },
+      { "type": "press", "title": "영등포신문 보도", "url": "https://www.ybstv.net/news/article.html?no=70666" }
     ],
     "related": [
       { "id": "evt_20260616_04", "note": "체육단체 진입 합의 불발과 경찰 수사 착수 뒤 시설 이용 방해 관련 수사가 이어짐" },
       { "id": "evt_20260620_02", "note": "잠실 개표소 봉쇄 시위 장기화 과정에서 현장 안전과 경찰 대응 문제가 계속됨" },
       { "id": "evt_20260622_05", "note": "문체부가 개표 물품 반출 협조를 요청한 뒤에도 체육단체 업무 차질과 관련 수사가 이어짐" }
     ],
-    "topics": ["선관위", "6·3지방선거", "장외시위", "수사"]
+    "topics": ["선관위", "6·3지방선거", "장외시위", "수사", "부정선거의혹"]
   },
   {
     "id": "evt_20260627_01",
