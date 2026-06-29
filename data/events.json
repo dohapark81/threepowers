@@ -1222,5 +1222,67 @@
       { "id": "evt_20260617_06", "note": "잠실7동 투표용지 보관상자 폐기 의혹 관련 물품 분석이 병행됨" }
     ],
     "topics": ["선관위", "6·3지방선거", "수사"]
+  },
+  {
+    "id": "evt_20260629_01",
+    "date": "2026-06-29",
+    "title": "민주당, 선관위 특검 당론 추진 공식화 — 국민의힘은 야당 추천 특검 요구",
+    "body_oneline": "더불어민주당 한병도 당대표 직무대행 겸 원내대표가 6·3 지방선거 투표용지 부족 사태 관련 의혹을 수사하기 위한 선관위 특별검사법 처리를 당론으로 추진하겠다고 밝힘. 보도에 따르면 민주당은 국정조사와 특검을 병행해 직무유기·허위보고·책임 회피 여부를 확인하겠다는 입장을 냈고, 국민의힘은 특검 수용을 환영하면서도 면피용이 되지 않으려면 야당 추천 특검을 임명해야 한다고 요구함",
+    "status": "official",
+    "source_grade": "press_multi",
+    "source_refs": [
+      { "type": "press", "title": "동아일보 보도", "url": "https://www.donga.com/news/amp/all/20260629/134202371/1" },
+      { "type": "press", "title": "매일경제 보도", "url": "https://www.mk.co.kr/news/politics/12085910" },
+      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.php?key=202606291807059923&s_mcd=0101" },
+      { "type": "press", "title": "법률신문 보도", "url": "https://www.lawtimes.co.kr/news/articleViewAmp.html?idxno=222789" }
+    ],
+    "related": [
+      { "id": "evt_20260618_01", "note": "국정조사계획서 본회의 승인 이후 특검 병행 여부가 정치권 쟁점으로 이어짐" },
+      { "id": "evt_20260623_03", "note": "대통령의 선관위 내부 운영 전반 수사 필요 발언 뒤 특검 추진 논의가 공식화됨" },
+      { "id": "evt_20260626_03", "note": "여당 선관위 개혁TF 개혁안 제시 이후 특검 추진 방침이 추가로 제시됨" },
+      { "id": "evt_20260626_04", "note": "국민의힘의 선관위 책임론·특검 요구와 맞물려 여야 특검 협상 쟁점이 형성됨" }
+    ],
+    "topics": ["선관위", "6·3지방선거", "국정조사", "수사"]
+  },
+  {
+    "id": "evt_20260629_02",
+    "date": "2026-06-29",
+    "title": "경찰, 잠실 개표소 시위 불법행위 57건·139명 수사 — 허위사실 148건 삭제",
+    "body_oneline": "서울경찰청이 정례 기자간담회에서 잠실 개표소 봉쇄 시위 관련 불법행위 사건 58건 가운데 종결 1건을 제외한 57건, 관련자 139명을 수사 중이라고 밝힘. 보도에 따르면 경찰은 체육단체 출입 방해, 핸드볼 선수단 소지품 무단수색, 취재기자 폭행, 경찰관 상대 모욕·공무집행방해, 시위 참가자 간 폭행·공중협박 등을 수사하고 있으며, 현장 경찰관 관련 허위사실 게시물은 방송통신심의위원회 요청 등을 거쳐 148건이 삭제됐다고 설명함",
+    "status": "investigating",
+    "source_grade": "press_multi",
+    "source_refs": [
+      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/society/article/6833616_36918.html" },
+      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.php?key=202606292256162934&s_mcd=0103" },
+      { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/news/endPage.do?cooper=RSS&news_id=N1008632332&plink=ORI" },
+      { "type": "press", "title": "연합뉴스TV 보도", "url": "https://www.yonhapnewstv.co.kr/news/MYH20260629170417g2e" }
+    ],
+    "related": [
+      { "id": "evt_20260620_02", "note": "잠실 개표소 봉쇄 시위 장기화 과정에서 현장 안전과 경찰 대응 문제가 계속됨" },
+      { "id": "evt_20260626_05", "note": "선관위 직원 경찰복 위장 탈출 허위 영상 검거 이후 온라인 허위사실 삭제 조치가 함께 집계됨" },
+      { "id": "evt_20260626_06", "note": "핸드볼 대표팀 소지품 무단수색 관련 피의자 특정·조사가 수사 대상 집계에 포함됨" }
+    ],
+    "topics": ["선관위", "6·3지방선거", "장외시위", "수사", "부정선거의혹"]
+  },
+  {
+    "id": "evt_20260629_03",
+    "date": "2026-06-29",
+    "title": "잠실 개표소 봉쇄 시위 현장서 연습용 수류탄 발견 — 경찰 경위 조사",
+    "body_oneline": "서울 송파경찰서가 6월 29일 낮 잠실 개표소 봉쇄 시위가 이어지는 올림픽공원 핸드볼경기장 인근에서 연습용 수류탄으로 의심되는 물체가 있다는 신고를 접수함. 경찰 확인 결과 해당 물체는 기폭 장치가 제거돼 폭발 위험이 없는 연습용 수류탄으로 파악됐고, 경찰은 물체를 수거한 뒤 시위 현장에 유입된 경위를 조사하고 있다고 보도됨",
+    "status": "investigating",
+    "source_grade": "press_multi",
+    "source_refs": [
+      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/society/article/6833621_36918.html" },
+      { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/news/endPage.do?cooper=SBSNEWSMAIN&news_id=N1008632480&plink=TOPLINE" },
+      { "type": "press", "title": "연합뉴스TV 보도", "url": "https://www.yonhapnewstv.co.kr/news/MYH20260629170521Hr6" },
+      { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/society/society_general/1265841.html" },
+      { "type": "press", "title": "동아일보 보도", "url": "https://www.donga.com/news/amp/all/20260629/134202177/1" }
+    ],
+    "related": [
+      { "id": "evt_20260620_02", "note": "잠실 개표소 봉쇄 시위 장기화 과정에서 현장 안전 문제가 계속됨" },
+      { "id": "evt_20260626_06", "note": "핸드볼경기장 일대 시위 현장 안전·시설 이용 방해 관련 수사가 이어지는 가운데 별도 위험물 신고가 접수됨" },
+      { "id": "evt_20260629_02", "note": "같은 날 경찰이 잠실 개표소 시위 관련 불법행위 수사 현황을 공개함" }
+    ],
+    "topics": ["선관위", "6·3지방선거", "장외시위", "수사"]
   }
 ]
