@@ -377,7 +377,7 @@ const detailData = Object.fromEntries(
   </div>
 
   <div class="hm-row-head">
-    <span class="hm-committee">중앙 9석 + 시·도 153석 · 통합 9열 격자</span>
+    <span class="hm-committee">중앙 9석 + 시·도 144석 · 통합 9열 격자</span>
     <span class="hm-tally">
       <span style={`color:${PARTY_COLOR.dpk}`}>● 민주 {tally.dpk}</span>
       <span style={`color:${PARTY_COLOR.ppp}`}>● 국힘 {tally.ppp}</span>
@@ -465,7 +465,7 @@ const detailData = Object.fromEntries(
 
   {provincial && (
     <p class="hm-footnote">
-      통합 격자는 중앙 9석과 시·도 17곳의 법정 9석씩을 같은 9열로 놓은 것입니다.
+      통합 격자는 중앙 9석과 시·도 16곳의 법정 9석씩을 같은 9열로 놓은 것입니다.
       시·도 행은 {provincial.snapshot_date} 기준 각 시·도선관위 공식 위원소개 페이지에 공개된
       현원 {provincial.observed_members}명을 채우고, 원문에 노출되지 않은 {unpublishedProvincialSeats}석은
       점선 빈칸으로 남겼습니다. 중앙의 사임 공석 {centralVacant}석도 같은 격자 안에서 표시합니다.

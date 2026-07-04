@@ -84,7 +84,7 @@ export type ProvincialRegionCode =
   | 'bs'
   | 'dg'
   | 'ic'
-  | 'gj'
+  | 'jg' // 전남광주통합특별시 (2026-07-01 광주광역시·전라남도 통합)
   | 'dj'
   | 'us'
   | 'sj'
@@ -93,7 +93,6 @@ export type ProvincialRegionCode =
   | 'cb'
   | 'cn'
   | 'jb'
-  | 'jn'
   | 'gb'
   | 'gn'
   | 'jj';
