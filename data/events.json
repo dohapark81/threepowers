@@ -1485,5 +1485,27 @@
       { "id": "evt_20251210_01", "note": "투표용지 50% 인쇄 기준 결정과 현장 관리 경위를 함께 확인하는 수사 흐름임" }
     ],
     "topics": ["선관위", "6·3지방선거", "수사", "잠실7동", "인쇄지침"]
+  },
+  {
+    "id": "evt_20260705_01",
+    "date": "2026-07-05",
+    "title": "민주당 한병도 원내대표, \"이번 주 선관위 특검법 제출\" 발표 — 대한변협 등 제3자 추천 제안",
+    "body_oneline": "더불어민주당 한병도 당대표 직무대행 겸 원내대표가 7월 5일 페이스북 글을 통해 6·3 지방선거 투표용지 부족 사태 관련 선거관리위원회 특별검사법을 이번 주 제출하겠다고 밝힘. 특검 후보는 정치적 유불리를 배제하기 위해 대한변호사협회 등 제3자가 추천하는 방식을 제안했고, 수사 대상으로 ①투표용지 인쇄 물량 축소 경위 ②선거일 지휘부 보고 누락·지연 ③선관위 내부 부실 행정과 관리 책임을 제시함. 특검 후보 추천 주체·수사 범위를 놓고 국민의힘과는 이견이 남은 것으로 보도됨",
+    "status": "official",
+    "source_grade": "press_multi",
+    "source_refs": [
+      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10798329" },
+      { "type": "press", "title": "한국일보 보도", "url": "https://www.hankookilbo.com/news/article/A2026070217570005976" },
+      { "type": "press", "title": "아주경제 보도", "url": "https://www.ajunews.com/view/20260705110420203" },
+      { "type": "press", "title": "세계일보 보도", "url": "https://segye.com/newsView/20260705504608" },
+      { "type": "press", "title": "서울경제 보도", "url": "https://www.sedaily.com/article/20063828" },
+      { "type": "press", "title": "뉴스핌 보도", "url": "https://www.newspim.com/news/view/20260705000054" },
+      { "type": "press", "title": "프레시안 보도", "url": "https://www.pressian.com/pages/articles/2026070514215824815" }
+    ],
+    "related": [
+      { "id": "evt_20260629_01", "note": "선관위 특검 당론 추진 공식화 이후 발의 시점·추천 방식이 구체화됨" },
+      { "id": "evt_20251210_01", "note": "특검 수사 대상으로 투표용지 인쇄 물량 축소 경위가 제시됨" }
+    ],
+    "topics": ["선관위", "6·3지방선거", "수사", "국정조사"]
   }
 ]
