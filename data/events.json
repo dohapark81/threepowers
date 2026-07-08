@@ -1592,8 +1592,7 @@
     "source_refs": [
       { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10802270" },
       { "type": "press", "title": "파이낸셜뉴스 보도", "url": "https://www.fnnews.com/news/202607081457438416" },
-      { "type": "press", "title": "파이낸셜뉴스 예고 보도", "url": "https://www.fnnews.com/news/202607080500293966" },
-      { "type": "press", "title": "동아경제신문 보도", "url": "https://www.daenews.co.kr/25846" }
+      { "type": "press", "title": "파이낸셜뉴스 예고 보도", "url": "https://www.fnnews.com/news/202607080500293966" }
     ],
     "related": [
       { "id": "evt_20260707_02", "note": "7월 7일 중앙·서울시선관위 2차 현장조사에 이어 이튿날 개혁 과제를 전문가 간담회로 이어감" },
