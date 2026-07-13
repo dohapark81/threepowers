@@ -1627,7 +1627,7 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "이데일리 보도", "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04946246645512880" },
+      { "type": "press", "title": "이데일리 보도", "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04946246645512880" },
       { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10804190" },
       { "type": "press", "title": "서울경제 보도", "url": "https://www.sedaily.com/article/20065649" }
     ],
