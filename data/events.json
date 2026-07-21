@@ -6,11 +6,20 @@
     "body_oneline": "본투표일에 일부 투표소에서 투표용지가 부족해 투표가 중단됐다가 재개됨",
     "status": "official",
     "source_grade": "press_multi",
-    "pivot": { "label": "투표 중단·재개" },
+    "pivot": {
+      "label": "투표 중단·재개"
+    },
     "source_refs": [
-      { "type": "press", "title": "선관위 발표·복수 매체 보도 (MBC)", "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828081_37004.html" }
+      {
+        "type": "press",
+        "title": "선관위 발표·복수 매체 보도 (MBC)",
+        "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828081_37004.html"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거"]
+    "topics": [
+      "선관위",
+      "6·3지방선거"
+    ]
   },
   {
     "id": "evt_20260603_02",
@@ -20,12 +29,31 @@
     "status": "official",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "선거일 투표용지 부족 관련 대국민 사과문 (중앙선거관리위원회)", "url": "https://img.nec.go.kr/cmm/dozen/view.do?bcIdx=326456&cbIdx=1090&fileNo=2" },
-      { "type": "official", "title": "제9회 전국동시지방선거 선거일 투표용지 부족 사태에 대한 중앙선거관리위원회 입장", "url": "https://img.nec.go.kr/cmm/dozen/view.do?bcIdx=326458&cbIdx=1090&fileNo=1" },
-      { "type": "press", "title": "선관위 브리핑 보도 (파이낸셜뉴스)", "url": "https://www.fnnews.com/news/202606032019328118" },
-      { "type": "press", "title": "경향신문 속보", "url": "https://www.khan.co.kr/en/article/202606032045027" }
+      {
+        "type": "official",
+        "title": "선거일 투표용지 부족 관련 대국민 사과문 (중앙선거관리위원회)",
+        "url": "https://img.nec.go.kr/cmm/dozen/view.do?bcIdx=326456&cbIdx=1090&fileNo=2"
+      },
+      {
+        "type": "official",
+        "title": "제9회 전국동시지방선거 선거일 투표용지 부족 사태에 대한 중앙선거관리위원회 입장",
+        "url": "https://img.nec.go.kr/cmm/dozen/view.do?bcIdx=326458&cbIdx=1090&fileNo=1"
+      },
+      {
+        "type": "press",
+        "title": "선관위 브리핑 보도 (파이낸셜뉴스)",
+        "url": "https://www.fnnews.com/news/202606032019328118"
+      },
+      {
+        "type": "press",
+        "title": "경향신문 속보",
+        "url": "https://www.khan.co.kr/en/article/202606032045027"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거"]
+    "topics": [
+      "선관위",
+      "6·3지방선거"
+    ]
   },
   {
     "id": "evt_20260605_01",
@@ -35,9 +63,16 @@
     "status": "corrected",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "선관위 발표 (MBC 보도)", "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828081_37004.html" }
+      {
+        "type": "official",
+        "title": "선관위 발표 (MBC 보도)",
+        "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828081_37004.html"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거"]
+    "topics": [
+      "선관위",
+      "6·3지방선거"
+    ]
   },
   {
     "id": "evt_20260605_02",
@@ -47,10 +82,21 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "MBC 뉴스데스크 보도", "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828084_37004.html" },
-      { "type": "press", "title": "더퍼블릭 보도", "url": "https://www.thepublic.kr/news/articleView.html?idxno=306628" }
+      {
+        "type": "press",
+        "title": "MBC 뉴스데스크 보도",
+        "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828084_37004.html"
+      },
+      {
+        "type": "press",
+        "title": "더퍼블릭 보도",
+        "url": "https://www.thepublic.kr/news/articleView.html?idxno=306628"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거"]
+    "topics": [
+      "선관위",
+      "6·3지방선거"
+    ]
   },
   {
     "id": "evt_20260605_03",
@@ -60,10 +106,23 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도 (파이낸셜뉴스 게재)", "url": "https://www.fnnews.com/news/202606050921342212" },
-      { "type": "press", "title": "머니투데이 보도", "url": "https://www.mt.co.kr/society/2026/06/05/2026060509132563943" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도 (파이낸셜뉴스 게재)",
+        "url": "https://www.fnnews.com/news/202606050921342212"
+      },
+      {
+        "type": "press",
+        "title": "머니투데이 보도",
+        "url": "https://www.mt.co.kr/society/2026/06/05/2026060509132563943"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "잠실7동", "장외시위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "잠실7동",
+      "장외시위"
+    ]
   },
   {
     "id": "evt_20260605_04",
@@ -72,13 +131,30 @@
     "body_oneline": "노태악 위원장이 \"참정권이라는 국민의 소중한 권리를 침해하는, 있어서는 안 될 일\"이라며 위원장직 사퇴 의사를 밝히고, 허철훈 사무총장도 사의 표명. 국정조사 등 책임 확인 절차에 성실히 임하겠다고 발표",
     "status": "official",
     "source_grade": "official",
-    "pivot": { "label": "위원장 사퇴 표명" },
+    "pivot": {
+      "label": "위원장 사퇴 표명"
+    },
     "source_refs": [
-      { "type": "official", "title": "투표용지 부족 관련 대국민 사과문 (중앙선거관리위원장)", "url": "https://img.nec.go.kr/cmm/dozen/view.do?bcIdx=326848&cbIdx=1090&fileNo=2" },
-      { "type": "press", "title": "선관위 브리핑 보도 (파이낸셜뉴스)", "url": "https://www.fnnews.com/news/202606051615525545" },
-      { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008596932" }
+      {
+        "type": "official",
+        "title": "투표용지 부족 관련 대국민 사과문 (중앙선거관리위원장)",
+        "url": "https://img.nec.go.kr/cmm/dozen/view.do?bcIdx=326848&cbIdx=1090&fileNo=2"
+      },
+      {
+        "type": "press",
+        "title": "선관위 브리핑 보도 (파이낸셜뉴스)",
+        "url": "https://www.fnnews.com/news/202606051615525545"
+      },
+      {
+        "type": "press",
+        "title": "SBS 보도",
+        "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008596932"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거"]
+    "topics": [
+      "선관위",
+      "6·3지방선거"
+    ]
   },
   {
     "id": "evt_20260608_01",
@@ -87,11 +163,20 @@
     "body_oneline": "국민의힘(의원 110명 명의)과 더불어민주당이 국정조사 요구서를 각각 국회 의안과에 제출 · 의안번호 확인 중",
     "status": "official",
     "source_grade": "official",
-    "pivot": { "label": "국정조사 요구" },
+    "pivot": {
+      "label": "국정조사 요구"
+    },
     "source_refs": [
-      { "type": "official", "title": "국회 의안과 접수 (MBC 보도)", "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828650_37004.html" }
+      {
+        "type": "official",
+        "title": "국회 의안과 접수 (MBC 보도)",
+        "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828650_37004.html"
+      }
     ],
-    "topics": ["선관위", "국정조사"]
+    "topics": [
+      "선관위",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260608_02",
@@ -101,9 +186,16 @@
     "status": "official",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "대법원·선관위 (뉴스1 보도)", "url": "https://www.news1.kr/politics/assembly/6188983" }
+      {
+        "type": "official",
+        "title": "대법원·선관위 (뉴스1 보도)",
+        "url": "https://www.news1.kr/politics/assembly/6188983"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거"]
+    "topics": [
+      "선관위",
+      "6·3지방선거"
+    ]
   },
   {
     "id": "evt_20260609_01",
@@ -113,11 +205,22 @@
     "status": "official",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "투표용지 부족사태 진상규명위원회 출범 및 부족 투표소 현황 (중앙선거관리위원회)", "url": "https://img.nec.go.kr/common/board/Download.do?bcIdx=326957&cbIdx=1090&streFileNm=fb634d44-a169-4049-b315-74fc7544a503.pdf" },
-      { "type": "press", "title": "선관위 집계 보도 (파이낸셜뉴스)", "url": "https://www.fnnews.com/news/202606090501132196" }
+      {
+        "type": "official",
+        "title": "투표용지 부족사태 진상규명위원회 출범 및 부족 투표소 현황 (중앙선거관리위원회)",
+        "url": "https://img.nec.go.kr/common/board/Download.do?bcIdx=326957&cbIdx=1090&streFileNm=fb634d44-a169-4049-b315-74fc7544a503.pdf"
+      },
+      {
+        "type": "press",
+        "title": "선관위 집계 보도 (파이낸셜뉴스)",
+        "url": "https://www.fnnews.com/news/202606090501132196"
+      }
     ],
     "supersedes": "evt_20260605_01",
-    "topics": ["선관위", "6·3지방선거"]
+    "topics": [
+      "선관위",
+      "6·3지방선거"
+    ]
   },
   {
     "id": "evt_20260609_02",
@@ -127,11 +230,26 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "국회 제출 선관위 자료 (뉴스1 보도)", "url": "https://www.news1.kr/politics/assembly/6192037" },
-      { "type": "press", "title": "MBC 뉴스데스크 보도", "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828646_37004.html" },
-      { "type": "press", "title": "한국경제 보도", "url": "https://www.hankyung.com/article/2026060713367" }
+      {
+        "type": "press",
+        "title": "국회 제출 선관위 자료 (뉴스1 보도)",
+        "url": "https://www.news1.kr/politics/assembly/6192037"
+      },
+      {
+        "type": "press",
+        "title": "MBC 뉴스데스크 보도",
+        "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828646_37004.html"
+      },
+      {
+        "type": "press",
+        "title": "한국경제 보도",
+        "url": "https://www.hankyung.com/article/2026060713367"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거"]
+    "topics": [
+      "선관위",
+      "6·3지방선거"
+    ]
   },
   {
     "id": "evt_20260609_03",
@@ -140,12 +258,26 @@
     "body_oneline": "대검찰청이 서울중앙지검에 합수본 설치 발표(본부장 김태훈 3차장검사 · 검찰 12명·경찰 15명). 이재명 대통령의 구성 지시 이틀 만의 출범으로, 대검은 \"국민적 의혹을 엄정히 규명하겠다\"고 발표",
     "status": "official",
     "source_grade": "official",
-    "pivot": { "label": "합수본 출범" },
+    "pivot": {
+      "label": "합수본 출범"
+    },
     "source_refs": [
-      { "type": "official", "title": "대검찰청 발표 (한국일보 보도)", "url": "https://www.hankookilbo.com/news/article/A2026060917540003667" },
-      { "type": "press", "title": "파이낸셜뉴스 보도", "url": "https://www.fnnews.com/news/202606092032051078" }
+      {
+        "type": "official",
+        "title": "대검찰청 발표 (한국일보 보도)",
+        "url": "https://www.hankookilbo.com/news/article/A2026060917540003667"
+      },
+      {
+        "type": "press",
+        "title": "파이낸셜뉴스 보도",
+        "url": "https://www.fnnews.com/news/202606092032051078"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260609_04",
@@ -155,14 +287,31 @@
     "status": "official",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "6·3 전국동시지방선거 투표용지 부족 사태 관련 국가인권위원회 위원장 성명", "url": "https://www.humanrights.go.kr/base/board/read?boardManagementNo=24&boardNo=7612117&menuLevel=3&menuNo=91" },
-      { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/society/society_general/1262726.html" }
+      {
+        "type": "official",
+        "title": "6·3 전국동시지방선거 투표용지 부족 사태 관련 국가인권위원회 위원장 성명",
+        "url": "https://www.humanrights.go.kr/base/board/read?boardManagementNo=24&boardNo=7612117&menuLevel=3&menuNo=91"
+      },
+      {
+        "type": "press",
+        "title": "한겨레 보도",
+        "url": "https://www.hani.co.kr/arti/society/society_general/1262726.html"
+      }
     ],
     "related": [
-      { "id": "evt_20260603_01", "note": "본투표일 투표용지 부족 사태에 대한 인권기관의 공식 성명" },
-      { "id": "evt_20260609_01", "note": "추가 용지 사용 투표소 집계와 같은 날 발표된 선거관리 체계 점검 촉구" }
+      {
+        "id": "evt_20260603_01",
+        "note": "본투표일 투표용지 부족 사태에 대한 인권기관의 공식 성명"
+      },
+      {
+        "id": "evt_20260609_01",
+        "note": "추가 용지 사용 투표소 집계와 같은 날 발표된 선거관리 체계 점검 촉구"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거"]
+    "topics": [
+      "선관위",
+      "6·3지방선거"
+    ]
   },
   {
     "id": "evt_20260610_01",
@@ -172,10 +321,22 @@
     "status": "official",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "투표용지 부족사태 진상규명위원회 출범 (중앙선거관리위원회)", "url": "https://img.nec.go.kr/common/board/Download.do?bcIdx=326957&cbIdx=1090&streFileNm=fb634d44-a169-4049-b315-74fc7544a503.pdf" },
-      { "type": "press", "title": "선관위 발표 보도 (파이낸셜뉴스)", "url": "https://www.fnnews.com/news/202606090501132196" }
+      {
+        "type": "official",
+        "title": "투표용지 부족사태 진상규명위원회 출범 (중앙선거관리위원회)",
+        "url": "https://img.nec.go.kr/common/board/Download.do?bcIdx=326957&cbIdx=1090&streFileNm=fb634d44-a169-4049-b315-74fc7544a503.pdf"
+      },
+      {
+        "type": "press",
+        "title": "선관위 발표 보도 (파이낸셜뉴스)",
+        "url": "https://www.fnnews.com/news/202606090501132196"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "진상규명위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "진상규명위"
+    ]
   },
   {
     "id": "evt_20260610_02",
@@ -185,10 +346,23 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "파이낸셜뉴스 보도", "url": "https://www.fnnews.com/news/202606100754182200" },
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/replay/2026/nw1700/article/6829201_36981.html" }
+      {
+        "type": "press",
+        "title": "파이낸셜뉴스 보도",
+        "url": "https://www.fnnews.com/news/202606100754182200"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/replay/2026/nw1700/article/6829201_36981.html"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "잠실7동", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "잠실7동",
+      "수사"
+    ]
   },
   {
     "id": "evt_20251210_01",
@@ -197,16 +371,37 @@
     "body_oneline": "중앙선관위가 '제9회 전국동시지방선거 종합관리지침'의 본투표용지 인쇄 매수 하한 기준을 선거인 수의 60%에서 50%로 낮춤. 2025-12-10 사무총장 전결, 12-24 선거정책실장 전결('공직선거 절차 사무편람')로 처리됐고 별도 공식 회의는 열리지 않은 것으로 확인 — 국민의힘 김승수·김민전 의원실에 제출된 선관위 자료 기준. 이 50% 하한이 일부 투표소의 50% 안팎 인쇄의 근거가 됨",
     "status": "official",
     "source_grade": "press_multi",
-    "pivot": { "label": "인쇄하한 60→50%" },
+    "pivot": {
+      "label": "인쇄하한 60→50%"
+    },
     "source_refs": [
-      { "type": "press", "title": "문화일보 보도", "url": "https://www.munhwa.com/article/11594591" },
-      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10768983" },
-      { "type": "press", "title": "디지털타임스 보도", "url": "https://www.dt.co.kr/article/12066850" }
+      {
+        "type": "press",
+        "title": "문화일보 보도",
+        "url": "https://www.munhwa.com/article/11594591"
+      },
+      {
+        "type": "press",
+        "title": "헤럴드경제 보도",
+        "url": "https://biz.heraldcorp.com/article/10768983"
+      },
+      {
+        "type": "press",
+        "title": "디지털타임스 보도",
+        "url": "https://www.dt.co.kr/article/12066850"
+      }
     ],
     "related": [
-      { "id": "evt_20260605_02", "note": "이 지침의 50% 하한이 적용된 인쇄·부족 사태" }
+      {
+        "id": "evt_20260605_02",
+        "note": "이 지침의 50% 하한이 적용된 인쇄·부족 사태"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260604_01",
@@ -216,11 +411,27 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10763429" },
-      { "type": "press", "title": "아시아경제 보도", "url": "https://www.asiae.co.kr/article/2026060410171621654" },
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/society/article/6827681_36918.html" }
+      {
+        "type": "press",
+        "title": "헤럴드경제 보도",
+        "url": "https://biz.heraldcorp.com/article/10763429"
+      },
+      {
+        "type": "press",
+        "title": "아시아경제 보도",
+        "url": "https://www.asiae.co.kr/article/2026060410171621654"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/news/2026/society/article/6827681_36918.html"
+      }
     ],
-    "topics": ["6·3지방선거", "부정선거의혹", "외세개입설"]
+    "topics": [
+      "6·3지방선거",
+      "부정선거의혹",
+      "외세개입설"
+    ]
   },
   {
     "id": "evt_20260611_01",
@@ -229,19 +440,51 @@
     "body_oneline": "서울경찰청 광역수사대와 검·경 합동수사본부가 공직선거법 위반·직무유기 혐의로 중앙선관위, 서울시선관위, 송파·서초·강남·광진·동작구 선관위 등 7곳을 동시 압수수색. 경찰·국수본·디지털포렌식 등 100여 명과 합수본 검사·수사관 10여 명 투입, 노태악 전 위원장과 허철훈 사무총장을 피의자로 적시. 투표용지 인쇄계획서·회의록·예산서 등 확보, 중앙선관위 서버 전자정보 압수를 제외한 압수수색은 약 13시간 만에 종료",
     "status": "investigating",
     "source_grade": "press_multi",
-    "pivot": { "label": "7곳 압수수색" },
+    "pivot": {
+      "label": "7곳 압수수색"
+    },
     "source_refs": [
-      { "type": "press", "title": "경향신문 속보", "url": "https://www.khan.co.kr/article/202606110903001/" },
-      { "type": "press", "title": "파이낸셜뉴스 [3보]", "url": "https://www.fnnews.com/news/202606110940119628" },
-      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10769474" },
-      { "type": "press", "title": "MBC 7곳 13시간 압수수색 보도", "url": "https://imnews.imbc.com/replay/2026/nwtoday/article/6829626_37012.html" },
-      { "type": "press", "title": "KBC 압수수색 종료 보도", "url": "https://news.ikbc.co.kr/article/view/kbc202606120006" }
+      {
+        "type": "press",
+        "title": "경향신문 속보",
+        "url": "https://www.khan.co.kr/article/202606110903001/"
+      },
+      {
+        "type": "press",
+        "title": "파이낸셜뉴스 [3보]",
+        "url": "https://www.fnnews.com/news/202606110940119628"
+      },
+      {
+        "type": "press",
+        "title": "헤럴드경제 보도",
+        "url": "https://biz.heraldcorp.com/article/10769474"
+      },
+      {
+        "type": "press",
+        "title": "MBC 7곳 13시간 압수수색 보도",
+        "url": "https://imnews.imbc.com/replay/2026/nwtoday/article/6829626_37012.html"
+      },
+      {
+        "type": "press",
+        "title": "KBC 압수수색 종료 보도",
+        "url": "https://news.ikbc.co.kr/article/view/kbc202606120006"
+      }
     ],
     "related": [
-      { "id": "evt_20260609_03", "note": "검·경 합수본 출범 후 첫 강제수사" },
-      { "id": "evt_20251210_01", "note": "인쇄 하한 50% 전결 개정 경위가 수사 핵심 쟁점" }
+      {
+        "id": "evt_20260609_03",
+        "note": "검·경 합수본 출범 후 첫 강제수사"
+      },
+      {
+        "id": "evt_20251210_01",
+        "note": "인쇄 하한 50% 전결 개정 경위가 수사 핵심 쟁점"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260611_02",
@@ -251,16 +494,42 @@
     "status": "official",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "국민 여러분께 올리는 말씀 (중앙선거관리위원장 직무대행)", "url": "https://img.nec.go.kr/cmm/dozen/view.do?bcIdx=327144&cbIdx=1090&fileNo=2" },
-      { "type": "press", "title": "위철환 직무대행 입장문 보도 (연합뉴스)", "url": "https://www.yna.co.kr/amp/view/AKR20260611116100001" },
-      { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/politics/politics_general/1263007.html" },
-      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.amp.php?param=0101_202606112229144503&version=1" }
+      {
+        "type": "official",
+        "title": "국민 여러분께 올리는 말씀 (중앙선거관리위원장 직무대행)",
+        "url": "https://img.nec.go.kr/cmm/dozen/view.do?bcIdx=327144&cbIdx=1090&fileNo=2"
+      },
+      {
+        "type": "press",
+        "title": "위철환 직무대행 입장문 보도 (연합뉴스)",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260611116100001"
+      },
+      {
+        "type": "press",
+        "title": "한겨레 보도",
+        "url": "https://www.hani.co.kr/arti/politics/politics_general/1263007.html"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://m.ytn.co.kr/news_view.amp.php?param=0101_202606112229144503&version=1"
+      }
     ],
     "related": [
-      { "id": "evt_20260605_02", "note": "본투표용지 인쇄 비율과 송파구 배분 실패에 대한 선관위 해명" },
-      { "id": "evt_20251210_01", "note": "50% 하한 지침의 적용 배경" }
+      {
+        "id": "evt_20260605_02",
+        "note": "본투표용지 인쇄 비율과 송파구 배분 실패에 대한 선관위 해명"
+      },
+      {
+        "id": "evt_20251210_01",
+        "note": "50% 하한 지침의 적용 배경"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260611_03",
@@ -270,15 +539,38 @@
     "status": "result_announced",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "진상규명위원회 브리핑 (연합뉴스 보도)", "url": "https://www.yna.co.kr/amp/view/AKR20260611165100001" },
-      { "type": "official", "title": "진상규명위원회 브리핑 현장영상 (YTN)", "url": "https://www.ytn.co.kr/_ln/0101_202606111832492580" },
-      { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/amp/news.amp?news_id=N1008606748" }
+      {
+        "type": "official",
+        "title": "진상규명위원회 브리핑 (연합뉴스 보도)",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260611165100001"
+      },
+      {
+        "type": "official",
+        "title": "진상규명위원회 브리핑 현장영상 (YTN)",
+        "url": "https://www.ytn.co.kr/_ln/0101_202606111832492580"
+      },
+      {
+        "type": "press",
+        "title": "SBS 보도",
+        "url": "https://news.sbs.co.kr/amp/news.amp?news_id=N1008606748"
+      }
     ],
     "related": [
-      { "id": "evt_20260610_01", "note": "진상규명위원회 출범 후 확인한 초기 조사 내용" },
-      { "id": "evt_20260611_02", "note": "송파구 투표용지 분배 실패에 대한 선관위 입장문과 같은 날 발표" }
+      {
+        "id": "evt_20260610_01",
+        "note": "진상규명위원회 출범 후 확인한 초기 조사 내용"
+      },
+      {
+        "id": "evt_20260611_02",
+        "note": "송파구 투표용지 분배 실패에 대한 선관위 입장문과 같은 날 발표"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "진상규명위", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "진상규명위",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260611_04",
@@ -288,13 +580,28 @@
     "status": "official",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "국회 본회의 보고 (한겨레 보도)", "url": "https://www.hani.co.kr/arti/politics/politics_general/1263079.html" },
-      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0101_202606111754045786" }
+      {
+        "type": "official",
+        "title": "국회 본회의 보고 (한겨레 보도)",
+        "url": "https://www.hani.co.kr/arti/politics/politics_general/1263079.html"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://www.ytn.co.kr/_ln/0101_202606111754045786"
+      }
     ],
     "related": [
-      { "id": "evt_20260608_01", "note": "여야 국정조사 요구서 제출 후 본회의 보고 절차" }
+      {
+        "id": "evt_20260608_01",
+        "note": "여야 국정조사 요구서 제출 후 본회의 보고 절차"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260612_01",
@@ -304,15 +611,39 @@
     "status": "result_announced",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "진상규명위원회 3차 브리핑 현장영상·전문 (YTN)", "url": "https://www.ytn.co.kr/_ln/0101_202606121404160292" },
-      { "type": "official", "title": "진상규명위원회 3차 브리핑 (연합뉴스 보도)", "url": "https://www.yna.co.kr/amp/view/AKR20260612112200001" },
-      { "type": "press", "title": "MBC 뉴스데스크 보도", "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6829862_37004.html" }
+      {
+        "type": "official",
+        "title": "진상규명위원회 3차 브리핑 현장영상·전문 (YTN)",
+        "url": "https://www.ytn.co.kr/_ln/0101_202606121404160292"
+      },
+      {
+        "type": "official",
+        "title": "진상규명위원회 3차 브리핑 (연합뉴스 보도)",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260612112200001"
+      },
+      {
+        "type": "press",
+        "title": "MBC 뉴스데스크 보도",
+        "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6829862_37004.html"
+      }
     ],
     "related": [
-      { "id": "evt_20260610_01", "note": "진상규명위원회 출범 후 3차 회의에서 발표한 송파구 현장 대응 조사 내용" },
-      { "id": "evt_20260611_03", "note": "무번호 투표용지 부족·일련번호 관리 문제의 후속 조사 내용" }
+      {
+        "id": "evt_20260610_01",
+        "note": "진상규명위원회 출범 후 3차 회의에서 발표한 송파구 현장 대응 조사 내용"
+      },
+      {
+        "id": "evt_20260611_03",
+        "note": "무번호 투표용지 부족·일련번호 관리 문제의 후속 조사 내용"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "진상규명위", "잠실7동", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "진상규명위",
+      "잠실7동",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260612_02",
@@ -322,14 +653,33 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260612067500004" },
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/society/article/6829744_36918.html" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260612067500004"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/news/2026/society/article/6829744_36918.html"
+      }
     ],
     "related": [
-      { "id": "evt_20260611_01", "note": "중앙선관위 등 7곳 압수수색 뒤 압수물 분석과 서버 전자정보 확보가 계속됨" },
-      { "id": "evt_20251210_01", "note": "합수본이 투표용지 인쇄 결정 과정과 당일 연락 내용을 확인할 예정" }
+      {
+        "id": "evt_20260611_01",
+        "note": "중앙선관위 등 7곳 압수수색 뒤 압수물 분석과 서버 전자정보 확보가 계속됨"
+      },
+      {
+        "id": "evt_20251210_01",
+        "note": "합수본이 투표용지 인쇄 결정 과정과 당일 연락 내용을 확인할 예정"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260612_03",
@@ -339,16 +689,41 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260612159900004" },
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/society/article/6829839_36918.html" },
-      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0103_202606121857045301" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260612159900004"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/news/2026/society/article/6829839_36918.html"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://www.ytn.co.kr/_ln/0103_202606121857045301"
+      }
     ],
     "related": [
-      { "id": "evt_20260609_03", "note": "검경 합동수사본부 출범 뒤 피의자 신병 관련 조치" },
-      { "id": "evt_20260611_01", "note": "압수수색 영장에 주요 피의자로 적시된 전·현직 선관위 관계자 관련 조치" },
-      { "id": "evt_20260612_02", "note": "압수물 분석과 함께 진행되는 수사 절차" }
+      {
+        "id": "evt_20260609_03",
+        "note": "검경 합동수사본부 출범 뒤 피의자 신병 관련 조치"
+      },
+      {
+        "id": "evt_20260611_01",
+        "note": "압수수색 영장에 주요 피의자로 적시된 전·현직 선관위 관계자 관련 조치"
+      },
+      {
+        "id": "evt_20260612_02",
+        "note": "압수물 분석과 함께 진행되는 수사 절차"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260613_01",
@@ -358,14 +733,33 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_cs/_ln_0103_202606140152481577_005.html" },
-      { "type": "press", "title": "동아일보 보도", "url": "https://www.donga.com/news/amp/all/20260614/134105635/1" }
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://www.ytn.co.kr/_cs/_ln_0103_202606140152481577_005.html"
+      },
+      {
+        "type": "press",
+        "title": "동아일보 보도",
+        "url": "https://www.donga.com/news/amp/all/20260614/134105635/1"
+      }
     ],
     "related": [
-      { "id": "evt_20260612_02", "note": "중앙선관위 서버 전자정보 압수수색과 압수물 분석이 이어짐" },
-      { "id": "evt_20251210_01", "note": "투표용지 50% 인쇄 하한 결정 경위가 수사 대상" }
+      {
+        "id": "evt_20260612_02",
+        "note": "중앙선관위 서버 전자정보 압수수색과 압수물 분석이 이어짐"
+      },
+      {
+        "id": "evt_20251210_01",
+        "note": "투표용지 50% 인쇄 하한 결정 경위가 수사 대상"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260613_02",
@@ -375,15 +769,39 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260613023651004" },
-      { "type": "press", "title": "MBN 현장 보도", "url": "https://www.mbn.co.kr/news/society/5199605" },
-      { "type": "press", "title": "한국일보 보도", "url": "https://www.hankookilbo.com/news/article/A2026061322410001051" },
-      { "type": "press", "title": "서울경제 보도", "url": "https://www.sedaily.com/article/20055343" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260613023651004"
+      },
+      {
+        "type": "press",
+        "title": "MBN 현장 보도",
+        "url": "https://www.mbn.co.kr/news/society/5199605"
+      },
+      {
+        "type": "press",
+        "title": "한국일보 보도",
+        "url": "https://www.hankookilbo.com/news/article/A2026061322410001051"
+      },
+      {
+        "type": "press",
+        "title": "서울경제 보도",
+        "url": "https://www.sedaily.com/article/20055343"
+      }
     ],
     "related": [
-      { "id": "evt_20260605_03", "note": "잠실7동 투표함 반출 이후 송파구 개표소 주변 장외시위가 이어짐" }
+      {
+        "id": "evt_20260605_03",
+        "note": "잠실7동 투표함 반출 이후 송파구 개표소 주변 장외시위가 이어짐"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "잠실7동", "장외시위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "잠실7동",
+      "장외시위"
+    ]
   },
   {
     "id": "evt_20260614_01",
@@ -393,17 +811,47 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260614023700004" },
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/society/article/6830046_36918.html" },
-      { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008609777" },
-      { "type": "press", "title": "동아일보 보도", "url": "https://www.donga.com/news/Society/article/all/20260615/134110525/2" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260614023700004"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/news/2026/society/article/6830046_36918.html"
+      },
+      {
+        "type": "press",
+        "title": "SBS 보도",
+        "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008609777"
+      },
+      {
+        "type": "press",
+        "title": "동아일보 보도",
+        "url": "https://www.donga.com/news/Society/article/all/20260615/134110525/2"
+      }
     ],
     "related": [
-      { "id": "evt_20260611_01", "note": "중앙선관위 등 7곳 압수수색의 서버 전자정보 확보 마무리" },
-      { "id": "evt_20260612_02", "note": "압수물 분석 착수와 서버 전자정보 확보가 이어진 뒤 소환 단계로 넘어감" },
-      { "id": "evt_20251210_01", "note": "합수본이 투표용지 50% 인쇄 하한 결정 경위와 사후 대응 방식을 확인할 예정" }
+      {
+        "id": "evt_20260611_01",
+        "note": "중앙선관위 등 7곳 압수수색의 서버 전자정보 확보 마무리"
+      },
+      {
+        "id": "evt_20260612_02",
+        "note": "압수물 분석 착수와 서버 전자정보 확보가 이어진 뒤 소환 단계로 넘어감"
+      },
+      {
+        "id": "evt_20251210_01",
+        "note": "합수본이 투표용지 50% 인쇄 하한 결정 경위와 사후 대응 방식을 확인할 예정"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260614_02",
@@ -413,15 +861,38 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260614024200004" },
-      { "type": "press", "title": "뉴스1 보도 (Daum 게재)", "url": "https://v.daum.net/v/20260614225248228" },
-      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.amp.php?param=0103_202606142005271824&version=1" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260614024200004"
+      },
+      {
+        "type": "press",
+        "title": "뉴스1 보도 (Daum 게재)",
+        "url": "https://v.daum.net/v/20260614225248228"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://m.ytn.co.kr/news_view.amp.php?param=0103_202606142005271824&version=1"
+      }
     ],
     "related": [
-      { "id": "evt_20260613_02", "note": "주말을 맞아 다시 규모가 커진 잠실 개표소 봉쇄 시위의 다음 날 상황" },
-      { "id": "evt_20260605_03", "note": "잠실7동 투표함 반출 이후 송파구 개표소 주변 장외시위가 장기화됨" }
+      {
+        "id": "evt_20260613_02",
+        "note": "주말을 맞아 다시 규모가 커진 잠실 개표소 봉쇄 시위의 다음 날 상황"
+      },
+      {
+        "id": "evt_20260605_03",
+        "note": "잠실7동 투표함 반출 이후 송파구 개표소 주변 장외시위가 장기화됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "잠실7동", "장외시위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "잠실7동",
+      "장외시위"
+    ]
   },
   {
     "id": "evt_20260614_03",
@@ -431,16 +902,44 @@
     "status": "official",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "이 대통령 주재 유럽 현지 화상 대수보회의 결과 관련 강유정 수석대변인 서면 브리핑 (청와대)", "url": "https://www.president.go.kr/briefings/96p0UYVL" },
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260614053200001" },
-      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0101_202606150003493027" }
+      {
+        "type": "official",
+        "title": "이 대통령 주재 유럽 현지 화상 대수보회의 결과 관련 강유정 수석대변인 서면 브리핑 (청와대)",
+        "url": "https://www.president.go.kr/briefings/96p0UYVL"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260614053200001"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://www.ytn.co.kr/_ln/0101_202606150003493027"
+      }
     ],
     "related": [
-      { "id": "evt_20260608_01", "note": "여야 국정조사 요구에 대한 선관위 협조 주문" },
-      { "id": "evt_20260609_03", "note": "검경 합동수사본부의 책임 규명 주문" },
-      { "id": "evt_20260614_02", "note": "장기화한 잠실 개표소 시위 중 사적 검문·업무방해 행위에 대한 대응 언급" }
+      {
+        "id": "evt_20260608_01",
+        "note": "여야 국정조사 요구에 대한 선관위 협조 주문"
+      },
+      {
+        "id": "evt_20260609_03",
+        "note": "검경 합동수사본부의 책임 규명 주문"
+      },
+      {
+        "id": "evt_20260614_02",
+        "note": "장기화한 잠실 개표소 시위 중 사적 검문·업무방해 행위에 대한 대응 언급"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사", "수사", "부정선거의혹", "장외시위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사",
+      "수사",
+      "부정선거의혹",
+      "장외시위"
+    ]
   },
   {
     "id": "evt_20260615_01",
@@ -450,15 +949,39 @@
     "status": "result_announced",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "진상규명위원회 4차 브리핑 현장영상·전문 (YTN)", "url": "https://www.ytn.co.kr/_ln/0101_202606151831121175" },
-      { "type": "official", "title": "진상규명위원회 4차 브리핑 보도 (연합뉴스)", "url": "https://www.yna.co.kr/view/AKR20260615160300001" },
-      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.php?key=202606151905534174&s_mcd=0101" }
+      {
+        "type": "official",
+        "title": "진상규명위원회 4차 브리핑 현장영상·전문 (YTN)",
+        "url": "https://www.ytn.co.kr/_ln/0101_202606151831121175"
+      },
+      {
+        "type": "official",
+        "title": "진상규명위원회 4차 브리핑 보도 (연합뉴스)",
+        "url": "https://www.yna.co.kr/view/AKR20260615160300001"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://m.ytn.co.kr/news_view.php?key=202606151905534174&s_mcd=0101"
+      }
     ],
     "related": [
-      { "id": "evt_20260612_01", "note": "송파구선관위의 오전 부족 가능성 인지와 보고·지휘 체계 미비 조사에서 서울시선관위 대응으로 조사 범위가 확장됨" },
-      { "id": "evt_20260611_03", "note": "무번호 투표용지 일련번호 문의와 추가 투표용지 사용 과정의 후속 조사" }
+      {
+        "id": "evt_20260612_01",
+        "note": "송파구선관위의 오전 부족 가능성 인지와 보고·지휘 체계 미비 조사에서 서울시선관위 대응으로 조사 범위가 확장됨"
+      },
+      {
+        "id": "evt_20260611_03",
+        "note": "무번호 투표용지 일련번호 문의와 추가 투표용지 사용 과정의 후속 조사"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "진상규명위", "잠실7동", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "진상규명위",
+      "잠실7동",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260615_02",
@@ -468,15 +991,37 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "CBC뉴스 보도", "url": "https://www.cbci.co.kr/news/articleView.html?idxno=582134" },
-      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.php?key=202606151214178148&s_mcd=0101" },
-      { "type": "press", "title": "연합뉴스TV 보도", "url": "https://www.yonhapnewstv.co.kr/news/MYH20260615211512jYd" }
+      {
+        "type": "press",
+        "title": "CBC뉴스 보도",
+        "url": "https://www.cbci.co.kr/news/articleView.html?idxno=582134"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://m.ytn.co.kr/news_view.php?key=202606151214178148&s_mcd=0101"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스TV 보도",
+        "url": "https://www.yonhapnewstv.co.kr/news/MYH20260615211512jYd"
+      }
     ],
     "related": [
-      { "id": "evt_20260611_04", "note": "국정조사 요구서 본회의 보고 뒤 특위 구성·조사계획서 협상이 이어짐" },
-      { "id": "evt_20260614_03", "note": "대통령의 선관위 국정조사 협조 주문 이후 여야 원내 협의" }
+      {
+        "id": "evt_20260611_04",
+        "note": "국정조사 요구서 본회의 보고 뒤 특위 구성·조사계획서 협상이 이어짐"
+      },
+      {
+        "id": "evt_20260614_03",
+        "note": "대통령의 선관위 국정조사 협조 주문 이후 여야 원내 협의"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260615_03",
@@ -486,15 +1031,37 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260615157452001" },
-      { "type": "press", "title": "경향신문 보도", "url": "https://www.khan.co.kr/article/202606152002001" },
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/replay/2026/nwtoday/article/6830435_37012.html" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260615157452001"
+      },
+      {
+        "type": "press",
+        "title": "경향신문 보도",
+        "url": "https://www.khan.co.kr/article/202606152002001"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/replay/2026/nwtoday/article/6830435_37012.html"
+      }
     ],
     "related": [
-      { "id": "evt_20260609_01", "note": "투표용지 추가 사용·투표 중단 투표소 집계가 선거소청 대상 판단의 배경" },
-      { "id": "evt_20260608_01", "note": "국민의힘은 국정조사 요구와 별개로 선거소청 절차도 추진" }
+      {
+        "id": "evt_20260609_01",
+        "note": "투표용지 추가 사용·투표 중단 투표소 집계가 선거소청 대상 판단의 배경"
+      },
+      {
+        "id": "evt_20260608_01",
+        "note": "국민의힘은 국정조사 요구와 별개로 선거소청 절차도 추진"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "부정선거의혹"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "부정선거의혹"
+    ]
   },
   {
     "id": "evt_20260615_04",
@@ -504,15 +1071,38 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260615063951004" },
-      { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/society/society_general/1263649.html" },
-      { "type": "press", "title": "MBN 보도", "url": "https://mbn.mk.co.kr/pages/vod/programView.mbn?bcastSeqNo=1421516" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260615063951004"
+      },
+      {
+        "type": "press",
+        "title": "한겨레 보도",
+        "url": "https://www.hani.co.kr/arti/society/society_general/1263649.html"
+      },
+      {
+        "type": "press",
+        "title": "MBN 보도",
+        "url": "https://mbn.mk.co.kr/pages/vod/programView.mbn?bcastSeqNo=1421516"
+      }
     ],
     "related": [
-      { "id": "evt_20260614_02", "note": "전날 입주 체육단체 업무 차질과 경찰 장기전 대비가 공식 요청·경고로 이어짐" },
-      { "id": "evt_20260614_03", "note": "대통령이 시위 현장의 사적 검문·업무방해 엄정 대응을 언급한 다음 날 상황" }
+      {
+        "id": "evt_20260614_02",
+        "note": "전날 입주 체육단체 업무 차질과 경찰 장기전 대비가 공식 요청·경고로 이어짐"
+      },
+      {
+        "id": "evt_20260614_03",
+        "note": "대통령이 시위 현장의 사적 검문·업무방해 엄정 대응을 언급한 다음 날 상황"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "잠실7동", "장외시위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "잠실7동",
+      "장외시위"
+    ]
   },
   {
     "id": "evt_20260616_01",
@@ -522,17 +1112,47 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260616074000004" },
-      { "type": "press", "title": "MBC 단독 보도", "url": "https://imnews.imbc.com/news/2026/society/article/6830506_36918.html" },
-      { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/society/society_general/1263753.html" },
-      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.amp.php?param=0103_202606161434403606&version=1" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260616074000004"
+      },
+      {
+        "type": "press",
+        "title": "MBC 단독 보도",
+        "url": "https://imnews.imbc.com/news/2026/society/article/6830506_36918.html"
+      },
+      {
+        "type": "press",
+        "title": "한겨레 보도",
+        "url": "https://www.hani.co.kr/arti/society/society_general/1263753.html"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://m.ytn.co.kr/news_view.amp.php?param=0103_202606161434403606&version=1"
+      }
     ],
     "related": [
-      { "id": "evt_20260614_01", "note": "중앙선관위 서버 압수수색 마무리 뒤 예고된 실무진 참고인 조사가 시작됨" },
-      { "id": "evt_20260612_01", "note": "송파구선관위의 부족 가능성 인지와 현장 대응 경위가 참고인 조사 대상" },
-      { "id": "evt_20260610_02", "note": "증거보전 현장검증이 이뤄졌던 잠실7동 제2투표소 관련 수사 절차" }
+      {
+        "id": "evt_20260614_01",
+        "note": "중앙선관위 서버 압수수색 마무리 뒤 예고된 실무진 참고인 조사가 시작됨"
+      },
+      {
+        "id": "evt_20260612_01",
+        "note": "송파구선관위의 부족 가능성 인지와 현장 대응 경위가 참고인 조사 대상"
+      },
+      {
+        "id": "evt_20260610_02",
+        "note": "증거보전 현장검증이 이뤄졌던 잠실7동 제2투표소 관련 수사 절차"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "잠실7동", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "잠실7동",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260616_02",
@@ -542,17 +1162,46 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260616118100001" },
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/replay/2026/nw1700/article/6830603_36981.html" },
-      { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/politics/politics_general/1263791.html" },
-      { "type": "press", "title": "서울신문 보도", "url": "https://www.seoul.co.kr/news/politics/2026/06/16/20260616500187" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260616118100001"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/replay/2026/nw1700/article/6830603_36981.html"
+      },
+      {
+        "type": "press",
+        "title": "한겨레 보도",
+        "url": "https://www.hani.co.kr/arti/politics/politics_general/1263791.html"
+      },
+      {
+        "type": "press",
+        "title": "서울신문 보도",
+        "url": "https://www.seoul.co.kr/news/politics/2026/06/16/20260616500187"
+      }
     ],
     "related": [
-      { "id": "evt_20260615_02", "note": "전날 원내수석 협의에서 남은 특위 구성·조사 범위 쟁점을 합의" },
-      { "id": "evt_20260611_04", "note": "국정조사 요구서 본회의 보고 뒤 조사계획서 처리 일정과 특위 구성을 확정" },
-      { "id": "evt_20260614_03", "note": "대통령의 선관위 국정조사 협조 주문 이후 여야가 계획서 처리에 합의" }
+      {
+        "id": "evt_20260615_02",
+        "note": "전날 원내수석 협의에서 남은 특위 구성·조사 범위 쟁점을 합의"
+      },
+      {
+        "id": "evt_20260611_04",
+        "note": "국정조사 요구서 본회의 보고 뒤 조사계획서 처리 일정과 특위 구성을 확정"
+      },
+      {
+        "id": "evt_20260614_03",
+        "note": "대통령의 선관위 국정조사 협조 주문 이후 여야가 계획서 처리에 합의"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260616_03",
@@ -562,17 +1211,46 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260616140200001" },
-      { "type": "press", "title": "머니투데이 보도", "url": "https://www.mt.co.kr/politics/2026/06/16/2026061616362023201" },
-      { "type": "press", "title": "아시아경제 보도", "url": "https://view.asiae.co.kr/article/2026061617131481830" },
-      { "type": "press", "title": "뉴시스 보도", "url": "https://www.newsis.com/view/NISX20260616_0003671499" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260616140200001"
+      },
+      {
+        "type": "press",
+        "title": "머니투데이 보도",
+        "url": "https://www.mt.co.kr/politics/2026/06/16/2026061616362023201"
+      },
+      {
+        "type": "press",
+        "title": "아시아경제 보도",
+        "url": "https://view.asiae.co.kr/article/2026061617131481830"
+      },
+      {
+        "type": "press",
+        "title": "뉴시스 보도",
+        "url": "https://www.newsis.com/view/NISX20260616_0003671499"
+      }
     ],
     "related": [
-      { "id": "evt_20251210_01", "note": "투표용지 인쇄 하한 기준 50% 전결 개정에 대한 재검토 방침" },
-      { "id": "evt_20260610_01", "note": "진상규명위원회 출범 뒤 확인된 투표용지 수급·보고체계 문제의 재발방지 대책" },
-      { "id": "evt_20260615_01", "note": "서울시선관위·중앙선관위의 부족 징후 인지와 보고 지연 조사 뒤 나온 개선 보고" }
+      {
+        "id": "evt_20251210_01",
+        "note": "투표용지 인쇄 하한 기준 50% 전결 개정에 대한 재검토 방침"
+      },
+      {
+        "id": "evt_20260610_01",
+        "note": "진상규명위원회 출범 뒤 확인된 투표용지 수급·보고체계 문제의 재발방지 대책"
+      },
+      {
+        "id": "evt_20260615_01",
+        "note": "서울시선관위·중앙선관위의 부족 징후 인지와 보고 지연 조사 뒤 나온 개선 보고"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260616_04",
@@ -582,17 +1260,47 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 체육단체 진입 시도 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260616063000004" },
-      { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/society/society_general/1263841.html" },
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/replay/2026/nw1700/article/6830602_36981.html" },
-      { "type": "press", "title": "동아일보 보도", "url": "https://www.donga.com/news/Politics/article/all/20260616/134122616/2" }
+      {
+        "type": "press",
+        "title": "연합뉴스 체육단체 진입 시도 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260616063000004"
+      },
+      {
+        "type": "press",
+        "title": "한겨레 보도",
+        "url": "https://www.hani.co.kr/arti/society/society_general/1263841.html"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/replay/2026/nw1700/article/6830602_36981.html"
+      },
+      {
+        "type": "press",
+        "title": "동아일보 보도",
+        "url": "https://www.donga.com/news/Politics/article/all/20260616/134122616/2"
+      }
     ],
     "related": [
-      { "id": "evt_20260615_04", "note": "전날 대한체육회 공권력 행사 요청과 경찰 경고 뒤 체육단체 진입 시도와 수사 착수로 이어짐" },
-      { "id": "evt_20260614_03", "note": "대통령이 시위 현장의 사적 검문·업무방해 엄정 대응을 언급한 뒤 행안부 담화와 경찰 수사 방침이 발표됨" },
-      { "id": "evt_20260605_03", "note": "잠실7동 투표함 반출 이후 송파구 개표소 주변 장외시위가 장기화됨" }
+      {
+        "id": "evt_20260615_04",
+        "note": "전날 대한체육회 공권력 행사 요청과 경찰 경고 뒤 체육단체 진입 시도와 수사 착수로 이어짐"
+      },
+      {
+        "id": "evt_20260614_03",
+        "note": "대통령이 시위 현장의 사적 검문·업무방해 엄정 대응을 언급한 뒤 행안부 담화와 경찰 수사 방침이 발표됨"
+      },
+      {
+        "id": "evt_20260605_03",
+        "note": "잠실7동 투표함 반출 이후 송파구 개표소 주변 장외시위가 장기화됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "잠실7동", "장외시위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "잠실7동",
+      "장외시위"
+    ]
   },
   {
     "id": "evt_20260617_01",
@@ -602,17 +1310,47 @@
     "status": "result_announced",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "진상규명위원회 6차 브리핑 현장영상 (YTN)", "url": "https://www.ytn.co.kr/_cs/_ln_0101_202606171832515830_005.html" },
-      { "type": "official", "title": "진상규명위원회 6차 브리핑 보도 (연합뉴스)", "url": "https://www.yna.co.kr/amp/view/AKR20260617163900001" },
-      { "type": "press", "title": "뉴시스 보도", "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20260617_0003673340" },
-      { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/politics/politics_general/1264046.html" }
+      {
+        "type": "official",
+        "title": "진상규명위원회 6차 브리핑 현장영상 (YTN)",
+        "url": "https://www.ytn.co.kr/_cs/_ln_0101_202606171832515830_005.html"
+      },
+      {
+        "type": "official",
+        "title": "진상규명위원회 6차 브리핑 보도 (연합뉴스)",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260617163900001"
+      },
+      {
+        "type": "press",
+        "title": "뉴시스 보도",
+        "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20260617_0003673340"
+      },
+      {
+        "type": "press",
+        "title": "한겨레 보도",
+        "url": "https://www.hani.co.kr/arti/politics/politics_general/1264046.html"
+      }
     ],
     "related": [
-      { "id": "evt_20260615_01", "note": "서울시선관위와 중앙선관위의 부족 징후 인지·보고 지연 조사 뒤 최고 책임자 서면답변으로 확인 범위가 확대됨" },
-      { "id": "evt_20251210_01", "note": "투표용지 50% 하한 지침의 보고·전결 경위가 진상규명위 6차 회의에서 확인됨" },
-      { "id": "evt_20260616_03", "note": "선관위가 보고체계와 투표지 인쇄 기준 재검토를 재발방지책으로 보고한 배경" }
+      {
+        "id": "evt_20260615_01",
+        "note": "서울시선관위와 중앙선관위의 부족 징후 인지·보고 지연 조사 뒤 최고 책임자 서면답변으로 확인 범위가 확대됨"
+      },
+      {
+        "id": "evt_20251210_01",
+        "note": "투표용지 50% 하한 지침의 보고·전결 경위가 진상규명위 6차 회의에서 확인됨"
+      },
+      {
+        "id": "evt_20260616_03",
+        "note": "선관위가 보고체계와 투표지 인쇄 기준 재검토를 재발방지책으로 보고한 배경"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "진상규명위", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "진상규명위",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260617_02",
@@ -622,17 +1360,47 @@
     "status": "result_announced",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "MBC 뉴스데스크 보도", "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6830939_37005.html" },
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260617157000001" },
-      { "type": "press", "title": "서울신문 속보", "url": "https://www.seoul.co.kr/news/society/2026/06/17/20260617500120" },
-      { "type": "press", "title": "TV조선 보도", "url": "https://news.tvchosun.com/site/data/html_dir/2026/06/17/2026061790268.html" }
+      {
+        "type": "press",
+        "title": "MBC 뉴스데스크 보도",
+        "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6830939_37005.html"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260617157000001"
+      },
+      {
+        "type": "press",
+        "title": "서울신문 속보",
+        "url": "https://www.seoul.co.kr/news/society/2026/06/17/20260617500120"
+      },
+      {
+        "type": "press",
+        "title": "TV조선 보도",
+        "url": "https://news.tvchosun.com/site/data/html_dir/2026/06/17/2026061790268.html"
+      }
     ],
     "related": [
-      { "id": "evt_20260612_01", "note": "송파구선관위의 부족 가능성 인지·대기표 발급·투표시간 연장 경위 조사와 연결됨" },
-      { "id": "evt_20260610_02", "note": "잠실7동 제2투표소 증거보전 현장검증 대상 투표소의 미투표 인원 확인" },
-      { "id": "evt_20260609_01", "note": "투표 중단 후 재개 26곳 집계에 대한 투표록 전수조사 결과" }
+      {
+        "id": "evt_20260612_01",
+        "note": "송파구선관위의 부족 가능성 인지·대기표 발급·투표시간 연장 경위 조사와 연결됨"
+      },
+      {
+        "id": "evt_20260610_02",
+        "note": "잠실7동 제2투표소 증거보전 현장검증 대상 투표소의 미투표 인원 확인"
+      },
+      {
+        "id": "evt_20260609_01",
+        "note": "투표 중단 후 재개 26곳 집계에 대한 투표록 전수조사 결과"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "잠실7동", "진상규명위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "잠실7동",
+      "진상규명위"
+    ]
   },
   {
     "id": "evt_20260617_03",
@@ -642,16 +1410,41 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260617050251001" },
-      { "type": "press", "title": "SBS 나이트라인 보도", "url": "https://news.sbs.co.kr/amp/news.amp?news_id=N1008615535" },
-      { "type": "press", "title": "경향신문 보도", "url": "https://www.khan.co.kr/article/202606171843001" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260617050251001"
+      },
+      {
+        "type": "press",
+        "title": "SBS 나이트라인 보도",
+        "url": "https://news.sbs.co.kr/amp/news.amp?news_id=N1008615535"
+      },
+      {
+        "type": "press",
+        "title": "경향신문 보도",
+        "url": "https://www.khan.co.kr/article/202606171843001"
+      }
     ],
     "related": [
-      { "id": "evt_20260615_03", "note": "국민의힘 지도부의 6개 지역 선거소청 의결 이후 실제 제출 범위가 11개 시도로 정리됨" },
-      { "id": "evt_20260609_01", "note": "추가 용지 사용·투표 중단 투표소 집계가 선거소청 대상 판단의 배경" },
-      { "id": "evt_20260617_02", "note": "투표를 포기하거나 투표하지 못한 유권자 규모 주장과 함께 선거소청 명분으로 제시됨" }
+      {
+        "id": "evt_20260615_03",
+        "note": "국민의힘 지도부의 6개 지역 선거소청 의결 이후 실제 제출 범위가 11개 시도로 정리됨"
+      },
+      {
+        "id": "evt_20260609_01",
+        "note": "추가 용지 사용·투표 중단 투표소 집계가 선거소청 대상 판단의 배경"
+      },
+      {
+        "id": "evt_20260617_02",
+        "note": "투표를 포기하거나 투표하지 못한 유권자 규모 주장과 함께 선거소청 명분으로 제시됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "부정선거의혹"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "부정선거의혹"
+    ]
   },
   {
     "id": "evt_20260617_04",
@@ -661,17 +1454,47 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "YTN 오전 현장 보도", "url": "https://www.ytn.co.kr/_ln/0103_202606171126573896" },
-      { "type": "press", "title": "YTN 저녁 보도", "url": "https://m.ytn.co.kr/news_view.amp.php?param=0101_202606172139045199&version=1" },
-      { "type": "press", "title": "뉴시스 현장 보도 (Daum 게재)", "url": "https://v.daum.net/v/20260617123049527" },
-      { "type": "press", "title": "연합뉴스TV 보도", "url": "https://www.yonhapnewstv.co.kr/news/MYH20260618051620qty" }
+      {
+        "type": "press",
+        "title": "YTN 오전 현장 보도",
+        "url": "https://www.ytn.co.kr/_ln/0103_202606171126573896"
+      },
+      {
+        "type": "press",
+        "title": "YTN 저녁 보도",
+        "url": "https://m.ytn.co.kr/news_view.amp.php?param=0101_202606172139045199&version=1"
+      },
+      {
+        "type": "press",
+        "title": "뉴시스 현장 보도 (Daum 게재)",
+        "url": "https://v.daum.net/v/20260617123049527"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스TV 보도",
+        "url": "https://www.yonhapnewstv.co.kr/news/MYH20260618051620qty"
+      }
     ],
     "related": [
-      { "id": "evt_20260616_04", "note": "체육단체 진입 합의 불발 뒤 다음 날에도 개표소 봉쇄와 출입 저지 문제가 이어짐" },
-      { "id": "evt_20260615_04", "note": "대한체육회와 입주 경기단체의 공권력 행사 요청 이후 업무 차질이 장기화됨" },
-      { "id": "evt_20260605_03", "note": "잠실7동 투표함 반출 이후 송파구 개표소 주변 장외시위가 계속됨" }
+      {
+        "id": "evt_20260616_04",
+        "note": "체육단체 진입 합의 불발 뒤 다음 날에도 개표소 봉쇄와 출입 저지 문제가 이어짐"
+      },
+      {
+        "id": "evt_20260615_04",
+        "note": "대한체육회와 입주 경기단체의 공권력 행사 요청 이후 업무 차질이 장기화됨"
+      },
+      {
+        "id": "evt_20260605_03",
+        "note": "잠실7동 투표함 반출 이후 송파구 개표소 주변 장외시위가 계속됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "잠실7동", "장외시위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "잠실7동",
+      "장외시위"
+    ]
   },
   {
     "id": "evt_20260617_05",
@@ -681,16 +1504,41 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260616165100001" },
-      { "type": "press", "title": "데일리안 보도", "url": "https://www.dailian.co.kr/news/view/1656742/%ED%88%AC%ED%91%9C%EC%9A%A9%EC%A7%80-%EB%B6%80%EC%A1%B1-%EC%9D%B4%EC%9C%A0-%EC%9E%88%EC%97%88%EB%82%98%EC%84%A0%EA%B4%80%EC%9C%84-14-2026" },
-      { "type": "press", "title": "서울신문 보도", "url": "https://www.seoul.co.kr/news/politics/2026/06/17/20260617500027" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260616165100001"
+      },
+      {
+        "type": "press",
+        "title": "데일리안 보도",
+        "url": "https://www.dailian.co.kr/news/view/1656742/%ED%88%AC%ED%91%9C%EC%9A%A9%EC%A7%80-%EB%B6%80%EC%A1%B1-%EC%9D%B4%EC%9C%A0-%EC%9E%88%EC%97%88%EB%82%98%EC%84%A0%EA%B4%80%EC%9C%84-14-2026"
+      },
+      {
+        "type": "press",
+        "title": "서울신문 보도",
+        "url": "https://www.seoul.co.kr/news/politics/2026/06/17/20260617500027"
+      }
     ],
     "related": [
-      { "id": "evt_20260605_02", "note": "선거인수 110% 기준 예산과 실제 50% 안팎 인쇄 보도의 후속 자료" },
-      { "id": "evt_20251210_01", "note": "투표용지 인쇄 하한 50% 지침과 예산 집행 사이의 쟁점" },
-      { "id": "evt_20260616_03", "note": "선관위의 투표지 인쇄매수 기준 전면 재검토 보고와 연결됨" }
+      {
+        "id": "evt_20260605_02",
+        "note": "선거인수 110% 기준 예산과 실제 50% 안팎 인쇄 보도의 후속 자료"
+      },
+      {
+        "id": "evt_20251210_01",
+        "note": "투표용지 인쇄 하한 50% 지침과 예산 집행 사이의 쟁점"
+      },
+      {
+        "id": "evt_20260616_03",
+        "note": "선관위의 투표지 인쇄매수 기준 전면 재검토 보고와 연결됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260617_06",
@@ -700,16 +1548,42 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260617096551004" },
-      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0103_202606171554476863" },
-      { "type": "press", "title": "머니투데이 보도", "url": "https://www.mt.co.kr/amp/society/2026/06/17/2026061717075273136" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260617096551004"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://www.ytn.co.kr/_ln/0103_202606171554476863"
+      },
+      {
+        "type": "press",
+        "title": "머니투데이 보도",
+        "url": "https://www.mt.co.kr/amp/society/2026/06/17/2026061717075273136"
+      }
     ],
     "related": [
-      { "id": "evt_20260610_02", "note": "법원의 잠실7동 제2투표소 증거보전 현장검증 당시 투표지 보관상자가 현장에 없었던 사안" },
-      { "id": "evt_20260611_01", "note": "합수본 강제수사 대상과 별도로 접수된 보관상자 폐기 고발 사건" },
-      { "id": "evt_20260605_03", "note": "잠실7동 투표함 반출과 이후 증거보전·수사 절차가 이어짐" }
+      {
+        "id": "evt_20260610_02",
+        "note": "법원의 잠실7동 제2투표소 증거보전 현장검증 당시 투표지 보관상자가 현장에 없었던 사안"
+      },
+      {
+        "id": "evt_20260611_01",
+        "note": "합수본 강제수사 대상과 별도로 접수된 보관상자 폐기 고발 사건"
+      },
+      {
+        "id": "evt_20260605_03",
+        "note": "잠실7동 투표함 반출과 이후 증거보전·수사 절차가 이어짐"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "잠실7동", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "잠실7동",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260617_07",
@@ -719,16 +1593,41 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260617054500004" },
-      { "type": "press", "title": "경향신문 보도", "url": "https://www.khan.co.kr/article/202606171528001" },
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/society/article/6830860_36918.html" },
-      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0103_202606171042275690" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260617054500004"
+      },
+      {
+        "type": "press",
+        "title": "경향신문 보도",
+        "url": "https://www.khan.co.kr/article/202606171528001"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/news/2026/society/article/6830860_36918.html"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://www.ytn.co.kr/_ln/0103_202606171042275690"
+      }
     ],
     "related": [
-      { "id": "evt_20260603_01", "note": "투표용지 부족 사태와 관련해 제기된 기본권 침해 주장에 대한 헌재 사전심사 결과" },
-      { "id": "evt_20260617_03", "note": "선거소청과 별도로 진행된 헌법소원 절차의 첫 사전심사 결정" }
+      {
+        "id": "evt_20260603_01",
+        "note": "투표용지 부족 사태와 관련해 제기된 기본권 침해 주장에 대한 헌재 사전심사 결과"
+      },
+      {
+        "id": "evt_20260617_03",
+        "note": "선거소청과 별도로 진행된 헌법소원 절차의 첫 사전심사 결정"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거"]
+    "topics": [
+      "선관위",
+      "6·3지방선거"
+    ]
   },
   {
     "id": "evt_20260618_01",
@@ -738,17 +1637,46 @@
     "status": "official",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "국정조사계획서 승인의 건 의안정보 (국회 의안정보시스템)", "url": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_E2Z6Q0O6A1B8M1L3P2D6Q1E2T6B1H8" },
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260618109500001" },
-      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.amp.php?param=0101_202606181818430535&version=1" },
-      { "type": "press", "title": "굿모닝충청 보도", "url": "https://www.goodmorningcc.com/news/articleView.html?idxno=447719" }
+      {
+        "type": "official",
+        "title": "국정조사계획서 승인의 건 의안정보 (국회 의안정보시스템)",
+        "url": "https://likms.assembly.go.kr/bill/billDetail.do?billId=PRC_E2Z6Q0O6A1B8M1L3P2D6Q1E2T6B1H8"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260618109500001"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://m.ytn.co.kr/news_view.amp.php?param=0101_202606181818430535&version=1"
+      },
+      {
+        "type": "press",
+        "title": "굿모닝충청 보도",
+        "url": "https://www.goodmorningcc.com/news/articleView.html?idxno=447719"
+      }
     ],
     "related": [
-      { "id": "evt_20260616_02", "note": "여야가 45일 국정조사와 18일 계획서 처리를 합의한 뒤 본회의에서 의결됨" },
-      { "id": "evt_20260608_01", "note": "여야의 국정조사 요구서 제출에서 국정조사계획서 승인 단계로 전환됨" },
-      { "id": "evt_20260617_03", "note": "선거소청 절차와 별도로 국회 차원의 진상규명 절차가 시작됨" }
+      {
+        "id": "evt_20260616_02",
+        "note": "여야가 45일 국정조사와 18일 계획서 처리를 합의한 뒤 본회의에서 의결됨"
+      },
+      {
+        "id": "evt_20260608_01",
+        "note": "여야의 국정조사 요구서 제출에서 국정조사계획서 승인 단계로 전환됨"
+      },
+      {
+        "id": "evt_20260617_03",
+        "note": "선거소청 절차와 별도로 국회 차원의 진상규명 절차가 시작됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260618_02",
@@ -758,16 +1686,42 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260618032751001" },
-      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.amp.php?param=0101_202606182155391977&version=1" },
-      { "type": "press", "title": "국민일보 보도", "url": "https://www.kmib.co.kr/article/view_amp.asp?arcid=1781772633" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260618032751001"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://m.ytn.co.kr/news_view.amp.php?param=0101_202606182155391977&version=1"
+      },
+      {
+        "type": "press",
+        "title": "국민일보 보도",
+        "url": "https://www.kmib.co.kr/article/view_amp.asp?arcid=1781772633"
+      }
     ],
     "related": [
-      { "id": "evt_20260617_02", "note": "투표록 전수조사에서 드러난 미투표 유권자 규모와 같은 자료 흐름" },
-      { "id": "evt_20260612_01", "note": "송파구선관위의 오전 부족 가능성 인지와 현장 대응 경위가 투표록 기록으로 보강됨" },
-      { "id": "evt_20260618_01", "note": "국정조사특위 출범 직후 특위 위원이 확보한 자료 공개" }
+      {
+        "id": "evt_20260617_02",
+        "note": "투표록 전수조사에서 드러난 미투표 유권자 규모와 같은 자료 흐름"
+      },
+      {
+        "id": "evt_20260612_01",
+        "note": "송파구선관위의 오전 부족 가능성 인지와 현장 대응 경위가 투표록 기록으로 보강됨"
+      },
+      {
+        "id": "evt_20260618_01",
+        "note": "국정조사특위 출범 직후 특위 위원이 확보한 자료 공개"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "잠실7동", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "잠실7동",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260619_01",
@@ -777,19 +1731,57 @@
     "status": "result_announced",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "진상규명위원회 최종 조사결과 브리핑 현장영상·전문 (YTN)", "url": "https://www.ytn.co.kr/_cs/_ln_0101_202606191031583670_005.html" },
-      { "type": "press", "title": "연합뉴스 종합 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260619071551001" },
-      { "type": "press", "title": "MBC 뉴스데스크 보도", "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6831516_37004.html" },
-      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_cs/_ln_0101_202606191750357004_005.html" },
-      { "type": "press", "title": "매일경제 보도", "url": "https://www.mk.co.kr/news/politics/12078528" }
+      {
+        "type": "official",
+        "title": "진상규명위원회 최종 조사결과 브리핑 현장영상·전문 (YTN)",
+        "url": "https://www.ytn.co.kr/_cs/_ln_0101_202606191031583670_005.html"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스 종합 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260619071551001"
+      },
+      {
+        "type": "press",
+        "title": "MBC 뉴스데스크 보도",
+        "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6831516_37004.html"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://www.ytn.co.kr/_cs/_ln_0101_202606191750357004_005.html"
+      },
+      {
+        "type": "press",
+        "title": "매일경제 보도",
+        "url": "https://www.mk.co.kr/news/politics/12078528"
+      }
     ],
     "related": [
-      { "id": "evt_20260610_01", "note": "6월 10일 출범한 진상규명위원회의 활동 종료 및 최종 조사결과 발표" },
-      { "id": "evt_20260617_01", "note": "6차 회의에서 확인한 보고·지휘체계 미작동 쟁점이 최종 조사결과에 반영됨" },
-      { "id": "evt_20251210_01", "note": "투표용지 50% 인쇄 하한 지침의 의결 부재와 전결 처리 문제가 최종 책임 판단의 핵심으로 제시됨" },
-      { "id": "evt_20260611_01", "note": "합수본 강제수사와 별도로 진상규명위가 고위 관계자 수사의뢰를 중앙선관위에 권고함" }
+      {
+        "id": "evt_20260610_01",
+        "note": "6월 10일 출범한 진상규명위원회의 활동 종료 및 최종 조사결과 발표"
+      },
+      {
+        "id": "evt_20260617_01",
+        "note": "6차 회의에서 확인한 보고·지휘체계 미작동 쟁점이 최종 조사결과에 반영됨"
+      },
+      {
+        "id": "evt_20251210_01",
+        "note": "투표용지 50% 인쇄 하한 지침의 의결 부재와 전결 처리 문제가 최종 책임 판단의 핵심으로 제시됨"
+      },
+      {
+        "id": "evt_20260611_01",
+        "note": "합수본 강제수사와 별도로 진상규명위가 고위 관계자 수사의뢰를 중앙선관위에 권고함"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "진상규명위", "인쇄지침", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "진상규명위",
+      "인쇄지침",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260619_02",
@@ -799,15 +1791,38 @@
     "status": "official",
     "source_grade": "official",
     "source_refs": [
-      { "type": "official", "title": "대통령 주재 제38차 수석보좌관회의 관련 강유정 수석대변인 서면 브리핑", "url": "https://www.president.go.kr/briefings/At6S25UE" },
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/politics/article/6831717_36911.html" }
+      {
+        "type": "official",
+        "title": "대통령 주재 제38차 수석보좌관회의 관련 강유정 수석대변인 서면 브리핑",
+        "url": "https://www.president.go.kr/briefings/At6S25UE"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/news/2026/politics/article/6831717_36911.html"
+      }
     ],
     "related": [
-      { "id": "evt_20260618_01", "note": "국정조사특위 활동 시작 이후 대통령실이 진상규명과 법 개정을 주문" },
-      { "id": "evt_20260614_03", "note": "화상 수석보좌관회의에서 선관위 국정조사 협조와 합수본 책임규명을 주문한 뒤 후속 발언" },
-      { "id": "evt_20260617_04", "note": "잠실 개표소 주변 장외시위와 폭력 상황 대응 언급" }
+      {
+        "id": "evt_20260618_01",
+        "note": "국정조사특위 활동 시작 이후 대통령실이 진상규명과 법 개정을 주문"
+      },
+      {
+        "id": "evt_20260614_03",
+        "note": "화상 수석보좌관회의에서 선관위 국정조사 협조와 합수본 책임규명을 주문한 뒤 후속 발언"
+      },
+      {
+        "id": "evt_20260617_04",
+        "note": "잠실 개표소 주변 장외시위와 폭력 상황 대응 언급"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사", "부정선거의혹", "장외시위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사",
+      "부정선거의혹",
+      "장외시위"
+    ]
   },
   {
     "id": "evt_20260620_01",
@@ -817,17 +1832,47 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260620031100004" },
-      { "type": "press", "title": "뉴시스 보도", "url": "https://www.newsis.com/view/NISX20260620_0003676819" },
-      { "type": "press", "title": "경향신문 보도", "url": "https://www.khan.co.kr/article/202606201747001" },
-      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0103_202606201553497065" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260620031100004"
+      },
+      {
+        "type": "press",
+        "title": "뉴시스 보도",
+        "url": "https://www.newsis.com/view/NISX20260620_0003676819"
+      },
+      {
+        "type": "press",
+        "title": "경향신문 보도",
+        "url": "https://www.khan.co.kr/article/202606201747001"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://www.ytn.co.kr/_ln/0103_202606201553497065"
+      }
     ],
     "related": [
-      { "id": "evt_20260616_01", "note": "잠실7동 제2투표소 투표관리원 참고인 조사 뒤 투표소 근무자 조사가 이어짐" },
-      { "id": "evt_20260619_01", "note": "진상규명위의 고위 관계자 수사의뢰 권고 이후 합수본 수사가 실무자 조사와 압수물 분석으로 계속됨" },
-      { "id": "evt_20260617_06", "note": "투표용지 보관상자 폐기 의혹도 합수본 수사 범위에 포함됨" }
+      {
+        "id": "evt_20260616_01",
+        "note": "잠실7동 제2투표소 투표관리원 참고인 조사 뒤 투표소 근무자 조사가 이어짐"
+      },
+      {
+        "id": "evt_20260619_01",
+        "note": "진상규명위의 고위 관계자 수사의뢰 권고 이후 합수본 수사가 실무자 조사와 압수물 분석으로 계속됨"
+      },
+      {
+        "id": "evt_20260617_06",
+        "note": "투표용지 보관상자 폐기 의혹도 합수본 수사 범위에 포함됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260620_02",
@@ -837,17 +1882,47 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260620040500004" },
-      { "type": "press", "title": "경향신문 보도", "url": "https://www.khan.co.kr/article/202606201950001" },
-      { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/amp/news.amp?news_id=N1008619663" },
-      { "type": "press", "title": "동아일보 보도", "url": "https://www.donga.com/news/amp/all/20260620/134148941/1" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260620040500004"
+      },
+      {
+        "type": "press",
+        "title": "경향신문 보도",
+        "url": "https://www.khan.co.kr/article/202606201950001"
+      },
+      {
+        "type": "press",
+        "title": "SBS 보도",
+        "url": "https://news.sbs.co.kr/amp/news.amp?news_id=N1008619663"
+      },
+      {
+        "type": "press",
+        "title": "동아일보 보도",
+        "url": "https://www.donga.com/news/amp/all/20260620/134148941/1"
+      }
     ],
     "related": [
-      { "id": "evt_20260617_04", "note": "개표소 봉쇄 시위와 경찰 업무방해 수사가 이어지는 가운데 현장 안전 조치가 추가됨" },
-      { "id": "evt_20260616_04", "note": "체육단체 진입 합의 불발과 경찰 수사 착수 이후 시위가 장기화됨" },
-      { "id": "evt_20260605_03", "note": "잠실7동 투표함 반출 이후 송파구 개표소 주변 장외시위가 계속됨" }
+      {
+        "id": "evt_20260617_04",
+        "note": "개표소 봉쇄 시위와 경찰 업무방해 수사가 이어지는 가운데 현장 안전 조치가 추가됨"
+      },
+      {
+        "id": "evt_20260616_04",
+        "note": "체육단체 진입 합의 불발과 경찰 수사 착수 이후 시위가 장기화됨"
+      },
+      {
+        "id": "evt_20260605_03",
+        "note": "잠실7동 투표함 반출 이후 송파구 개표소 주변 장외시위가 계속됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "잠실7동", "장외시위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "잠실7동",
+      "장외시위"
+    ]
   },
   {
     "id": "evt_20260620_03",
@@ -857,16 +1932,41 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "MBC 단독 보도", "url": "https://imnews.imbc.com/news/2026/politics/article/6831623_36911.html" },
-      { "type": "press", "title": "경향신문 보도", "url": "https://www.khan.co.kr/article/202606201823001" },
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260621027900001" }
+      {
+        "type": "press",
+        "title": "MBC 단독 보도",
+        "url": "https://imnews.imbc.com/news/2026/politics/article/6831623_36911.html"
+      },
+      {
+        "type": "press",
+        "title": "경향신문 보도",
+        "url": "https://www.khan.co.kr/article/202606201823001"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260621027900001"
+      }
     ],
     "related": [
-      { "id": "evt_20260617_01", "note": "중앙선관위가 언론 보도로 사태를 처음 인지했다는 진상규명위 발표의 후속 자료" },
-      { "id": "evt_20260612_01", "note": "송파구선관위의 오전 부족 가능성 인지와 중앙선관위 수뇌부 첫 보고 사이의 보고체계 쟁점" },
-      { "id": "evt_20260618_01", "note": "국정조사특위의 보고체계 규명 대상 자료" }
+      {
+        "id": "evt_20260617_01",
+        "note": "중앙선관위가 언론 보도로 사태를 처음 인지했다는 진상규명위 발표의 후속 자료"
+      },
+      {
+        "id": "evt_20260612_01",
+        "note": "송파구선관위의 오전 부족 가능성 인지와 중앙선관위 수뇌부 첫 보고 사이의 보고체계 쟁점"
+      },
+      {
+        "id": "evt_20260618_01",
+        "note": "국정조사특위의 보고체계 규명 대상 자료"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260622_01",
@@ -876,15 +1976,36 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260622020000004" },
-      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.amp.php?param=0103_202606220834134468&version=1" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260622020000004"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://m.ytn.co.kr/news_view.amp.php?param=0103_202606220834134468&version=1"
+      }
     ],
     "related": [
-      { "id": "evt_20260620_01", "note": "개포2동 투표관리관 참고인 조사 뒤 투표소 현장 실무자 조사가 확대됨" },
-      { "id": "evt_20260616_01", "note": "잠실7동 제2투표소 투표관리원 참고인 조사 이후 이어진 현장 대응 경위 확인" },
-      { "id": "evt_20260611_01", "note": "중앙선관위 등 7곳 압수수색 뒤 압수물 분석과 참고인 조사가 병행됨" }
+      {
+        "id": "evt_20260620_01",
+        "note": "개포2동 투표관리관 참고인 조사 뒤 투표소 현장 실무자 조사가 확대됨"
+      },
+      {
+        "id": "evt_20260616_01",
+        "note": "잠실7동 제2투표소 투표관리원 참고인 조사 이후 이어진 현장 대응 경위 확인"
+      },
+      {
+        "id": "evt_20260611_01",
+        "note": "중앙선관위 등 7곳 압수수색 뒤 압수물 분석과 참고인 조사가 병행됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260622_02",
@@ -894,15 +2015,38 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "동아일보 보도", "url": "https://www.donga.com/news/Politics/article/all/20260622/134161917/1" },
-      { "type": "press", "title": "매일경제 보도", "url": "https://www.mk.co.kr/news/politics/12080416" },
-      { "type": "press", "title": "아시아경제 보도", "url": "https://view.asiae.co.kr/article/2026062222054906253" }
+      {
+        "type": "press",
+        "title": "동아일보 보도",
+        "url": "https://www.donga.com/news/Politics/article/all/20260622/134161917/1"
+      },
+      {
+        "type": "press",
+        "title": "매일경제 보도",
+        "url": "https://www.mk.co.kr/news/politics/12080416"
+      },
+      {
+        "type": "press",
+        "title": "아시아경제 보도",
+        "url": "https://view.asiae.co.kr/article/2026062222054906253"
+      }
     ],
     "related": [
-      { "id": "evt_20260619_01", "note": "진상규명위 최종 조사결과와 수사의뢰·징계 권고에 대한 중앙선관위 후속 조치" },
-      { "id": "evt_20260609_03", "note": "검·경 합동수사본부에 진상규명위 보고 자료를 제출하기로 한 결정" }
+      {
+        "id": "evt_20260619_01",
+        "note": "진상규명위 최종 조사결과와 수사의뢰·징계 권고에 대한 중앙선관위 후속 조치"
+      },
+      {
+        "id": "evt_20260609_03",
+        "note": "검·경 합동수사본부에 진상규명위 보고 자료를 제출하기로 한 결정"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "진상규명위", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "진상규명위",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260622_03",
@@ -912,15 +2056,37 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "아시아경제 보도", "url": "https://view.asiae.co.kr/article/2026062222054906253" },
-      { "type": "press", "title": "연합뉴스 보도 (파이낸셜뉴스 게재)", "url": "https://www.fnnews.com/news/202606230500572693" },
-      { "type": "press", "title": "한국경제 보도", "url": "https://www.hankyung.com/article/2026062315957" }
+      {
+        "type": "press",
+        "title": "아시아경제 보도",
+        "url": "https://view.asiae.co.kr/article/2026062222054906253"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스 보도 (파이낸셜뉴스 게재)",
+        "url": "https://www.fnnews.com/news/202606230500572693"
+      },
+      {
+        "type": "press",
+        "title": "한국경제 보도",
+        "url": "https://www.hankyung.com/article/2026062315957"
+      }
     ],
     "related": [
-      { "id": "evt_20260618_01", "note": "국정조사계획서 승인 뒤 증인 채택과 기관보고 단계로 진행" },
-      { "id": "evt_20260619_01", "note": "진상규명위가 수사의뢰·징계를 권고한 선관위 관계자들이 국정조사 증인 논의에 포함됨" }
+      {
+        "id": "evt_20260618_01",
+        "note": "국정조사계획서 승인 뒤 증인 채택과 기관보고 단계로 진행"
+      },
+      {
+        "id": "evt_20260619_01",
+        "note": "진상규명위가 수사의뢰·징계를 권고한 선관위 관계자들이 국정조사 증인 논의에 포함됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260622_04",
@@ -930,15 +2096,37 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260622134400001" },
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/politics/article/6832010_36911.html" },
-      { "type": "press", "title": "문화일보 보도(10문10답)", "url": "https://www.munhwa.com/article/11597425" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260622134400001"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/news/2026/politics/article/6832010_36911.html"
+      },
+      {
+        "type": "press",
+        "title": "문화일보 보도(10문10답)",
+        "url": "https://www.munhwa.com/article/11597425"
+      }
     ],
     "related": [
-      { "id": "evt_20260617_03", "note": "국민의힘 선거소청 제출 이후 선관위가 전체 소청 접수 규모를 발표함" },
-      { "id": "evt_20260618_01", "note": "국정조사 대상 사안과 별도로 선거·당선 효력에 대한 선관위 소청 절차가 진행됨" }
+      {
+        "id": "evt_20260617_03",
+        "note": "국민의힘 선거소청 제출 이후 선관위가 전체 소청 접수 규모를 발표함"
+      },
+      {
+        "id": "evt_20260618_01",
+        "note": "국정조사 대상 사안과 별도로 선거·당선 효력에 대한 선관위 소청 절차가 진행됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "부정선거의혹"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "부정선거의혹"
+    ]
   },
   {
     "id": "evt_20260622_05",
@@ -948,14 +2136,32 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260625089000004" },
-      { "type": "press", "title": "MBN 보도", "url": "https://www.mbn.co.kr/pages/news/newsView.php?category=mbn00009&news_seq_no=5201916" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260625089000004"
+      },
+      {
+        "type": "press",
+        "title": "MBN 보도",
+        "url": "https://www.mbn.co.kr/pages/news/newsView.php?category=mbn00009&news_seq_no=5201916"
+      }
     ],
     "related": [
-      { "id": "evt_20260620_02", "note": "잠실 개표소 봉쇄 시위 장기화로 현장 안전과 시설 이용 차질이 이어짐" },
-      { "id": "evt_20260605_03", "note": "잠실7동 투표함 반출 이후 송파구 개표소 물품 보관과 봉쇄 시위가 계속됨" }
+      {
+        "id": "evt_20260620_02",
+        "note": "잠실 개표소 봉쇄 시위 장기화로 현장 안전과 시설 이용 차질이 이어짐"
+      },
+      {
+        "id": "evt_20260605_03",
+        "note": "잠실7동 투표함 반출 이후 송파구 개표소 물품 보관과 봉쇄 시위가 계속됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "장외시위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "장외시위"
+    ]
   },
   {
     "id": "evt_20260623_01",
@@ -965,18 +2171,51 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 국조특위 일정 보도", "url": "https://www.yna.co.kr/view/AKR20260623074300001" },
-      { "type": "press", "title": "SBS 국정조사 첫 기관보고 보도", "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008623686" },
-      { "type": "press", "title": "YTN 증인 불출석·오후 출석 보도", "url": "https://www.ytn.co.kr/_ln/0101_202606231547022109" },
-      { "type": "press", "title": "연합뉴스 노태악 전 위원장 질의답변 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260623090400001" },
-      { "type": "press", "title": "연합뉴스 위철환 직무대행 기관보고 보도", "url": "https://www.yna.co.kr/view/AKR20260623083900001" }
+      {
+        "type": "press",
+        "title": "연합뉴스 국조특위 일정 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260623074300001"
+      },
+      {
+        "type": "press",
+        "title": "SBS 국정조사 첫 기관보고 보도",
+        "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008623686"
+      },
+      {
+        "type": "press",
+        "title": "YTN 증인 불출석·오후 출석 보도",
+        "url": "https://www.ytn.co.kr/_ln/0101_202606231547022109"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스 노태악 전 위원장 질의답변 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260623090400001"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스 위철환 직무대행 기관보고 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260623083900001"
+      }
     ],
     "related": [
-      { "id": "evt_20260618_01", "note": "국정조사계획서 승인 후 첫 기관보고가 진행됨" },
-      { "id": "evt_20260622_03", "note": "전날 여야 간사 합의가 증인·참고인 공식 의결로 이어짐" },
-      { "id": "evt_20260619_01", "note": "진상규명위 최종 조사결과 이후 국회 차원의 증인 신문 절차가 시작됨" }
+      {
+        "id": "evt_20260618_01",
+        "note": "국정조사계획서 승인 후 첫 기관보고가 진행됨"
+      },
+      {
+        "id": "evt_20260622_03",
+        "note": "전날 여야 간사 합의가 증인·참고인 공식 의결로 이어짐"
+      },
+      {
+        "id": "evt_20260619_01",
+        "note": "진상규명위 최종 조사결과 이후 국회 차원의 증인 신문 절차가 시작됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260623_02",
@@ -986,16 +2225,42 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 선관위 업무보고 개혁안 보도", "url": "https://www.yna.co.kr/view/AKR20260623058100001" },
-      { "type": "press", "title": "TV조선 업무보고 인지시점·추가 교부 투표소 정정 보도", "url": "https://news.tvchosun.com/site/data/html_dir/2026/06/23/2026062390247.html" },
-      { "type": "press", "title": "SBS 국정조사 첫 기관보고 보도", "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008623686" }
+      {
+        "type": "press",
+        "title": "연합뉴스 선관위 업무보고 개혁안 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260623058100001"
+      },
+      {
+        "type": "press",
+        "title": "TV조선 업무보고 인지시점·추가 교부 투표소 정정 보도",
+        "url": "https://news.tvchosun.com/site/data/html_dir/2026/06/23/2026062390247.html"
+      },
+      {
+        "type": "press",
+        "title": "SBS 국정조사 첫 기관보고 보도",
+        "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008623686"
+      }
     ],
     "related": [
-      { "id": "evt_20260616_03", "note": "선관위가 앞서 보고한 인쇄매수 기준 재검토 방침이 국정조사 업무보고 개혁안으로 구체화됨" },
-      { "id": "evt_20260619_01", "note": "진상규명위의 제도개선 제안 이후 선관위가 국정조사 업무보고에서 개혁안을 제시함" },
-      { "id": "evt_20260623_01", "note": "같은 날 국조특위 첫 기관보고에서 제출·보고된 내용" }
+      {
+        "id": "evt_20260616_03",
+        "note": "선관위가 앞서 보고한 인쇄매수 기준 재검토 방침이 국정조사 업무보고 개혁안으로 구체화됨"
+      },
+      {
+        "id": "evt_20260619_01",
+        "note": "진상규명위의 제도개선 제안 이후 선관위가 국정조사 업무보고에서 개혁안을 제시함"
+      },
+      {
+        "id": "evt_20260623_01",
+        "note": "같은 날 국조특위 첫 기관보고에서 제출·보고된 내용"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260623_03",
@@ -1005,17 +2270,47 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "경향신문 보도", "url": "https://www.khan.co.kr/article/202606231727001" },
-      { "type": "press", "title": "동아일보 보도", "url": "https://www.donga.com/news/Politics/article/all/20260623/134165701/1" },
-      { "type": "press", "title": "법률신문 보도", "url": "https://www.lawtimes.co.kr/news/articleViewAmp.html?idxno=222404" },
-      { "type": "press", "title": "TV조선 보도", "url": "https://news.tvchosun.com/site/data/html_dir/2026/06/23/2026062390247.html" }
+      {
+        "type": "press",
+        "title": "경향신문 보도",
+        "url": "https://www.khan.co.kr/article/202606231727001"
+      },
+      {
+        "type": "press",
+        "title": "동아일보 보도",
+        "url": "https://www.donga.com/news/Politics/article/all/20260623/134165701/1"
+      },
+      {
+        "type": "press",
+        "title": "법률신문 보도",
+        "url": "https://www.lawtimes.co.kr/news/articleViewAmp.html?idxno=222404"
+      },
+      {
+        "type": "press",
+        "title": "TV조선 보도",
+        "url": "https://news.tvchosun.com/site/data/html_dir/2026/06/23/2026062390247.html"
+      }
     ],
     "related": [
-      { "id": "evt_20260609_03", "note": "검·경 합동수사본부 출범 이후 수사 범위 확대 필요성을 대통령이 언급함" },
-      { "id": "evt_20260619_02", "note": "대통령이 선관위 개혁과 책임규명을 주문한 뒤 국무회의에서 내부 비위 의혹 수사 필요성을 추가 언급함" },
-      { "id": "evt_20260622_02", "note": "선관위가 진상규명위 자료를 합수본에 제출하기로 한 직후 수사 범위 논의가 확대됨" }
+      {
+        "id": "evt_20260609_03",
+        "note": "검·경 합동수사본부 출범 이후 수사 범위 확대 필요성을 대통령이 언급함"
+      },
+      {
+        "id": "evt_20260619_02",
+        "note": "대통령이 선관위 개혁과 책임규명을 주문한 뒤 국무회의에서 내부 비위 의혹 수사 필요성을 추가 언급함"
+      },
+      {
+        "id": "evt_20260622_02",
+        "note": "선관위가 진상규명위 자료를 합수본에 제출하기로 한 직후 수사 범위 논의가 확대됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사", "채용비리"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사",
+      "채용비리"
+    ]
   },
   {
     "id": "evt_20260623_04",
@@ -1025,16 +2320,42 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "TV조선 보도", "url": "https://news.tvchosun.com/site/data/html_dir/2026/06/25/2026062590191.html" },
-      { "type": "press", "title": "머니투데이 보도", "url": "https://www.mt.co.kr/amp/society/2026/06/25/2026062514410598014" },
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260625089000004" }
+      {
+        "type": "press",
+        "title": "TV조선 보도",
+        "url": "https://news.tvchosun.com/site/data/html_dir/2026/06/25/2026062590191.html"
+      },
+      {
+        "type": "press",
+        "title": "머니투데이 보도",
+        "url": "https://www.mt.co.kr/amp/society/2026/06/25/2026062514410598014"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260625089000004"
+      }
     ],
     "related": [
-      { "id": "evt_20260610_02", "note": "잠실7동 제2투표소 증거보전 현장검증과 별도로 송파구 개표소 물품 전체 보전 신청이 다뤄짐" },
-      { "id": "evt_20260620_02", "note": "투표함·투표지 보전 요구가 잠실 개표소 봉쇄 시위 장기화의 명분으로 제기됨" },
-      { "id": "evt_20260617_03", "note": "선거소청 등 선거쟁송 절차와 병행해 증거보전 신청이 제기됨" }
+      {
+        "id": "evt_20260610_02",
+        "note": "잠실7동 제2투표소 증거보전 현장검증과 별도로 송파구 개표소 물품 전체 보전 신청이 다뤄짐"
+      },
+      {
+        "id": "evt_20260620_02",
+        "note": "투표함·투표지 보전 요구가 잠실 개표소 봉쇄 시위 장기화의 명분으로 제기됨"
+      },
+      {
+        "id": "evt_20260617_03",
+        "note": "선거소청 등 선거쟁송 절차와 병행해 증거보전 신청이 제기됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "장외시위", "부정선거의혹"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "장외시위",
+      "부정선거의혹"
+    ]
   },
   {
     "id": "evt_20260624_01",
@@ -1044,16 +2365,41 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "경향신문 보도", "url": "https://www.khan.co.kr/article/202606241714001/" },
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/politics/article/6832528_36911.html" },
-      { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/politics/politics_general/1265157.html" }
+      {
+        "type": "press",
+        "title": "경향신문 보도",
+        "url": "https://www.khan.co.kr/article/202606241714001/"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/news/2026/politics/article/6832528_36911.html"
+      },
+      {
+        "type": "press",
+        "title": "한겨레 보도",
+        "url": "https://www.hani.co.kr/arti/politics/politics_general/1265157.html"
+      }
     ],
     "related": [
-      { "id": "evt_20260617_05", "note": "투표용지 인쇄예산 집행 자료 보도 이후 회계검사 쟁점으로 이어짐" },
-      { "id": "evt_20260623_03", "note": "대통령이 선관위 내부 예산낭비 등 수사 필요성을 언급한 다음 날 감사원이 회계검사 착수를 공개함" },
-      { "id": "evt_20251210_01", "note": "투표용지 인쇄 하한 지침과 예산·물품 관리가 회계검사에서 확인될 수 있는 쟁점" }
+      {
+        "id": "evt_20260617_05",
+        "note": "투표용지 인쇄예산 집행 자료 보도 이후 회계검사 쟁점으로 이어짐"
+      },
+      {
+        "id": "evt_20260623_03",
+        "note": "대통령이 선관위 내부 예산낭비 등 수사 필요성을 언급한 다음 날 감사원이 회계검사 착수를 공개함"
+      },
+      {
+        "id": "evt_20251210_01",
+        "note": "투표용지 인쇄 하한 지침과 예산·물품 관리가 회계검사에서 확인될 수 있는 쟁점"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260624_02",
@@ -1063,16 +2409,41 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "경기일보 보도", "url": "https://www.kyeonggi.com/article/20260624580115" },
-      { "type": "press", "title": "뉴데일리 보도", "url": "https://www.newdaily.co.kr/site/data/html/2026/06/24/2026062400155.html" },
-      { "type": "press", "title": "경향신문 보도", "url": "https://www.khan.co.kr/article/202606241202001/" }
+      {
+        "type": "press",
+        "title": "경기일보 보도",
+        "url": "https://www.kyeonggi.com/article/20260624580115"
+      },
+      {
+        "type": "press",
+        "title": "뉴데일리 보도",
+        "url": "https://www.newdaily.co.kr/site/data/html/2026/06/24/2026062400155.html"
+      },
+      {
+        "type": "press",
+        "title": "경향신문 보도",
+        "url": "https://www.khan.co.kr/article/202606241202001/"
+      }
     ],
     "related": [
-      { "id": "evt_20260611_01", "note": "중앙선관위 등 7곳 압수수색 이후 서울시·송파구 선관위 관계자 개인 자료 확보로 수사가 확대됨" },
-      { "id": "evt_20260622_01", "note": "투표소 현장 공무원 참고인 조사와 병행해 선관위 내부 보고·지시 경로를 확인하기 위한 압수수색" },
-      { "id": "evt_20260623_03", "note": "선관위 내부 운영 전반 수사 필요 발언 이후 합수본 강제수사가 이어짐" }
+      {
+        "id": "evt_20260611_01",
+        "note": "중앙선관위 등 7곳 압수수색 이후 서울시·송파구 선관위 관계자 개인 자료 확보로 수사가 확대됨"
+      },
+      {
+        "id": "evt_20260622_01",
+        "note": "투표소 현장 공무원 참고인 조사와 병행해 선관위 내부 보고·지시 경로를 확인하기 위한 압수수색"
+      },
+      {
+        "id": "evt_20260623_03",
+        "note": "선관위 내부 운영 전반 수사 필요 발언 이후 합수본 강제수사가 이어짐"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260625_01",
@@ -1082,16 +2453,41 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260625027151004" },
-      { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008626913" },
-      { "type": "press", "title": "파이낸셜뉴스 보도", "url": "https://www.fnnews.com/news/202606250956555754" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260625027151004"
+      },
+      {
+        "type": "press",
+        "title": "SBS 보도",
+        "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008626913"
+      },
+      {
+        "type": "press",
+        "title": "파이낸셜뉴스 보도",
+        "url": "https://www.fnnews.com/news/202606250956555754"
+      }
     ],
     "related": [
-      { "id": "evt_20260624_02", "note": "서울시·송파구 선관위 관계자 압수수색 다음 날 선관위 직원 첫 참고인 조사가 진행됨" },
-      { "id": "evt_20260622_01", "note": "지자체 공무원 참고인 조사에 이어 투표소 현장 대응 경위 확인이 계속됨" },
-      { "id": "evt_20260620_01", "note": "합수본의 압수물 분석과 현장 실무자 조사가 송파구선관위 직원 조사로 확대됨" }
+      {
+        "id": "evt_20260624_02",
+        "note": "서울시·송파구 선관위 관계자 압수수색 다음 날 선관위 직원 첫 참고인 조사가 진행됨"
+      },
+      {
+        "id": "evt_20260622_01",
+        "note": "지자체 공무원 참고인 조사에 이어 투표소 현장 대응 경위 확인이 계속됨"
+      },
+      {
+        "id": "evt_20260620_01",
+        "note": "합수본의 압수물 분석과 현장 실무자 조사가 송파구선관위 직원 조사로 확대됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260626_01",
@@ -1101,15 +2497,37 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도(다음 게재)", "url": "https://v.daum.net/v/20260626100213474" },
-      { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008629032" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도(다음 게재)",
+        "url": "https://v.daum.net/v/20260626100213474"
+      },
+      {
+        "type": "press",
+        "title": "SBS 보도",
+        "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008629032"
+      }
     ],
     "related": [
-      { "id": "evt_20260625_01", "note": "송파구선관위 직원 첫 참고인 조사 다음 날 같은 기관 직원과 투표소 공무원 조사가 이어짐" },
-      { "id": "evt_20260624_02", "note": "서울시·송파구 선관위 관계자 12명 압수수색 뒤 보고·지시 경로 확인이 계속됨" },
-      { "id": "evt_20260617_06", "note": "잠실7동 투표용지 보관상자 폐기 의혹 관련 물품 분석이 병행됨" }
+      {
+        "id": "evt_20260625_01",
+        "note": "송파구선관위 직원 첫 참고인 조사 다음 날 같은 기관 직원과 투표소 공무원 조사가 이어짐"
+      },
+      {
+        "id": "evt_20260624_02",
+        "note": "서울시·송파구 선관위 관계자 12명 압수수색 뒤 보고·지시 경로 확인이 계속됨"
+      },
+      {
+        "id": "evt_20260617_06",
+        "note": "잠실7동 투표용지 보관상자 폐기 의혹 관련 물품 분석이 병행됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "잠실7동", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "잠실7동",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260626_02",
@@ -1119,15 +2537,36 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0103_202606261233241258" },
-      { "type": "press", "title": "채널A 보도(다음 게재)", "url": "https://v.daum.net/v/20260626104000379" }
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://www.ytn.co.kr/_ln/0103_202606261233241258"
+      },
+      {
+        "type": "press",
+        "title": "채널A 보도(다음 게재)",
+        "url": "https://v.daum.net/v/20260626104000379"
+      }
     ],
     "related": [
-      { "id": "evt_20260622_05", "note": "문체부의 개표 물품 반출 협조 요청 이후 서울시선관위가 현장 설득을 시도함" },
-      { "id": "evt_20260620_02", "note": "잠실 개표소 봉쇄 시위 장기화와 현장 안전 문제가 계속됨" },
-      { "id": "evt_20260605_03", "note": "잠실7동 투표함 반출 이후 송파구 개표소 주변 장외시위가 계속됨" }
+      {
+        "id": "evt_20260622_05",
+        "note": "문체부의 개표 물품 반출 협조 요청 이후 서울시선관위가 현장 설득을 시도함"
+      },
+      {
+        "id": "evt_20260620_02",
+        "note": "잠실 개표소 봉쇄 시위 장기화와 현장 안전 문제가 계속됨"
+      },
+      {
+        "id": "evt_20260605_03",
+        "note": "잠실7동 투표함 반출 이후 송파구 개표소 주변 장외시위가 계속됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "장외시위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "장외시위"
+    ]
   },
   {
     "id": "evt_20260626_03",
@@ -1137,16 +2576,41 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008629757" },
-      { "type": "press", "title": "YTN 보도(다음 게재)", "url": "https://v.daum.net/v/20260626115104770" },
-      { "type": "press", "title": "연합뉴스TV 보도", "url": "https://www.yonhapnewstv.co.kr/news/MYH20260626181852eKD" }
+      {
+        "type": "press",
+        "title": "SBS 보도",
+        "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008629757"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도(다음 게재)",
+        "url": "https://v.daum.net/v/20260626115104770"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스TV 보도",
+        "url": "https://www.yonhapnewstv.co.kr/news/MYH20260626181852eKD"
+      }
     ],
     "related": [
-      { "id": "evt_20260623_02", "note": "중앙선관위가 국정조사 업무보고에서 제시한 상근제·감사기구 법제화 등 개혁안과 병행해 여당 TF 개혁안이 제시됨" },
-      { "id": "evt_20260618_01", "note": "국정조사계획서 승인 이후 제도개선 논의가 정당 차원의 입법·개헌안으로 확대됨" },
-      { "id": "evt_20260623_03", "note": "대통령의 선관위 내부 운영 수사 필요 발언 이후 여야의 개혁·수사 접근 차이가 부각됨" }
+      {
+        "id": "evt_20260623_02",
+        "note": "중앙선관위가 국정조사 업무보고에서 제시한 상근제·감사기구 법제화 등 개혁안과 병행해 여당 TF 개혁안이 제시됨"
+      },
+      {
+        "id": "evt_20260618_01",
+        "note": "국정조사계획서 승인 이후 제도개선 논의가 정당 차원의 입법·개헌안으로 확대됨"
+      },
+      {
+        "id": "evt_20260623_03",
+        "note": "대통령의 선관위 내부 운영 수사 필요 발언 이후 여야의 개혁·수사 접근 차이가 부각됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260626_04",
@@ -1156,15 +2620,36 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260626066700001" },
-      { "type": "press", "title": "YTN 보도(다음 게재)", "url": "https://v.daum.net/v/20260626181315782" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260626066700001"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도(다음 게재)",
+        "url": "https://v.daum.net/v/20260626181315782"
+      }
     ],
     "related": [
-      { "id": "evt_20260623_01", "note": "국조특위 1차 기관보고 이후 위철환 직무대행의 책임론이 이어짐" },
-      { "id": "evt_20260608_02", "note": "노태악 전 위원장 사직 수용 뒤 위철환 상임위원이 위원장 직무대행을 맡고 있음" },
-      { "id": "evt_20260622_03", "note": "중앙선관위원 전원을 포함한 국정조사 증인 채택 합의 이후 거취 압박이 공식화됨" }
+      {
+        "id": "evt_20260623_01",
+        "note": "국조특위 1차 기관보고 이후 위철환 직무대행의 책임론이 이어짐"
+      },
+      {
+        "id": "evt_20260608_02",
+        "note": "노태악 전 위원장 사직 수용 뒤 위철환 상임위원이 위원장 직무대행을 맡고 있음"
+      },
+      {
+        "id": "evt_20260622_03",
+        "note": "중앙선관위원 전원을 포함한 국정조사 증인 채택 합의 이후 거취 압박이 공식화됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260626_05",
@@ -1174,16 +2659,43 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "뉴스1 보도(다음 게재)", "url": "https://v.daum.net/v/20260626144108039" },
-      { "type": "press", "title": "머니투데이 보도", "url": "https://www.mt.co.kr/amp/society/2026/06/26/2026062618024675822" },
-      { "type": "press", "title": "이데일리 보도", "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05631766645485656" }
+      {
+        "type": "press",
+        "title": "뉴스1 보도(다음 게재)",
+        "url": "https://v.daum.net/v/20260626144108039"
+      },
+      {
+        "type": "press",
+        "title": "머니투데이 보도",
+        "url": "https://www.mt.co.kr/amp/society/2026/06/26/2026062618024675822"
+      },
+      {
+        "type": "press",
+        "title": "이데일리 보도",
+        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=05631766645485656"
+      }
     ],
     "related": [
-      { "id": "evt_20260620_02", "note": "잠실 개표소 봉쇄 시위 장기화 과정에서 현장 안전과 경찰 대응 문제가 이어짐" },
-      { "id": "evt_20260604_01", "note": "부정선거 의혹성 주장 자체가 아니라 허위 영상 유포에 대한 경찰 검거라는 공식 대응을 기록함" },
-      { "id": "evt_20260605_03", "note": "잠실7동 투표함 반출 이후 개표소 주변 봉쇄·시위와 관련한 경찰 대응이 계속됨" }
+      {
+        "id": "evt_20260620_02",
+        "note": "잠실 개표소 봉쇄 시위 장기화 과정에서 현장 안전과 경찰 대응 문제가 이어짐"
+      },
+      {
+        "id": "evt_20260604_01",
+        "note": "부정선거 의혹성 주장 자체가 아니라 허위 영상 유포에 대한 경찰 검거라는 공식 대응을 기록함"
+      },
+      {
+        "id": "evt_20260605_03",
+        "note": "잠실7동 투표함 반출 이후 개표소 주변 봉쇄·시위와 관련한 경찰 대응이 계속됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "장외시위", "수사", "부정선거의혹"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "장외시위",
+      "수사",
+      "부정선거의혹"
+    ]
   },
   {
     "id": "evt_20260626_06",
@@ -1193,16 +2705,43 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260628041900004" },
-      { "type": "press", "title": "이데일리 보도", "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02824086645486312" },
-      { "type": "press", "title": "영등포신문 보도", "url": "https://www.ybstv.net/news/article.html?no=70666" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260628041900004"
+      },
+      {
+        "type": "press",
+        "title": "이데일리 보도",
+        "url": "https://edaily.co.kr/News/Read?mediaCodeNo=257&newsId=02824086645486312"
+      },
+      {
+        "type": "press",
+        "title": "영등포신문 보도",
+        "url": "https://www.ybstv.net/news/article.html?no=70666"
+      }
     ],
     "related": [
-      { "id": "evt_20260616_04", "note": "체육단체 진입 합의 불발과 경찰 수사 착수 뒤 시설 이용 방해 관련 수사가 이어짐" },
-      { "id": "evt_20260620_02", "note": "잠실 개표소 봉쇄 시위 장기화 과정에서 현장 안전과 경찰 대응 문제가 계속됨" },
-      { "id": "evt_20260622_05", "note": "문체부가 개표 물품 반출 협조를 요청한 뒤에도 체육단체 업무 차질과 관련 수사가 이어짐" }
+      {
+        "id": "evt_20260616_04",
+        "note": "체육단체 진입 합의 불발과 경찰 수사 착수 뒤 시설 이용 방해 관련 수사가 이어짐"
+      },
+      {
+        "id": "evt_20260620_02",
+        "note": "잠실 개표소 봉쇄 시위 장기화 과정에서 현장 안전과 경찰 대응 문제가 계속됨"
+      },
+      {
+        "id": "evt_20260622_05",
+        "note": "문체부가 개표 물품 반출 협조를 요청한 뒤에도 체육단체 업무 차질과 관련 수사가 이어짐"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "장외시위", "수사", "부정선거의혹"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "장외시위",
+      "수사",
+      "부정선거의혹"
+    ]
   },
   {
     "id": "evt_20260627_01",
@@ -1212,16 +2751,41 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/society/article/6833299_36918.html" },
-      { "type": "press", "title": "뉴시스 보도", "url": "https://www.newsis.com/view/NISX20260627_0003686051" },
-      { "type": "press", "title": "연합뉴스TV 보도(다음 게재)", "url": "https://v.daum.net/v/20260627181235558" }
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/news/2026/society/article/6833299_36918.html"
+      },
+      {
+        "type": "press",
+        "title": "뉴시스 보도",
+        "url": "https://www.newsis.com/view/NISX20260627_0003686051"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스TV 보도(다음 게재)",
+        "url": "https://v.daum.net/v/20260627181235558"
+      }
     ],
     "related": [
-      { "id": "evt_20260626_01", "note": "송파구선관위 직원과 투표소 공무원 참고인 조사 다음 날 같은 수사 흐름이 이어짐" },
-      { "id": "evt_20260624_02", "note": "서울시·송파구 선관위 관계자 12명 압수수색 뒤 보고·대응 경위 확인이 계속됨" },
-      { "id": "evt_20260617_06", "note": "잠실7동 투표용지 보관상자 폐기 의혹 관련 물품 분석이 병행됨" }
+      {
+        "id": "evt_20260626_01",
+        "note": "송파구선관위 직원과 투표소 공무원 참고인 조사 다음 날 같은 수사 흐름이 이어짐"
+      },
+      {
+        "id": "evt_20260624_02",
+        "note": "서울시·송파구 선관위 관계자 12명 압수수색 뒤 보고·대응 경위 확인이 계속됨"
+      },
+      {
+        "id": "evt_20260617_06",
+        "note": "잠실7동 투표용지 보관상자 폐기 의혹 관련 물품 분석이 병행됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260629_01",
@@ -1231,18 +2795,51 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "동아일보 보도", "url": "https://www.donga.com/news/amp/all/20260629/134202371/1" },
-      { "type": "press", "title": "매일경제 보도", "url": "https://www.mk.co.kr/news/politics/12085910" },
-      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.php?key=202606291807059923&s_mcd=0101" },
-      { "type": "press", "title": "법률신문 보도", "url": "https://www.lawtimes.co.kr/news/articleViewAmp.html?idxno=222789" }
+      {
+        "type": "press",
+        "title": "동아일보 보도",
+        "url": "https://www.donga.com/news/amp/all/20260629/134202371/1"
+      },
+      {
+        "type": "press",
+        "title": "매일경제 보도",
+        "url": "https://www.mk.co.kr/news/politics/12085910"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://m.ytn.co.kr/news_view.php?key=202606291807059923&s_mcd=0101"
+      },
+      {
+        "type": "press",
+        "title": "법률신문 보도",
+        "url": "https://www.lawtimes.co.kr/news/articleViewAmp.html?idxno=222789"
+      }
     ],
     "related": [
-      { "id": "evt_20260618_01", "note": "국정조사계획서 본회의 승인 이후 특검 병행 여부가 정치권 쟁점으로 이어짐" },
-      { "id": "evt_20260623_03", "note": "대통령의 선관위 내부 운영 전반 수사 필요 발언 뒤 특검 추진 논의가 공식화됨" },
-      { "id": "evt_20260626_03", "note": "여당 선관위 개혁TF 개혁안 제시 이후 특검 추진 방침이 추가로 제시됨" },
-      { "id": "evt_20260626_04", "note": "국민의힘의 선관위 책임론·특검 요구와 맞물려 여야 특검 협상 쟁점이 형성됨" }
+      {
+        "id": "evt_20260618_01",
+        "note": "국정조사계획서 본회의 승인 이후 특검 병행 여부가 정치권 쟁점으로 이어짐"
+      },
+      {
+        "id": "evt_20260623_03",
+        "note": "대통령의 선관위 내부 운영 전반 수사 필요 발언 뒤 특검 추진 논의가 공식화됨"
+      },
+      {
+        "id": "evt_20260626_03",
+        "note": "여당 선관위 개혁TF 개혁안 제시 이후 특검 추진 방침이 추가로 제시됨"
+      },
+      {
+        "id": "evt_20260626_04",
+        "note": "국민의힘의 선관위 책임론·특검 요구와 맞물려 여야 특검 협상 쟁점이 형성됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260629_02",
@@ -1252,17 +2849,48 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/society/article/6833616_36918.html" },
-      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.php?key=202606292256162934&s_mcd=0103" },
-      { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/news/endPage.do?cooper=RSS&news_id=N1008632332&plink=ORI" },
-      { "type": "press", "title": "연합뉴스TV 보도", "url": "https://www.yonhapnewstv.co.kr/news/MYH20260629170417g2e" }
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/news/2026/society/article/6833616_36918.html"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://m.ytn.co.kr/news_view.php?key=202606292256162934&s_mcd=0103"
+      },
+      {
+        "type": "press",
+        "title": "SBS 보도",
+        "url": "https://news.sbs.co.kr/news/endPage.do?cooper=RSS&news_id=N1008632332&plink=ORI"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스TV 보도",
+        "url": "https://www.yonhapnewstv.co.kr/news/MYH20260629170417g2e"
+      }
     ],
     "related": [
-      { "id": "evt_20260620_02", "note": "잠실 개표소 봉쇄 시위 장기화 과정에서 현장 안전과 경찰 대응 문제가 계속됨" },
-      { "id": "evt_20260626_05", "note": "선관위 직원 경찰복 위장 탈출 허위 영상 검거 이후 온라인 허위사실 삭제 조치가 함께 집계됨" },
-      { "id": "evt_20260626_06", "note": "핸드볼 대표팀 소지품 무단수색 관련 피의자 특정·조사가 수사 대상 집계에 포함됨" }
+      {
+        "id": "evt_20260620_02",
+        "note": "잠실 개표소 봉쇄 시위 장기화 과정에서 현장 안전과 경찰 대응 문제가 계속됨"
+      },
+      {
+        "id": "evt_20260626_05",
+        "note": "선관위 직원 경찰복 위장 탈출 허위 영상 검거 이후 온라인 허위사실 삭제 조치가 함께 집계됨"
+      },
+      {
+        "id": "evt_20260626_06",
+        "note": "핸드볼 대표팀 소지품 무단수색 관련 피의자 특정·조사가 수사 대상 집계에 포함됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "장외시위", "수사", "부정선거의혹"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "장외시위",
+      "수사",
+      "부정선거의혹"
+    ]
   },
   {
     "id": "evt_20260629_03",
@@ -1272,18 +2900,52 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/society/article/6833621_36918.html" },
-      { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/news/endPage.do?cooper=SBSNEWSMAIN&news_id=N1008632480&plink=TOPLINE" },
-      { "type": "press", "title": "연합뉴스TV 보도", "url": "https://www.yonhapnewstv.co.kr/news/MYH20260629170521Hr6" },
-      { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/society/society_general/1265841.html" },
-      { "type": "press", "title": "동아일보 보도", "url": "https://www.donga.com/news/amp/all/20260629/134202177/1" }
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/news/2026/society/article/6833621_36918.html"
+      },
+      {
+        "type": "press",
+        "title": "SBS 보도",
+        "url": "https://news.sbs.co.kr/news/endPage.do?cooper=SBSNEWSMAIN&news_id=N1008632480&plink=TOPLINE"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스TV 보도",
+        "url": "https://www.yonhapnewstv.co.kr/news/MYH20260629170521Hr6"
+      },
+      {
+        "type": "press",
+        "title": "한겨레 보도",
+        "url": "https://www.hani.co.kr/arti/society/society_general/1265841.html"
+      },
+      {
+        "type": "press",
+        "title": "동아일보 보도",
+        "url": "https://www.donga.com/news/amp/all/20260629/134202177/1"
+      }
     ],
     "related": [
-      { "id": "evt_20260620_02", "note": "잠실 개표소 봉쇄 시위 장기화 과정에서 현장 안전 문제가 계속됨" },
-      { "id": "evt_20260626_06", "note": "핸드볼경기장 일대 시위 현장 안전·시설 이용 방해 관련 수사가 이어지는 가운데 별도 위험물 신고가 접수됨" },
-      { "id": "evt_20260629_02", "note": "같은 날 경찰이 잠실 개표소 시위 관련 불법행위 수사 현황을 공개함" }
+      {
+        "id": "evt_20260620_02",
+        "note": "잠실 개표소 봉쇄 시위 장기화 과정에서 현장 안전 문제가 계속됨"
+      },
+      {
+        "id": "evt_20260626_06",
+        "note": "핸드볼경기장 일대 시위 현장 안전·시설 이용 방해 관련 수사가 이어지는 가운데 별도 위험물 신고가 접수됨"
+      },
+      {
+        "id": "evt_20260629_02",
+        "note": "같은 날 경찰이 잠실 개표소 시위 관련 불법행위 수사 현황을 공개함"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "장외시위", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "장외시위",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260629_04",
@@ -1293,15 +2955,36 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0103_202606291036015137" },
-      { "type": "press", "title": "연합뉴스 보도(다음 게재)", "url": "https://v.daum.net/v/20260629082407285" }
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://www.ytn.co.kr/_ln/0103_202606291036015137"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스 보도(다음 게재)",
+        "url": "https://v.daum.net/v/20260629082407285"
+      }
     ],
     "related": [
-      { "id": "evt_20260627_01", "note": "송파구선관위 관계자 추가 참고인 조사 뒤 같은 수사 흐름이 이어짐" },
-      { "id": "evt_20260626_01", "note": "송파구선관위 직원과 투표소 공무원 참고인 조사가 계속됨" },
-      { "id": "evt_20260624_02", "note": "서울시·송파구 선관위 관계자 12명 압수수색 이후 보고·대응 경위 확인이 확대됨" }
+      {
+        "id": "evt_20260627_01",
+        "note": "송파구선관위 관계자 추가 참고인 조사 뒤 같은 수사 흐름이 이어짐"
+      },
+      {
+        "id": "evt_20260626_01",
+        "note": "송파구선관위 직원과 투표소 공무원 참고인 조사가 계속됨"
+      },
+      {
+        "id": "evt_20260624_02",
+        "note": "서울시·송파구 선관위 관계자 12명 압수수색 이후 보고·대응 경위 확인이 확대됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260630_01",
@@ -1311,16 +2994,42 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "뉴시스 보도(다음 게재)", "url": "https://v.daum.net/v/4u4kpNOcH7" },
-      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0103_202606300925596307" },
-      { "type": "press", "title": "천지일보 보도", "url": "https://www.newscj.com/news/articleView.html?idxno=3413184" }
+      {
+        "type": "press",
+        "title": "뉴시스 보도(다음 게재)",
+        "url": "https://v.daum.net/v/4u4kpNOcH7"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://www.ytn.co.kr/_ln/0103_202606300925596307"
+      },
+      {
+        "type": "press",
+        "title": "천지일보 보도",
+        "url": "https://www.newscj.com/news/articleView.html?idxno=3413184"
+      }
     ],
     "related": [
-      { "id": "evt_20260617_06", "note": "잠실7동 투표용지 보관상자 폐기 의혹 관련 고발 사건이 합수본 조사 대상으로 확대됨" },
-      { "id": "evt_20260629_04", "note": "송파구선관위 직원과 현장 공무원 참고인 조사 다음 날 보관상자·해외출장 의혹 고발인 조사로 이어짐" },
-      { "id": "evt_20260623_03", "note": "선관위 내부 운영 전반 수사 필요 발언 이후 외유성 해외출장 의혹도 합수본 수사 대상으로 다뤄짐" }
+      {
+        "id": "evt_20260617_06",
+        "note": "잠실7동 투표용지 보관상자 폐기 의혹 관련 고발 사건이 합수본 조사 대상으로 확대됨"
+      },
+      {
+        "id": "evt_20260629_04",
+        "note": "송파구선관위 직원과 현장 공무원 참고인 조사 다음 날 보관상자·해외출장 의혹 고발인 조사로 이어짐"
+      },
+      {
+        "id": "evt_20260623_03",
+        "note": "선관위 내부 운영 전반 수사 필요 발언 이후 외유성 해외출장 의혹도 합수본 수사 대상으로 다뤄짐"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "잠실7동", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "잠실7동",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260630_02",
@@ -1330,16 +3039,42 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "뉴스1 보도(다음 게재)", "url": "https://v.daum.net/v/20260630121200569" },
-      { "type": "press", "title": "뉴시스 보도(다음 게재)", "url": "https://v.daum.net/v/20260629180502263" },
-      { "type": "press", "title": "세계일보 보도", "url": "https://m.segye.com/ampView/20260629516491" }
+      {
+        "type": "press",
+        "title": "뉴스1 보도(다음 게재)",
+        "url": "https://v.daum.net/v/20260630121200569"
+      },
+      {
+        "type": "press",
+        "title": "뉴시스 보도(다음 게재)",
+        "url": "https://v.daum.net/v/20260629180502263"
+      },
+      {
+        "type": "press",
+        "title": "세계일보 보도",
+        "url": "https://m.segye.com/ampView/20260629516491"
+      }
     ],
     "related": [
-      { "id": "evt_20260623_01", "note": "국조특위 첫 기관보고에서 7월 현장조사·청문회 일정이 의결된 뒤 세부 방문 계획이 공개됨" },
-      { "id": "evt_20260620_02", "note": "잠실 개표소 봉쇄 시위 장기화 현장이 현장조사 대상에 포함됨" },
-      { "id": "evt_20260622_05", "note": "올림픽공원 핸드볼경기장 개표 물품 반출 문제와 시설 이용 차질이 현장조사 맥락에 포함됨" }
+      {
+        "id": "evt_20260623_01",
+        "note": "국조특위 첫 기관보고에서 7월 현장조사·청문회 일정이 의결된 뒤 세부 방문 계획이 공개됨"
+      },
+      {
+        "id": "evt_20260620_02",
+        "note": "잠실 개표소 봉쇄 시위 장기화 현장이 현장조사 대상에 포함됨"
+      },
+      {
+        "id": "evt_20260622_05",
+        "note": "올림픽공원 핸드볼경기장 개표 물품 반출 문제와 시설 이용 차질이 현장조사 맥락에 포함됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사", "장외시위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사",
+      "장외시위"
+    ]
   },
   {
     "id": "evt_20260701_01",
@@ -1349,17 +3084,47 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260701076800001" },
-      { "type": "press", "title": "뉴시스 보도", "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20260701_0003691324" },
-      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0101_202607011148266054" },
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/replay/2026/nw1200/article/6834190_36967.html" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260701076800001"
+      },
+      {
+        "type": "press",
+        "title": "뉴시스 보도",
+        "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20260701_0003691324"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://www.ytn.co.kr/_ln/0101_202607011148266054"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/replay/2026/nw1200/article/6834190_36967.html"
+      }
     ],
     "related": [
-      { "id": "evt_20260630_02", "note": "여야 간사 협의로 공개된 현장조사 계획이 다음 날 전체회의 의결로 확정됨" },
-      { "id": "evt_20260623_01", "note": "제1차 기관보고 때 정한 7월 현장조사·청문회 일정이 조정됨" },
-      { "id": "evt_20260618_01", "note": "국정조사계획서 승인 뒤 조사 일정이 운영일정 변경 의결로 구체화됨" }
+      {
+        "id": "evt_20260630_02",
+        "note": "여야 간사 협의로 공개된 현장조사 계획이 다음 날 전체회의 의결로 확정됨"
+      },
+      {
+        "id": "evt_20260623_01",
+        "note": "제1차 기관보고 때 정한 7월 현장조사·청문회 일정이 조정됨"
+      },
+      {
+        "id": "evt_20260618_01",
+        "note": "국정조사계획서 승인 뒤 조사 일정이 운영일정 변경 의결로 구체화됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사", "장외시위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사",
+      "장외시위"
+    ]
   },
   {
     "id": "evt_20260701_02",
@@ -1369,19 +3134,57 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "경향신문 보도", "url": "https://www.khan.co.kr/article/202607011746001" },
-      { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/politics/politics_general/1266247.html" },
-      { "type": "press", "title": "뉴시스 보도", "url": "https://www.newsis.com/view/NISX20260701_0003691410" },
-      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0101_202607011719129481" },
-      { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/news/endPage.do?autoplay=Y&cooper=RSS&news_id=N1008636470&plink=PLAY" }
+      {
+        "type": "press",
+        "title": "경향신문 보도",
+        "url": "https://www.khan.co.kr/article/202607011746001"
+      },
+      {
+        "type": "press",
+        "title": "한겨레 보도",
+        "url": "https://www.hani.co.kr/arti/politics/politics_general/1266247.html"
+      },
+      {
+        "type": "press",
+        "title": "뉴시스 보도",
+        "url": "https://www.newsis.com/view/NISX20260701_0003691410"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://www.ytn.co.kr/_ln/0101_202607011719129481"
+      },
+      {
+        "type": "press",
+        "title": "SBS 보도",
+        "url": "https://news.sbs.co.kr/news/endPage.do?autoplay=Y&cooper=RSS&news_id=N1008636470&plink=PLAY"
+      }
     ],
     "related": [
-      { "id": "evt_20260623_02", "note": "선관위가 1차 기관보고 업무보고서에서 제시한 인쇄비율 재검토 방침이 2차 기관보고 개선책으로 구체화됨" },
-      { "id": "evt_20260616_03", "note": "선관위가 투표지 인쇄매수 기준 전면 재검토를 보고한 뒤 후속 개선책을 제시함" },
-      { "id": "evt_20251210_01", "note": "사무총장 전결로 낮춘 투표용지 인쇄 하한선 문제에 대한 후속 제도개선 방침임" },
-      { "id": "evt_20260630_02", "note": "잠실 개표소 현장조사 계획과 맞물려 보관 투표함·투표용지 공개검증 방안이 논의됨" }
+      {
+        "id": "evt_20260623_02",
+        "note": "선관위가 1차 기관보고 업무보고서에서 제시한 인쇄비율 재검토 방침이 2차 기관보고 개선책으로 구체화됨"
+      },
+      {
+        "id": "evt_20260616_03",
+        "note": "선관위가 투표지 인쇄매수 기준 전면 재검토를 보고한 뒤 후속 개선책을 제시함"
+      },
+      {
+        "id": "evt_20251210_01",
+        "note": "사무총장 전결로 낮춘 투표용지 인쇄 하한선 문제에 대한 후속 제도개선 방침임"
+      },
+      {
+        "id": "evt_20260630_02",
+        "note": "잠실 개표소 현장조사 계획과 맞물려 보관 투표함·투표용지 공개검증 방안이 논의됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사", "인쇄지침", "장외시위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사",
+      "인쇄지침",
+      "장외시위"
+    ]
   },
   {
     "id": "evt_20260701_03",
@@ -1391,18 +3194,51 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260701026600004" },
-      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0103_202607010846215905" },
-      { "type": "press", "title": "뉴시스 보도", "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20260701_0003690715" },
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/news/2026/society/article/6834247_36918.html" },
-      { "type": "press", "title": "한국경제 보도", "url": "https://www.hankyung.com/amp/202607018299i" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260701026600004"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://www.ytn.co.kr/_ln/0103_202607010846215905"
+      },
+      {
+        "type": "press",
+        "title": "뉴시스 보도",
+        "url": "https://mobile.newsis.com/view_amp.html?ar_id=NISX20260701_0003690715"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/news/2026/society/article/6834247_36918.html"
+      },
+      {
+        "type": "press",
+        "title": "한국경제 보도",
+        "url": "https://www.hankyung.com/amp/202607018299i"
+      }
     ],
     "related": [
-      { "id": "evt_20260629_04", "note": "송파구선관위 직원과 현장 공무원 참고인 조사 뒤 강남·서초구 선관위 관계자 조사로 이어짐" },
-      { "id": "evt_20260624_02", "note": "서울시·송파구 선관위 관계자 압수수색 이후 부족 발생 지역별 보고·대응 경위 확인이 확대됨" },
-      { "id": "evt_20260630_01", "note": "보관상자 폐기·분실 의혹 및 노태악 전 위원장 해외출장 의혹 조사와 병행해 선거 당일 대응 수사가 계속됨" }
+      {
+        "id": "evt_20260629_04",
+        "note": "송파구선관위 직원과 현장 공무원 참고인 조사 뒤 강남·서초구 선관위 관계자 조사로 이어짐"
+      },
+      {
+        "id": "evt_20260624_02",
+        "note": "서울시·송파구 선관위 관계자 압수수색 이후 부족 발생 지역별 보고·대응 경위 확인이 확대됨"
+      },
+      {
+        "id": "evt_20260630_01",
+        "note": "보관상자 폐기·분실 의혹 및 노태악 전 위원장 해외출장 의혹 조사와 병행해 선거 당일 대응 수사가 계속됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260702_01",
@@ -1412,18 +3248,51 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/amp/view/AKR20260702076300001" },
-      { "type": "press", "title": "한겨레 보도", "url": "https://www.hani.co.kr/arti/politics/politics_general/1266422.html" },
-      { "type": "press", "title": "MBC 보도", "url": "https://imnews.imbc.com/replay/2026/nw1700/article/6834571_36981.html" },
-      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.amp.php?param=0101_202607021126396971&version=1" }
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/amp/view/AKR20260702076300001"
+      },
+      {
+        "type": "press",
+        "title": "한겨레 보도",
+        "url": "https://www.hani.co.kr/arti/politics/politics_general/1266422.html"
+      },
+      {
+        "type": "press",
+        "title": "MBC 보도",
+        "url": "https://imnews.imbc.com/replay/2026/nw1700/article/6834571_36981.html"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://m.ytn.co.kr/news_view.amp.php?param=0101_202607021126396971&version=1"
+      }
     ],
     "related": [
-      { "id": "evt_20260701_01", "note": "국조특위가 전날 의결한 1차 현장조사가 실제 진행됨" },
-      { "id": "evt_20260701_02", "note": "잠실 개표소 보관 투표함·투표지 공개검증 논의 뒤 현장 보관 상태를 확인함" },
-      { "id": "evt_20260630_02", "note": "여야 간사가 공개한 송파구선관위·올림픽공원 현장조사 계획의 실행 단계임" },
-      { "id": "evt_20260620_02", "note": "잠실 개표소 봉쇄 시위 장기화 뒤 27일 만에 특위가 내부 현장을 확인함" }
+      {
+        "id": "evt_20260701_01",
+        "note": "국조특위가 전날 의결한 1차 현장조사가 실제 진행됨"
+      },
+      {
+        "id": "evt_20260701_02",
+        "note": "잠실 개표소 보관 투표함·투표지 공개검증 논의 뒤 현장 보관 상태를 확인함"
+      },
+      {
+        "id": "evt_20260630_02",
+        "note": "여야 간사가 공개한 송파구선관위·올림픽공원 현장조사 계획의 실행 단계임"
+      },
+      {
+        "id": "evt_20260620_02",
+        "note": "잠실 개표소 봉쇄 시위 장기화 뒤 27일 만에 특위가 내부 현장을 확인함"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사", "장외시위"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사",
+      "장외시위"
+    ]
   },
   {
     "id": "evt_20260702_03",
@@ -1433,15 +3302,38 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "YTN 보도", "url": "https://www.ytn.co.kr/_ln/0101_202607021407502920" },
-      { "type": "press", "title": "이데일리 보도", "url": "https://www.edaily.co.kr/News/Read?newsId=05339846645510584&mediaCodeNo=257" },
-      { "type": "press", "title": "파이낸셜뉴스 보도", "url": "https://www.fnnews.com/news/202607021552150746" }
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://www.ytn.co.kr/_ln/0101_202607021407502920"
+      },
+      {
+        "type": "press",
+        "title": "이데일리 보도",
+        "url": "https://www.edaily.co.kr/News/Read?newsId=05339846645510584&mediaCodeNo=257"
+      },
+      {
+        "type": "press",
+        "title": "파이낸셜뉴스 보도",
+        "url": "https://www.fnnews.com/news/202607021552150746"
+      }
     ],
     "related": [
-      { "id": "evt_20260702_01", "note": "같은 날 1차 현장조사 진행 중 나온 재검표 제안·CCTV 미비 확인" },
-      { "id": "evt_20260701_02", "note": "선관위의 잠실 투표함 공개검증 찬성 방침에 이어 국회 의결 재검표 제안으로 구체화됨" }
+      {
+        "id": "evt_20260702_01",
+        "note": "같은 날 1차 현장조사 진행 중 나온 재검표 제안·CCTV 미비 확인"
+      },
+      {
+        "id": "evt_20260701_02",
+        "note": "선관위의 잠실 투표함 공개검증 찬성 방침에 이어 국회 의결 재검표 제안으로 구체화됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사", "부정선거의혹"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사",
+      "부정선거의혹"
+    ]
   },
   {
     "id": "evt_20260702_02",
@@ -1451,18 +3343,51 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "경향신문 보도", "url": "https://www.khan.co.kr/article/202607020842001" },
-      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.amp.php?param=0103_202607020835556050&version=1" },
-      { "type": "press", "title": "뉴스핌 보도", "url": "https://www.newspim.com/news/view/20260702000302" },
-      { "type": "press", "title": "TBS 보도", "url": "https://tbs.seoul.kr/news/newsView.do?idx_800=3537138&seq_800=20530013&typ_800=6" }
+      {
+        "type": "press",
+        "title": "경향신문 보도",
+        "url": "https://www.khan.co.kr/article/202607020842001"
+      },
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://m.ytn.co.kr/news_view.amp.php?param=0103_202607020835556050&version=1"
+      },
+      {
+        "type": "press",
+        "title": "뉴스핌 보도",
+        "url": "https://www.newspim.com/news/view/20260702000302"
+      },
+      {
+        "type": "press",
+        "title": "TBS 보도",
+        "url": "https://tbs.seoul.kr/news/newsView.do?idx_800=3537138&seq_800=20530013&typ_800=6"
+      }
     ],
     "related": [
-      { "id": "evt_20260701_03", "note": "강남·서초구 선관위 관계자 참고인 조사 다음 날 서울시선관위 보고 라인 조사로 이어짐" },
-      { "id": "evt_20260630_01", "note": "노태악 전 위원장 해외출장 의혹 고발인 조사 흐름이 계속됨" },
-      { "id": "evt_20251210_01", "note": "투표용지 50% 인쇄 기준 결정 과정 확인과 연결됨" },
-      { "id": "evt_20260624_02", "note": "서울시·송파구 선관위 관계자 압수수색 이후 보고·지시 라인 확인이 확대됨" }
+      {
+        "id": "evt_20260701_03",
+        "note": "강남·서초구 선관위 관계자 참고인 조사 다음 날 서울시선관위 보고 라인 조사로 이어짐"
+      },
+      {
+        "id": "evt_20260630_01",
+        "note": "노태악 전 위원장 해외출장 의혹 고발인 조사 흐름이 계속됨"
+      },
+      {
+        "id": "evt_20251210_01",
+        "note": "투표용지 50% 인쇄 기준 결정 과정 확인과 연결됨"
+      },
+      {
+        "id": "evt_20260624_02",
+        "note": "서울시·송파구 선관위 관계자 압수수색 이후 보고·지시 라인 확인이 확대됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260703_01",
@@ -1472,19 +3397,57 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "YTN 보도", "url": "https://m.ytn.co.kr/news_view.amp.php?param=0103_202607030849441708&version=1" },
-      { "type": "press", "title": "연합뉴스 보도", "url": "https://www.yna.co.kr/view/AKR20260703072700004" },
-      { "type": "press", "title": "뉴시스 보도(다음 게재)", "url": "https://v.daum.net/v/20260703113307417" },
-      { "type": "press", "title": "SBS 보도", "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008640553" },
-      { "type": "press", "title": "동아일보 보도", "url": "https://www.donga.com/news/amp/all/20260703/134229537/1" }
+      {
+        "type": "press",
+        "title": "YTN 보도",
+        "url": "https://m.ytn.co.kr/news_view.amp.php?param=0103_202607030849441708&version=1"
+      },
+      {
+        "type": "press",
+        "title": "연합뉴스 보도",
+        "url": "https://www.yna.co.kr/view/AKR20260703072700004"
+      },
+      {
+        "type": "press",
+        "title": "뉴시스 보도(다음 게재)",
+        "url": "https://v.daum.net/v/20260703113307417"
+      },
+      {
+        "type": "press",
+        "title": "SBS 보도",
+        "url": "https://news.sbs.co.kr/news/endPage.do?news_id=N1008640553"
+      },
+      {
+        "type": "press",
+        "title": "동아일보 보도",
+        "url": "https://www.donga.com/news/amp/all/20260703/134229537/1"
+      }
     ],
     "related": [
-      { "id": "evt_20260702_02", "note": "서울시선관위 기획계장과 송파 선관위원 참고인 조사 다음 날 같은 수사 흐름이 이어짐" },
-      { "id": "evt_20260617_06", "note": "잠실7동 투표용지 보관상자 폐기 의혹 수사가 별도 조사 쟁점으로 계속됨" },
-      { "id": "evt_20260624_02", "note": "서울시·송파구 선관위 관계자 압수수색 이후 보고·지시 라인과 보관상자 처리 경위 확인이 확대됨" },
-      { "id": "evt_20251210_01", "note": "투표용지 50% 인쇄 기준 결정과 현장 관리 경위를 함께 확인하는 수사 흐름임" }
+      {
+        "id": "evt_20260702_02",
+        "note": "서울시선관위 기획계장과 송파 선관위원 참고인 조사 다음 날 같은 수사 흐름이 이어짐"
+      },
+      {
+        "id": "evt_20260617_06",
+        "note": "잠실7동 투표용지 보관상자 폐기 의혹 수사가 별도 조사 쟁점으로 계속됨"
+      },
+      {
+        "id": "evt_20260624_02",
+        "note": "서울시·송파구 선관위 관계자 압수수색 이후 보고·지시 라인과 보관상자 처리 경위 확인이 확대됨"
+      },
+      {
+        "id": "evt_20251210_01",
+        "note": "투표용지 50% 인쇄 기준 결정과 현장 관리 경위를 함께 확인하는 수사 흐름임"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사", "잠실7동", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사",
+      "잠실7동",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260705_01",
@@ -1494,19 +3457,58 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10798329" },
-      { "type": "press", "title": "한국일보 보도", "url": "https://www.hankookilbo.com/news/article/A2026070217570005976" },
-      { "type": "press", "title": "아주경제 보도", "url": "https://www.ajunews.com/view/20260705110420203" },
-      { "type": "press", "title": "세계일보 보도", "url": "https://segye.com/newsView/20260705504608" },
-      { "type": "press", "title": "서울경제 보도", "url": "https://www.sedaily.com/article/20063828" },
-      { "type": "press", "title": "뉴스핌 보도", "url": "https://www.newspim.com/news/view/20260705000054" },
-      { "type": "press", "title": "프레시안 보도", "url": "https://www.pressian.com/pages/articles/2026070514215824815" }
+      {
+        "type": "press",
+        "title": "헤럴드경제 보도",
+        "url": "https://biz.heraldcorp.com/article/10798329"
+      },
+      {
+        "type": "press",
+        "title": "한국일보 보도",
+        "url": "https://www.hankookilbo.com/news/article/A2026070217570005976"
+      },
+      {
+        "type": "press",
+        "title": "아주경제 보도",
+        "url": "https://www.ajunews.com/view/20260705110420203"
+      },
+      {
+        "type": "press",
+        "title": "세계일보 보도",
+        "url": "https://segye.com/newsView/20260705504608"
+      },
+      {
+        "type": "press",
+        "title": "서울경제 보도",
+        "url": "https://www.sedaily.com/article/20063828"
+      },
+      {
+        "type": "press",
+        "title": "뉴스핌 보도",
+        "url": "https://www.newspim.com/news/view/20260705000054"
+      },
+      {
+        "type": "press",
+        "title": "프레시안 보도",
+        "url": "https://www.pressian.com/pages/articles/2026070514215824815"
+      }
     ],
     "related": [
-      { "id": "evt_20260629_01", "note": "선관위 특검 당론 추진 공식화 이후 발의 시점·추천 방식이 구체화됨" },
-      { "id": "evt_20251210_01", "note": "특검 수사 대상으로 투표용지 인쇄 물량 축소 경위가 제시됨" }
+      {
+        "id": "evt_20260629_01",
+        "note": "선관위 특검 당론 추진 공식화 이후 발의 시점·추천 방식이 구체화됨"
+      },
+      {
+        "id": "evt_20251210_01",
+        "note": "특검 수사 대상으로 투표용지 인쇄 물량 축소 경위가 제시됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260707_01",
@@ -1516,16 +3518,43 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "아주경제 보도", "url": "https://www.ajunews.com/view/20260707093605806" },
-      { "type": "press", "title": "뉴데일리 보도", "url": "https://www.newdaily.co.kr/site/data/html/2026/07/07/2026070700068.html" },
-      { "type": "press", "title": "시사저널 보도", "url": "https://www.sisajournal.com/news/articleView.html?idxno=378917" },
-      { "type": "press", "title": "뉴스핌 보도", "url": "https://www.newspim.com/news/view/20260707000394" }
+      {
+        "type": "press",
+        "title": "아주경제 보도",
+        "url": "https://www.ajunews.com/view/20260707093605806"
+      },
+      {
+        "type": "press",
+        "title": "뉴데일리 보도",
+        "url": "https://www.newdaily.co.kr/site/data/html/2026/07/07/2026070700068.html"
+      },
+      {
+        "type": "press",
+        "title": "시사저널 보도",
+        "url": "https://www.sisajournal.com/news/articleView.html?idxno=378917"
+      },
+      {
+        "type": "press",
+        "title": "뉴스핌 보도",
+        "url": "https://www.newspim.com/news/view/20260707000394"
+      }
     ],
     "related": [
-      { "id": "evt_20260703_01", "note": "송파구선관위 관계자 참고인 조사에 이어 인쇄 계약·납품 경위로 조사 범위가 확대됨" },
-      { "id": "evt_20251210_01", "note": "투표용지 인쇄 하한선 50% 결정과 지역별 인쇄 계약 경위를 함께 확인하는 수사 흐름임" }
+      {
+        "id": "evt_20260703_01",
+        "note": "송파구선관위 관계자 참고인 조사에 이어 인쇄 계약·납품 경위로 조사 범위가 확대됨"
+      },
+      {
+        "id": "evt_20251210_01",
+        "note": "투표용지 인쇄 하한선 50% 결정과 지역별 인쇄 계약 경위를 함께 확인하는 수사 흐름임"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260707_02",
@@ -1535,15 +3564,37 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "파이낸셜뉴스 보도", "url": "https://www.fnnews.com/news/202607071850285950" },
-      { "type": "press", "title": "프레시안 보도", "url": "https://www.pressian.com/pages/articles/2026070719140582150" },
-      { "type": "press", "title": "머니투데이 보도", "url": "https://www.mt.co.kr/politics/2026/07/07/2026070712341127120" }
+      {
+        "type": "press",
+        "title": "파이낸셜뉴스 보도",
+        "url": "https://www.fnnews.com/news/202607071850285950"
+      },
+      {
+        "type": "press",
+        "title": "프레시안 보도",
+        "url": "https://www.pressian.com/pages/articles/2026070719140582150"
+      },
+      {
+        "type": "press",
+        "title": "머니투데이 보도",
+        "url": "https://www.mt.co.kr/politics/2026/07/07/2026070712341127120"
+      }
     ],
     "related": [
-      { "id": "evt_20260701_01", "note": "국조특위가 의결한 7월 2·7일 현장조사 일정에 따른 2차 현장조사" },
-      { "id": "evt_20260702_01", "note": "송파구선관위·잠실 1차 현장조사에 이어 중앙·서울시선관위로 현장조사가 이어짐" }
+      {
+        "id": "evt_20260701_01",
+        "note": "국조특위가 의결한 7월 2·7일 현장조사 일정에 따른 2차 현장조사"
+      },
+      {
+        "id": "evt_20260702_01",
+        "note": "송파구선관위·잠실 1차 현장조사에 이어 중앙·서울시선관위로 현장조사가 이어짐"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260707_03",
@@ -1553,15 +3604,39 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10800948" },
-      { "type": "press", "title": "파이낸셜뉴스 보도", "url": "https://www.fnnews.com/news/202607071850285950" },
-      { "type": "press", "title": "한국일보 보도", "url": "https://www.hankookilbo.com/news/article/A2026070715280000792" },
-      { "type": "press", "title": "프레시안 보도", "url": "https://www.pressian.com/pages/articles/2026070719140582150" }
+      {
+        "type": "press",
+        "title": "헤럴드경제 보도",
+        "url": "https://biz.heraldcorp.com/article/10800948"
+      },
+      {
+        "type": "press",
+        "title": "파이낸셜뉴스 보도",
+        "url": "https://www.fnnews.com/news/202607071850285950"
+      },
+      {
+        "type": "press",
+        "title": "한국일보 보도",
+        "url": "https://www.hankookilbo.com/news/article/A2026070715280000792"
+      },
+      {
+        "type": "press",
+        "title": "프레시안 보도",
+        "url": "https://www.pressian.com/pages/articles/2026070719140582150"
+      }
     ],
     "related": [
-      { "id": "evt_20260701_01", "note": "국조특위가 의결한 7월 14·22일 청문회 일정에 따른 1차 청문회 증인 채택" }
+      {
+        "id": "evt_20260701_01",
+        "note": "국조특위가 의결한 7월 14·22일 청문회 일정에 따른 1차 청문회 증인 채택"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사", "채용비리"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사",
+      "채용비리"
+    ]
   },
   {
     "id": "evt_20260707_04",
@@ -1571,16 +3646,43 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "한국일보 보도", "url": "https://www.hankookilbo.com/news/article/A2026070715280000792" },
-      { "type": "press", "title": "파이낸셜뉴스 보도", "url": "https://www.fnnews.com/news/202607071006028270" },
-      { "type": "press", "title": "아주경제 보도", "url": "https://www.ajunews.com/view/20260707125015215" },
-      { "type": "press", "title": "매일일보 보도", "url": "https://www.m-i.kr/news/articleView.html?idxno=1388951" }
+      {
+        "type": "press",
+        "title": "한국일보 보도",
+        "url": "https://www.hankookilbo.com/news/article/A2026070715280000792"
+      },
+      {
+        "type": "press",
+        "title": "파이낸셜뉴스 보도",
+        "url": "https://www.fnnews.com/news/202607071006028270"
+      },
+      {
+        "type": "press",
+        "title": "아주경제 보도",
+        "url": "https://www.ajunews.com/view/20260707125015215"
+      },
+      {
+        "type": "press",
+        "title": "매일일보 보도",
+        "url": "https://www.m-i.kr/news/articleView.html?idxno=1388951"
+      }
     ],
     "related": [
-      { "id": "evt_20260702_03", "note": "국조특위의 국회 의결 통한 재검표 공개 제안과 중앙선관위의 응하겠다는 답변이 구체적 실시 방안으로 이어짐" },
-      { "id": "evt_20260701_02", "note": "선관위의 잠실 투표함 공개검증 찬성 보고가 247만장 재검표 방안으로 구체화됨" }
+      {
+        "id": "evt_20260702_03",
+        "note": "국조특위의 국회 의결 통한 재검표 공개 제안과 중앙선관위의 응하겠다는 답변이 구체적 실시 방안으로 이어짐"
+      },
+      {
+        "id": "evt_20260701_02",
+        "note": "선관위의 잠실 투표함 공개검증 찬성 보고가 247만장 재검표 방안으로 구체화됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "잠실7동", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "잠실7동",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260708_01",
@@ -1590,15 +3692,37 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10802270" },
-      { "type": "press", "title": "파이낸셜뉴스 보도", "url": "https://www.fnnews.com/news/202607081457438416" },
-      { "type": "press", "title": "파이낸셜뉴스 예고 보도", "url": "https://www.fnnews.com/news/202607080500293966" }
+      {
+        "type": "press",
+        "title": "헤럴드경제 보도",
+        "url": "https://biz.heraldcorp.com/article/10802270"
+      },
+      {
+        "type": "press",
+        "title": "파이낸셜뉴스 보도",
+        "url": "https://www.fnnews.com/news/202607081457438416"
+      },
+      {
+        "type": "press",
+        "title": "파이낸셜뉴스 예고 보도",
+        "url": "https://www.fnnews.com/news/202607080500293966"
+      }
     ],
     "related": [
-      { "id": "evt_20260707_02", "note": "7월 7일 중앙·서울시선관위 2차 현장조사에 이어 이튿날 개혁 과제를 전문가 간담회로 이어감" },
-      { "id": "evt_20260707_03", "note": "7월 14일 1차 청문회 증인·참고인 채택 이후 청문회를 앞두고 개혁 논의를 진행함" }
+      {
+        "id": "evt_20260707_02",
+        "note": "7월 7일 중앙·서울시선관위 2차 현장조사에 이어 이튿날 개혁 과제를 전문가 간담회로 이어감"
+      },
+      {
+        "id": "evt_20260707_03",
+        "note": "7월 14일 1차 청문회 증인·참고인 채택 이후 청문회를 앞두고 개혁 논의를 진행함"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260709_01",
@@ -1608,16 +3732,43 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "파이낸셜뉴스 보도", "url": "https://www.fnnews.com/news/202607090905416642" },
-      { "type": "press", "title": "세계일보 보도", "url": "https://segye.com/newsView/20260709508793" },
-      { "type": "press", "title": "뉴스1 보도", "url": "https://www.news1.kr/society/court-prosecution/6222444" },
-      { "type": "press", "title": "아주경제 보도", "url": "https://www.ajunews.com/view/20260709104616367" }
+      {
+        "type": "press",
+        "title": "파이낸셜뉴스 보도",
+        "url": "https://www.fnnews.com/news/202607090905416642"
+      },
+      {
+        "type": "press",
+        "title": "세계일보 보도",
+        "url": "https://segye.com/newsView/20260709508793"
+      },
+      {
+        "type": "press",
+        "title": "뉴스1 보도",
+        "url": "https://www.news1.kr/society/court-prosecution/6222444"
+      },
+      {
+        "type": "press",
+        "title": "아주경제 보도",
+        "url": "https://www.ajunews.com/view/20260709104616367"
+      }
     ],
     "related": [
-      { "id": "evt_20251210_01", "note": "인쇄 하한선 60%→50% 하향 개정의 근거로 지목된 연구용역 보고서 관계자를 조사함" },
-      { "id": "evt_20260707_01", "note": "7월 7일 인쇄업자·선관위 관계자 소환에 이어 인쇄량 감축 정책 결정 경위로 수사를 확대함" }
+      {
+        "id": "evt_20251210_01",
+        "note": "인쇄 하한선 60%→50% 하향 개정의 근거로 지목된 연구용역 보고서 관계자를 조사함"
+      },
+      {
+        "id": "evt_20260707_01",
+        "note": "7월 7일 인쇄업자·선관위 관계자 소환에 이어 인쇄량 감축 정책 결정 경위로 수사를 확대함"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260709_02",
@@ -1627,14 +3778,34 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "이데일리 보도", "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04946246645512880" },
-      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10804190" },
-      { "type": "press", "title": "서울경제 보도", "url": "https://www.sedaily.com/article/20065649" }
+      {
+        "type": "press",
+        "title": "이데일리 보도",
+        "url": "https://www.edaily.co.kr/News/Read?mediaCodeNo=257&newsId=04946246645512880"
+      },
+      {
+        "type": "press",
+        "title": "헤럴드경제 보도",
+        "url": "https://biz.heraldcorp.com/article/10804190"
+      },
+      {
+        "type": "press",
+        "title": "서울경제 보도",
+        "url": "https://www.sedaily.com/article/20065649"
+      }
     ],
     "related": [
-      { "id": "evt_20260705_01", "note": "한병도 원내대표의 '이번 주 특검법 제출' 발표와 제3자 추천 제안이 당론 발의로 실행됨" }
+      {
+        "id": "evt_20260705_01",
+        "note": "한병도 원내대표의 '이번 주 특검법 제출' 발표와 제3자 추천 제안이 당론 발의로 실행됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사",
+      "수사"
+    ]
   },
   {
     "id": "evt_20260709_03",
@@ -1644,15 +3815,38 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "경향신문 보도", "url": "https://www.khan.co.kr/article/202607091721011/" },
-      { "type": "press", "title": "한국일보 보도", "url": "https://www.hankookilbo.com/news/article/A2026070915040003121" },
-      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10803819" },
-      { "type": "press", "title": "이투데이 보도", "url": "https://www.etoday.co.kr/news/view/2602116" }
+      {
+        "type": "press",
+        "title": "경향신문 보도",
+        "url": "https://www.khan.co.kr/article/202607091721011/"
+      },
+      {
+        "type": "press",
+        "title": "한국일보 보도",
+        "url": "https://www.hankookilbo.com/news/article/A2026070915040003121"
+      },
+      {
+        "type": "press",
+        "title": "헤럴드경제 보도",
+        "url": "https://biz.heraldcorp.com/article/10803819"
+      },
+      {
+        "type": "press",
+        "title": "이투데이 보도",
+        "url": "https://www.etoday.co.kr/news/view/2602116"
+      }
     ],
     "related": [
-      { "id": "evt_20260709_02", "note": "같은 날 발의한 선관위 특검법과 함께 추진된 제도 개혁 입법 패키지" }
+      {
+        "id": "evt_20260709_02",
+        "note": "같은 날 발의한 선관위 특검법과 함께 추진된 제도 개혁 입법 패키지"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260706_01",
@@ -1662,13 +3856,29 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "파이낸셜뉴스 보도", "url": "https://www.fnnews.com/news/202607060917330882" },
-      { "type": "press", "title": "아주경제 보도", "url": "https://www.ajunews.com/view/20260706104944452" }
+      {
+        "type": "press",
+        "title": "파이낸셜뉴스 보도",
+        "url": "https://www.fnnews.com/news/202607060917330882"
+      },
+      {
+        "type": "press",
+        "title": "아주경제 보도",
+        "url": "https://www.ajunews.com/view/20260706104944452"
+      }
     ],
     "related": [
-      { "id": "evt_20260707_01", "note": "인쇄업자·지역 선관위 관계자 소환에 앞서 지역 선관위의 지침 이행 여부를 실무 단위에서 확인함" }
+      {
+        "id": "evt_20260707_01",
+        "note": "인쇄업자·지역 선관위 관계자 소환에 앞서 지역 선관위의 지침 이행 여부를 실무 단위에서 확인함"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260710_01",
@@ -1678,16 +3888,44 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "뉴스1 보도", "url": "https://www.news1.kr/society/court-prosecution/6223861" },
-      { "type": "press", "title": "시사저널 보도", "url": "https://www.sisajournal.com/news/articleView.html?idxno=379423" },
-      { "type": "press", "title": "뉴스핌 보도", "url": "https://www.newspim.com/news/view/20260710001118" },
-      { "type": "press", "title": "세계일보 보도", "url": "https://segye.com/newsView/20260710508779" }
+      {
+        "type": "press",
+        "title": "뉴스1 보도",
+        "url": "https://www.news1.kr/society/court-prosecution/6223861"
+      },
+      {
+        "type": "press",
+        "title": "시사저널 보도",
+        "url": "https://www.sisajournal.com/news/articleView.html?idxno=379423"
+      },
+      {
+        "type": "press",
+        "title": "뉴스핌 보도",
+        "url": "https://www.newspim.com/news/view/20260710001118"
+      },
+      {
+        "type": "press",
+        "title": "세계일보 보도",
+        "url": "https://segye.com/newsView/20260710508779"
+      }
     ],
     "related": [
-      { "id": "evt_20260709_01", "note": "7월 9일 연구용역 관계자·지역 선관위 관계자 조사에 이어 실무 총괄 계장·투표관리관으로 조사를 이어감" },
-      { "id": "evt_20260706_01", "note": "동작구 등 지역 선관위 실무 관계자 조사를 이어가며 투표용지 준비·폐기 경위를 확인함" }
+      {
+        "id": "evt_20260709_01",
+        "note": "7월 9일 연구용역 관계자·지역 선관위 관계자 조사에 이어 실무 총괄 계장·투표관리관으로 조사를 이어감"
+      },
+      {
+        "id": "evt_20260706_01",
+        "note": "동작구 등 지역 선관위 실무 관계자 조사를 이어가며 투표용지 준비·폐기 경위를 확인함"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사", "잠실7동", "인쇄지침"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사",
+      "잠실7동",
+      "인쇄지침"
+    ]
   },
   {
     "id": "evt_20260714_01",
@@ -1697,16 +3935,42 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "경향신문 보도", "url": "https://www.khan.co.kr/article/202607140729011/" },
-      { "type": "press", "title": "파이낸셜뉴스 보도", "url": "https://www.fnnews.com/news/202607141555144553" },
-      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10800948" },
-      { "type": "press", "title": "프레시안 보도", "url": "https://www.pressian.com/pages/articles/2026071421120321292" }
+      {
+        "type": "press",
+        "title": "경향신문 보도",
+        "url": "https://www.khan.co.kr/article/202607140729011/"
+      },
+      {
+        "type": "press",
+        "title": "파이낸셜뉴스 보도",
+        "url": "https://www.fnnews.com/news/202607141555144553"
+      },
+      {
+        "type": "press",
+        "title": "헤럴드경제 보도",
+        "url": "https://biz.heraldcorp.com/article/10800948"
+      },
+      {
+        "type": "press",
+        "title": "프레시안 보도",
+        "url": "https://www.pressian.com/pages/articles/2026071421120321292"
+      }
     ],
     "related": [
-      { "id": "evt_20260707_03", "note": "7월 7일 채택한 1차 청문회 증인·참고인 명단대로 실제 청문회가 열림" },
-      { "id": "evt_20260707_04", "note": "잠실 247만장 재검표 방안이 청문회 쟁점으로 다뤄졌으나 실시 시점은 여야 이견으로 미의결" }
+      {
+        "id": "evt_20260707_03",
+        "note": "7월 7일 채택한 1차 청문회 증인·참고인 명단대로 실제 청문회가 열림"
+      },
+      {
+        "id": "evt_20260707_04",
+        "note": "잠실 247만장 재검표 방안이 청문회 쟁점으로 다뤄졌으나 실시 시점은 여야 이견으로 미의결"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260714_02",
@@ -1716,14 +3980,33 @@
     "status": "official",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "파이낸셜뉴스 보도", "url": "https://www.fnnews.com/news/202607142130467796" },
-      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10808922" },
-      { "type": "press", "title": "한국경제 보도", "url": "https://www.hankyung.com/article/2026071453497" }
+      {
+        "type": "press",
+        "title": "파이낸셜뉴스 보도",
+        "url": "https://www.fnnews.com/news/202607142130467796"
+      },
+      {
+        "type": "press",
+        "title": "헤럴드경제 보도",
+        "url": "https://biz.heraldcorp.com/article/10808922"
+      },
+      {
+        "type": "press",
+        "title": "한국경제 보도",
+        "url": "https://www.hankyung.com/article/2026071453497"
+      }
     ],
     "related": [
-      { "id": "evt_20260714_01", "note": "같은 7월 14일 전체회의에서 1차 청문회 개최와 함께 2차 청문회 증인·참고인 출석요구안이 의결됨" }
+      {
+        "id": "evt_20260714_01",
+        "note": "같은 7월 14일 전체회의에서 1차 청문회 개최와 함께 2차 청문회 증인·참고인 출석요구안이 의결됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "국정조사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "국정조사"
+    ]
   },
   {
     "id": "evt_20260720_01",
@@ -1733,13 +4016,74 @@
     "status": "investigating",
     "source_grade": "press_multi",
     "source_refs": [
-      { "type": "press", "title": "헤럴드경제 보도", "url": "https://biz.heraldcorp.com/article/10813349" },
-      { "type": "press", "title": "서울신문 보도", "url": "https://m.seoul.co.kr/news/2026/07/20/20260720500252" },
-      { "type": "press", "title": "한국경제 보도", "url": "https://www.hankyung.com/article/2026072036507" }
+      {
+        "type": "press",
+        "title": "헤럴드경제 보도",
+        "url": "https://biz.heraldcorp.com/article/10813349"
+      },
+      {
+        "type": "press",
+        "title": "서울신문 보도",
+        "url": "https://m.seoul.co.kr/news/2026/07/20/20260720500252"
+      },
+      {
+        "type": "press",
+        "title": "한국경제 보도",
+        "url": "https://www.hankyung.com/article/2026072036507"
+      }
     ],
     "related": [
-      { "id": "evt_20260630_01", "note": "노태악 전 위원장 외유성 해외출장 의혹 고발인 조사가 중앙선관위·위원장 사무실 압수수색 강제수사로 확대됨" }
+      {
+        "id": "evt_20260630_01",
+        "note": "노태악 전 위원장 외유성 해외출장 의혹 고발인 조사가 중앙선관위·위원장 사무실 압수수색 강제수사로 확대됨"
+      }
     ],
-    "topics": ["선관위", "6·3지방선거", "수사"]
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사"
+    ]
+  },
+  {
+    "id": "evt_20260721_01",
+    "date": "2026-07-21",
+    "title": "여야, 선관위 특검법 7월 임시국회 내 처리 합의 — 국민추천위서 특검 후보 추천",
+    "body_oneline": "더불어민주당 한병도 대표 직무대행 겸 원내대표와 국민의힘 정점식 원내대표가 7월 21일 국회에서 회동해 '제9회 지선 투표용지 부족 사태 등 선거 관리 부실 사태 진상규명을 위한 특별검사 임명 등에 관한 법률안'을 7월 임시국회 내에 처리하기로 합의하고 합의문을 발표했다고 보도됨. 그동안 특검 후보 추천권(제3자 추천 대 야당 추천)을 놓고 대치해 온 여야는 특별검사 임명을 위한 국민추천위원회를 양당이 각 3명씩 추천해 6명으로 구성하고, 이 위원회가 대한변호사협회와 법학전문대학원협의회로부터 각각 3명씩 후보를 추천받아 그중 2명을 여야 합의로 대통령에게 추천하면 대통령이 2명 중 1명을 특별검사로 임명하는 방식에 합의했다고 보도됨. 특검 수사 범위·규모·수사 기간 등 세부 사항은 추후 여야가 합의해 정하기로 했다고 보도됨",
+    "status": "official",
+    "source_grade": "press_multi",
+    "source_refs": [
+      {
+        "type": "press",
+        "title": "헤럴드경제 보도",
+        "url": "https://biz.heraldcorp.com/article/10815005"
+      },
+      {
+        "type": "press",
+        "title": "파이낸셜뉴스 보도",
+        "url": "https://www.fnnews.com/news/202607211231038361"
+      },
+      {
+        "type": "press",
+        "title": "한국일보 보도",
+        "url": "https://www.hankookilbo.com/news/article/A2026072111310002298"
+      },
+      {
+        "type": "press",
+        "title": "한국경제 보도",
+        "url": "https://www.hankyung.com/article/2026072165997"
+      }
+    ],
+    "related": [
+      {
+        "id": "evt_20260709_02",
+        "note": "민주당이 당론 발의한 선관위 특검법을 놓고 이어진 특검 후보 추천권(제3자 추천 대 야당 추천) 대치가 여야 합의로 정리됨"
+      }
+    ],
+    "topics": [
+      "선관위",
+      "6·3지방선거",
+      "수사",
+      "국정조사"
+    ]
   }
 ]
