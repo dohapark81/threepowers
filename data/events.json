@@ -12,8 +12,13 @@
     "source_refs": [
       {
         "type": "press",
-        "title": "선관위 발표·복수 매체 보도 (MBC)",
+        "title": "MBC 보도",
         "url": "https://imnews.imbc.com/replay/2026/nwdesk/article/6828081_37004.html"
+      },
+      {
+        "type": "press",
+        "title": "뉴시스 보도",
+        "url": "https://www.newsis.com/view/NISX20260605_0003658335"
       }
     ],
     "topics": [
