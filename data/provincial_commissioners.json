@@ -1,6 +1,6 @@
 {
   "_note": "17개 시·도선거관리위원회 공식 위원장 및 위원소개 페이지에서 추출한 현원 데이터. 2026-07-05 재확인 결과 다음 변경을 반영: ① 전남광주통합특별시 설치를 위한 특별법(법률 제21446호, 2026-03-05 제정)에 따라 2026-07-01부로 광주광역시·전라남도가 폐지되고 전남광주통합특별시선거관리위원회로 통합 — 시·도 수 17→16, 신설 위원회는 위원장 장용기(호선)·상임위원 위환(중앙선관위 지명)·위원 5명(홍기문·주영화·오현석·조현주·정윤현) 현원 7명, 8번째 위원 자리 공석. ② 대구·대전·울산·경기도 4곳의 상임위원(조용칠·김만영·김영도·김문배)이 모두 공석으로 전환. ③ 경기도 위원 신현정 임기 종료, 후임 장미애(자체선정, 2026-07-01 위촉) 위촉. 그 외 서울·부산·인천·세종·강원·충청북도·충청남도·전북특별자치도·경상북도·경상남도·제주특별자치도는 명단·위촉일·선정방법 변동 없음. 서울특별시선거관리위원회 위원장은 계속 공석으로 표시되어 서울 현원 7명. 공식 페이지에 공개된 현원은 122명(전남광주통합특별시·대구·대전·울산·경기도는 7명, 부산·인천·세종·강원·충북·충남·전북·경북·경남·제주는 8명). 정당명이 원문에 없는 `정당추천` 항목 4명은 추정하지 않고 `party_unspecified`로 둔다. 2026-07-12 16개 시·도선관위 공식 위원소개 페이지 전수 재확인 결과 122명 전원 이름·직책·위촉일·선정방법·정당 변경 없음(대구·대전·울산·경기도 상임위원 공석, 서울 위원장 공석 상태 포함 그대로 유지). 2026-07-19 16개 시·도선관위 공식 위원소개 페이지 전수 재확인(raw HTML 대조) 결과 다음 2건 변경을 확인해 반영: ① 서울특별시선거관리위원회 — 6·3 투표용지 부족 사태 재선거 여부를 가릴 선거소청 심사를 앞두고 중앙선관위가 '법 위반·무효로 보기 어렵다'는 취지의 내부 참고자료를 하달한 것에 반발해 위원 3명(박진표·국민의힘 추천, 김진곤·자체선정, 이재학·더불어민주당 추천)이 2026-07-06 일괄 사임(더퍼블릭·SBS 보도, press_multi 교차확인) — 공식 위원소개 페이지에서 3명 삭제 확인, 그중 1자리는 신임 위원 강한주(자체선정, 강한주법률사무소 변호사, 2026-07-14 위촉)로 충원되어 서울 현원 7→5명(잔여 위원 공석 2자리, 위원장 공석 기존 유지). ② 제주특별자치도선거관리위원회 — 좌혜선 위원(더불어민주당 추천, 2020-04-07 위촉, 6년 임기 만료)이 후임 손지현(더불어민주당 추천, 법무법인 안팍 제주지사장, 2026-04-07 위촉)으로 교체 확인 — 통상적 임기만료 교체로 제주 현원 8명 변동 없음. 그 외 14개 시·도(부산·대구·인천·전남광주통합특별시·대전·울산·세종·경기도·강원·충청북도·충청남도·전북특별자치도·경상북도·경상남도)는 명단·위촉일·선정방법·정당 변경 없음(대구·대전·울산·경기도 상임위원 공석 상태 그대로 유지). 공식 페이지에 공개된 현원은 120명(서울 5명 반영, 그 외 지역 변동 없음). 2026-08-09 16개 시·도선관위 공식 위원소개 페이지 전수 재확인 결과 다음 1건 변경을 확인해 반영: 서울특별시선거관리위원회 — 2026-07-06 사임분 중 남아 있던 위원 공석 2자리가 최정민(더불어민주당 추천, 2026-08-04 위촉), 김한솔(국민의힘 추천, 2026-08-04 위촉)으로 충원되어 서울 현원 5→7명(위원장 공석 1자리만 잔존). 그 외 15개 시·도(부산·대구·인천·전남광주통합특별시·대전·울산·세종·경기도·강원·충청북도·충청남도·전북특별자치도·경상북도·경상남도·제주특별자치도)는 명단·위촉일·선정방법·정당 변경 없음(대구·대전·울산·경기도 상임위원 공석 상태 그대로 유지). 공식 페이지에 공개된 현원은 122명(서울 7명 반영, 그 외 지역 변동 없음). 같은 날 중앙선거관리위원회 위원장소개·상임위원소개·위원소개 페이지도 재확인했으며 위원장 공석·위철환 상임위원(위원장 직무대행)·위원 7명 구성에 변경 없음을 확인함.",
-  "snapshot_date": "2026-08-09",
+  "snapshot_date": "2026-08-16",
   "scope": "province_committees",
   "expected_regions": 16,
   "expected_members": 144,
@@ -44,112 +44,112 @@
       "region": "서울특별시",
       "title": "위원장 및 위원소개 — 서울특별시선거관리위원회",
       "url": "https://su.nec.go.kr/su/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-08-09"
+      "retrieved_at": "2026-08-16"
     },
     {
       "region_code": "bs",
       "region": "부산광역시",
       "title": "위원장 및 위원소개 — 부산광역시선거관리위원회",
       "url": "https://bs.nec.go.kr/bs/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-08-09"
+      "retrieved_at": "2026-08-16"
     },
     {
       "region_code": "dg",
       "region": "대구광역시",
       "title": "위원장 및 위원소개 — 대구광역시선거관리위원회",
       "url": "https://dg.nec.go.kr/dg/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-08-09"
+      "retrieved_at": "2026-08-16"
     },
     {
       "region_code": "ic",
       "region": "인천광역시",
       "title": "위원장 및 위원소개 — 인천광역시선거관리위원회",
       "url": "https://ic.nec.go.kr/ic/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-08-09"
+      "retrieved_at": "2026-08-16"
     },
     {
       "region_code": "jg",
       "region": "전남광주통합특별시",
       "title": "위원장 및 위원소개 — 전남광주통합특별시선거관리위원회",
       "url": "https://jg.nec.go.kr/jg/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-08-09"
+      "retrieved_at": "2026-08-16"
     },
     {
       "region_code": "dj",
       "region": "대전광역시",
       "title": "위원장 및 위원소개 — 대전광역시선거관리위원회",
       "url": "https://dj.nec.go.kr/dj/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-08-09"
+      "retrieved_at": "2026-08-16"
     },
     {
       "region_code": "us",
       "region": "울산광역시",
       "title": "위원장 및 위원소개 — 울산광역시선거관리위원회",
       "url": "https://us.nec.go.kr/us/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-08-09"
+      "retrieved_at": "2026-08-16"
     },
     {
       "region_code": "sj",
       "region": "세종특별자치시",
       "title": "위원장 및 위원소개 — 세종특별자치시선거관리위원회",
       "url": "https://sj.nec.go.kr/sj/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-08-09"
+      "retrieved_at": "2026-08-16"
     },
     {
       "region_code": "gg",
       "region": "경기도",
       "title": "위원장 및 위원소개 — 경기도선거관리위원회",
       "url": "https://gg.nec.go.kr/gg/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-08-09"
+      "retrieved_at": "2026-08-16"
     },
     {
       "region_code": "gw",
       "region": "강원특별자치도",
       "title": "위원장 및 위원소개 — 강원특별자치도선거관리위원회",
       "url": "https://gw.nec.go.kr/gw/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-08-09"
+      "retrieved_at": "2026-08-16"
     },
     {
       "region_code": "cb",
       "region": "충청북도",
       "title": "위원장 및 위원소개 — 충청북도선거관리위원회",
       "url": "https://cb.nec.go.kr/cb/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-08-09"
+      "retrieved_at": "2026-08-16"
     },
     {
       "region_code": "cn",
       "region": "충청남도",
       "title": "위원장 및 위원소개 — 충청남도선거관리위원회",
       "url": "https://cn.nec.go.kr/cn/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-08-09"
+      "retrieved_at": "2026-08-16"
     },
     {
       "region_code": "jb",
       "region": "전북특별자치도",
       "title": "위원장 및 위원소개 — 전북특별자치도선거관리위원회",
       "url": "https://jb.nec.go.kr/jb/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-08-09"
+      "retrieved_at": "2026-08-16"
     },
     {
       "region_code": "gb",
       "region": "경상북도",
       "title": "위원장 및 위원소개 — 경상북도선거관리위원회",
       "url": "https://gb.nec.go.kr/gb/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-08-09"
+      "retrieved_at": "2026-08-16"
     },
     {
       "region_code": "gn",
       "region": "경상남도",
       "title": "위원장 및 위원소개 — 경상남도선거관리위원회",
       "url": "https://gn.nec.go.kr/gn/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-08-09"
+      "retrieved_at": "2026-08-16"
     },
     {
       "region_code": "jj",
       "region": "제주특별자치도",
       "title": "위원장 및 위원소개 — 제주특별자치도선거관리위원회",
       "url": "https://jj.nec.go.kr/jj/bbs/B0000273/list.do?menuNo=200013",
-      "retrieved_at": "2026-08-09"
+      "retrieved_at": "2026-08-16"
     }
   ],
   "commissioners": [
@@ -1501,7 +1501,7 @@
       "region_code": "gg",
       "region": "경기도",
       "committee": "경기도선거관리위원회",
-      "display_order": 4,
+      "display_order": 8,
       "person": "장미애",
       "position": "위원",
       "appointed_date": "2026-07-01",
@@ -1526,7 +1526,7 @@
       "region_code": "gg",
       "region": "경기도",
       "committee": "경기도선거관리위원회",
-      "display_order": 5,
+      "display_order": 4,
       "person": "김진수",
       "position": "위원",
       "appointed_date": "2024-06-11",
@@ -1551,7 +1551,7 @@
       "region_code": "gg",
       "region": "경기도",
       "committee": "경기도선거관리위원회",
-      "display_order": 6,
+      "display_order": 5,
       "person": "오호택",
       "position": "위원",
       "appointed_date": "2026-03-17",
@@ -1576,7 +1576,7 @@
       "region_code": "gg",
       "region": "경기도",
       "committee": "경기도선거관리위원회",
-      "display_order": 7,
+      "display_order": 6,
       "person": "이상화",
       "position": "위원",
       "appointed_date": "2026-05-23",
@@ -1601,7 +1601,7 @@
       "region_code": "gg",
       "region": "경기도",
       "committee": "경기도선거관리위원회",
-      "display_order": 8,
+      "display_order": 7,
       "person": "김종근",
       "position": "위원",
       "appointed_date": "2026-04-03",
@@ -2904,7 +2904,7 @@
       "region_code": "jj",
       "region": "제주특별자치도",
       "committee": "제주특별자치도선거관리위원회",
-      "display_order": 4,
+      "display_order": 8,
       "person": "손지현",
       "position": "위원",
       "appointed_date": "2026-04-07",
@@ -2929,7 +2929,7 @@
       "region_code": "jj",
       "region": "제주특별자치도",
       "committee": "제주특별자치도선거관리위원회",
-      "display_order": 5,
+      "display_order": 4,
       "person": "최진숙",
       "position": "위원",
       "appointed_date": "2023-09-19",
@@ -2954,7 +2954,7 @@
       "region_code": "jj",
       "region": "제주특별자치도",
       "committee": "제주특별자치도선거관리위원회",
-      "display_order": 6,
+      "display_order": 5,
       "person": "전용현",
       "position": "위원",
       "appointed_date": "2024-08-21",
@@ -2979,7 +2979,7 @@
       "region_code": "jj",
       "region": "제주특별자치도",
       "committee": "제주특별자치도선거관리위원회",
-      "display_order": 7,
+      "display_order": 6,
       "person": "이길범",
       "position": "위원",
       "appointed_date": "2025-03-07",
@@ -3004,7 +3004,7 @@
       "region_code": "jj",
       "region": "제주특별자치도",
       "committee": "제주특별자치도선거관리위원회",
-      "display_order": 8,
+      "display_order": 7,
       "person": "한동명",
       "position": "위원",
       "appointed_date": "2025-03-18",
