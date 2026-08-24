@@ -5376,13 +5376,18 @@
     "source_refs": [
       {
         "type": "press",
-        "title": "연합뉴스 보도 — 선관위특검, 서초동 임시사무실로 출근…수사 준비 본격화",
+        "title": "연합뉴스 보도 — 선관위특검 \"올림픽공원 재검표 참관 요청\"…금명간 특검보 추천(종합)",
         "url": "https://www.yna.co.kr/view/AKR20260824018151004"
       },
       {
         "type": "press",
         "title": "뉴스1 보도 — 선관위 특검, 서초동에 '임시 둥지'…팀 구성·수사 대상 선별 '속도'",
         "url": "https://www.news1.kr/society/court-prosecution/6266947"
+      },
+      {
+        "type": "press",
+        "title": "서울신문 보도 — ‘첫 출근’ 이태한 선관위 특검, 25일 청와대에 특검보 추천… “과학 수사 전문성 필수”",
+        "url": "https://www.seoul.co.kr/news/society/law/2026/08/24/20260824500188"
       }
     ],
     "related": [
